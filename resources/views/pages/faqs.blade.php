@@ -12,6 +12,9 @@
 </head>
 <body class="bg-white text-slate-700 font-['Montserrat',sans-serif]">
 
+
+@include('partials.header')
+
 <section>
     <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden">
 
@@ -235,5 +238,8 @@
         });
     });
 </script>
+
+@include('partials.footer')
+
 </body>
 </html>
