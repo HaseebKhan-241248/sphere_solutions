@@ -68,7 +68,7 @@
                             </div>
 
                             <span class="px-6 text-[#4761FF] font-semibold text-base sm:text-lg tracking-wide bg-white h-full flex items-center whitespace-nowrap">
-                                +012 345 6789
+                                +1 (604) 313-7091
                             </span>
                         </div>
                     </div>

@@ -58,9 +58,9 @@
                         <img src="{{ asset('images/icon-1.png') }}" class="w-16 mb-6">
 
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Award Winning</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Web Development</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -69,9 +69,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-2.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Professional Staff</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Digital Marketing</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -80,9 +80,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-3.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Fair Prices</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Creative Content</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -91,9 +91,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-4.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">24/7 Support</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Quick Support</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -103,9 +103,9 @@
                         <img src="{{ asset('images/icon-1.png') }}" class="w-16 mb-6">
 
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Award Winning</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Web Development</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -114,9 +114,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-2.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Professional Staff</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Digital Marketing</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -125,9 +125,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-3.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Fair Prices</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Creative Content</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -136,9 +136,9 @@
                     <div class="text-[#4F46E5] text-5xl mb-6">
                         <img src="{{ asset('images/icon-4.png') }}" class="w-16 mb-6">
                     </div>
-                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">24/7 Support</h4>
+                    <h4 class="text-[#0F172A] text-xl font-bold mb-3">Quick Support</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">
-                        Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam
+                        Results-driven digital solutions tailored to your business goals.
                     </p>
                 </div>
 
@@ -179,13 +179,12 @@
 
             <!-- Main Heading -->
             <h2 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight mb-4">
-                The Best Marketing Agency to Improve Your Business
+                Empower Your Potential with Our Progressive Team
             </h2>
 
             <!-- Paragraph text -->
             <p class="text-slate-500 text-sm leading-relaxed mb-6">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+                Welcome to Sphere Marketing Solutions. We specialize in web development, social media advertising, SEO, video editing, graphic design, and YouTube channel management to enhance your online presence and achieve your business goals.
             </p>
 
             <!-- Features Grid -->
@@ -195,9 +194,9 @@
                     <div class="mb-3">
                         <img src="{{ asset('images/icon-5.png') }}" alt="Service Icon" class="w-12 h-12 object-contain">
                     </div>
-                    <h5 class="text-[#0F172A] text-base font-bold mb-1">Managed Services</h5>
+                    <h5 class="text-[#0F172A] text-base font-bold mb-1">Client-First Ethics</h5>
                     <p class="text-slate-400 text-xs leading-relaxed">
-                        Clita erat ipsum et lorem et sit sed stet lorem
+                        We prioritize client success, ethical services, and maximizing ROI.
                     </p>
                 </div>
 
@@ -208,15 +207,15 @@
                     </div>
                     <h5 class="text-[#0F172A] text-base font-bold mb-1">Dedicated Experts</h5>
                     <p class="text-slate-400 text-xs leading-relaxed">
-                        Clita erat ipsum et lorem et sit sed stet lorem
+                        A tightly-knit team focused on innovation and results-driven delivery.
                     </p>
                 </div>
             </div>
 
             <div class="pb-2">
-                <a href="#"
+                <a href="{{ route('contact') }}"
                    class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
-                    Explore More
+                    Hire Us
                 </a>
             </div>
         </div>

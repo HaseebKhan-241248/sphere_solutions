@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Sphere Marketing Solutions – Digital Marketing</title>
 </head>
 <body>
 
@@ -16,8 +16,8 @@
   <div class="max-w-[88%] mx-auto px-4 sm:px-6">
     <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4">
 
-      <div class="text-3xl font-bold">
-        GrowMark
+      <div class="text-2xl md:text-3xl font-bold">
+        Sphere Marketing Solutions
       </div>
 
       <div class="flex flex-wrap items-center justify-center lg:justify-end gap-6 text-sm">
@@ -26,38 +26,38 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
           </svg>
-          <span style="font-weight: 500;">123 Street, New York, USA</span>
+          <span style="font-weight: 500;">Vancouver, BC, Canada</span>
         </div>
 
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M2 4h20v16H2V4zm10 8L4 6v12h16V6l-8 6z"/>
           </svg>
-          <span style="font-weight: 500;">info@example.com</span>
+          <span style="font-weight: 500;">info@spheremarketingsolutions.com</span>
         </div>
 
         <div class="flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
           </svg>
-          <span style="font-weight: 500;">+012 345 67890</span>
+          <span style="font-weight: 500;">+1 (604) 313-7091</span>
         </div>
 
         <div class="flex items-center gap-3">
 
-          <a style="font-weight: 500;" href="#" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+          <a style="font-weight: 500;" href="https://www.facebook.com/profile.php?id=61558581241296 class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M22 12A10 10 0 1010.5 21.95v-7.04H8v-2.91h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54v1.85h2.72l-.43 2.91h-2.29v7.04A10 10 0 0022 12z"/>
             </svg>
           </a>
 
-          <a style="font-weight: 500;" href="#" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+          <a style="font-weight: 500;" href="https://x.com/SpMarkSolutions class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.52 8.52 0 01-2.71 1.04A4.25 4.25 0 0016.11 4c-2.35 0-4.25 1.9-4.25 4.25 0 .33.04.65.11.96-3.53-.18-6.66-1.87-8.75-4.44a4.25 4.25 0 001.31 5.67 4.2 4.2 0 01-1.92-.53v.05c0 2.06 1.47 3.77 3.42 4.16a4.28 4.28 0 01-1.92.07 4.26 4.26 0 003.97 2.95A8.53 8.53 0 012 19.54 12.03 12.03 0 008.5 21c7.8 0 12.07-6.46 12.07-12.07l-.01-.55A8.66 8.66 0 0022.46 6z"/>
             </svg>
           </a>
 
-          <a style="font-weight: 500;" href="#" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+          <a style="font-weight: 500;" href="https://www.linkedin.com/in/sm-solutions/ class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M4.98 3.5C4.98 4.6 4.09 5.5 3 5.5S1.02 4.6 1.02 3.5 1.91 1.5 3 1.5s1.98.9 1.98 2zM1.5 8h3V22h-3V8zm7 0h2.88v1.91h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59V22h-3v-7.06c0-1.68-.03-3.84-2.34-3.84-2.34 0-2.7 1.83-2.7 3.72V22h-3V8z"/>
             </svg>
@@ -96,6 +96,20 @@
           </a>
         </li>
 
+        <li>
+          <a href="{{ route('prices') }}" class="nav-link hover:text-[#4761FF] transition-all duration-300 relative group">
+            Packages
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="{{ route('faqs') }}" class="nav-link hover:text-[#4761FF] transition-all duration-300 relative group">
+            FAQs
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </li>
+
         <li class="relative group">
           <button class="nav-link flex items-center gap-1 hover:text-[#4761FF] transition-all duration-300 relative group">
             Service
@@ -105,8 +119,8 @@
             </svg>
           </button>
           <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
-            <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Web Development</a></li>
-            <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">SEO Service</a></li>
+            <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Website Development</a></li>
+            <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">SEO Services</a></li>
             <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Digital Marketing</a></li>
           </ul>
         </li>
@@ -158,12 +172,14 @@
     <div id="mobileNavPanel" class="hidden sm:hidden absolute left-0 top-full w-full bg-white shadow-lg z-50 px-6 py-4">
       <ul class="flex flex-col gap-3 text-[18px] text-black">
         <li><a href="{{ route('home') }}" class="block py-2 text-[#4761FF]">Home</a></li>
-        <li><a href="#" class="block py-2 hover:text-[#4761FF]">About</a></li>
+        <li><a href="{{ route('about') }}" class="block py-2 hover:text-[#4761FF]">About</a></li>
+        <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4761FF]">Packages</a></li>
+        <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4761FF]">FAQs</a></li>
 
         <li class="border-t pt-2">
           <span class="block text-gray-500 text-sm mb-1">Service</span>
-          <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Web Development</a>
-          <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">SEO Service</a>
+          <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Website Development</a>
+          <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">SEO Services</a>
           <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Digital Marketing</a>
         </li>
 
@@ -186,7 +202,7 @@
         </li>
 
         <li class="pt-2">
-          <a href="{{ route('quote') }}" class="block text-center bg-[#4761FF] text-white font-medium px-4 py-2 rounded-full">Get A Quote</a>
+          <a href="{{ route('quote') }}" class="block text-center bg-[#4761FF] text-white font-medium px-4 py-2 rounded-full">Hire Us</a>
         </li>
       </ul>
     </div>
@@ -205,17 +221,17 @@
       <div class="max-w-2xl text-white">
 
         <p class="text-xl md:text-2xl mb-5">
-          Welcome to <span class="font-bold">GrowMark</span>
+          We Are <span class="font-bold">Experts</span>
         </p>
 
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-          Unlock Your <br>
-          Business Growth
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
+          Transform Your <br>
+          Digital Presence
         </h1>
 
-        <a href="#"
+        <a href="{{ route('contact') }}"
            class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-          Explore More
+          Free Consultation
         </a>
 
       </div>
@@ -231,17 +247,17 @@
       <div class="max-w-2xl text-white text-right">
 
         <p class="text-xl md:text-2xl mb-5">
-          Creative Digital Agency
+          Sphere Marketing Solutions
         </p>
 
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-          We Build <br>
-          Amazing Brands
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
+          Web, SEO &amp; <br>
+          Digital Growth
         </h1>
 
-        <a href="#"
+        <a href="{{ route('services') }}"
            class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-          Explore More
+          Our Services
         </a>
 
       </div>
@@ -283,11 +299,11 @@
         </div>
 
         <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-          Award Winning
+          Web Development
         </h3>
 
         <p class="text-[#555555] leading-8 text-[18px]">
-          Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam.
+          Visually appealing, functionally robust websites built for your business goals.
         </p>
       </div>
 
@@ -297,11 +313,11 @@
         </div>
 
         <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-          Professional Staff
+          Digital Marketing
         </h3>
 
         <p class="text-[#555555] leading-8 text-[18px]">
-          Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam.
+          Social ads, SEO, and campaigns that reach your audience and drive conversions.
         </p>
       </div>
 
@@ -311,11 +327,11 @@
         </div>
 
         <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-          Fair Prices
+          Creative Content
         </h3>
 
         <p class="text-[#555555] leading-8 text-[18px]">
-          Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam.
+          Video editing and graphic design that elevate your brand image and content.
         </p>
       </div>
 
@@ -325,11 +341,11 @@
         </div>
 
         <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-          24/7 Support
+          Quick Support
         </h3>
 
         <p class="text-[#555555] leading-8 text-[18px]">
-          Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam.
+          Our team is available Monday to Saturday to help with services and pricing.
         </p>
       </div>
 
@@ -350,13 +366,14 @@
                 </span>
 
         <h2 class="text-xl md:text-4xl font-bold text-gray-900 leading-tight mt-4">
-          The Best Marketing Agency to Improve Your Business
+          Empower Your Potential with Our Progressive Team
         </h2>
 
         <p class="text-gray-500 leading-8 mt-6">
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-          Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-          sed stet lorem sit clita duo justo.
+          Welcome to Sphere Marketing Solutions, your premier destination for comprehensive
+          digital marketing services. We specialize in web development, social media advertising,
+          SEO, video editing, graphic design, and YouTube channel management to help you achieve
+          your business goals.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-8 mt-10">
@@ -366,10 +383,10 @@
               <img src="{{ asset('images/icon-5.png') }}">
             </div>
             <h4 class="text-xl font-semibold mb-3">
-              Managed Services
+              Client-First Ethics
             </h4>
             <p class="text-gray-500">
-              Clita erat ipsum et lorem et sit sed stet lorem.
+              We prioritize client success, ethical services, and maximizing ROI.
             </p>
           </div>
 
@@ -381,15 +398,15 @@
               Dedicated Experts
             </h4>
             <p class="text-gray-500">
-              Clita erat ipsum et lorem et sit sed stet lorem.
+              A tightly-knit team focused on innovation and results-driven delivery.
             </p>
           </div>
 
         </div>
 
-        <a href="#"
+        <a href="{{ route('about') }}"
            class="inline-block mt-10 bg-[#4761FF] hover:bg-indigo-700 text-white px-10 py-4 rounded-full transition">
-          Explore More
+          Read More
         </a>
 
       </div>
@@ -404,7 +421,7 @@
 
   <div class="text-center mb-12">
     <span class="text-[#4761FF] font-semibold text-sm tracking-widest uppercase">Our Services</span>
-    <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">Digital Marketing Services that We Offer</h2>
+    <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">Services That Help Your Business Grow</h2>
     <div class="w-16 h-1 bg-[#4761FF] mx-auto mt-4 rounded"></div>
   </div>
 
@@ -419,9 +436,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          Digital Marketing</h3>
+          Website Development</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Visually appealing, functionally robust websites tailored to your business.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -440,9 +457,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          Internet Marketing</h3>
+          SEO Services</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Strategies designed to improve your search engine rankings and organic reach.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -461,9 +478,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          Content Marketing</h3>
+          Digital Marketing</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Campaigns that grow engagement, visibility, and conversions across channels.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -482,9 +499,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          Social Media</h3>
+          Social Media Advertising</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Reach your target audience effectively and drive measurable results.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -503,9 +520,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          SEO Marketing</h3>
+          Video Editing & Graphics</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Elevate your content and brand image with professional creative services.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -524,9 +541,9 @@
           </div>
         </div>
         <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
-          Email Marketing</h3>
+          YouTube Management</h3>
         <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-          Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+          Grow your channel so your videos reach their maximum potential.
         </p>
       </div>
       <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
@@ -724,7 +741,7 @@
                     </span>
 
           <span class="px-4 flex items-center text-[#4761FF] text-xl font-medium bg-white">
-                        +012 345 6789
+                        +1 (604) 313-7091
                     </span>
 
         </a>
@@ -1065,17 +1082,17 @@
 
           <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]">
             <i class="fa-solid fa-location-dot"></i>
-            <span>123 Street, New York, USA</span>
+            <span>Vancouver, BC, Canada</span>
           </li>
 
           <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]">
             <i class="fa-solid fa-phone"></i>
-            <span>+012 345 67890</span>
+            <span>+1 (604) 313-7091</span>
           </li>
 
           <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]">
             <i class="fa-solid fa-envelope"></i>
-            <span>info@example.com</span>
+            <span>info@spheremarketingsolutions.com</span>
           </li>
 
         </ul>
@@ -1137,7 +1154,7 @@
 
           <div>
             <p class="text-[17px] text-[#B0B9AE]">Monday - Friday</p>
-            <h4 class="text-[18px] font-semibold">09:00 am - 07:00 pm</h4>
+            <h4 class="text-[18px] font-semibold">09:00 am - 06:00 pm</h4>
           </div>
 
           <div>
@@ -1187,11 +1204,11 @@
     <div class="max-w-[88%] mx-auto py-7 flex flex-col md:flex-row items-center justify-between gap-5">
 
       <p class="text-[17px] text-gray-300">
-        © <span class="font-semibold text-white">Your Site Name</span>,<span class="text-[#B0B9AE]"> All Right Reserved.</span>
+        © <span class="font-semibold text-white">Sphere Marketing Solutions</span>,<span class="text-[#B0B9AE]"> All Right Reserved.</span>
       </p>
 
       <p class="text-[17px] text-gray-300">
-        <span class="text-[#B0B9AE]">Designed By</span> <span class="font-semibold text-white">HTML Codex</span>
+        <span class="text-[#B0B9AE]">Sphere Digital Marketing Solutions</span>
       </p>
 
     </div>

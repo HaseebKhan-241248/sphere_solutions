@@ -45,7 +45,7 @@
                     Contact Us
                 </span>
             <h2 class="text-[#0F172A] text-4xl md:text-[46px] font-extrabold tracking-tight leading-tight">
-                If You Have Any Query, Please Contact Us
+                Want to Discuss a Project With Us?
             </h2>
         </div>
 
@@ -54,7 +54,7 @@
 
             <div class="lg:col-span-6">
                 <h2 class="text-[#1C2035] text-2xl font-extrabold tracking-tight mb-8">
-                    Full Functional Contact Form
+                    Talk to Our Sales & Marketing Team
                 </h2>
 
                 <form action="#" method="POST" class="space-y-5">
@@ -105,7 +105,7 @@
                             <div>
                                 <h4 class="text-black text-xs font-semibold uppercase tracking-wider">Our
                                     Office</h4>
-                                <p class="text-[#555555] text-sm">123 Street, New York, USA</p>
+                                <p class="text-[#555555] text-sm">Vancouver, BC, Canada</p>
                             </div>
                         </div>
 
@@ -118,7 +118,7 @@
                             <div>
                                 <h4 class="text-black text-xs font-semibold uppercase tracking-wider">Call
                                     Us</h4>
-                                <p class="text-[#555555] text-sm">+012 345 6789</p>
+                                <p class="text-[#555555] text-sm">+1 (604) 313-7091</p>
                             </div>
                         </div>
 
@@ -131,7 +131,7 @@
                             <div>
                                 <h4 class="text-black text-xs font-semibold uppercase tracking-wider">Mail
                                     Us</h4>
-                                <p class="text-[#555555] text-sm">info@example.com</p>
+                                <p class="text-[#555555] text-sm">info@spheremarketingsolutions.com</p>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
 
                 <div class="w-full h-[280px] rounded-xl overflow-hidden shadow-sm border border-slate-100 relative">
                     <iframe class="w-full h-full border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4764959141075!2d-73.98542838459385!3d40.74844047932828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2s!4v1641234567890!5m2!1sen!2s"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.34964792216!2d-123.1939432!3d49.2578263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0x796063c1de3f8f35!2sVancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
                             allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>

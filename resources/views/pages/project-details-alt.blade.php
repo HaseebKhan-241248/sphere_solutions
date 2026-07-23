@@ -16,8 +16,8 @@
     <div class="max-w-[88%] mx-auto px-4 sm:px-6">
         <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4">
 
-            <div class="text-3xl font-bold">
-                GrowMark
+            <div class="text-2xl md:text-3xl font-bold">
+                Sphere Marketing Solutions
             </div>
 
             <div class="flex flex-wrap items-center justify-center lg:justify-end gap-6 text-sm">
@@ -26,40 +26,40 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
                     </svg>
-                    <span style="font-weight: 500;">123 Street, New York, USA</span>
+                    <span style="font-weight: 500;">Vancouver, BC, Canada</span>
                 </div>
 
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M2 4h20v16H2V4zm10 8L4 6v12h16V6l-8 6z"/>
                     </svg>
-                    <span style="font-weight: 500;">info@example.com</span>
+                    <span style="font-weight: 500;">info@spheremarketingsolutions.com</span>
                 </div>
 
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                     </svg>
-                    <span style="font-weight: 500;">+012 345 67890</span>
+                    <span style="font-weight: 500;">+1 (604) 313-7091</span>
                 </div>
 
                 <div class="flex items-center gap-3">
 
-                    <a style="font-weight: 500;" href="#"
+                    <a style="font-weight: 500;" href="https://www.facebook.com/profile.php?id=61558581241296
                        class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                             <path d="M22 12A10 10 0 1010.5 21.95v-7.04H8v-2.91h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54v1.85h2.72l-.43 2.91h-2.29v7.04A10 10 0 0022 12z"/>
                         </svg>
                     </a>
 
-                    <a style="font-weight: 500;" href="#"
+                    <a style="font-weight: 500;" href="https://x.com/SpMarkSolutions
                        class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                             <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.52 8.52 0 01-2.71 1.04A4.25 4.25 0 0016.11 4c-2.35 0-4.25 1.9-4.25 4.25 0 .33.04.65.11.96-3.53-.18-6.66-1.87-8.75-4.44a4.25 4.25 0 001.31 5.67 4.2 4.2 0 01-1.92-.53v.05c0 2.06 1.47 3.77 3.42 4.16a4.28 4.28 0 01-1.92.07 4.26 4.26 0 003.97 2.95A8.53 8.53 0 012 19.54 12.03 12.03 0 008.5 21c7.8 0 12.07-6.46 12.07-12.07l-.01-.55A8.66 8.66 0 0022.46 6z"/>
                         </svg>
                     </a>
 
-                    <a style="font-weight: 500;" href="#"
+                    <a style="font-weight: 500;" href="https://www.linkedin.com/in/sm-solutions/
                        class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                             <path d="M4.98 3.5C4.98 4.6 4.09 5.5 3 5.5S1.02 4.6 1.02 3.5 1.91 1.5 3 1.5s1.98.9 1.98 2zM1.5 8h3V22h-3V8zm7 0h2.88v1.91h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59V22h-3v-7.06c0-1.68-.03-3.84-2.34-3.84-2.34 0-2.7 1.83-2.7 3.72V22h-3V8z"/>
@@ -193,8 +193,8 @@
 
                 <li class="border-t pt-2">
                     <span class="block text-gray-500 text-sm mb-1">Service</span>
-                    <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Web Development</a>
-                    <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">SEO Service</a>
+                    <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Website Development</a>
+                    <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">SEO Services</a>
                     <a href="#" class="block py-1 pl-3 hover:text-[#4761FF]">Digital Marketing</a>
                 </li>
 
@@ -459,11 +459,11 @@
                 <h2 class="text-[25px] font-semibold mb-5">Our Office</h2>
                 <ul class="space-y-3">
                     <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]"><i
-                            class="fa-solid fa-location-dot"></i><span>123 Street, New York, USA</span></li>
+                            class="fa-solid fa-location-dot"></i><span>Vancouver, BC, Canada</span></li>
                     <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]"><i
-                            class="fa-solid fa-phone"></i><span>+012 345 67890</span></li>
+                            class="fa-solid fa-phone"></i><span>+1 (604) 313-7091</span></li>
                     <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]"><i
-                            class="fa-solid fa-envelope"></i><span>info@example.com</span></li>
+                            class="fa-solid fa-envelope"></i><span>info@spheremarketingsolutions.com</span></li>
                 </ul>
                 <div class="flex gap-4 mt-4">
                     <a href="#"
@@ -501,7 +501,7 @@
                 <h2 class="text-[25px] font-semibold mb-5">Business Hours</h2>
                 <div class="space-y-2">
                     <div><p class="text-[17px] text-[#B0B9AE]">Monday - Friday</p><h4 class="text-[18px] font-semibold">
-                        09:00 am - 07:00 pm</h4></div>
+                        09:00 am - 06:00 pm</h4></div>
                     <div><p class="text-[17px] text-[#B0B9AE]">Saturday</p><h4 class="text-[18px] font-semibold">09:00
                         am - 12:00 pm</h4></div>
                     <div><p class="text-[17px] text-[#B0B9AE]">Sunday</p><h4 class="text-[18px] font-semibold">
@@ -526,10 +526,9 @@
 
     <div class="bg-black">
         <div class="max-w-[88%] mx-auto py-7 flex flex-col md:flex-row items-center justify-between gap-5">
-            <p class="text-[17px] text-gray-300">© <span class="font-semibold text-white">Your Site Name</span>,<span
+            <p class="text-[17px] text-gray-300">© <span class="font-semibold text-white">Sphere Marketing Solutions</span>,<span
                     class="text-[#B0B9AE]"> All Right Reserved.</span></p>
-            <p class="text-[17px] text-gray-300"><span class="text-[#B0B9AE]">Designed By</span> <span
-                    class="font-semibold text-white">HTML Codex</span></p>
+            <p class="text-[17px] text-gray-300"><span class="text-[#B0B9AE]">Sphere Digital Marketing Solutions</span></p>
         </div>
     </div>
 
