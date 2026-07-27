@@ -6,7 +6,7 @@
 
 @theme {
     --font-sans: 'Montserrat', 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 /* Testimonial slider (pages) */
@@ -14,6 +14,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 #testimonialSlider::-webkit-scrollbar {
     display: none;
 }
@@ -56,9 +57,11 @@
     transition: transform .3s, background .4s, color .4s;
     flex: 0 0 calc(33.333% - 1.34rem);
 }
+
 .testi-card:hover {
     transform: translateY(-0.5rem);
 }
+
 .testi-card img {
     width: 6rem;
     height: 6rem;
@@ -67,18 +70,21 @@
     object-fit: cover;
     transition: border-color .4s;
 }
+
 .testi-card p {
     color: #6b7280;
     font-size: 17px;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 .testi-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: #20233F;
     margin-bottom: .5rem;
 }
+
 .testi-card span {
     color: #4761FF;
     font-size: 1.25rem;
@@ -88,15 +94,19 @@
     background: #4761FF;
     color: #fff;
 }
+
 .testi-card.is-active p {
     color: rgba(255, 255, 255, .95);
 }
+
 .testi-card.is-active h3 {
     color: #fff;
 }
+
 .testi-card.is-active span {
     color: rgba(255, 255, 255, .9);
 }
+
 .testi-card.is-active img {
     border: 4px solid #fff;
 }
@@ -104,6 +114,7 @@
 #slider {
     transition: transform .5s ease;
 }
+
 #slider.no-transition {
     transition: none !important;
 }
@@ -121,11 +132,28 @@ body {
 .faq-item .faq-icon {
     transition: transform .3s ease;
 }
+
 .faq-item.open .faq-icon {
     transform: rotate(180deg);
 }
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height .35s ease;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
 }
