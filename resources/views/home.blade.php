@@ -47,7 +47,9 @@
 </div>
 
 
-@include('partials.header')
+@extends('layout.app')
+
+@section('content')
 
 <section class="relative h-screen overflow-hidden">
 
@@ -964,8 +966,6 @@
 </section>
 
 
-@include('partials.footer')
-
 <script>const slides = document.querySelectorAll(".hero-slide");
     const nextBtn = document.getElementById("nextBtn");
     const prevBtn = document.getElementById("prevBtn");
@@ -1174,3 +1174,4 @@
 </script>
 </body>
 </html>
+@endsection
