@@ -916,9 +916,6 @@
 </section>
 
 
-<<<<<<< HEAD
-@include('partials.footer')
-
 <script>const slides = document.querySelectorAll(".hero-slide");
     const nextBtn = document.getElementById("nextBtn");
     const prevBtn = document.getElementById("prevBtn");
