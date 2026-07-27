@@ -1,52 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <title>Sphere Marketing Solutions – Digital Marketing</title>
-</head>
-<body>
-
-
 @extends('layout.app')
-
 @section('content')
 
-    <section class="relative h-screen overflow-hidden">
+<section class="relative h-screen overflow-hidden">
 
-        <!-- Slide 1 (Video 1) -->
-        <div class="hero-slide active absolute inset-0">
-            <!-- Background Video -->
-            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-                <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <!-- Slide 1 (Video 1) -->
+    <div class="hero-slide active absolute inset-0">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-            <!-- Dark Overlay for better text readability -->
-            <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Dark Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black/40"></div>
 
-            <!-- Content -->
-            <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
-                <div class="max-w-2xl text-white">
-                    <p class="text-xl md:text-2xl mb-5">
-                        Welcome to <span class="font-bold">GrowMark</span>
-                    </p>
-                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-                        Unlock Your <br>
-                        Business Growth
-                    </h1>
-                    <a href="#"
-                       class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-                        Explore More
-                    </a>
-                </div>
+        <!-- Content -->
+        <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
+            <div class="max-w-2xl text-white">
+                <p class="text-xl md:text-2xl mb-5">
+                    Welcome to <span class="font-bold">GrowMark</span>
+                </p>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                    Unlock Your <br>
+                    Business Growth
+                </h1>
+                <a href="#"
+                   class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
+                    Explore More
+                </a>
             </div>
         </div>
 
@@ -963,12 +944,18 @@
     </section>
 
 
+<<<<<<< HEAD
     <script>const slides = document.querySelectorAll(".hero-slide");
         const nextBtn = document.getElementById("nextBtn");
         const prevBtn = document.getElementById("prevBtn");
 
         let current = 0;
         let autoSlide;
+=======
+<script>const slides = document.querySelectorAll(".hero-slide");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+>>>>>>> main
 
         function showSlide(index) {
 
@@ -1169,6 +1156,4 @@
 
 
     </script>
-</body>
-</html>
 @endsection
