@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="relative">
+    <section  class="relative">
         <div class="relative h-80 bg-cover bg-center flex items-center justify-center text-center bg-black/30"
              style="background-image: url({{ asset('images/about-hero.jpg') }});">
             <div class="text-white px-4">
@@ -18,7 +18,7 @@
         </div>
     </section>
 
-    <section class="md:max-w-[88%] mx-auto px-4 py-16">
+    <section data-aos="fade-up" data-aos-delay="100" class="md:max-w-[88%] mx-auto px-4 py-16">
 
         <div class="text-center mb-12">
             <span class="text-[#4761FF] font-semibold text-sm tracking-widest uppercase">Our Services</span>
@@ -157,7 +157,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
         <div class="md:max-w-[88%] mx-auto px-6">
 
             <div class="flex items-center justify-between mb-16">
@@ -237,7 +237,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
         <div class="max-w-[88%] mx-auto">
 
             <div class="grid lg:grid-cols-2 gap-20 items-start">
