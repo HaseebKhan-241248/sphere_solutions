@@ -1,0 +1,48 @@
+.service-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: var(--delay, 0s);
+}
+
+.service-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.project-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: var(--delay, 0s);
+}
+
+.project-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: var(--delay, 0s);
+}
+
+.team-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testi-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: var(--delay, 0s);
+}
+
+.testi-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

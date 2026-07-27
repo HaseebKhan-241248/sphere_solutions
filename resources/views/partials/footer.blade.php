@@ -24,7 +24,7 @@
 
           <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:info@spheremarketingsolutions.com" class="hover:text-white duration-300">info@spheremarketingsolutions.com</a>
+            <a href="mailto:info@spheremarketingsolutions.com" class="hover:text-white duration-300">info@spheremark.com</a>
           </li>
 
         </ul>

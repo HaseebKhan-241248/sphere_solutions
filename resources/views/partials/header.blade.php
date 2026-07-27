@@ -1,3 +1,32 @@
+<div class="relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md">
+    <div
+        class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
+
+        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
+            <span>WEB & MOBILE ENGINEERING</span>
+            <span class="text-lg">•</span>
+            <span>INTELLIGENT BUSINESS SYSTEMS</span>
+            <span class="text-lg">•</span>
+            <span>DESIGNING WHAT'S NEXT</span>
+            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
+            <span class="text-lg">•</span>
+        </div>
+
+        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0" aria-hidden="true">
+            <span>WEB & MOBILE ENGINEERING</span>
+            <span class="text-lg">•</span>
+            <span>INTELLIGENT BUSINESS SYSTEMS</span>
+            <span class="text-lg">•</span>
+            <span>DESIGNING WHAT'S NEXT</span>
+            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
+            <span class="text-lg">•</span>
+        </div>
+
+    </div>
+</div>
+
 <header class="bg-[#4761FF] text-white">
   <div class="max-w-[88%] mx-auto px-4 sm:px-6">
     <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4">

@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <title>Sphere Marketing Solutions – Digital Marketing</title>
-</head>
-<body>
-
-
-<!-- Top Moving Ticker Strip -->
-<div
-    class="relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md">
-    <div
-        class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
-
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
-            <span>WEB & MOBILE ENGINEERING</span>
-            <span class="text-lg">•</span>
-            <span>INTELLIGENT BUSINESS SYSTEMS</span>
-            <span class="text-lg">•</span>
-            <span>DESIGNING WHAT'S NEXT</span>
-            <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
-        </div>
-
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0" aria-hidden="true">
-            <span>WEB & MOBILE ENGINEERING</span>
-            <span class="text-lg">•</span>
-            <span>INTELLIGENT BUSINESS SYSTEMS</span>
-            <span class="text-lg">•</span>
-            <span>DESIGNING WHAT'S NEXT</span>
-            <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
-        </div>
-
-    </div>
-</div>
-
-
 @extends('layout.app')
 
 @section('content')
@@ -270,7 +221,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Card 1 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.05s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -293,7 +244,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.15s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -316,7 +267,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.25s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -339,7 +290,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.35s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -362,7 +313,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.45s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -385,7 +336,7 @@
         </div>
 
         <!-- Card 6 -->
-        <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+        <div class="service-card group relative transition-all duration-300 hover:-translate-y-2 hover:z-20" style="--delay: 0.55s">
             <div
                 class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                 <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -439,7 +390,7 @@
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
 
-            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div class="project-card group rounded-2xl overflow-hidden shadow-lg bg-white" style="--delay: 0.05s">
 
                 <div class="relative overflow-hidden">
 
@@ -481,7 +432,7 @@
 
             </div>
 
-            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div class="project-card group rounded-2xl overflow-hidden shadow-lg bg-white" style="--delay: 0.2s">
 
                 <div class="relative overflow-hidden">
 
@@ -522,7 +473,7 @@
 
             </div>
 
-            <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div class="project-card group rounded-2xl overflow-hidden shadow-lg bg-white" style="--delay: 0.35s">
 
                 <div class="relative overflow-hidden">
 
@@ -567,6 +518,10 @@
 
     </div>
 </section>
+
+<style>
+
+</style>
 
 <section class="py-24 bg-white">
     <div class="max-w-[88%] mx-auto">
@@ -688,10 +643,10 @@
 
                 <!-- Card 1 -->
                 <div
-                    class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group">
+                    class="team-card bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group" style="--delay: 0.05s">
 
                     <div class="relative overflow-hidden mb-5">
-                        <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-1.jpg') }}"
+                        <img class="w-full h-[320px] object-cover" src="{{ asset('images/person2.png') }}"
                              alt="Alex Robin">
 
                         <!-- Floating Right Side Social Icons -->
@@ -736,9 +691,9 @@
 
                 <!-- Card 2 -->
                 <div
-                    class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group">
+                    class="team-card bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group" style="--delay: 0.2s">
                     <div class="relative overflow-hidden mb-5">
-                        <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-2.jpg') }}"
+                        <img class="w-full h-[320px] object-cover" src="{{ asset('images/person1.png') }}"
                              alt="Adam Crew">
 
                         <ul class="absolute top-4 left-4 flex flex-col space-y-2 -translate-x-16 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
@@ -782,7 +737,7 @@
 
                 <!-- Card 3 -->
                 <div
-                    class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group">
+                    class="team-card bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group" style="--delay: 0.35s">
                     <div class="relative overflow-hidden mb-5">
                         <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-3.jpg') }}"
                              alt="Boris Johnson">
@@ -828,7 +783,7 @@
 
                 <!-- Card 4 -->
                 <div
-                    class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group">
+                    class="team-card bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 border border-slate-50 relative group" style="--delay: 0.5s">
                     <div class="relative overflow-hidden mb-5">
                         <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-4.jpg') }}"
                              alt="Robert Jordan">
@@ -878,6 +833,7 @@
     </div>
 </section>
 
+
 <section class="py-24 bg-white">
     <div class="md:max-w-[88%] mx-auto px-6">
 
@@ -911,7 +867,7 @@
         <div class="overflow-hidden">
             <div id="slider" class="flex gap-8">
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.05s">
                     <img src="https://i.pravatar.cc/150?img=1">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -919,7 +875,7 @@
                     <span>Marketing Head</span>
                 </div>
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.15s">
                     <img src="https://i.pravatar.cc/150?img=2">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -927,7 +883,7 @@
                     <span>Product Designer</span>
                 </div>
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.25s">
                     <img src="https://i.pravatar.cc/150?img=3">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -935,7 +891,7 @@
                     <span>Founder, Studio X</span>
                 </div>
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.35s">
                     <img src="https://i.pravatar.cc/150?img=4">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -943,7 +899,7 @@
                     <span>CTO, Nova Labs</span>
                 </div>
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.45s">
                     <img src="https://i.pravatar.cc/150?img=5">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -951,7 +907,7 @@
                     <span>Operations Lead</span>
                 </div>
 
-                <div class="testi-card">
+                <div class="testi-card" style="--delay: 0.55s">
                     <img src="https://i.pravatar.cc/150?img=6">
                     <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                         stet lorem sit clita duo justo</p>
@@ -965,213 +921,6 @@
     </div>
 </section>
 
-
-<script>const slides = document.querySelectorAll(".hero-slide");
-    const nextBtn = document.getElementById("nextBtn");
-    const prevBtn = document.getElementById("prevBtn");
-
-    let current = 0;
-    let autoSlide;
-
-    function showSlide(index) {
-
-        slides.forEach(slide => {
-            slide.classList.add("hidden");
-            slide.classList.remove("active");
-        });
-
-        slides[index].classList.remove("hidden");
-        slides[index].classList.add("active");
-    }
-
-    function nextSlide() {
-
-        current++;
-
-        if (current >= slides.length) {
-            current = 0;
-        }
-
-        showSlide(current);
-    }
-
-    function prevSlide() {
-
-        current--;
-
-        if (current < 0) {
-            current = slides.length - 1;
-        }
-
-        showSlide(current);
-    }
-
-    function startAutoSlide() {
-        autoSlide = setInterval(nextSlide, 5000);
-    }
-
-    function resetAutoSlide() {
-        clearInterval(autoSlide);
-        startAutoSlide();
-    }
-
-    nextBtn.addEventListener("click", function () {
-        nextSlide();
-        resetAutoSlide();
-    });
-
-    prevBtn.addEventListener("click", function () {
-        prevSlide();
-        resetAutoSlide();
-    });
-
-    showSlide(current);
-    startAutoSlide();
-
-
-    (function () {
-        const slider = document.getElementById('slider');
-        const originals = Array.from(slider.children); // 6 real cards
-        const total = originals.length;
-
-        const beforeFrag = document.createDocumentFragment();
-        originals.forEach(c => beforeFrag.appendChild(c.cloneNode(true)));
-        slider.insertBefore(beforeFrag, slider.firstChild);
-
-        const afterFrag = document.createDocumentFragment();
-        originals.forEach(c => afterFrag.appendChild(c.cloneNode(true)));
-        slider.appendChild(afterFrag);
-
-        const cards = Array.from(slider.children);
-
-        let current = total;
-        let autoTimer = null;
-
-        function visibleCount() {
-            return window.innerWidth >= 768 ? 3 : 1;
-        }
-
-        function step() {
-            const gap = parseFloat(getComputedStyle(slider).columnGap || 32);
-            return cards[0].getBoundingClientRect().width + gap;
-        }
-
-        function updateActive() {
-            const vCount = visibleCount();
-            const centerIndex = current + Math.floor(vCount / 2);
-            cards.forEach((card, i) => card.classList.toggle('is-active', i === centerIndex));
-        }
-
-        function render(withTransition) {
-            if (!withTransition) slider.classList.add('no-transition');
-            slider.style.transform = `translateX(-${current * step()}px)`;
-            if (!withTransition) {
-                void slider.offsetHeight; // force reflow before re-enabling transition
-                slider.classList.remove('no-transition');
-            }
-            updateActive();
-        }
-
-        slider.addEventListener('transitionend', () => {
-            if (current === total * 2) {
-                current = total;
-                render(false);
-            } else if (current === 0) {
-                current = total;
-                render(false);
-            }
-        });
-
-        function goNext() {
-            current++;
-            render(true);
-        }
-
-        function goPrev() {
-            current--;
-            render(true);
-        }
-
-        function startAuto() {
-            stopAuto();
-            autoTimer = setInterval(goNext, 5000);
-        }
-
-        function stopAuto() {
-            if (autoTimer) clearInterval(autoTimer);
-        }
-
-        document.getElementById('next').addEventListener('click', () => {
-            goNext();
-            startAuto();
-        });
-        document.getElementById('previous').addEventListener('click', () => {
-            goPrev();
-            startAuto();
-        });
-
-        window.addEventListener('resize', () => render(false));
-
-        render(false);
-        startAuto();
-    })();
-
-    (function () {
-        const projectGrid = document.querySelector('.grid.lg\\:grid-cols-3.md\\:grid-cols-2');
-        const projectPrevBtn = document.getElementById('projectPrevBtn');
-        const projectNextBtn = document.getElementById('projectNextBtn');
-
-        if (!projectGrid || !projectPrevBtn || !projectNextBtn) return;
-
-        const projects = Array.from(projectGrid.children);
-        const totalProjects = projects.length;
-
-        let currentProject = 0;
-
-        function visibleProjectCount() {
-            return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-        }
-
-        function updateProjectVisibility() {
-            const visibleCount = visibleProjectCount();
-            const maxIndex = totalProjects - visibleCount;
-
-            projects.forEach((project, index) => {
-                if (index >= currentProject && index < currentProject + visibleCount) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            });
-        }
-
-        function nextProject() {
-            const visibleCount = visibleProjectCount();
-            const maxIndex = totalProjects - visibleCount;
-
-            if (currentProject < maxIndex) {
-                currentProject++;
-                updateProjectVisibility();
-            }
-        }
-
-        function prevProject() {
-            if (currentProject > 0) {
-                currentProject--;
-                updateProjectVisibility();
-            }
-        }
-
-        projectNextBtn.addEventListener('click', nextProject);
-        projectPrevBtn.addEventListener('click', prevProject);
-
-        window.addEventListener('resize', updateProjectVisibility);
-
-        updateProjectVisibility();
-    })();
-
-
-</script>
 </body>
 </html>
 @endsection
