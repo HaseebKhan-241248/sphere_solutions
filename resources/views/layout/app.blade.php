@@ -17,5 +17,13 @@
 <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#4761FF] text-white items-center justify-center shadow-lg z-50">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
+
+<script src="{{ asset('js/home.js') }}"></script>
+<script src="{{ asset('js/faqs.js') }}"></script>
+<script src="{{ asset('js/project-detail.js') }}"></script>
+<script src="{{ asset('js/projects-details-alt.js') }}"></script>
+<script src="{{ asset('js/service-details.js') }}"></script>
+<script src="{{ asset('js/services.js') }}"></script>
+<script src="{{ asset('js/testimonials.js') }}"></script>
 </body>
 </html>

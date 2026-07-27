@@ -1,53 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <title>Sphere Marketing Solutions – Digital Marketing</title>
-</head>
-<body>
-
-
-<!-- Top Moving Ticker Strip -->
-<div
-    class="relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md">
-    <div
-        class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
-
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
-            <span>WEB & MOBILE ENGINEERING</span>
-            <span class="text-lg">•</span>
-            <span>INTELLIGENT BUSINESS SYSTEMS</span>
-            <span class="text-lg">•</span>
-            <span>DESIGNING WHAT'S NEXT</span>
-            <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
-        </div>
-
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0" aria-hidden="true">
-            <span>WEB & MOBILE ENGINEERING</span>
-            <span class="text-lg">•</span>
-            <span>INTELLIGENT BUSINESS SYSTEMS</span>
-            <span class="text-lg">•</span>
-            <span>DESIGNING WHAT'S NEXT</span>
-            <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
-        </div>
-
-    </div>
-</div>
-
-
-@include('partials.header')
+@extends('layout.app')
+@section('content')
 
 <section class="relative h-screen overflow-hidden">
 
@@ -964,6 +916,7 @@
 </section>
 
 
+<<<<<<< HEAD
 @include('partials.footer')
 
 <script>const slides = document.querySelectorAll(".hero-slide");
@@ -1172,5 +1125,4 @@
 
 
 </script>
-</body>
-</html>
+@endsection
