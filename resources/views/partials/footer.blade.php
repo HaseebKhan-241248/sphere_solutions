@@ -65,20 +65,15 @@
 
                 <ul class="space-y-2 text-[17px] text-[#B0B9AE]">
 
-                    <li><a href="{{ route('about') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>About Us</a></li>
+                    <li><a href="{{ route('about') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>About Us</a></li>
 
-                    <li><a href="{{ route('contact') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Contact Us</a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Contact Us</a></li>
 
-                    <li><a href="{{ route('services') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Our Services</a></li>
+                    <li><a href="{{ route('services') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Our Services</a></li>
 
-                    <li><a href="{{ route('prices') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Packages</a></li>
+                    <li><a href="{{ route('prices') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Packages</a></li>
 
-                    <li><a href="{{ route('faqs') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>FAQs</a></li>
+                    <li><a href="{{ route('faqs') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>FAQs</a></li>
 
                 </ul>
 
