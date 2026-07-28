@@ -92,8 +92,7 @@
     <div class="max-w-[88%] mx-auto px-6">
         <div class="flex items-center justify-between py-4">
 
-            <button id="mobileMenuBtn" type="button" class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-2 bg-[#4761FF] rounded-lg order-2"
-                    aria-label="Toggle menu">
+            <button id="mobileMenuBtn" type="button" class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-2 bg-[#4761FF] rounded-lg order-2" aria-label="Toggle menu">
                 <span class="w-6 h-1 bg-white transition-all duration-300"></span>
                 <span class="w-6 h-1 bg-white transition-all duration-300"></span>
                 <span class="w-6 h-1 bg-white transition-all duration-300"></span>
@@ -120,12 +119,12 @@
                     <button type="button" class="nav-link flex items-center gap-1 {{ request()->routeIs('services', 'service-details') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
                         Service
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                        {{--<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
                              viewBox="0 0 20 20">
                             <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>
+                        </svg>--}}
                     </button>
-                    <ul class="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
+                   {{-- <ul class="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
                         <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">All
                                 Services</a></li>
                         <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Website
@@ -134,7 +133,7 @@
                                 Services</a></li>
                         <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Digital
                                 Marketing</a></li>
-                    </ul>
+                    </ul>--}}
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="400">
@@ -155,17 +154,19 @@
                     <button type="button" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects', 'project-details', 'projects-list', 'project-details-alt') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
                         Project
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                       {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
                              viewBox="0 0 20 20">
                             <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>
+                        </svg>--}}
                     </button>
+{{--
                     <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
                         <li><a href="{{ route('projects') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Projects</a>
                         </li>
                         <li><a href="{{ route('project-details') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Project
                                 Details</a></li>
                     </ul>
+--}}
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="550">
@@ -178,8 +179,11 @@
                         </svg>
                     </button>
                     <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
-                        <li><a href="{{ route('our-team') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Our
-                                Team</a></li>
+                        <li>
+                            <a href="{{ route('our-team') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
+                                Our Team
+                            </a>
+                        </li>
                         <li><a href="{{ route('testimonials') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Testimonials</a>
                         </li>
                         <li><a href="{{ route('features') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Features</a>
