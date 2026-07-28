@@ -1,32 +1,34 @@
 @extends('layout.app')
 @section('content')
 
-<section class="relative h-screen overflow-hidden">
+    <section class="relative h-screen overflow-hidden">
 
-    <!-- Slide 1 (Video 1) -->
-    <div class="hero-slide active absolute inset-0">
-        <!-- Background Video -->
-        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Slide 1 (Video 1) -->
+        <div class="hero-slide active absolute inset-0">
+            <!-- Background Video -->
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        <!-- Dark Overlay for better text readability -->
-        <div class="absolute inset-0 bg-black/40"></div>
+            <!-- Dark Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black/40"></div>
 
-        <!-- Content -->
-        <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
-            <div class="max-w-2xl text-white">
-                <p class="text-xl md:text-2xl mb-5">
-                    Welcome to <span class="font-bold">GrowMark</span>
-                </p>
-                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-                    Unlock Your <br>
-                    Business Growth
-                </h1>
-                <a href="#" class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-                    Explore More
-                </a>
+            <!-- Content -->
+            <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
+                <div class="max-w-2xl text-white">
+                    <p class="text-xl md:text-2xl mb-5">
+                        Welcome to <span class="font-bold">GrowMark</span>
+                    </p>
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                        Unlock Your <br>
+                        Business Growth
+                    </h1>
+                    <a href="#"
+                       class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
+                        Explore More
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -59,7 +61,8 @@
         </div>
 
         <!-- Navigation Buttons -->
-        <button id="prevBtn" class="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20">
+        <button id="prevBtn"
+                class="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor"
                  stroke-width="2">
@@ -67,7 +70,8 @@
             </svg>
         </button>
 
-        <button id="nextBtn" class="absolute right-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20">
+        <button id="nextBtn"
+                class="absolute right-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor"
                  stroke-width="2">
@@ -540,33 +544,36 @@
                         Get A Free Quote
                     </h2>
 
-                    <form>
+                    <form action="#" method="POST">
+                        @csrf
 
-                        <div class="grid md:grid-cols-2 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
 
-                            <label>
-                                <input type="text" placeholder="Your Name" class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF] ">
-                            </label>
+                            <div class="w-full">
+                                <input type="text" placeholder="Your Name"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
-                                <input type="email" placeholder="Your Email" class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-                            </label>
+                            <div class="w-full">
+                                <input type="email" placeholder="Your Email"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
-                                <input type="text" placeholder="Your Mobile" class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-                            </label>
+                            <div class="w-full">
+                                <input type="text" placeholder="Your Mobile"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
-                                <select class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-
-                                    <option>Choose A Service</option>
+                            <div class="w-full">
+                                <select
+                                    class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg text-gray-700 outline-none focus:border-[#4761FF] transition duration-300 bg-white">
+                                    <option disabled selected>Choose A Service</option>
                                     <option>Digital Marketing</option>
                                     <option>SEO</option>
                                     <option>Content Marketing</option>
                                     <option>Social Marketing</option>
-
                                 </select>
-                            </label>
+                            </div>
 
                         </div>
 
