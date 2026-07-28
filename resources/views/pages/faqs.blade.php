@@ -29,7 +29,7 @@
     </section>
 
 
-    <section class="py-20">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-20">
         <div class="w-[85%] mx-auto max-w-4xl">
 
             <div class="text-center mb-12">
@@ -191,7 +191,7 @@
     </section>
 
 
-    <div class="w-[85%] mx-auto max-w-4xl bg-white rounded-xl shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-slate-100/80 p-8 sm:p-10 text-center mb-24">
+    <div data-aos="fade-up" data-aos-delay="100" class="w-[85%] mx-auto max-w-4xl bg-white rounded-xl shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-slate-100/80 p-8 sm:p-10 text-center mb-24">
         <h3 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight mb-6">Have More Questions?</h3>
         <a href="{{ route('contact') }}"
            class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition duration-200 text-sm sm:text-base">
