@@ -1,33 +1,34 @@
 @extends('layout.app')
 @section('content')
 
-<section class="relative h-screen overflow-hidden">
+    <section class="relative h-screen overflow-hidden">
 
-    <!-- Slide 1 (Video 1) -->
-    <div class="hero-slide active absolute inset-0">
-        <!-- Background Video -->
-        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Slide 1 (Video 1) -->
+        <div class="hero-slide active absolute inset-0">
+            <!-- Background Video -->
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-        <!-- Dark Overlay for better text readability -->
-        <div class="absolute inset-0 bg-black/40"></div>
+            <!-- Dark Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black/40"></div>
 
-        <!-- Content -->
-        <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
-            <div class="max-w-2xl text-white">
-                <p class="text-xl md:text-2xl mb-5">
-                    Welcome to <span class="font-bold">GrowMark</span>
-                </p>
-                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-                    Unlock Your <br>
-                    Business Growth
-                </h1>
-                <a href="#"
-                   class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-                    Explore More
-                </a>
+            <!-- Content -->
+            <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
+                <div class="max-w-2xl text-white">
+                    <p class="text-xl md:text-2xl mb-5">
+                        Welcome to <span class="font-bold">GrowMark</span>
+                    </p>
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                        Unlock Your <br>
+                        Business Growth
+                    </h1>
+                    <a href="#"
+                       class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
+                        Explore More
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -62,7 +63,7 @@
 
         <!-- Navigation Buttons -->
         <button id="prevBtn"
-                class="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20">
+                class="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor"
                  stroke-width="2">
@@ -71,7 +72,7 @@
         </button>
 
         <button id="nextBtn"
-                class="absolute right-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20">
+                class="absolute right-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor"
                  stroke-width="2">
@@ -588,47 +589,46 @@
                         Get A Free Quote
                     </h2>
 
-                    <form>
+                    <form action="#" method="POST">
+                        @csrf
 
-                        <div class="grid md:grid-cols-2 gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
 
-                            <label>
+                            <div class="w-full">
                                 <input type="text" placeholder="Your Name"
-                                       class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF] ">
-                            </label>
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
+                            <div class="w-full">
                                 <input type="email" placeholder="Your Email"
-                                       class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-                            </label>
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
+                            <div class="w-full">
                                 <input type="text" placeholder="Your Mobile"
-                                       class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-                            </label>
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                            </div>
 
-                            <label>
+                            <div class="w-full">
                                 <select
-                                    class="h-14 rounded-xl border border-gray-300 px-6 text-xl outline-none focus:border-[#4761FF]">
-
-                                    <option>Choose A Service</option>
+                                    class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg text-gray-700 outline-none focus:border-[#4761FF] transition duration-300 bg-white">
+                                    <option disabled selected>Choose A Service</option>
                                     <option>Digital Marketing</option>
                                     <option>SEO</option>
                                     <option>Content Marketing</option>
                                     <option>Social Marketing</option>
-
                                 </select>
-                            </label>
+                            </div>
 
                         </div>
 
-                        <label>
-                        <textarea rows="6" placeholder="Message"
-                                  class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
-                        </label>
+                        <div class="w-full mt-5 md:mt-6">
+        <textarea rows="5" placeholder="Message"
+                  class="w-full rounded-xl border border-gray-300 p-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300"></textarea>
+                        </div>
 
-                        <button
-                            class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300">
+                        <button type="submit"
+                                class="w-full mt-4 h-14 rounded-xl text-white text-base md:text-lg font-medium bg-gradient-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
                             Submit Now
                         </button>
 
@@ -944,215 +944,216 @@
     </section>
 
 
-<<<<<<< HEAD
+    <<<<<<< HEAD
     <script>const slides = document.querySelectorAll(".hero-slide");
         const nextBtn = document.getElementById("nextBtn");
         const prevBtn = document.getElementById("prevBtn");
 
         let current = 0;
         let autoSlide;
-=======
-<script>const slides = document.querySelectorAll(".hero-slide");
-    const nextBtn = document.getElementById("nextBtn");
-    const prevBtn = document.getElementById("prevBtn");
->>>>>>> main
+        ======
+        =
+            <script>const slides = document.querySelectorAll(".hero-slide");
+                const nextBtn = document.getElementById("nextBtn");
+                const prevBtn = document.getElementById("prevBtn");
+                >>>>>>> main
 
-        function showSlide(index) {
+                function showSlide(index) {
 
-            slides.forEach(slide => {
-                slide.classList.add("hidden");
-                slide.classList.remove("active");
-            });
+                    slides.forEach(slide => {
+                        slide.classList.add("hidden");
+                        slide.classList.remove("active");
+                    });
 
-            slides[index].classList.remove("hidden");
-            slides[index].classList.add("active");
-        }
+                    slides[index].classList.remove("hidden");
+                    slides[index].classList.add("active");
+                }
 
-        function nextSlide() {
+                function nextSlide() {
 
-            current++;
+                    current++;
 
-            if (current >= slides.length) {
-                current = 0;
-            }
+                    if (current >= slides.length) {
+                    current = 0;
+                }
 
-            showSlide(current);
-        }
+                    showSlide(current);
+                }
 
-        function prevSlide() {
+                function prevSlide() {
 
-            current--;
+                    current--;
 
-            if (current < 0) {
-                current = slides.length - 1;
-            }
+                    if (current < 0) {
+                    current = slides.length - 1;
+                }
 
-            showSlide(current);
-        }
+                    showSlide(current);
+                }
 
-        function startAutoSlide() {
-            autoSlide = setInterval(nextSlide, 5000);
-        }
+                function startAutoSlide() {
+                    autoSlide = setInterval(nextSlide, 5000);
+                }
 
-        function resetAutoSlide() {
-            clearInterval(autoSlide);
-            startAutoSlide();
-        }
+                function resetAutoSlide() {
+                    clearInterval(autoSlide);
+                    startAutoSlide();
+                }
 
-        nextBtn.addEventListener("click", function () {
-            nextSlide();
-            resetAutoSlide();
-        });
+                nextBtn.addEventListener("click", function () {
+                    nextSlide();
+                    resetAutoSlide();
+                });
 
-        prevBtn.addEventListener("click", function () {
-            prevSlide();
-            resetAutoSlide();
-        });
+                prevBtn.addEventListener("click", function () {
+                    prevSlide();
+                    resetAutoSlide();
+                });
 
-        showSlide(current);
-        startAutoSlide();
+                showSlide(current);
+                startAutoSlide();
 
 
-        (function () {
-            const slider = document.getElementById('slider');
-            const originals = Array.from(slider.children); // 6 real cards
-            const total = originals.length;
+                (function () {
+                    const slider = document.getElementById('slider');
+                    const originals = Array.from(slider.children); // 6 real cards
+                    const total = originals.length;
 
-            const beforeFrag = document.createDocumentFragment();
-            originals.forEach(c => beforeFrag.appendChild(c.cloneNode(true)));
-            slider.insertBefore(beforeFrag, slider.firstChild);
+                    const beforeFrag = document.createDocumentFragment();
+                    originals.forEach(c => beforeFrag.appendChild(c.cloneNode(true)));
+                    slider.insertBefore(beforeFrag, slider.firstChild);
 
-            const afterFrag = document.createDocumentFragment();
-            originals.forEach(c => afterFrag.appendChild(c.cloneNode(true)));
-            slider.appendChild(afterFrag);
+                    const afterFrag = document.createDocumentFragment();
+                    originals.forEach(c => afterFrag.appendChild(c.cloneNode(true)));
+                    slider.appendChild(afterFrag);
 
-            const cards = Array.from(slider.children);
+                    const cards = Array.from(slider.children);
 
-            let current = total;
-            let autoTimer = null;
+                    let current = total;
+                    let autoTimer = null;
 
-            function visibleCount() {
-                return window.innerWidth >= 768 ? 3 : 1;
-            }
+                    function visibleCount() {
+                    return window.innerWidth >= 768 ? 3 : 1;
+                }
 
-            function step() {
-                const gap = parseFloat(getComputedStyle(slider).columnGap || 32);
-                return cards[0].getBoundingClientRect().width + gap;
-            }
+                    function step() {
+                    const gap = parseFloat(getComputedStyle(slider).columnGap || 32);
+                    return cards[0].getBoundingClientRect().width + gap;
+                }
 
-            function updateActive() {
-                const vCount = visibleCount();
-                const centerIndex = current + Math.floor(vCount / 2);
-                cards.forEach((card, i) => card.classList.toggle('is-active', i === centerIndex));
-            }
+                    function updateActive() {
+                    const vCount = visibleCount();
+                    const centerIndex = current + Math.floor(vCount / 2);
+                    cards.forEach((card, i) => card.classList.toggle('is-active', i === centerIndex));
+                }
 
-            function render(withTransition) {
-                if (!withTransition) slider.classList.add('no-transition');
-                slider.style.transform = `translateX(-${current * step()}px)`;
-                if (!withTransition) {
+                    function render(withTransition) {
+                    if (!withTransition) slider.classList.add('no-transition');
+                    slider.style.transform = `translateX(-${current * step()}px)`;
+                    if (!withTransition) {
                     void slider.offsetHeight; // force reflow before re-enabling transition
                     slider.classList.remove('no-transition');
                 }
-                updateActive();
-            }
+                    updateActive();
+                }
 
-            slider.addEventListener('transitionend', () => {
-                if (current === total * 2) {
+                    slider.addEventListener('transitionend', () => {
+                    if (current === total * 2) {
                     current = total;
                     render(false);
                 } else if (current === 0) {
                     current = total;
                     render(false);
                 }
-            });
-
-            function goNext() {
-                current++;
-                render(true);
-            }
-
-            function goPrev() {
-                current--;
-                render(true);
-            }
-
-            function startAuto() {
-                stopAuto();
-                autoTimer = setInterval(goNext, 5000);
-            }
-
-            function stopAuto() {
-                if (autoTimer) clearInterval(autoTimer);
-            }
-
-            document.getElementById('next').addEventListener('click', () => {
-                goNext();
-                startAuto();
-            });
-            document.getElementById('previous').addEventListener('click', () => {
-                goPrev();
-                startAuto();
-            });
-
-            window.addEventListener('resize', () => render(false));
-
-            render(false);
-            startAuto();
-        })();
-
-        (function () {
-            const projectGrid = document.querySelector('.grid.lg\\:grid-cols-3.md\\:grid-cols-2');
-            const projectPrevBtn = document.getElementById('projectPrevBtn');
-            const projectNextBtn = document.getElementById('projectNextBtn');
-
-            if (!projectGrid || !projectPrevBtn || !projectNextBtn) return;
-
-            const projects = Array.from(projectGrid.children);
-            const totalProjects = projects.length;
-
-            let currentProject = 0;
-
-            function visibleProjectCount() {
-                return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-            }
-
-            function updateProjectVisibility() {
-                const visibleCount = visibleProjectCount();
-                const maxIndex = totalProjects - visibleCount;
-
-                projects.forEach((project, index) => {
-                    if (index >= currentProject && index < currentProject + visibleCount) {
-                        project.style.display = 'block';
-                    } else {
-                        project.style.display = 'none';
-                    }
                 });
-            }
 
-            function nextProject() {
-                const visibleCount = visibleProjectCount();
-                const maxIndex = totalProjects - visibleCount;
+                    function goNext() {
+                    current++;
+                    render(true);
+                }
 
-                if (currentProject < maxIndex) {
+                    function goPrev() {
+                    current--;
+                    render(true);
+                }
+
+                    function startAuto() {
+                    stopAuto();
+                    autoTimer = setInterval(goNext, 5000);
+                }
+
+                    function stopAuto() {
+                    if (autoTimer) clearInterval(autoTimer);
+                }
+
+                    document.getElementById('next').addEventListener('click', () => {
+                    goNext();
+                    startAuto();
+                });
+                    document.getElementById('previous').addEventListener('click', () => {
+                    goPrev();
+                    startAuto();
+                });
+
+                    window.addEventListener('resize', () => render(false));
+
+                    render(false);
+                    startAuto();
+                })();
+
+                (function () {
+                    const projectGrid = document.querySelector('.grid.lg\\:grid-cols-3.md\\:grid-cols-2');
+                    const projectPrevBtn = document.getElementById('projectPrevBtn');
+                    const projectNextBtn = document.getElementById('projectNextBtn');
+
+                    if (!projectGrid || !projectPrevBtn || !projectNextBtn) return;
+
+                    const projects = Array.from(projectGrid.children);
+                    const totalProjects = projects.length;
+
+                    let currentProject = 0;
+
+                    function visibleProjectCount() {
+                    return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+                }
+
+                    function updateProjectVisibility() {
+                    const visibleCount = visibleProjectCount();
+                    const maxIndex = totalProjects - visibleCount;
+
+                    projects.forEach((project, index) => {
+                    if (index >= currentProject && index < currentProject + visibleCount) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+                });
+                }
+
+                    function nextProject() {
+                    const visibleCount = visibleProjectCount();
+                    const maxIndex = totalProjects - visibleCount;
+
+                    if (currentProject < maxIndex) {
                     currentProject++;
                     updateProjectVisibility();
                 }
-            }
+                }
 
-            function prevProject() {
-                if (currentProject > 0) {
+                    function prevProject() {
+                    if (currentProject > 0) {
                     currentProject--;
                     updateProjectVisibility();
                 }
-            }
+                }
 
-            projectNextBtn.addEventListener('click', nextProject);
-            projectPrevBtn.addEventListener('click', prevProject);
+                    projectNextBtn.addEventListener('click', nextProject);
+                    projectPrevBtn.addEventListener('click', prevProject);
 
-            window.addEventListener('resize', updateProjectVisibility);
+                    window.addEventListener('resize', updateProjectVisibility);
 
-            updateProjectVisibility();
-        })();
+                    updateProjectVisibility();
+                })();
 
 
     </script>

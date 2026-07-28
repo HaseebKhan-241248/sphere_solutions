@@ -106,20 +106,25 @@
 <!-- Navigation Bar: Fade Down Animation with Delay -->
 <nav id="navBar" class="bg-white shadow-sm relative z-40" data-aos="fade-down" data-aos-delay="200"
      data-aos-duration="600">
-    <div class="max-w-[88%] mx-auto px-6">
-        <div class="flex items-center justify-between py-4">
+    <div class="max-w-[92%] xl:max-w-[88%] mx-auto px-4 sm:px-6">
 
-            <button id="mobileMenuBtn" type="button"
-                    class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-2 bg-[#4761FF] rounded-lg order-2"
-                    aria-label="Toggle menu">
-                <span class="w-6 h-1 bg-white transition-all duration-300"></span>
-                <span class="w-6 h-1 bg-white transition-all duration-300"></span>
-                <span class="w-6 h-1 bg-white transition-all duration-300"></span>
-            </button>
+        <!-- Main Header Container -->
+        <div class="flex flex-col sm:flex-row items-center justify-between py-4 gap-4 xl:gap-0">
+
+            <!-- Mobile Menu Toggle Button (sm and below) -->
+            <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start">
+                <button id="mobileMenuBtn" type="button"
+                        class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-1.5 bg-[#4761FF] rounded-lg focus:outline-none"
+                        aria-label="Toggle menu">
+                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+                </button>
+            </div>
 
             <!-- Nav Links List -->
             <ul id="navLinks"
-                class="hidden sm:flex flex-row items-center gap-6 lg:gap-8 text-[18px] lg:text-[20px] text-black order-1">
+                class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
 
                 <li data-aos="fade-down" data-aos-delay="250">
                     <a href="{{ route('home') }}"
@@ -245,18 +250,20 @@
                 </li>
             </ul>
 
-            <!-- Action Button -->
-            <a href="{{ route('quote') }}" data-aos="fade-down" data-aos-delay="650"
-               class="hidden sm:inline-block bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-4 py-2 rounded-full transition-all duration-300 hover:scale-105 order-3">
-                Hire Us
-            </a>
+            <!-- Action Button (Fixed Shrink Issue) -->
+            <div data-aos="fade-down" data-aos-delay="650" class="hidden sm:flex shrink-0">
+                <a href="{{ route('quote') }}"
+                   class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
+                    Hire Us
+                </a>
+            </div>
 
         </div>
 
         <!-- Mobile Panel -->
         <div id="mobileNavPanel"
-             class="hidden sm:hidden absolute left-0 top-full w-full bg-white shadow-lg z-50 px-6 py-4">
-            <ul class="flex flex-col gap-3 text-[18px] text-black">
+             class="hidden sm:hidden absolute left-0 top-full w-full bg-white border-t border-gray-100 shadow-xl z-50 px-6 py-6">
+            <ul class="flex flex-col gap-3 text-[17px] text-black font-medium">
                 <li><a href="{{ route('home') }}"
                        class="block py-2 {{ request()->routeIs('home') ? 'text-[#4761FF]' : 'hover:text-[#4761FF]' }}">Home</a>
                 </li>
@@ -268,9 +275,10 @@
                 <li><a href="{{ route('our-team') }}" class="block py-2 hover:text-[#4761FF]">Our Team</a></li>
                 <li><a href="{{ route('testimonials') }}" class="block py-2 hover:text-[#4761FF]">Testimonials</a></li>
                 <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4761FF]">Contact</a></li>
-                <li class="pt-2">
+                <li class="pt-3">
                     <a href="{{ route('quote') }}"
-                       class="block text-center bg-[#4761FF] text-white font-medium px-4 py-2 rounded-full">Hire Us</a>
+                       class="block text-center bg-[#4761FF] text-white font-medium py-3 rounded-full hover:bg-indigo-700 transition">Hire
+                        Us</a>
                 </li>
             </ul>
         </div>

@@ -25,7 +25,7 @@
 
                     <li class="flex items-center gap-4 text-[17px] text-[#B0B9AE]">
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@spheremarketingsolutions.com" class="hover:text-white duration-300">info@spheremarketingsolutions.com</a>
+                        <a href="mailto:info@spheremarketingsolutions.com" class="flex-wrap hover:text-white duration-300 truncate">info@spheremarketingsolutions.com</a>
                     </li>
 
                 </ul>
@@ -123,15 +123,13 @@
                     Get updates on our digital marketing services and offers.
                 </p>
 
-                <form action="#" method="POST" class="relative">
+                <form action="#" method="POST" class="relative w-full max-w-md">
                     @csrf
-                    <input type="email"
-                           name="email"
-                           placeholder="Your email"
-                           class="w-full h-15 rounded-lg border border-gray-500 bg-transparent px-6 text-[20px] placeholder:text-gray-400 focus:outline-none">
+                    <input type="email" name="email" placeholder="Your email"
+                           class="w-full h-14 sm:h-16 rounded-lg border border-gray-500 bg-transparent pl-4 pr-28 sm:pl-6 sm:pr-32 text-base sm:text-lg placeholder:text-gray-400 focus:outline-none transition duration-300">
 
                     <button type="submit"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black px-6 h-12 rounded-lg text-[20px] hover:bg-[#4761FF] hover:text-white duration-300">
+                            class="absolute right-1.5 sm:right-2 top-1/2 -translate-y-1/2 bg-white text-black px-4 sm:px-6 h-11 sm:h-12 rounded-lg text-sm sm:text-base font-semibold hover:bg-[#4761FF] hover:text-white transition duration-300 cursor-pointer">
                         SignUp
                     </button>
                 </form>
