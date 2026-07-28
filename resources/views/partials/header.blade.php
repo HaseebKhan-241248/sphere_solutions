@@ -91,23 +91,19 @@
      data-aos-duration="600">
     <div class="max-w-[92%] xl:max-w-[88%] mx-auto px-4 sm:px-6">
 
+        <!-- Mobile Menu Toggle Button (sm and below) -->
+        <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start">
+            <button id="mobileMenuBtn" type="button" class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-1.5 bg-[#4761FF] rounded-lg focus:outline-none" aria-label="Toggle menu">
+                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+            </button>
+        </div>
         <!-- Main Header Container -->
-        <div class="flex flex-col sm:flex-row items-center justify-between py-4 gap-4 xl:gap-0">
-
-            <!-- Mobile Menu Toggle Button (sm and below) -->
-            <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start">
-                <button id="mobileMenuBtn" type="button"
-                        class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-1.5 bg-[#4761FF] rounded-lg focus:outline-none"
-                        aria-label="Toggle menu">
-                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                    <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                </button>
-            </div>
+        <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0 max-w-[90%] mx-auto">
 
             <!-- Nav Links List -->
-            <ul id="navLinks"
-                class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
+            <ul id="navLinks" class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
 
                 <li data-aos="fade-down" data-aos-delay="250">
                     <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
@@ -192,16 +188,26 @@
                                 Our Team
                             </a>
                         </li>
-                        <li><a href="{{ route('testimonials') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Testimonials</a>
+                        <li>
+                            <a href="{{ route('testimonials') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
+                                Testimonials
+                            </a>
                         </li>
-                        <li><a href="{{ route('features') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Features</a>
+                        <li>
+                            <a href="{{ route('features') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
+                                Features
+                            </a>
                         </li>
-                        <li><a href="{{ route('quote') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Get
-                                a Quote</a></li>
+                        <li>
+                            <a href="{{ route('quote') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
+                                Get a Quote
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="600">
+
                     <a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
                         Contact
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
@@ -209,7 +215,6 @@
                 </li>
             </ul>
 
-            <!-- Action Button (Fixed Shrink Issue) -->
             <div data-aos="fade-down" data-aos-delay="650" class="hidden sm:flex shrink-0">
                 <a href="{{ route('quote') }}"
                    class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
