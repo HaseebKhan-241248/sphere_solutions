@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section class="w-full bg-[#F8F9FA] py-16 md:py-24 font-sans antialiased overflow-hidden">
+    <section data-aos="fade-up" data-aos-delay="100" class="w-full bg-[#F8F9FA] py-16 md:py-24 font-sans antialiased overflow-hidden">
         <div class="w-[90%] md:w-[85%] mx-auto max-w-6xl">
 
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">

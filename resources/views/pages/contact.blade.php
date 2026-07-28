@@ -28,7 +28,7 @@
     </section>
 
 
-    <section class="py-24 bg-white">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
         <div class="max-w-[85%] mx-auto">
 
             <div class="text-center max-w-2xl mx-auto mb-16">

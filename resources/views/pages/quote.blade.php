@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up" data-aos-delay="100">
         <div class="w-full px-4 bg-white py-12 md:py-20 font-sans antialiased text-slate-800">
             <div class="w-[90%] md:w-[85%] mx-auto max-w-6xl">
 
