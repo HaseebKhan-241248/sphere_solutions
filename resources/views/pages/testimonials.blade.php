@@ -38,14 +38,12 @@
 
                 <!-- Control Buttons -->
                 <div class="flex items-center gap-4 shrink-0">
-                    <button id="customPrevBtn"
-                            class="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#4761FF] hover:text-white hover:border-[#4761FF] shadow-sm transition duration-300">
+                    <button id="customPrevBtn" class="w-12 h-12 rounded-full cursor-pointer border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#4761FF] hover:text-white hover:border-[#4761FF] shadow-sm transition duration-300">
                         <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
                         </svg>
                     </button>
-                    <button id="customNextBtn"
-                            class="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#4761FF] hover:text-white hover:border-[#4761FF] shadow-sm transition duration-300">
+                    <button id="customNextBtn" class="w-12 h-12 rounded-full cursor-pointer border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#4761FF] hover:text-white hover:border-[#4761FF] shadow-sm transition duration-300">
                         <svg class="w-5 h-5 stroke-current fill-none" stroke-width="2" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
                         </svg>

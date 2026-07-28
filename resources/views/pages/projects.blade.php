@@ -277,19 +277,19 @@
                     </svg>
                 </button>
 
-                <button class="flex size-10 md:size-14 items-center rounded-lg justify-center bg-[#4761FF] font-semibold text-white focus:outline-none">
+                <button class="flex size-10 md:size-14 items-center cursor-pointer rounded-lg justify-center bg-[#4761FF] font-semibold text-white focus:outline-none">
                     1
                 </button>
 
-                <button class="flex size-10 md:size-14 items-center rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
+                <button class="flex size-10 md:size-14 items-center cursor-pointer rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
                     2
                 </button>
 
-                <button class="flex size-10 md:size-14 items-center rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
+                <button class="flex size-10 md:size-14 items-center cursor-pointer rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
                     3
                 </button>
 
-                <button class="flex size-10 md:size-14 items-center rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
+                <button class="flex size-10 md:size-14 items-center cursor-pointer rounded-lg justify-center border border-gray-200 text-[#4761FF] transition hover:bg-gray-200 focus:outline-none">
                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://w3.org">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>

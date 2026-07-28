@@ -65,20 +65,15 @@
 
                 <ul class="space-y-2 text-[17px] text-[#B0B9AE]">
 
-                    <li><a href="{{ route('about') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>About Us</a></li>
+                    <li><a href="{{ route('about') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>About Us</a></li>
 
-                    <li><a href="{{ route('contact') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Contact Us</a></li>
+                    <li><a href="{{ route('contact') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Contact Us</a></li>
 
-                    <li><a href="{{ route('services') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Our Services</a></li>
+                    <li><a href="{{ route('services') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Our Services</a></li>
 
-                    <li><a href="{{ route('prices') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>Packages</a></li>
+                    <li><a href="{{ route('prices') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>Packages</a></li>
 
-                    <li><a href="{{ route('faqs') }}" class="hover:text-white duration-300"><i
-                                class="fa-solid fa-angle-right mr-3"></i>FAQs</a></li>
+                    <li><a href="{{ route('faqs') }}" class="hover:text-white duration-300"><i class="fa-solid fa-angle-right mr-3"></i>FAQs</a></li>
 
                 </ul>
 
@@ -130,8 +125,7 @@
                            placeholder="Your email"
                            class="w-full h-15 rounded-lg border border-gray-500 bg-transparent px-6 text-[20px] placeholder:text-gray-400 focus:outline-none">
 
-                    <button type="submit"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black px-6 h-12 rounded-lg text-[20px] hover:bg-[#4761FF] hover:text-white duration-300">
+                    <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black px-6 h-12 rounded-lg cursor-pointer text-[20px] hover:bg-[#4761FF] hover:text-white duration-300">
                         SignUp
                     </button>
                 </form>

@@ -42,8 +42,8 @@
                         Visually appealing, functionally robust websites tailored to your business.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -63,8 +63,8 @@
                         Strategies designed to improve your search engine rankings and organic reach.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -84,8 +84,8 @@
                         Campaigns that grow engagement, visibility, and conversions across channels.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -105,8 +105,8 @@
                         Reach your target audience effectively and drive measurable results.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -126,8 +126,8 @@
                         Elevate your content and brand image with professional creative services.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -144,11 +144,11 @@
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
                         YouTube Management</h3>
                     <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
-                        Grow your channel so your videos reach their maximum potential.
+                        Grow your channel so your videos reach their maximum potential through smarter promotion.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
-                    <button class="text-[#4761FF] font-semibold">
+                <div class="absolute left-0 right-0 top-full h-0 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                    <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
                 </div>
@@ -174,11 +174,11 @@
 
                 <div class="hidden md:flex gap-4">
 
-                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center cursor-pointer">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center cursor-pointer">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 
@@ -319,7 +319,7 @@
                             <textarea rows="6" placeholder="Message" class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
                         </label>
 
-                        <button class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300">
+                        <button class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
                             Submit Now
                         </button>
 
