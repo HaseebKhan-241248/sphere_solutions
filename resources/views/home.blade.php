@@ -82,65 +82,65 @@
     </section>
 
     <section class="py-16 overflow-hidden">
-        <div class="max-w-[90%] mx-auto bg-[#F5F5F5]">
+        <div class="max-w-[85%] mx-auto bg-[#F5F5F5]">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-[5px]">
 
                 <!-- Card 1 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center bg-[#F1F3FA] group-hover:bg-white/20 rounded-full justify-center mb-6 transition-colors duration-300">
-                        <img src="{{ asset('images/icon-1.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="100" class="p-8 bg-white transition-all duration-300 group cursor-pointer">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#F1F3FA] transition-colors duration-300">
+                        <img src="{{ asset('images/icon-1.png') }}" class="transition duration-300 ">
                     </div>
 
-                    <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
+                    <h3 class="text-lg mb-4 transition-colors duration-300" style="font-weight: 500;">
                         Web Development
                     </h3>
 
-                    <p class="text-[#555555] group-hover:text-white/90 leading-8 text-[18px] transition-colors duration-300">
+                    <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-300">
                         Visually appealing, functionally robust websites built for your business goals.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
-                <div data-aos="fade-up" data-aos-delay="200" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-2.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="200" class="p-10 bg-white transition-all duration-300 group cursor-pointer">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#F1F3FA] transition-colors duration-300">
+                        <img src="{{ asset('images/icon-2.png') }}" class="transition duration-300 ">
                     </div>
 
-                    <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
+                    <h3 class="text-lg mb-4 transition-colors duration-300" style="font-weight: 500;">
                         Digital Marketing
                     </h3>
 
-                    <p class="text-[#555555] group-hover:text-white/90 leading-8 text-[18px] transition-colors duration-300">
+                    <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-300">
                         Social ads, SEO, and campaigns that reach your audience and drive conversions.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
-                <div data-aos="fade-up" data-aos-delay="300" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-3.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="300" class="p-10 bg-white transition-all duration-300 group cursor-pointer">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#F1F3FA] transition-colors duration-300">
+                        <img src="{{ asset('images/icon-3.png') }}" class="transition duration-300 ">
                     </div>
 
-                    <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
+                    <h3 class="text-lg mb-4 transition-colors duration-300" style="font-weight: 500;">
                         Creative Content
                     </h3>
 
-                    <p class="text-[#555555] group-hover:text-white/90 leading-8 text-[18px] transition-colors duration-300">
+                    <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-300">
                         Video editing and graphic design that elevate your brand image and content.
                     </p>
                 </div>
 
                 <!-- Card 4 -->
-                <div data-aos="fade-up" data-aos-delay="400" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-4.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="400" class="p-10 bg-white transition-all duration-300 group cursor-pointer">
+                    <div class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#F1F3FA] transition-colors duration-300">
+                        <img src="{{ asset('images/icon-4.png') }}" class="transition duration-300 ">
                     </div>
 
-                    <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
+                    <h3 class="text-lg mb-4 transition-colors duration-300" style="font-weight: 500;">
                         Quick Support
                     </h3>
 
-                    <p class="text-[#555555] group-hover:text-white/90 leading-8 text-[18px] transition-colors duration-300">
+                    <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-300">
                         Our team is available Monday to Saturday to help with services and pricing.
                     </p>
                 </div>
@@ -149,10 +149,9 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" class="relative bg-cover bg-center py-20"
-             style="background-image: url({{ asset('images/about-play.jpg') }});">
+    <section data-aos="fade-up" data-aos-delay="100" class="relative bg-cover bg-center" style="background-image: url({{ asset('images/about-play.jpg') }});">
 
-        <div class="relative max-w-7xl mx-auto px-4">
+        <div class="relative max-w-[85%] mx-auto px-4">
 
             <div class="flex justify-end items-end">
 
@@ -213,138 +212,137 @@
 
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" class="md:max-w-[88%] mx-auto px-4 py-16">
+    <section data-aos="fade-up" data-aos-delay="100" class="max-w-[85%] mx-auto py-16">
 
         <div class="text-center mb-12">
             <span class="text-[#4761FF] font-semibold text-sm tracking-widest uppercase">Our Services</span>
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">Services That Help Your Business Grow</h2>
-            <div class="w-16 h-1 bg-[#4761FF] mx-auto mt-4 rounded"></div>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">  Services That Help Your Business Grow</h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Card 1 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-5.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         Website Development</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Visually appealing, functionally robust websites tailored to your business.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 2 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-6.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         SEO Services</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Strategies designed to improve your search engine rankings and organic reach.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 3 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-7.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         Digital Marketing</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Campaigns that grow engagement, visibility, and conversions across channels.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 4 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-8.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         Social Media Advertising</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Reach your target audience effectively and drive measurable results.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 5 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-9.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         Video Editing & Graphics</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Elevate your content and brand image with professional creative services.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 6 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-10.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
                         YouTube Management</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6">
+                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Grow your channel so your videos reach their maximum potential through smarter promotion.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
-                        Read More >>
+                        Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
@@ -353,12 +351,12 @@
     </section>
 
     <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
-        <div class="md:max-w-[88%] mx-auto px-6">
+        <div class="max-w-[85%] mx-auto">
 
             <div class="flex items-center justify-between mb-16">
                 <div>
                     <h1 class="mb-4 text-[#4761FF] text-xl">Our Project</h1>
-                    <h2 class="text-2xl md:text-[45px] leading-[1.1] font-bold text-[#20233F] max-w-2xl">
+                    <h2 class="text-2xl md:text-[45px] leading-[1.3] font-bold text-[#20233F] max-w-2xl">
                         We've Done Lot's of
                         Awesome Projects
                     </h2>
@@ -383,18 +381,18 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover ">
 
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -404,11 +402,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Data Analytics & Insights
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
 
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
@@ -421,18 +419,18 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover ">
 
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -442,11 +440,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Marketing Content Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
@@ -458,18 +456,18 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover ">
 
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -479,11 +477,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Social Marketing Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
@@ -497,7 +495,7 @@
     </section>
 
     <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
-        <div class="max-w-[88%] mx-auto">
+        <div class="max-w-[85%] mx-auto">
 
             <div class="grid lg:grid-cols-2 gap-20 items-start">
 
@@ -507,18 +505,18 @@
                     Get A Quote
                 </span>
 
-                    <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-bold text-[#20233F] mt-5 mb-8">
+                    <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
                         Need Our Expert Help?
                         We're Here!
                     </h2>
 
-                    <p class="text-gray-500 text-[17px] leading-7 mb-4">
+                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
                         Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                         sed stet lorem sit clita duo justo.
                     </p>
 
-                    <p class="text-gray-500 text-[17px] leading-7 mb-4">
+                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
                         Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                         sed stet lorem sit clita duo justo.
@@ -595,22 +593,19 @@
     </section>
 
     <section data-aos="fade-up">
-        <div class="bg-white py-24 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-[85%] mx-auto">
-
-                <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="bg-white py-24 max-w-[85%] mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-[#4761FF] text-lg tracking-wide block mb-3">
                     Our Team
                 </span>
-                    <h2 class="text-[#0F172A] text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-                        Our Expert People <br> Ready to Help You
-                    </h2>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <h2 class="text-[#0F172A] text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                    Our Expert People <br> Ready to Help You
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group">
 
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/CEO.png') }}"
@@ -651,13 +646,13 @@
                                     </a></li>
                             </ul>
                         </div>
-                        <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
+                        <h5 class="text-[#0F172A] transition-colors duration-300 text-lg font-semibold mb-1">
                             Alex Robin</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Founder & CEO</span>
+                        <span class="text-[#4761FF] transition-colors duration-300 text-sm">Founder & CEO</span>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/CoFounder.png') }}"
                                  alt="Adam Crew">
@@ -697,13 +692,13 @@
                                     </a></li>
                             </ul>
                         </div>
-                        <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
+                        <h5 class="text-[#0F172A] transition-colors duration-300 text-lg font-semibold mb-1">
                             Adam Crew</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Co Founder</span>
+                        <span class="text-[#4761FF] transition-colors duration-300 text-sm">Co Founder</span>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-3.jpg') }}"
                                  alt="Boris Johnson">
@@ -743,13 +738,13 @@
                                     </a></li>
                             </ul>
                         </div>
-                        <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
+                        <h5 class="text-[#0F172A] transition-colors duration-300 text-lg font-semibold mb-1">
                             Boris Johnson</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Executive Manager</span>
+                        <span class="text-[#4761FF] transition-colors duration-300 text-sm">Executive Manager</span>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-4.jpg') }}"
                                  alt="Robert Jordan">
@@ -789,14 +784,12 @@
                                     </a></li>
                             </ul>
                         </div>
-                        <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
+                        <h5 class="text-[#0F172A] transition-colors duration-300 text-lg font-semibold mb-1">
                             Robert Jordan</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Digital Marketer</span>
+                        <span class="text-[#4761FF] transition-colors duration-300 text-sm">Digital Marketer</span>
                     </div>
 
                 </div>
-
-            </div>
         </div>
     </section>
 
@@ -808,7 +801,7 @@
                 <div>
                     <h1 class="mb-4 text-[#4761FF] text-xl">Testimonial</h1>
 
-                    <h2 class="text-[30px] md:text-[45px] lg:text-[55px] leading-[1.1] font-bold text-[#20233F] md:max-w-2xl">
+                    <h2 class="text-[30px] md:text-[45px] font-semibold leading-[1.1] text-[#20233F] md:max-w-2xl">
                         What Clients Say
                         <br>
                         About Our Services!
@@ -817,11 +810,11 @@
 
                 <div class="hidden md:flex gap-4">
 
-                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 
@@ -834,7 +827,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=1">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Ayesha Khan</h3>
                         <span>Marketing Head</span>
@@ -842,7 +835,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=2">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Bilal Ahmed</h3>
                         <span>Product Designer</span>
@@ -850,7 +843,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=3">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Sara Malik</h3>
                         <span>Founder, Studio X</span>
@@ -858,7 +851,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=4">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Usman Tariq</h3>
                         <span>CTO, Nova Labs</span>
@@ -866,7 +859,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=5">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Hina Sheikh</h3>
                         <span>Operations Lead</span>
@@ -874,7 +867,7 @@
 
                     <div class="testi-card">
                         <img src="https://i.pravatar.cc/150?img=6">
-                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>
                         <h3>Faisal Raza</h3>
                         <span>Client Success Manager</span>

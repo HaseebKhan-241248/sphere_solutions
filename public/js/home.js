@@ -63,7 +63,7 @@ startAutoSlide();
 
 (function () {
     const slider = document.getElementById('slider');
-    const originals = Array.from(slider.children); // 6 real cards
+    const originals = Array.from(slider.children);
     const total = originals.length;
 
     const beforeFrag = document.createDocumentFragment();
@@ -98,7 +98,7 @@ startAutoSlide();
         if (!withTransition) slider.classList.add('no-transition');
         slider.style.transform = `translateX(-${current * step()}px)`;
         if (!withTransition) {
-            void slider.offsetHeight; // force reflow before re-enabling transition
+            void slider.offsetHeight;
             slider.classList.remove('no-transition');
         }
         updateActive();
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // animate only once
+                observer.unobserve(entry.target);
             }
         });
     }, {

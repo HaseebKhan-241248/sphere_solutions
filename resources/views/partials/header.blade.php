@@ -1,7 +1,7 @@
 
 <marquee direction="left" data-aos="fade-down" data-aos-duration="600" data-aos-once="true" class="relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md z-50">
 
-    <div class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
+    <div class="flex w-[200%] animate-marquee animate-[marquee_30s_linear_infinite] font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
 
         <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
             <span>WEB & MOBILE ENGINEERING</span>
@@ -31,7 +31,7 @@
 
 <!-- Top Header-->
 <header class="bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
-    <div class="max-w-[88%] mx-auto px-4 sm:px-6">
+    <div class="max-w-[85%] mx-auto px-4 sm:px-6">
         <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
 
             <!-- Logo-->
@@ -87,23 +87,19 @@
 </header>
 
 <!-- Navigation Bar -->
-<nav id="navBar" class="bg-white shadow-sm relative z-40" data-aos="fade-down" data-aos-delay="200"
-     data-aos-duration="600">
-    <div class="max-w-[92%] xl:max-w-[88%] mx-auto px-4 sm:px-6">
-
-        <!-- Mobile Menu Toggle Button (sm and below) -->
-        <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start">
-            <button id="mobileMenuBtn" type="button" class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-1.5 bg-[#4761FF] rounded-lg focus:outline-none" aria-label="Toggle menu">
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-            </button>
-        </div>
+<nav id="navBar" class="bg-white shadow-sm relative z-40" data-aos="fade-down" data-aos-delay="200" data-aos-duration="600">
+    <div class="max-w-[85%] mx-auto">
         <!-- Main Header Container -->
-        <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0 max-w-[90%] mx-auto">
+        <div class="flex flex-col lg:flex-row items-center justify-between py-7 gap-4 xl:gap-0 mx-auto">
 
+            <!-- Mobile Menu Toggle Button (sm and below) -->
+            <div class="sm:hidden w-full flex items-center">
+                <button id="mobileMenuBtn" type="button" class=" focus:outline-none" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
             <!-- Nav Links List -->
-            <ul id="navLinks" class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
+            <ul id="navLinks" class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-8 text-[16px] md:text-[18px] xl:text-[20px] text-black">
 
                 <li data-aos="fade-down" data-aos-delay="250">
                     <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
@@ -120,14 +116,14 @@
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="350">
-                    <button type="button" class="nav-link flex items-center gap-1 {{ request()->routeIs('services', 'service-details') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                    <a href="{{ route('services') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
                         Service
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                         {{--<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
                              viewBox="0 0 20 20">
                             <path d="M5.5 7.5L10 12l4.5-4.5z"/>
                         </svg>--}}
-                    </button>
+                    </a>
                    {{-- <ul class="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
                         <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">All
                                 Services</a></li>
@@ -174,14 +170,15 @@
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="550">
-                    <button type="button" class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team', 'testimonials', 'features', 'quote') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
-                        Pages
+                    <a href="{{ route('our-team') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                        Our Team
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                       {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
                              viewBox="0 0 20 20">
                             <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>
-                    </button>
+                        </svg>--}}
+                    </a>
+{{--
                     <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
                         <li>
                             <a href="{{ route('our-team') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
@@ -204,6 +201,7 @@
                             </a>
                         </li>
                     </ul>
+--}}
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="600">
@@ -217,7 +215,7 @@
 
             <div data-aos="fade-down" data-aos-delay="650" class="hidden sm:flex shrink-0">
                 <a href="{{ route('quote') }}"
-                   class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
+                   class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
                     Hire Us
                 </a>
             </div>

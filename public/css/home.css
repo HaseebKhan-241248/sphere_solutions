@@ -46,3 +46,16 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.reveal {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+}
+.group:hover .reveal {
+    grid-template-rows: 1fr;
+}
+.reveal > div {
+    overflow: hidden;
+    min-height: 0;
+}
