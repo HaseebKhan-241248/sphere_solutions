@@ -30,14 +30,14 @@
 
 
     <section data-aos="fade-up" data-aos-delay="100" class="py-20">
-        <div class="w-[85%] mx-auto max-w-4xl">
+        <div class="lg:max-w-[55%] w-full p-4 mx-auto">
 
             <div class="text-center mb-12">
-                <span class="text-[#4761FF] font-semibold text-base tracking-wide block mb-2">
+                <span class="text-[#4761FF] text-[18px] text-base tracking-wide block mb-2">
                     General FAQs
                 </span>
-                <h2 class="text-[#0F172A] text-4xl font-extrabold tracking-tight">
-                    Frequently Asked Questions
+                <h2 class="text-[#0F172A] text-3xl lg:text-5xl font-extrabold tracking-tight">
+                    Any Question?<br> Check the FAQs
                 </h2>
             </div>
 
@@ -52,7 +52,7 @@
                     >
 
                     <button class="bg-[#4761FF] hover:bg-blue-700 text-white w-16 h-full flex items-center justify-center transition duration-200 shrink-0 focus:outline-none">
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                         </svg>
                     </button>
@@ -191,7 +191,7 @@
     </section>
 
 
-    <div data-aos="fade-up" data-aos-delay="100" class="w-[85%] mx-auto max-w-4xl bg-white rounded-xl shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-slate-100/80 p-8 sm:p-10 text-center mb-24">
+    <div data-aos="fade-up" data-aos-delay="100" class="lg:max-w-[55%] w-full mx-auto bg-white rounded-xl shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-slate-100/80 p-8 sm:p-10 text-center mb-24">
         <h3 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight mb-6">Have More Questions?</h3>
         <a href="{{ route('contact') }}"
            class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition duration-200 text-sm sm:text-base">

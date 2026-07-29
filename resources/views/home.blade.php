@@ -389,7 +389,8 @@
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
                             <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
@@ -424,7 +425,8 @@
                         <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover ">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
                             <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
@@ -456,7 +458,8 @@
 
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
                             <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-eye"></i>

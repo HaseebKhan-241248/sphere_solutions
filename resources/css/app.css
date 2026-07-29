@@ -157,3 +157,62 @@ body {
     display: flex;
     animation: marquee 60s linear infinite;
 }
+
+
+/* Content Slider */
+@keyframes shiftLeft {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes shiftRight {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-slide.active .animate-shift-left {
+    animation: shiftLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.hero-slide.active .animate-shift-right {
+    animation: shiftRight 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.5s;
+}
+
+.delay-3 {
+    animation-delay: 0.8s;
+}
+
+
+/* Video Slider */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+}

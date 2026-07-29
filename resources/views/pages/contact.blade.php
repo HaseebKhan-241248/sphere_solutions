@@ -28,7 +28,7 @@
     </section>
 
 
-    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div class="max-w-[85%] mx-auto">
 
             <div class="text-center max-w-2xl mx-auto mb-16">
@@ -73,7 +73,7 @@
 
                         <div>
                             <button type="submit"
-                                    class="bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide">
+                                    class="bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide cursor-pointer">
                                 Send Message
                             </button>
                         </div>

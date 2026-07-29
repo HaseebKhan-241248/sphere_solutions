@@ -26,8 +26,8 @@
     </section>
 
     <section data-aos="fade-up" data-aos-delay="100">
-        <div class="w-full bg-slate-50/50 py-16 font-sans antialiased text-slate-800">
-            <div class="w-[85%] mx-auto max-w-6xl">
+        <div class="w-full bg-slate-50/50 py-16 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
+            <div class="max-w-[85%] mx-auto max-w-6xl">
 
                 <div class="text-center mb-12">
                 <span class="text-[#4761FF] text-lg font-semibold tracking-wide block mb-2">
