@@ -233,7 +233,7 @@
             <!-- Play Button Container -->
             <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
                 <button
-                    class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl transition duration-300 transform hover:scale-110 relative group focus:outline-none">
+                    class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center cursor-pointer justify-center shadow-2xl transition duration-300 transform hover:scale-110 relative group focus:outline-none">
                     <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40"></span>
 
                     <svg class="w-6 h-6 lg:w-8 lg:h-8 fill-current ml-1 relative z-10" viewBox="0 0 24 24">
@@ -242,9 +242,8 @@
                 </button>
             </div>
 
-            <div class="relative z-20 w-full lg:w-[45%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl
-                    mt-56 mb-0 xl:mb-0 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none
-                    max-h-[85vh] overflow-y-auto xl:overflow-hidden bottom-0 self-end">
+            <div class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[30%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl
+                    mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
 
                 <!-- About Us Subtitle -->
                 <span class="text-[#4761FF] font-semibold text-lg tracking-wide block mb-3">
@@ -252,8 +251,8 @@
                 </span>
 
                 <!-- Main Heading -->
-                <h2 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight mb-4">
-                    Empower Your Potential with Our Progressive Team
+                <h2 class="text-[#0F172A] text-3xl font-bold tracking-tight leading-tight mb-4">
+                    The Best Marketing Agency to Improve Your Businesses
                 </h2>
 
                 <!-- Paragraph text -->
@@ -293,7 +292,7 @@
                 <div class="pb-2">
                     <a href="{{ route('contact') }}"
                        class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
-                        Hire Us
+                        Explore More
                     </a>
                 </div>
             </div>

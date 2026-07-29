@@ -3,59 +3,54 @@
 
     <section class="relative h-screen overflow-hidden">
 
-        <!-- Slide 1 (Video 1) -->
+        <!-- Slide 1 (Active by default, no hidden class) -->
         <div class="hero-slide active absolute inset-0">
-            <!-- Background Video -->
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                 <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-
-            <!-- Dark Overlay for better text readability -->
             <div class="absolute inset-0 bg-black/40"></div>
 
-            <!-- Content -->
             <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center z-10">
                 <div class="max-w-2xl text-white">
-                    <p class="text-xl md:text-2xl mb-5">
+                    <p class="animate-shift-left delay-1 text-xl md:text-2xl mb-5 opacity-0">
                         Welcome to <span class="font-bold">GrowMark</span>
                     </p>
-                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-                        Unlock Your <br>
-                        Business Growth
+                    <h1 class="animate-shift-left delay-2 text-5xl md:text-7xl font-bold leading-tight mb-8 opacity-0">
+                        Unlock Your <br> Business Growth
                     </h1>
-                    <a href="#"
-                       class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-                        Explore More
-                    </a>
+                    <div class="animate-shift-left delay-3 opacity-0">
+                        <a href="#"
+                           class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
+                            Explore More
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 2 (Video 2) -->
-        <div class="hero-slide absolute inset-0 hidden">
-            <!-- Background Video -->
+        <!-- Slide 2 (No hidden class, managed via opacity) -->
+        <div class="hero-slide absolute inset-0">
             <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
                 <source src="{{ asset('videos/hero-video-2.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-
-            <!-- Dark Overlay -->
             <div class="absolute inset-0 bg-black/40"></div>
 
-            <!-- Content -->
             <div class="relative max-w-7xl mx-auto h-full px-6 flex items-center justify-end z-10">
                 <div class="max-w-2xl text-white text-right">
-                    <p class="text-xl md:text-2xl mb-5">
+                    <p class="animate-shift-right delay-1 text-xl md:text-2xl mb-5 opacity-0">
                         Creative Digital Agency
                     </p>
-                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
-                        We Build <br>
-                        Amazing Brands
+                    <h1 class="animate-shift-right delay-2 text-5xl md:text-7xl font-bold leading-tight mb-8 opacity-0">
+                        We Build <br> Amazing Brands
                     </h1>
-                    <a href="#" class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
-                        Explore More
-                    </a>
+                    <div class="animate-shift-right delay-3 opacity-0">
+                        <a href="#"
+                           class="inline-block bg-[#4761FF] hover:bg-blue-700 px-10 py-4 rounded-full text-lg font-semibold transition">
+                            Explore More
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,8 +59,7 @@
         <button id="prevBtn"
                 class="absolute left-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                 stroke="currentColor"
-                 stroke-width="2">
+                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
             </svg>
         </button>
@@ -73,22 +67,24 @@
         <button id="nextBtn"
                 class="absolute right-6 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#4761FF]/90 hover:bg-[#4761FF] flex items-center justify-center text-white z-20 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
-                 stroke="currentColor"
-                 stroke-width="2">
+                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
             </svg>
         </button>
-
     </section>
 
     <section class="py-16 overflow-hidden">
         <div class="max-w-[90%] mx-auto bg-[#F5F5F5]">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-[5px]">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] rounded-[5px]">
 
                 <!-- Card 1 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center bg-[#F1F3FA] group-hover:bg-white/20 rounded-full justify-center mb-6 transition-colors duration-300">
-                        <img src="{{ asset('images/icon-1.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="100"
+                     class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="w-16 h-16 flex items-center bg-[#F1F3FA] group-hover:bg-white/20 rounded-full justify-center mb-6 transition-colors duration-300">
+                        <img src="{{ asset('images/icon-1.png') }}"
+                             class="transition duration-300 group-hover:brightness-0 group-hover:invert">
                     </div>
 
                     <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
@@ -101,9 +97,12 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div data-aos="fade-up" data-aos-delay="200" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-2.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="200"
+                     class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
+                        <img src="{{ asset('images/icon-2.png') }}"
+                             class="transition duration-300 group-hover:brightness-0 group-hover:invert">
                     </div>
 
                     <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
@@ -116,9 +115,12 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div data-aos="fade-up" data-aos-delay="300" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-3.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="300"
+                     class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
+                        <img src="{{ asset('images/icon-3.png') }}"
+                             class="transition duration-300 group-hover:brightness-0 group-hover:invert">
                     </div>
 
                     <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
@@ -131,9 +133,12 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div data-aos="fade-up" data-aos-delay="400" class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
-                    <div class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
-                        <img src="{{ asset('images/icon-4.png') }}" class="transition duration-300 group-hover:brightness-0 group-hover:invert">
+                <div data-aos="fade-up" data-aos-delay="400"
+                     class="p-10 bg-white hover:bg-[#4761FF] transition-all duration-300 group cursor-pointer">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center mb-6 bg-[#F1F3FA] group-hover:bg-white/20 rounded-full transition-colors duration-300">
+                        <img src="{{ asset('images/icon-4.png') }}"
+                             class="transition duration-300 group-hover:brightness-0 group-hover:invert">
                     </div>
 
                     <h3 class="text-2xl font-semibold text-gray-900 group-hover:text-white mb-4 transition-colors duration-300">
@@ -201,7 +206,8 @@
 
                     </div>
 
-                    <a href="{{ route('about') }}" class="inline-block mt-10 bg-[#4761FF] hover:bg-indigo-700 text-white px-10 py-4 rounded-full transition">
+                    <a href="{{ route('about') }}"
+                       class="inline-block mt-10 bg-[#4761FF] hover:bg-indigo-700 text-white px-10 py-4 rounded-full transition">
                         Read More
                     </a>
 
@@ -225,7 +231,8 @@
 
             <!-- Card 1 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-5.png') }}">
@@ -237,7 +244,8 @@
                         Visually appealing, functionally robust websites tailored to your business.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -246,7 +254,8 @@
 
             <!-- Card 2 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-6.png') }}">
@@ -258,7 +267,8 @@
                         Strategies designed to improve your search engine rankings and organic reach.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -267,7 +277,8 @@
 
             <!-- Card 3 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-7.png') }}">
@@ -279,7 +290,8 @@
                         Campaigns that grow engagement, visibility, and conversions across channels.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -288,7 +300,8 @@
 
             <!-- Card 4 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-8.png') }}">
@@ -300,7 +313,8 @@
                         Reach your target audience effectively and drive measurable results.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -309,7 +323,8 @@
 
             <!-- Card 5 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-9.png') }}">
@@ -321,7 +336,8 @@
                         Elevate your content and brand image with professional creative services.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -330,7 +346,8 @@
 
             <!-- Card 6 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
-                <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
+                <div
+                    class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 space-y-5">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-10.png') }}">
@@ -342,7 +359,8 @@
                         Grow your channel so your videos reach their maximum potential through smarter promotion.
                     </p>
                 </div>
-                <div class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
+                <div
+                    class="absolute left-0 right-0 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10">
                     <button class="text-[#4761FF] font-semibold cursor-pointer">
                         Read More >>
                     </button>
@@ -365,11 +383,13 @@
                 </div>
                 <div class="hidden md:flex gap-4">
 
-                    <button id="projectPrevBtn" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                    <button id="projectPrevBtn"
+                            class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="projectNextBtn" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                    <button id="projectNextBtn"
+                            class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 
@@ -383,18 +403,23 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-1.jpg') }}"
+                             class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -421,18 +446,23 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-2.jpg') }}"
+                             class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -458,18 +488,23 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-3.jpg') }}"
+                             class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
                         </div>
 
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#"
+                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -526,7 +561,8 @@
 
                     <a href="#" class="inline-flex overflow-hidden rounded-xl border border-[#4761FF]">
 
-                    <span class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
+                    <span
+                        class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
                         <i class="fa-solid fa-phone"></i>
                     </span>
 
@@ -578,10 +614,12 @@
                         </div>
 
                         <label>
-                        <textarea rows="6" placeholder="Message" class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
+                            <textarea rows="6" placeholder="Message"
+                                      class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
                         </label>
 
-                        <button class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
+                        <button
+                            class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
                             Submit Now
                         </button>
 
@@ -610,7 +648,8 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                     <!-- Card 1 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div
+                        class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
 
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/CEO.png') }}"
@@ -653,11 +692,13 @@
                         </div>
                         <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
                             Alex Robin</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Founder & CEO</span>
+                        <span
+                            class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Founder & CEO</span>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div
+                        class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/CoFounder.png') }}"
                                  alt="Adam Crew">
@@ -699,11 +740,13 @@
                         </div>
                         <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
                             Adam Crew</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Co Founder</span>
+                        <span
+                            class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Co Founder</span>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div
+                        class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-3.jpg') }}"
                                  alt="Boris Johnson">
@@ -745,11 +788,13 @@
                         </div>
                         <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
                             Boris Johnson</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Executive Manager</span>
+                        <span
+                            class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Executive Manager</span>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
+                    <div
+                        class="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 hover:bg-[#4761FF] transition duration-700 border border-slate-50 relative group">
                         <div class="relative overflow-hidden mb-5">
                             <img class="w-full h-[320px] object-cover" src="{{ asset('images/team-4.jpg') }}"
                                  alt="Robert Jordan">
@@ -791,7 +836,8 @@
                         </div>
                         <h5 class="text-[#0F172A] group-hover:text-white transition-colors duration-300 text-xl font-bold mb-1">
                             Robert Jordan</h5>
-                        <span class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Digital Marketer</span>
+                        <span
+                            class="text-[#4761FF] group-hover:text-white transition-colors duration-300 text-sm font-medium">Digital Marketer</span>
                     </div>
 
                 </div>
@@ -817,11 +863,13 @@
 
                 <div class="hidden md:flex gap-4">
 
-                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="previous"
+                            class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
+                    <button id="next"
+                            class="w-16 h-16 rounded-full bg-white shadow-lg flex items-center justify-center">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 

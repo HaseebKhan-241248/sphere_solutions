@@ -272,3 +272,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cards.forEach(card => observer.observe(card));
 }); ``
+
+
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.classList.add('active');
+        } else {
+            slide.classList.remove('active');
+        }
+    });
+}
