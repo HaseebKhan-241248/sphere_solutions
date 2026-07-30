@@ -8,6 +8,8 @@ class PricesController extends Controller
 {
     public function index()
     {
-        return view('pages.prices');
+        return view('pages.prices', [
+            'plans' => config('packages.plans', []),
+        ]);
     }
 }

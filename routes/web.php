@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\user\HomeController;
 use App\Http\Controllers\user\AboutController;
+use App\Http\Controllers\user\CheckoutController;
 use App\Http\Controllers\user\ContactController;
 use App\Http\Controllers\user\ErrorsController;
 use App\Http\Controllers\user\FAQSController;
@@ -27,6 +28,9 @@ Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');
 Route::get('/prices', [PricesController::class, 'index'])->name('prices');
+Route::post('/checkout/{package}', [CheckoutController::class, 'store'])->name('checkout.store');
+Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
+Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');
 Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
 Route::get('/testimonials', [TestimonialsController::class, 'index'])->name('testimonials');
 
