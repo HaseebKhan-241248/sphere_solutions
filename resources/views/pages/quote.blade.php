@@ -25,97 +25,104 @@
         </div>
     </section>
 
-    <section>
-        <div class="w-full px-4 bg-white py-12 md:py-20 font-sans antialiased text-slate-800">
-            <div class="w-[90%] md:w-[85%] mx-auto max-w-6xl">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
+        <div class="max-w-[85%] mx-auto">
 
-                <div class="flex flex-col lg:flex-row items-stretch justify-between gap-12 lg:gap-16">
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
 
-                    <!-- LEFT COLUMN -->
-                    <div class="w-full lg:w-[50%] flex flex-col justify-between py-2 gap-8 lg:gap-0">
-                        <div class="space-y-6">
-                            <div>
-                                <span class="text-[#4761FF] font-semibold text-xl tracking-wide block mb-2">Get A Quote</span>
-                                <h2 class="text-[#1C2035] font-bold text-3xl md:text-5xl leading-[1.15]">
-                                    Need Our Expert Help?<br>We're Here!
-                                </h2>
+                <div>
+
+                <span class="text-[#4761FF] text-xl font-medium">
+                    Get A Quote
+                </span>
+
+                    <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
+                        Need Our Expert Help?
+                        We're Here!
+                    </h2>
+
+                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                        sed stet lorem sit clita duo justo.
+                    </p>
+
+                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                        sed stet lorem sit clita duo justo.
+                    </p>
+
+                    <a href="#" class="inline-flex overflow-hidden rounded-xl border border-[#4761FF]">
+
+                    <span
+                        class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+
+                        <span class="px-4 flex items-center text-[#4761FF] text-xl font-medium bg-white">
+                        +1 (604) 313-7091
+                    </span>
+
+                    </a>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-[36px] font-semibold text-[#20233F] mb-10">
+                        Get A Free Quote
+                    </h2>
+
+                    <form action="#" method="POST">
+                        @csrf
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div class="w-full">
+                                <input type="text" placeholder="Your Name" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
 
-                            <div class="space-y-6 text-slate-500 text-[16px]">
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                            <div class="w-full">
+                                <input type="email" placeholder="Yur Email"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
-                        </div>
 
-                        <div class="flex items-center justify-start mt-auto">
-                            <div class="inline-flex items-center border border-[#4761FF] rounded-lg overflow-hidden h-14 bg-white shrink-0">
-                                <div class="bg-[#4761FF] h-full w-14 flex items-center justify-center text-white shrink-0">
-                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                                    </svg>
-                                </div>
-
-                                <span class="px-6 text-[#4761FF] font-semibold text-base sm:text-lg tracking-wide bg-white h-full flex items-center whitespace-nowrap">
-                                +1 (604) 313-7091
-                            </span>
+                            <div class="w-full">
+                                <input type="text" placeholder="Your Mobile"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
+
+                            <div class="w-full">
+                                <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md placeholder:text-gray-400 md:text-md text-gray-700 outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 bg-white">
+                                    <option disabled selected>Choose A Service</option>
+                                    <option>Digital Marketing</option>
+                                    <option>SEO</option>
+                                    <option>Content Marketing</option>
+                                    <option>Social Marketing</option>
+                                </select>
+                            </div>
+
                         </div>
-                    </div>
 
-                    <!-- RIGHT COLUMN (FORM) -->
-                    <div class="w-full lg:w-[50%] bg-white flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-[#0F172A] text-3xl font-bold tracking-tight mb-8">Get A Free Quote</h3>
+                        <label>
+                            <textarea rows="6" placeholder="Message" class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"></textarea>
+                        </label>
 
-                            <form action="#" method="POST" class="space-y-5">
-                                <div class="flex flex-col lg:flex-row gap-5">
-                                    <div class="w-full lg:w-1/2">
-                                        <input type="text" name="name" placeholder="Your Name"
-                                               class="w-full border border-slate-300 rounded-lg px-4 py-4 placeholder-slate-600 text-sm focus:outline-none focus:border-[#4761FF] transition duration-200">
-                                    </div>
-                                    <div class="w-full lg:w-1/2">
-                                        <input type="email" name="email" placeholder="Your Email"
-                                               class="w-full border border-slate-300 rounded-lg px-4 py-4 placeholder-slate-600 text-sm focus:outline-none focus:border-[#4761FF] transition duration-200">
-                                    </div>
-                                </div>
+                        <button
+                            class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
+                            Submit Now
+                        </button>
 
-                                <div class="flex flex-col lg:flex-row gap-5">
-                                    <div class="w-full lg:w-1/2">
-                                        <input type="text" name="mobile" placeholder="Your Mobile"
-                                               class="w-full border border-slate-300 rounded-lg px-4 py-4 placeholder-slate-600 text-sm focus:outline-none focus:border-[#4761FF] transition duration-200">
-                                    </div>
-                                    <div class="w-full lg:w-1/2 relative">
-                                        <select name="service"
-                                                class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] transition duration-200 text-slate-600 appearance-none cursor-pointer pr-10">
-                                            <option value="digital">Digital Marketing</option>
-                                            <option value="seo">SEO Optimization</option>
-                                            <option value="web">Web Development</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="w-full">
-                                <textarea name="message" rows="5" placeholder="Message"
-                                          class="w-full border border-slate-300 rounded-lg px-4 py-4 placeholder-slate-600 text-sm focus:outline-none focus:border-[#4761FF] transition duration-200 resize-none"></textarea>
-                                </div>
-
-                                <div class="pt-2">
-                                    <button type="submit"
-                                            class="w-full bg-[#4761FF] hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition duration-200 text-base tracking-wide shadow-md">
-                                        Submit Now
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    </form>
 
                 </div>
 
             </div>
+
         </div>
     </section>
+
 
 
 @endsection
