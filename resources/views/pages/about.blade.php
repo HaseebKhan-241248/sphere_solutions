@@ -30,7 +30,9 @@
     <section data-aos="fade-up">
         <!-- Why People Choose Us -->
         <div class="py-24 px-4 sm:px-6 lg:px-8">
+
             <div class="max-w-[88%] mx-auto">
+
 
                 <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-[#4761FF] text-lg tracking-wide block mb-3">
