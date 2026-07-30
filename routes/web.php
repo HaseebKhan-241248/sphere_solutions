@@ -22,6 +22,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');

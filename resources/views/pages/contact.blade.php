@@ -48,36 +48,7 @@
                         Full Functional Contact Form
                     </h2>
 
-                    <form action="#" method="POST" class="space-y-5">
-                        <div class="w-full">
-                            <input type="text" name="name" placeholder="Your Name"
-                                   class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500">
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            <input type="email" name="email" placeholder="Your Email"
-                                   class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500">
-                            <input type="text" name="mobile" placeholder="Mobile"
-                                   class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500">
-                        </div>
-
-                        <div class="w-full">
-                            <input type="text" name="subject" placeholder="Subject"
-                                   class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500">
-                        </div>
-
-                        <div class="w-full">
-                            <textarea name="message" rows="10" placeholder="Leave a message here"
-                                      class="w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500 resize-none"></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit"
-                                    class="bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide cursor-pointer">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+                    <x-contact-form />
                 </div>
 
                 <div class="lg:col-span-5 space-y-8">

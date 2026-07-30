@@ -158,6 +158,24 @@ body {
     animation: marquee 30s linear infinite;
 }
 
+/* Contact form validation */
+.contact-field-error {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25);
+}
+
+.contact-field-error:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.35);
+}
+
+.contact-error-text {
+    color: #dc2626;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.35rem;
+}
+
 
 /* Content Slider */
 @keyframes shiftLeft {

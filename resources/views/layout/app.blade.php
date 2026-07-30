@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,7 @@
 </button>
 
 <script src="{{ asset('js/home.js') }}"></script>
+<script src="{{ asset('js/contact-form.js') }}"></script>
 <script src="{{ asset('js/faqs.js') }}"></script>
 <script src="{{ asset('js/project-detail.js') }}"></script>
 <script src="{{ asset('js/projects-details-alt.js') }}"></script>
