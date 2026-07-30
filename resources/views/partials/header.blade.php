@@ -1,42 +1,42 @@
 
-<marquee direction="left" data-aos="fade-down" data-aos-duration="600" data-aos-once="true" class="relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md z-50">
+<marquee direction="left" data-aos="fade-down" data-aos-duration="600" data-aos-once="true" class="hidden md:block relative w-full overflow-hidden bg-gradient-to-r from-[#1A237E] via-[#2A3CBA] to-[#4761FF] py-2 text-white shadow-md z-50">
 
     <div class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
 
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
+        <div class="flex w-1/2 items-center gap-6 shrink-0">
+            <span class="text-lg">•</span>
             <span>WEB & MOBILE ENGINEERING</span>
             <span class="text-lg">•</span>
             <span>INTELLIGENT BUSINESS SYSTEMS</span>
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>        
         </div>
 
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0" aria-hidden="true">
+        <div class="flex w-1/2 items-center gap-6 shrink-0" aria-hidden="true">
+            <span class="text-lg">•</span>
             <span>WEB & MOBILE ENGINEERING</span>
             <span class="text-lg">•</span>
             <span>INTELLIGENT BUSINESS SYSTEMS</span>
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>            
         </div>
 
     </div>
 </marquee>
 
 
-<!-- Top Header-->
-<header class="bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
+<!-- Top Header (desktop only) -->
+<header class="hidden sm:block bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
     <div class="max-w-[88%] mx-auto px-4 sm:px-6">
         <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
 
             <!-- Logo-->
             <a href="{{ route('home') }}" class="text-2xl md:text-3xl font-bold text-white hover:opacity-90 transition">
-                <img src="{{ asset('images/h-logo.png') }}" alt="" class="w-24">
+                <img src="{{ asset('images/h-logo.png') }}" alt="Sphere Marketing Solutions" class="w-24">
             </a>
 
             <!-- Contact Info & Socials -->
@@ -91,19 +91,23 @@
      data-aos-duration="600">
     <div class="max-w-[92%] xl:max-w-[88%] mx-auto px-4 sm:px-6">
 
-        <!-- Mobile Menu Toggle Button (sm and below) -->
-        <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start">
-            <button id="mobileMenuBtn" type="button" class="sm:hidden flex flex-col w-10 h-10 items-center justify-center gap-1.5 bg-[#4761FF] rounded-lg focus:outline-none" aria-label="Toggle menu">
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
-                <span class="w-5 h-[2px] bg-white transition-all duration-300"></span>
+        <!-- Mobile: logo + menu only -->
+        <div class="flex sm:hidden items-center justify-between py-3">
+            <a href="{{ route('home') }}" class="shrink-0">
+                <img src="{{ asset('images/sphere_logo.png') }}" alt="Sphere Marketing Solutions" class="h-12 w-auto object-contain">
+            </a>
+            <button id="mobileMenuBtn" type="button" class="flex flex-col w-10 h-10 items-center justify-center gap-1.5 border border-gray-200 rounded-lg focus:outline-none" aria-label="Toggle menu">
+                <span class="w-5 h-[2px] bg-[#1C2035] transition-all duration-300"></span>
+                <span class="w-5 h-[2px] bg-[#1C2035] transition-all duration-300"></span>
+                <span class="w-5 h-[2px] bg-[#1C2035] transition-all duration-300"></span>
             </button>
         </div>
-        <!-- Main Header Container -->
-        <div class="flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0 max-w-[90%] mx-auto">
+
+        <!-- Desktop Header Container -->
+        <div class="hidden sm:flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0 max-w-[90%] mx-auto">
 
             <!-- Nav Links List -->
-            <ul id="navLinks" class="hidden sm:flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
+            <ul id="navLinks" class="flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
 
                 <li data-aos="fade-down" data-aos-delay="250">
                     <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
@@ -215,7 +219,7 @@
                 </li>
             </ul>
 
-            <div data-aos="fade-down" data-aos-delay="650" class="hidden sm:flex shrink-0">
+            <div data-aos="fade-down" data-aos-delay="650" class="shrink-0">
                 <a href="{{ route('quote') }}"
                    class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
                     Hire Us
