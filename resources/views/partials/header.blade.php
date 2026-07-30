@@ -31,7 +31,7 @@
 
 <!-- Top Header (desktop only) -->
 <header class="hidden sm:block bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
-    <div class="max-w-[88%] mx-auto px-4 sm:px-6">
+    <div class="max-w-[85%] mx-auto px-6 sm:px-8 lg:px-[130px]">
         <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
 
             <!-- Logo-->
@@ -89,7 +89,7 @@
 <!-- Navigation Bar -->
 <nav id="navBar" class="bg-white shadow-sm relative z-40" data-aos="fade-down" data-aos-delay="200"
      data-aos-duration="600">
-    <div class="max-w-[92%] xl:max-w-[88%] mx-auto px-4 sm:px-6">
+    <div class="max-w-[85%] mx-auto px-6 sm:px-8 lg:px-[130px]">
 
         <!-- Mobile: logo + menu only -->
         <div class="flex sm:hidden items-center justify-between py-3">
@@ -104,7 +104,7 @@
         </div>
 
         <!-- Desktop Header Container -->
-        <div class="hidden sm:flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0 max-w-[90%] mx-auto">
+        <div class="hidden sm:flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0">
 
             <!-- Mobile Menu Toggle Button (sm and below) -->
             <div class="sm:hidden w-full flex items-center">
