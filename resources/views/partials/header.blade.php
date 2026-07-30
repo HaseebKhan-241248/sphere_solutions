@@ -3,26 +3,26 @@
 
     <div class="flex w-[200%] animate-marquee font-semibold tracking-wider text-xs sm:text-sm uppercase whitespace-nowrap">
 
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0">
+        <div class="flex w-1/2 items-center gap-6 shrink-0">
+            <span class="text-lg">•</span>
             <span>WEB & MOBILE ENGINEERING</span>
             <span class="text-lg">•</span>
             <span>INTELLIGENT BUSINESS SYSTEMS</span>
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>        
         </div>
 
-        <div class="flex w-1/2 justify-around items-center space-x-6 shrink-0" aria-hidden="true">
+        <div class="flex w-1/2 items-center gap-6 shrink-0" aria-hidden="true">
+            <span class="text-lg">•</span>
             <span>WEB & MOBILE ENGINEERING</span>
             <span class="text-lg">•</span>
             <span>INTELLIGENT BUSINESS SYSTEMS</span>
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
-            <span class="text-lg">•</span>
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>            
         </div>
 
     </div>
