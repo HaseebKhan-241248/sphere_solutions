@@ -37,20 +37,17 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover " alt="project1">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -60,11 +57,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Data Analytics & Insights
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
 
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
@@ -76,60 +73,48 @@
                 <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
 
                     <div class="relative overflow-hidden">
-
-                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
-
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
+                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover ">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center ">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
-
                         </div>
-
                     </div>
-
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Marketing Content Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
                     </div>
-
                 </div>
 
                 <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover ">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -139,11 +124,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Social Marketing Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
@@ -155,20 +140,17 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-1.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover ">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -178,51 +160,11 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
-                            Data Analytics & Insights
-                        </h3>
-
-                        <p class="text-gray-500 text-lg leading-8">
-
-                            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
-
-                    <div class="relative overflow-hidden">
-
-                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
-
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
-
-                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
-
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
-                                <i class="fa-solid fa-link"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="p-6">
-
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
                             Social Marketing Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
@@ -234,20 +176,17 @@
 
                     <div class="relative overflow-hidden">
 
-                        <img src="{{ asset('images/project-2.jpg') }}" class="w-full h-75 object-cover transition duration-500 group-hover:scale-110">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover ">
 
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500">
-                        </div>
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                         <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <a href="#"
-                               class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[#4761FF] hover:bg-[#4761FF] hover:text-white">
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
                                 <i class="fa-solid fa-link"></i>
                             </a>
 
@@ -257,17 +196,55 @@
 
                     <div class="p-6">
 
-                        <h3 class="text-[22px] font-bold text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer">
-                            Marketing Content Strategy
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
+                            Social Marketing Strategy
                         </h3>
 
-                        <p class="text-gray-500 text-lg leading-8">
+                        <p class="text-gray-500 text-md leading-6 font-sans">
                             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
                         </p>
 
                     </div>
 
                 </div>
+
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-white">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="{{ asset('images/project-3.jpg') }}" class="w-full h-75 object-cover ">
+
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+                        <div class="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+
+                            <a href="#" class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-[18px] text-[#20233F] mb-1 hover:text-[#4761FF] cursor-pointer" style="font-weight: 600">
+                            Social Marketing Strategy
+                        </h3>
+
+                        <p class="text-gray-500 text-md leading-6 font-sans">
+                            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                        </p>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
             <div class="flex items-center justify-center bg-white py-4 gap-2">

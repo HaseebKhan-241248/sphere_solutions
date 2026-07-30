@@ -43,10 +43,13 @@
 
             <div class="bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-100 p-6 mb-10 w-full max-w-4xl mx-auto">
 
-                <div class="border border-slate-200 rounded-lg flex items-center overflow-hidden h-14 bg-white focus-within:border-[#4761FF]/50 transition duration-200">
+                <div class="border border-slate-200 rounded-lg flex items-center overflow-hidden h-14 bg-white transition-all duration-300 focus-within:border-indigo-400 focus-within:ring-4 focus-within:ring-indigo-200">
 
-                    <input type="text" placeholder="Search..."
-                           class="w-full bg-transparent px-5 text-slate-700 focus:outline-none placeholder-slate-400 text-sm h-full">
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        class="w-full bg-transparent px-5 text-slate-700 placeholder-slate-400 text-sm h-full outline-none focus:outline-none"
+                    >
 
                     <button class="bg-[#4761FF] hover:bg-blue-700 text-white w-16 h-full flex items-center justify-center transition duration-200 shrink-0 focus:outline-none">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -56,26 +59,31 @@
 
                 </div>
             </div>
-
             <div class="w-full faq-wrapper">
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
+
                         <span>1. What sort of services do we offer?</span>
+
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
+
+
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="px-5 pb-5 pt-1 text-slate-500 text-sm leading-relaxed border-t border-slate-100/30">
-                            We are a software development and digital marketing agency providing all related solutions. We can develop new software, modify existing systems, or resolve problems in products you already have.
+                            We are a software development and digital marketing agency providing all related solutions.
                         </div>
                     </div>
+
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>2. Which industries do we offer work for?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +98,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>3. What technologies do we work on?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +113,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>4. What details do I need to provide?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +128,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>5. Do we sign an NDA to ensure your data privacy?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +143,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>6. What is our stance regarding intellectual property?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +158,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>7. Do I get any support for the product developed?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,7 +173,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-slate-800 font-bold text-sm sm:text-base focus:outline-none cursor-pointer">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50">
                         <span>8. How much time will it take for the completion of my project?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">

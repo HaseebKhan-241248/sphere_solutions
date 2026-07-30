@@ -222,10 +222,10 @@
             <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">  Services That Help Your Business Grow</h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
             <!-- Card 1 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
 
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
@@ -233,121 +233,122 @@
                             <img src="{{ asset('images/icon-5.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
                         Website Development</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
+                    <p class="lines text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Visually appealing, functionally robust websites tailored to your business.
                     </p>
                 </div>
 
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-6.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
                         SEO Services</h3>
-                    <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
+                    <p class="lines text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Strategies designed to improve your search engine rankings and organic reach.
                     </p>
                 </div>
 
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                 <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-7.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
                         Digital Marketing</h3>
                     <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Campaigns that grow engagement, visibility, and conversions across channels.
                     </p>
                 </div>
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                 <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-8.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
                         Social Media Advertising</h3>
                     <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Reach your target audience effectively and drive measurable results.
                     </p>
                 </div>
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 5 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-9.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
-                        Video Editing & Graphics</h3>
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
+                        Video Editing & Graphics
+                    </h3>
                     <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Elevate your content and brand image with professional creative services.
                     </p>
                 </div>
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                 <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Card 6 -->
-            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
+            <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-50 mb-6 hover:mb-0 mx-3">
                 <div class="bg-white p-9 rounded-lg group-hover:rounded-b-none shadow-[0_0_25px_rgba(0,0,0,0.1)] group-hover:shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 h-[300px] flex flex-col items-center">
                     <div class="text-[#4761FF] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center">
                             <img src="{{ asset('images/icon-10.png') }}">
                         </div>
                     </div>
-                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center mb-3">
+                    <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4761FF] cursor-pointer min-h-[52px] flex items-center justify-center">
                         YouTube Management</h3>
                     <p class="text-gray-500 text-center text-[17px] leading-relaxed px-6 flex-1 flex items-center justify-center overflow-hidden line-clamp-3">
                         Grow your channel so your videos reach their maximum potential through smarter promotion.
                     </p>
                 </div>
-                <div class="absolute left-1/2 -translate-x-1/2 top-full h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-14 group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/70 rounded-b-lg shadow-[0_20px_25px_rgba(0,0,0,0.15)] z-10 w-[70%]">
-                    <button class="text-[#4761FF] font-semibold cursor-pointer">
+                 <div class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
+                    <button class="text-[#4761FF] text-sm font-medium cursor-pointer">
                         Read More <i class="fas fa-angle-double-right"></i>
                     </button>
                 </div>
@@ -361,17 +362,17 @@
             <div class="flex items-center justify-between mb-16">
                 <div>
                     <h1 class="mb-4 text-[#4761FF] text-xl">Our Project</h1>
-                    <h2 class="text-2xl md:text-[45px] leading-[1.3] font-bold text-[#20233F] max-w-2xl">
+                    <h2 class="text-xl md:text-[45px] leading-[1.3] font-bold text-[#20233F] max-w-2xl">
                         We've Done Lot's of
                         Awesome Projects
                     </h2>
                 </div>
-                <div class="hidden md:flex gap-4">
-                    <button id="projectPrevBtn" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                <div class="flex gap-2 md:gap-4">
+                    <button id="projectPrevBtn" class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="projectNextBtn" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                    <button id="projectNextBtn" class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 
@@ -816,20 +817,20 @@
                 <div>
                     <h1 class="mb-4 text-[#4761FF] text-xl">Testimonial</h1>
 
-                    <h2 class="text-[30px] md:text-[45px] font-semibold leading-[1.1] text-[#20233F] md:max-w-2xl">
+                    <h2 class="text-[20px] md:text-[45px] font-semibold leading-[1.1] text-[#20233F] md:max-w-2xl">
                         What Clients Say
                         <br>
                         About Our Services!
                     </h2>
                 </div>
 
-                <div class="hidden md:flex gap-4">
+                <div class="flex gap-2 md:gap-4">
 
-                    <button id="previous" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                    <button id="previous" class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
 
-                    <button id="next" class="w-16 h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
+                    <button id="next" class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-blue-600 hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
 
