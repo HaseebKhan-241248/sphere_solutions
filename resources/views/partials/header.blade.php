@@ -31,7 +31,7 @@
 
 <!-- Top Header-->
 <header class="bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
-    <div class="max-w-[85%] mx-auto px-4 sm:px-6">
+    <div class="max-w-[85%] mx-auto">
         <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
 
             <!-- Logo-->
