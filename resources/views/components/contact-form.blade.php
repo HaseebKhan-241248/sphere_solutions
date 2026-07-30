@@ -34,7 +34,7 @@
 
     <div class="w-full">
         <input type="text" name="name" placeholder="Your Name" maxlength="100" value="{{ old('name') }}"
-               class="{{ $fieldClass }} @error('name') contact-field-error @enderror"
+               class="{{ $fieldClass }} @error('name') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
                data-field="name"
                aria-describedby="error-name">
         <p id="error-name" data-error-for="name" class="contact-error-text {{ $errors->has('name') ? '' : 'hidden' }}">
@@ -45,7 +45,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div class="w-full">
             <input type="email" name="email" placeholder="Your Email" maxlength="255" value="{{ old('email') }}"
-                   class="{{ $fieldClass }} @error('email') contact-field-error @enderror"
+                   class="{{ $fieldClass }} @error('email') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
                    data-field="email"
                    aria-describedby="error-email">
             <p id="error-email" data-error-for="email" class="contact-error-text {{ $errors->has('email') ? '' : 'hidden' }}">
@@ -54,7 +54,7 @@
         </div>
         <div class="w-full">
             <input type="text" name="mobile" placeholder="Mobile" maxlength="30" value="{{ old('mobile') }}"
-                   class="{{ $fieldClass }} @error('mobile') contact-field-error @enderror"
+                   class="{{ $fieldClass }} @error('mobile') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
                    data-field="mobile"
                    aria-describedby="error-mobile">
             <p id="error-mobile" data-error-for="mobile" class="contact-error-text {{ $errors->has('mobile') ? '' : 'hidden' }}">
@@ -65,7 +65,7 @@
 
     <div class="w-full">
         <input type="text" name="subject" placeholder="Subject" maxlength="200" value="{{ old('subject') }}"
-               class="{{ $fieldClass }} @error('subject') contact-field-error @enderror"
+               class="{{ $fieldClass }} @error('subject') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
                data-field="subject"
                aria-describedby="error-subject">
         <p id="error-subject" data-error-for="subject" class="contact-error-text {{ $errors->has('subject') ? '' : 'hidden' }}">
@@ -75,7 +75,7 @@
 
     <div class="w-full">
         <textarea name="message" rows="10" placeholder="Leave a message here" maxlength="5000"
-                  class="{{ $fieldClass }} resize-none @error('message') contact-field-error @enderror"
+                  class="{{ $fieldClass }} resize-none @error('message') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
                   data-field="message"
                   aria-describedby="error-message">{{ old('message') }}</textarea>
         <p id="error-message" data-error-for="message" class="contact-error-text {{ $errors->has('message') ? '' : 'hidden' }}">

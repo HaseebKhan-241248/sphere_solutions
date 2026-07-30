@@ -27,7 +27,7 @@
 
     <section data-aos="fade-up" data-aos-delay="100">
         <div class="w-full py-24 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
-            <div class="max-w-[85%] mx-auto max-w-6xl">
+            <div class="max-w-[88%] mx-auto">
 
                 <div class="text-center mb-12">
                 <span class="text-[#4761FF] text-lg tracking-wide block mb-2">
@@ -58,27 +58,27 @@
                                     <span>Social Media Management (1 platform)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Basic SEO Optimization</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Blog Posts / Articles per month</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>150 Backlinks (DAPA) Guaranteed</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Monthly Performance Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Website Audit Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>1 Promotional Video (editing included)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
@@ -110,27 +110,27 @@
                                     <span>Social Media Management (3 platforms)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Basic SEO Optimization</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Blog Posts / Articles per month</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>400 Backlinks (DAPA) Guaranteed</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Monthly Performance Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Website Audit Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>2 Promotional Videos (editing included)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
@@ -162,27 +162,27 @@
                                     <span>Social Media Management (5 platforms)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Advanced SEO Optimization</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Blog Posts / Articles per month</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>400 Backlinks + Weekly Reports</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Monthly Performance Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>Website Audit Report</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
-                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 border-slate-100">
                                     <span>5 Promotional Videos (editing included)</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
@@ -198,7 +198,7 @@
 
                 </div>
 
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                {{--<div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white rounded-xl border border-slate-100 p-8 shadow-sm">
                         <h3 class="text-xl font-bold text-[#0F172A] mb-2">Platinum Package — $700 / Month</h3>
                         <p class="text-slate-500 text-sm mb-4">For businesses that want a stronger digital impact with advanced SEO, campaign management, and 600 backlinks guaranteed.</p>
@@ -209,7 +209,7 @@
                         <p class="text-slate-500 text-sm mb-4">Website development, Google Ads, CRO, custom video production, and a data-driven marketing approach tailored to your industry.</p>
                         <a href="{{ route('contact') }}" class="text-[#4761FF] font-semibold hover:underline">Request a custom quote →</a>
                     </div>
-                </div>
+                </div>--}}
 
             </div>
         </div>

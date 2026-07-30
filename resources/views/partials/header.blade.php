@@ -11,7 +11,7 @@
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>        
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
         </div>
 
         <div class="flex w-1/2 items-center gap-6 shrink-0" aria-hidden="true">
@@ -22,7 +22,7 @@
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>            
+            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
         </div>
 
     </div>
@@ -31,7 +31,7 @@
 
 <!-- Top Header (desktop only) -->
 <header class="hidden sm:block bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
-    <div class="max-w-[85%] mx-auto px-6 sm:px-8 lg:px-[130px]">
+    <div class="max-w-[85%] mx-auto px-6 sm:px-0">
         <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
 
             <!-- Logo-->
@@ -44,18 +44,16 @@
 
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
                     </svg>
-                    <span style="font-weight: 500;">Vancouver, BC, Canada</span>
+                    <span class="font-sans">Vancouver, BC, Canada</span>
                 </div>
 
                 <div class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M2 4h20v16H2V4zm10 8L4 6v12h16V6l-8 6z"/>
                     </svg>
-                    <a href="mailto:info@spheremarketingsolutions.com" class="hover:underline"
-                       style="font-weight: 500;">info@spheremarketingsolutions.com</a>
+                    <a href="mailto:info@spheremarketingsolutions.com" class="hover:underline font-sans">info@spheremarketingsolutions.com</a>
                 </div>
 
                 <div class="flex items-center gap-2">
@@ -63,7 +61,7 @@
                         <path
                             d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                     </svg>
-                    <a href="tel:+16043137091" class="hover:underline" style="font-weight: 500;">+1 (604) 313-7091</a>
+                    <a href="tel:+16043137091" class="hover:underline font-sans">+1 (604) 313-7091</a>
                 </div>
 
                 <div class="flex items-center gap-3">
@@ -89,7 +87,7 @@
 <!-- Navigation Bar -->
 <nav id="navBar" class="bg-white shadow-sm relative z-40" data-aos="fade-down" data-aos-delay="200"
      data-aos-duration="600">
-    <div class="max-w-[85%] mx-auto px-6 sm:px-8 lg:px-[130px]">
+    <div class="max-w-[85%] mx-auto px-6 sm:px-0">
 
         <!-- Mobile: logo + menu only -->
         <div class="flex sm:hidden items-center justify-between py-3">
@@ -113,24 +111,24 @@
                 </button>
             </div>
             <!-- Nav Links List -->
-            <ul id="navLinks" class="flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] xl:text-[20px] text-black">
+            <ul id="navLinks" class="flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] text-black">
 
                 <li data-aos="fade-down" data-aos-delay="250">
-                    <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
+                    <a href="{{ route('home') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Home
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="300">
-                    <a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
+                    <a href="{{ route('about') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('about') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         About
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="350">
-                    <a href="{{ route('services') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                    <a href="{{ route('services') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
                         Service
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                         {{--<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
@@ -151,21 +149,21 @@
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="400">
-                    <a href="{{ route('prices') }}" class="nav-link {{ request()->routeIs('prices') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
+                    <a href="{{ route('prices') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Packages
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
 
                 <li data-aos="fade-down" data-aos-delay="450">
-                    <a href="{{ route('faqs') }}" class="nav-link {{ request()->routeIs('faqs') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
+                    <a href="{{ route('faqs') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('faqs') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         FAQs
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="500">
-                    <a href="{{ route('projects') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                    <a href="{{ route('projects') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
                         Project
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                        {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
@@ -184,7 +182,7 @@
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="550">
-                    <a href="{{ route('our-team') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                    <a href="{{ route('our-team') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
                         Our Team
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                        {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
@@ -220,7 +218,7 @@
 
                 <li data-aos="fade-down" data-aos-delay="600">
 
-                    <a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group">
+                    <a href="{{ route('contact') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('contact') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Contact
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                     </a>
@@ -261,3 +259,4 @@
 
     </div>
 </nav>
+
