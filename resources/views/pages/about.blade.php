@@ -291,13 +291,6 @@
         </div>
     </section>
 
-<<<<<<< HEAD
-
-    <section data-aos="fade-up">
-        <div class="bg-white py-24 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-[85%] mx-auto">
-=======
->>>>>>> a518a036b97bbf0136490fc05c92c264249c2ab7
 
     <section data-aos="fade-up">
         <div class="bg-white py-24 max-w-[85%] mx-auto">
