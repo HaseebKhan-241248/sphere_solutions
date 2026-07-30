@@ -15,12 +15,12 @@
                     Contact Us
                 </h1>
 
-                <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
-                    <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
+                <nav class="flex items-center justify-center space-x-2 text-white text-base">
+                    <a href="{{ route('home') }}" class="hover:underline text-[20px] transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <a href="#" class="hover:underline transition text-slate-200">Pages</a>
+                    <a href="#" class="hover:underline text-[20px] transition text-slate-200">Pages</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">Contact Us</span>
+                    <span class="text-[#4F46E5] text-[20px]">Contact Us</span>
                 </nav>
             </div>
 
@@ -31,12 +31,12 @@
     <section data-aos="fade-up" data-aos-delay="100" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div class="max-w-[85%] mx-auto">
 
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#4761FF] text-lg tracking-wide block mb-3">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-[#4761FF] text-[20px] tracking-wide block mb-3">
                     Contact Us
                 </span>
-                <h2 class="text-[#0F172A] text-4xl md:text-[46px] font-extrabold tracking-tight leading-tight">
-                    Want to Discuss a Project With Us?
+                <h2 class="text-[#1C2035] text-4xl md:text-[46px] font-bold tracking-tight leading-tight">
+                    If You Have Any Query, Please Contact Us
                 </h2>
             </div>
 
@@ -44,8 +44,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
                 <div class="lg:col-span-6">
-                    <h2 class="text-[#1C2035] text-2xl font-extrabold tracking-tight mb-8">
-                        Talk to Our Sales & Marketing Team
+                    <h2 class="text-[#1C2035] text-3xl font-semibold tracking-tight mb-8">
+                        Full Functional Contact Form
                     </h2>
 
                     <form action="#" method="POST" class="space-y-5">
@@ -82,7 +82,7 @@
 
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <h2 class="text-[#1C2035] text-2xl font-extrabold tracking-tight mb-8">
+                        <h2 class="text-[#1C2035] text-2xl font-semibold tracking-tight mb-8">
                             Contact Details
                         </h2>
 
@@ -107,8 +107,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-black text-xs font-semibold uppercase tracking-wider">Call
-                                        Us</h4>
+                                    <h4 class="text-[#1C2035] text-sm font-semibold tracking-wider">Call Us</h4>
                                     <p class="text-[#555555] text-sm">+1 (604) 313-7091</p>
                                 </div>
                             </div>
@@ -120,9 +119,9 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-black text-xs font-semibold uppercase tracking-wider">Mail
-                                        Us</h4>
-                                    <p class="text-[#555555] text-sm">info@spheremarketingsolutions.com</p>
+                                    <h4 class="text-[#1C2035] text-sm font-semibold tracking-wider">
+                                        Mail Us</h4>
+                                    <p class="text-[#555555] text-sm">info@example.com</p>
                                 </div>
                             </div>
                         </div>

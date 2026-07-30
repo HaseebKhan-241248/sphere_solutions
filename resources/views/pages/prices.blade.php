@@ -26,19 +26,16 @@
     </section>
 
     <section data-aos="fade-up" data-aos-delay="100">
-        <div class="w-full bg-slate-50/50 py-16 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
+        <div class="w-full py-24 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
             <div class="max-w-[85%] mx-auto max-w-6xl">
 
                 <div class="text-center mb-12">
-                <span class="text-[#4761FF] text-lg font-semibold tracking-wide block mb-2">
+                <span class="text-[#4761FF] text-lg tracking-wide block mb-2">
                     Pricing Plans
                 </span>
-                    <h2 class="text-[#0F172A] text-4xl md:text-5xl font-bold tracking-tight">
-                        Digital Marketing Packages
+                    <h2 class="text-[#0F172A] text-4xl md:text-5xl font-semibold tracking-tight">
+                        Pricing Plan for Our Services
                     </h2>
-                    <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
-                        Domain and hosting to be provided by the customer. Packages can be customized based on your business requirements.
-                    </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
