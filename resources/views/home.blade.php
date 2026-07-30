@@ -842,7 +842,7 @@
             <div class="overflow-hidden">
                 <div id="slider" class="flex gap-8">
 
-                    <div class="testi-card">
+                    <div class="testi-card animate">
                         <img src="https://i.pravatar.cc/150?img=1">
                         <p class="text-[#20233F] font-sans text-20px">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita duo justo</p>

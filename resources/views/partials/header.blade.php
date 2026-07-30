@@ -151,14 +151,14 @@
                 </li>
 
                 <li class="relative group" data-aos="fade-down" data-aos-delay="500">
-                    <button type="button" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects', 'project-details', 'projects-list', 'project-details-alt') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
+                    <a href="{{ route('projects') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative">
                         Project
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
                        {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
                              viewBox="0 0 20 20">
                             <path d="M5.5 7.5L10 12l4.5-4.5z"/>
                         </svg>--}}
-                    </button>
+                    </a>
 {{--
                     <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
                         <li><a href="{{ route('projects') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Projects</a>

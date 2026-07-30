@@ -35,16 +35,94 @@
     transform: translateY(0);
 }
 
-.testi-card {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-    transition-delay: var(--delay, 0s);
+
+#slider {
+    display: flex;
+    gap: 32px;
+    transition: transform 0.5s ease;
+    will-change: transform;
 }
 
-.testi-card.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+.no-transition {
+    transition: none !important;
+}
+
+
+.testi-card {
+    flex: 0 0 calc((100% - 64px) / 3);
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+}
+
+
+
+.testi-card.is-active {
+    background: #4761FF;
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(71,97,255,0.35);
+}
+
+
+.testi-card.is-active p,
+.testi-card.is-active h3,
+.testi-card.is-active span {
+    color: #ffffff;
+}
+
+
+.testi-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+.testi-card h3 {
+    color: #20233F;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.testi-card span {
+    color: #666;
+    font-size: 15px;
+}
+
+
+.testi-card p {
+    color: #20233F;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1023px) {
+
+    .testi-card {
+        flex: 0 0 calc((100% - 32px) / 2);
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    #slider {
+        gap: 20px;
+    }
+
+    .testi-card {
+        flex: 0 0 100%;
+        padding: 25px;
+    }
+
 }
 
 .reveal {
