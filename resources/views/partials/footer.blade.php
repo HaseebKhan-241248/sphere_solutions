@@ -136,9 +136,9 @@
                     @csrf
 
                     <div class="relative max-w-lg">
-                    <input type="email" placeholder="Your email" class="w-full h-15 rounded-lg border border-white bg-transparent px-6 text-[15px] placeholder:text-gray-700 focus:outline-none">
+                    <input type="email" placeholder="Your email" class="w-full h-15 rounded-lg border border-white bg-transparent px-6 text-[15px] placeholder:text-[#656E77] focus:outline-none">
 
-                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black px-3 h-12 rounded-lg text-[15px]">
+                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-[#1C2035] px-4 h-10 rounded-lg text-[15px]">
                             SignUp
                         </button>
 
