@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section  class="relative">
+    <section class="relative">
         <div class="relative h-80 bg-cover bg-center flex items-center justify-center text-center bg-black/30"
              style="background-image: url({{ asset('images/about-hero.jpg') }});">
             <div class="text-white px-4">
@@ -18,14 +18,14 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" class="md:max-w-[88%] mx-auto px-4 py-16">
+    <section data-aos="fade-up" data-aos-delay="100" class="max-w-[85%] mx-auto py-16">
 
         <div class="text-center mb-12">
             <span class="text-[#4761FF] font-semibold text-sm tracking-widest uppercase">Our Services</span>
             <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">Services That Help Your Business Grow</h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
             <!-- Card 1 -->
             <div class="group relative transition-all duration-300 hover:-translate-y-2 hover:z-20">
@@ -156,11 +156,10 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
-        <div class="md:max-w-[88%] mx-auto px-6">
+    <section class="w-full bg-[#F8F9FA] py-16 md:py-24 font-sans antialiased overflow-hidden">
+        <div class="max-w-[85%] mx-auto">
 
-            <div class="flex items-center justify-between mb-16">
-
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
                     <h1 class="mb-4 text-[#4761FF] text-xl">Testimonial</h1>
 
@@ -239,6 +238,73 @@
                 </div>
             </div>
 
+            <!-- Scrollable Slider Container -->
+            <div id="testimonialSlider"
+                 class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none py-4">
+                <!-- Card 1 -->
+                <div
+                    class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
+                        <img src="images/team-1.jpg"
+                             alt="Client 1" class="w-full h-full object-cover">
+                    </div>
+                    <p class="desc text-slate-500 text-sm md:text-base leading-relaxed mb-6">
+                        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet
+                        lorem sit clita duo justo
+                    </p>
+                    <h4 class="name text-[#1C2035] font-bold text-lg md:text-xl">Client Name</h4>
+                    <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
+                        <img src="images/team-2.jpg"
+                             alt="Client 2" class="w-full h-full object-cover">
+                    </div>
+                    <p class="desc text-slate-500 text-sm md:text-base leading-relaxed mb-6">
+                        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet
+                        lorem sit clita duo justo
+                    </p>
+                    <h4 class="name text-[#1C2035] font-bold text-lg md:text-xl">Client Name</h4>
+                    <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
+                        <img src="images/team-3.jpg"
+                             alt="Client 3" class="w-full h-full object-cover">
+                    </div>
+                    <p class="desc text-slate-500 text-sm md:text-base leading-relaxed mb-6">
+                        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet
+                        lorem sit clita duo justo
+                    </p>
+                    <h4 class="name text-[#1C2035] font-bold text-lg md:text-xl">Client Name</h4>
+                    <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
+                    <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
+                        <img src="images/team-4.jpg"
+                             alt="Client 4" class="w-full h-full object-cover">
+                    </div>
+                    <p class="desc text-slate-500 text-sm md:text-base leading-relaxed mb-6">
+                        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                        stet
+                        lorem sit clita duo justo
+                    </p>
+                    <h4 class="name text-[#1C2035] font-bold text-lg md:text-xl">Client Name</h4>
+                    <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -249,9 +315,9 @@
 
                 <div>
 
-                <span class="text-[#4761FF] text-xl font-medium">
-                    Get A Quote
-                </span>
+            <span class="text-[#4761FF] text-xl font-medium">
+                Get A Quote
+            </span>
 
                     <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
                         Need Our Expert Help?
@@ -272,13 +338,14 @@
 
                     <a href="#" class="inline-flex overflow-hidden rounded-xl border border-[#4761FF]">
 
-                    <span class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
+                <span
+                    class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
 
                         <span class="px-4 flex items-center text-[#4761FF] text-xl font-medium bg-white">
-                        +1 (604) 313-7091
-                    </span>
+                    +1 (604) 313-7091
+                </span>
 
                     </a>
 
@@ -324,10 +391,12 @@
                         </div>
 
                         <label>
-                            <textarea rows="6" placeholder="Message" class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
+                            <textarea rows="6" placeholder="Message"
+                                      class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"></textarea>
                         </label>
 
-                        <button class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
+                        <button
+                            class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
                             Submit Now
                         </button>
 

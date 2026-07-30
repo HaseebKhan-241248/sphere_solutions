@@ -61,92 +61,123 @@ showSlide(current);
 startAutoSlide();
 
 
-(function () {
-    const slider = document.getElementById('slider');
-    const originals = Array.from(slider.children);
-    const total = originals.length;
+// Slider Variables
+const slider = document.getElementById("slider");
+const cards = [...slider.children];
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("previous");
 
-    const beforeFrag = document.createDocumentFragment();
-    originals.forEach(c => beforeFrag.appendChild(c.cloneNode(true)));
-    slider.insertBefore(beforeFrag, slider.firstChild);
+let current = cards.length;
+let autoSlide;
 
-    const afterFrag = document.createDocumentFragment();
-    originals.forEach(c => afterFrag.appendChild(c.cloneNode(true)));
-    slider.appendChild(afterFrag);
+function cloneCards() {
+    const first = document.createDocumentFragment();
+    const last = document.createDocumentFragment();
 
-    const cards = Array.from(slider.children);
-
-    let current = total;
-    let autoTimer = null;
-
-    function visibleCount() {
-        return window.innerWidth >= 768 ? 3 : 1;
-    }
-
-    function step() {
-        const gap = parseFloat(getComputedStyle(slider).columnGap || 32);
-        return cards[0].getBoundingClientRect().width + gap;
-    }
-
-    function updateActive() {
-        const vCount = visibleCount();
-        const centerIndex = current + Math.floor(vCount / 2);
-        cards.forEach((card, i) => card.classList.toggle('is-active', i === centerIndex));
-    }
-
-    function render(withTransition) {
-        if (!withTransition) slider.classList.add('no-transition');
-        slider.style.transform = `translateX(-${current * step()}px)`;
-        if (!withTransition) {
-            void slider.offsetHeight;
-            slider.classList.remove('no-transition');
-        }
-        updateActive();
-    }
-
-    slider.addEventListener('transitionend', () => {
-        if (current === total * 2) {
-            current = total;
-            render(false);
-        } else if (current === 0) {
-            current = total;
-            render(false);
-        }
+    cards.forEach(card => {
+        first.appendChild(card.cloneNode(true));
+        last.appendChild(card.cloneNode(true));
     });
 
-    function goNext() {
-        current++;
-        render(true);
+    slider.prepend(first);
+    slider.append(last);
+}
+
+function visibleCards() {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
+}
+
+
+function cardWidth() {
+    const gap = parseFloat(getComputedStyle(slider).gap) || 32;
+    return slider.children[0].offsetWidth + gap;
+}
+
+function activeCard() {
+
+    [...slider.children].forEach(card =>
+        card.classList.remove("is-active")
+    );
+
+    let index = current;
+
+    if (visibleCards() === 3) {
+        index = current + 1;
     }
 
-    function goPrev() {
-        current--;
-        render(true);
+    slider.children[index].classList.add("is-active");
+}
+
+function render(animation = true) {
+
+    if (!animation) {
+        slider.classList.add("no-transition");
     }
 
-    function startAuto() {
-        stopAuto();
-        autoTimer = setInterval(goNext, 5000);
+    slider.style.transform =
+        `translateX(-${current * cardWidth()}px)`;
+
+    if (!animation) {
+        slider.offsetHeight;
+        slider.classList.remove("no-transition");
     }
 
-    function stopAuto() {
-        if (autoTimer) clearInterval(autoTimer);
+    activeCard();
+}
+
+function nextSlide() {
+    current++;
+    render();
+}
+
+function prevSlide() {
+    current--;
+    render();
+}
+
+slider.addEventListener("transitionend", () => {
+
+    if (current >= cards.length * 2) {
+
+        current = cards.length;
+        render(false);
+
+    } else if (current <= 0) {
+
+        current = cards.length;
+        render(false);
+
     }
 
-    document.getElementById('next').addEventListener('click', () => {
-        goNext();
-        startAuto();
-    });
-    document.getElementById('previous').addEventListener('click', () => {
-        goPrev();
-        startAuto();
-    });
+});
 
-    window.addEventListener('resize', () => render(false));
+function startAuto() {
 
-    render(false);
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(() => {
+        nextSlide();
+    }, 5000);
+
+}
+
+nextBtn.onclick = () => {
+    nextSlide();
     startAuto();
-})();
+};
+
+prevBtn.onclick = () => {
+    prevSlide();
+    startAuto();
+};
+
+window.onresize = () => render(false);
+
+cloneCards();
+render(false);
+startAuto();
 
 (function () {
     const projectGrid = document.querySelector('.grid.lg\\:grid-cols-3.md\\:grid-cols-2');
@@ -272,3 +303,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cards.forEach(card => observer.observe(card));
 }); ``
+
+
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.classList.add('active');
+        } else {
+            slide.classList.remove('active');
+        }
+    });
+}
