@@ -144,68 +144,75 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="100" class="relative bg-cover bg-center" style="background-image: url({{ asset('images/about-play.jpg') }});">
+    <section data-aos="fade-up" class="relative w-full bg-slate-50 overflow-hidden">
+        <div class="relative min-h-[650px] lg:min-h-[700px] xl:min-h-[750px] w-full flex items-end lg:items-end overflow-hidden">
 
-        <div class="relative max-w-[85%] mx-auto px-4">
+            <img src="{{ asset('images/about-play.jpg') }}" alt="About Background" class="absolute inset-0 w-full h-full object-cover z-0">
 
-            <div class="flex justify-end items-end">
+            <!-- Play Button Container -->
+            <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
+                <button class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl relative group xl:translate-x-[150px]">
+                    <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40 duration-600"></span>
 
-                <div class="bg-white rounded-lg shadow-xl p-8 md:p-12 w-full lg:w-[50%]">
+                    <svg class="w-6 h-6 lg:w-8 lg:h-8 fill-current ml-1 relative z-10" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+            </div>
 
-                <span class="text-[#4761FF] text-xl font-medium">
+            <div class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[42%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
+
+                <!-- About Us Subtitle -->
+                <span class="text-[#4761FF] font-medium text-lg tracking-wide block mb-5">
                     About Us
                 </span>
 
-                    <h2 class="text-xl md:text-4xl font-bold text-gray-900 leading-tight mt-4">
-                        Empower Your Potential with Our Progressive Team
-                    </h2>
+                <!-- Main Heading -->
+                <h2 class="text-[#0F172A] text-3xl lg:text-4xl font-semibold tracking-tight leading-[45px] mb-5">
+                    The Best Marketing Agency to Improve Your Businesses
+                </h2>
 
-                    <p class="text-gray-500 leading-8 mt-6">
-                        Welcome to Sphere Marketing Solutions, your premier destination for comprehensive
-                        digital marketing services. We specialize in web development, social media advertising,
-                        SEO, video editing, graphic design, and YouTube channel management to help you achieve
-                        your business goals.
-                    </p>
+                <!-- Paragraph text -->
+                <p class="text-[#555555] font-sans text-sm leading-[25px] mb-7">
+                    Welcome to Sphere Marketing Solutions. We specialize in web development, social media advertising,
+                    SEO, video editing, graphic design, and YouTube channel management to enhance your online presence
+                    and achieve your business goals.
+                </p>
 
-                    <div class="grid sm:grid-cols-2 gap-8 mt-10">
-
-                        <div>
-                            <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center mb-6">
-                                <img src="{{ asset('images/icon-5.png') }}">
-                            </div>
-                            <h4 class="text-xl font-semibold mb-3">
-                                Client-First Ethics
-                            </h4>
-                            <p class="text-gray-500">
-                                We prioritize client success, ethical services, and maximizing ROI.
-                            </p>
+                <!-- Features Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <!-- Feature 1 -->
+                    <div class="flex flex-col items-start">
+                        <div class="mb-3">
+                            <img src="{{ asset('images/icon-5.png') }}" alt="Service Icon" class="w-16 h-16 object-contain">
                         </div>
-
-                        <div>
-                            <div class="w-16 h-16 flex items-center bg-[#F1F3FA] rounded-full justify-center mb-6">
-                                <img src="{{ asset('images/icon-2.png') }}">
-                            </div>
-                            <h4 class="text-xl font-semibold mb-3">
-                                Dedicated Experts
-                            </h4>
-                            <p class="text-gray-500">
-                                A tightly-knit team focused on innovation and results-driven delivery.
-                            </p>
-                        </div>
-
+                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Client-First Ethics</h3>
+                        <p class="text-[#555555] text-md leading-[25px] font-sans">
+                            We prioritize client success, ethical services, and maximizing ROI.
+                        </p>
                     </div>
 
-                    <a href="{{ route('about') }}"
-                       class="inline-block mt-10 bg-[#4761FF] hover:bg-indigo-700 text-white px-10 py-4 rounded-full transition">
-                        Read More
-                    </a>
-
+                    <!-- Feature 2 -->
+                    <div class="flex flex-col items-start">
+                        <div class="mb-3">
+                            <img src="{{ asset('images/icon-2.png') }}" alt="Expert Icon" class="w-16 h-16 object-contain">
+                        </div>
+                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Dedicated Experts</h3>
+                        <p class="text-[#555555] text-md leading-[25px] font-sans">
+                            A tightly-knit team focused on innovation and results-driven delivery.
+                        </p>
+                    </div>
                 </div>
 
+                <div class="pb-2">
+                    <a href="{{ route('contact') }}"
+                       class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
+                        Explore More
+                    </a>
+                </div>
             </div>
 
         </div>
-
     </section>
 
     <section data-aos="fade-up" data-aos-delay="100" class="max-w-[85%] mx-auto py-16">
@@ -533,26 +540,24 @@
                     <form action="#" method="POST">
                         @csrf
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                             <div class="w-full">
-                                <input type="text" placeholder="Your Name"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                                <input type="text" placeholder="Your Name" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
 
                             <div class="w-full">
-                                <input type="email" placeholder="Your Email"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                                <input type="email" placeholder="Yur Email"
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
 
                             <div class="w-full">
                                 <input type="text" placeholder="Your Mobile"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
+                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200">
                             </div>
 
                             <div class="w-full">
-                                <select
-                                    class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg text-gray-700 outline-none focus:border-[#4761FF] transition duration-300 bg-white">
+                                <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-md placeholder:text-gray-400 md:text-md text-gray-700 outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 bg-white">
                                     <option disabled selected>Choose A Service</option>
                                     <option>Digital Marketing</option>
                                     <option>SEO</option>
@@ -564,8 +569,7 @@
                         </div>
 
                         <label>
-                            <textarea rows="6" placeholder="Message"
-                                      class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-xl outline-none focus:border-[#4761FF]"></textarea>
+                            <textarea rows="6" placeholder="Message" class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"></textarea>
                         </label>
 
                         <button
