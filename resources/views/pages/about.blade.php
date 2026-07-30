@@ -29,7 +29,7 @@
 
     <section data-aos="fade-up">
         <!-- Why People Choose Us -->
-        <div class="bg-slate-50 py-24 px-4 sm:px-6 lg:px-8">
+        <div class="py-24 px-4 sm:px-6 lg:px-8">
             <div class="max-w-[85%] mx-auto">
 
                 <div class="text-center max-w-2xl mx-auto mb-16">
@@ -221,20 +221,14 @@
 
 
     <section data-aos="fade-up" class="relative w-full bg-slate-50 overflow-hidden">
+        <div class="relative min-h-[650px] lg:min-h-[700px] xl:min-h-[750px] w-full flex items-end lg:items-end overflow-hidden">
 
-        <div
-            class="relative min-h-[650px] lg:min-h-[700px] xl:min-h-[750px] w-full flex items-end lg:items-end overflow-hidden">
-
-            <img src="{{ asset('images/about-play.jpg') }}" alt="About Background"
-                 class="absolute inset-0 w-full h-full object-cover z-0">
-
-            <div class="absolute inset-0 bg-black/20 z-10"></div>
+            <img src="{{ asset('images/about-play.jpg') }}" alt="About Background" class="absolute inset-0 w-full h-full object-cover z-0">
 
             <!-- Play Button Container -->
             <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
-                <button
-                    class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl transition duration-300 transform hover:scale-110 relative group focus:outline-none">
-                    <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40"></span>
+                <button class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl relative group xl:translate-x-[150px]">
+                    <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40 duration-600"></span>
 
                     <svg class="w-6 h-6 lg:w-8 lg:h-8 fill-current ml-1 relative z-10" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
@@ -242,22 +236,20 @@
                 </button>
             </div>
 
-            <div class="relative z-20 w-full lg:w-[45%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl
-                    mt-56 mb-0 xl:mb-0 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none
-                    max-h-[85vh] overflow-y-auto xl:overflow-hidden bottom-0 self-end">
+            <div class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[42%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
 
                 <!-- About Us Subtitle -->
-                <span class="text-[#4761FF] font-semibold text-lg tracking-wide block mb-3">
+                <span class="text-[#4761FF] font-medium text-lg tracking-wide block mb-5">
                     About Us
                 </span>
 
                 <!-- Main Heading -->
-                <h2 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight mb-4">
-                    Empower Your Potential with Our Progressive Team
+                <h2 class="text-[#0F172A] text-3xl lg:text-4xl font-semibold tracking-tight leading-[45px] mb-5">
+                    The Best Marketing Agency to Improve Your Businesses
                 </h2>
 
                 <!-- Paragraph text -->
-                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                <p class="text-[#555555] font-sans text-sm leading-[25px] mb-7">
                     Welcome to Sphere Marketing Solutions. We specialize in web development, social media advertising,
                     SEO, video editing, graphic design, and YouTube channel management to enhance your online presence
                     and achieve your business goals.
@@ -268,11 +260,10 @@
                     <!-- Feature 1 -->
                     <div class="flex flex-col items-start">
                         <div class="mb-3">
-                            <img src="{{ asset('images/icon-5.png') }}" alt="Service Icon"
-                                 class="w-12 h-12 object-contain">
+                            <img src="{{ asset('images/icon-5.png') }}" alt="Service Icon" class="w-16 h-16 object-contain">
                         </div>
-                        <h5 class="text-[#0F172A] text-base font-bold mb-1">Client-First Ethics</h5>
-                        <p class="text-slate-400 text-xs leading-relaxed">
+                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Client-First Ethics</h3>
+                        <p class="text-[#555555] text-md leading-[25px] font-sans">
                             We prioritize client success, ethical services, and maximizing ROI.
                         </p>
                     </div>
@@ -280,11 +271,10 @@
                     <!-- Feature 2 -->
                     <div class="flex flex-col items-start">
                         <div class="mb-3">
-                            <img src="{{ asset('images/icon-2.png') }}" alt="Expert Icon"
-                                 class="w-12 h-12 object-contain">
+                            <img src="{{ asset('images/icon-2.png') }}" alt="Expert Icon" class="w-16 h-16 object-contain">
                         </div>
-                        <h5 class="text-[#0F172A] text-base font-bold mb-1">Dedicated Experts</h5>
-                        <p class="text-slate-400 text-xs leading-relaxed">
+                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Dedicated Experts</h3>
+                        <p class="text-[#555555] text-md leading-[25px] font-sans">
                             A tightly-knit team focused on innovation and results-driven delivery.
                         </p>
                     </div>
@@ -293,13 +283,14 @@
                 <div class="pb-2">
                     <a href="{{ route('contact') }}"
                        class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
-                        Hire Us
+                        Explore More
                     </a>
                 </div>
             </div>
 
         </div>
     </section>
+
 
     <section data-aos="fade-up">
         <div class="bg-white py-24 px-4 sm:px-6 lg:px-8">
