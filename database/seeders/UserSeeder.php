@@ -14,6 +14,7 @@ class UserSeeder extends Seeder
         User::updateOrCreate(
             ['email' => 'admin@spheremarketingsolutions.com'],
             [
+                'name' => 'Admin',
                 'password' => Hash::make('password'),
             ]
         );
