@@ -1,7 +1,7 @@
 {
-  "_fonts-BZKeGvkj.css": {
-    "file": "assets/fonts-BZKeGvkj.css",
-    "src": "_fonts-BZKeGvkj.css"
+  "_fonts-DEUHKZ-C.css": {
+    "file": "assets/fonts-DEUHKZ-C.css",
+    "src": "_fonts-DEUHKZ-C.css"
   },
   "_montserrat-400-normal-BLhwKU8k.woff2": {
     "file": "assets/montserrat-400-normal-BLhwKU8k.woff2",
@@ -60,7 +60,7 @@
     "src": "_poppins-700-normal-Qrb0O0WB.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DBC7SaJj.css",
+    "file": "assets/app-9W9l6W02.css",
     "name": "app",
     "names": [
       "app.css"
