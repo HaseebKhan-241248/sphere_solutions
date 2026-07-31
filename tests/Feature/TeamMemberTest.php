@@ -4,12 +4,12 @@ namespace Tests\Feature;
 
 use App\Models\TeamMember;
 use App\Models\User;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class TeamMemberTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function test_team_section_renders_active_members_on_home(): void
     {

@@ -3,12 +3,12 @@
 namespace Tests\Feature;
 
 use App\Models\Setting;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class PolicyPagesTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function test_policy_pages_show_seeded_content_with_bold(): void
     {

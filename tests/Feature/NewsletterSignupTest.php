@@ -5,13 +5,13 @@ namespace Tests\Feature;
 use App\Mail\NewsletterSubscriberMail;
 use App\Models\NewsletterSubscriber;
 use App\Models\User;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class NewsletterSignupTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function test_newsletter_signup_stores_subscriber_and_sends_email(): void
     {

@@ -5,13 +5,13 @@ namespace Tests\Feature;
 use App\Mail\ContactAdminMail;
 use App\Mail\ContactCustomerMail;
 use App\Models\Contact;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class ContactFormTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function test_contact_form_stores_submission_and_sends_emails(): void
     {

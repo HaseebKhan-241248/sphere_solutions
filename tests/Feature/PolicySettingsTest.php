@@ -7,13 +7,13 @@ use App\Filament\Pages\ManageRefundPolicy;
 use App\Filament\Pages\ManageTermsAndConditions;
 use App\Models\Setting;
 use App\Models\User;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use Tests\TestCase;
 
 class PolicySettingsTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function test_settings_upsert_by_key(): void
     {
