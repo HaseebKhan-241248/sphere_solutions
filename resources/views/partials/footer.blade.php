@@ -132,17 +132,39 @@
                     Get updates on our digital marketing services and offers.
                 </p>
 
-                <form action="#" method="POST" class="w-full max-w-md">
+                <form action="{{ route('newsletter.store') }}" method="POST" class="w-full max-w-md" data-newsletter-form>
                     @csrf
 
+                    <div
+                        data-newsletter-success
+                        class="hidden mb-3 rounded-lg border border-emerald-400/40 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-300"
+                    ></div>
+                    <div
+                        data-newsletter-error
+                        class="hidden mb-3 rounded-lg border border-red-400/40 bg-red-500/10 px-3 py-2 text-sm text-red-300"
+                    ></div>
+
                     <div class="relative max-w-lg">
-                    <input type="email" placeholder="Your email" class="w-full h-15 rounded-lg border border-white bg-transparent px-6 text-[15px] placeholder:text-[#656E77] focus:outline-none">
+                        <input
+                            type="email"
+                            name="email"
+                            data-field="email"
+                            placeholder="Your email"
+                            autocomplete="email"
+                            class="w-full h-15 rounded-lg border border-white bg-transparent px-6 pr-28 text-[15px] placeholder:text-[#656E77] focus:outline-none"
+                        >
 
-                        <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-[#1C2035] px-4 h-10 rounded-lg text-[15px]">
-                            SignUp
+                        <button
+                            type="submit"
+                            data-newsletter-submit
+                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-[#1C2035] px-4 h-10 rounded-lg text-[15px] disabled:opacity-70"
+                        >
+                            <span data-submit-label>SignUp</span>
+                            <span data-submit-loading class="hidden">...</span>
                         </button>
-
                     </div>
+
+                    <p data-error-for="email" class="hidden mt-2 text-sm text-red-300"></p>
                 </form>
 
             </div>
