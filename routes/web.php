@@ -17,17 +17,20 @@ use App\Http\Controllers\user\ProjectsController;
 use App\Http\Controllers\user\ProjectsDetailsController;
 use App\Http\Controllers\user\ProjectsListController;
 use App\Http\Controllers\user\ProjectsDetailsAltController;
+use App\Http\Controllers\user\PrivacyPolicyController;
+use App\Http\Controllers\user\RefundPolicyController;
+use App\Http\Controllers\user\TermsConditionsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/about', [AboutController::class, 'index'])->name('about');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/about-us', [AboutController::class, 'index'])->name('about');
+Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');
-Route::get('/prices', [PricesController::class, 'index'])->name('prices');
+Route::get('/packages', [PricesController::class, 'index'])->name('prices');
 Route::post('/checkout/{package}', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
 Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');
@@ -44,3 +47,8 @@ Route::get('/projects-list', [ProjectsListController::class, 'index'])->name('pr
 Route::get('/project-details-alt', [ProjectsDetailsAltController::class, 'index'])->name('project-details-alt');
 
 Route::get('/404', [ErrorsController::class, 'index'])->name('errors.404');
+
+Route::get('privacy-policy', [PrivacyPolicyController::class, 'index'])->name('privacy-policy');
+Route::get('refund-policy', [RefundPolicyController::class, 'index'])->name('refund-policy');
+Route::get('terms-conditions', [TermsConditionsController::class, 'index'])->name('terms-conditions');
+

@@ -61,8 +61,8 @@
 
                 <ul class="space-y-2 text-[15px] text-[#B0B9AE]">
                     <li>
-                        <a href="{{ route('about') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>About Us
+                        <a href="{{ route('terms-conditions') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Terms & Conditions
                         </a>
                     </li>
 
@@ -73,14 +73,14 @@
                     </li>
 
                     <li>
-                        <a href="{{ route('services') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Our Services
+                        <a href="{{ route('privacy-policy') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Privacy Policy
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('prices') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Packages
+                        <a href="{{ route('refund-policy') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Refund Policy
                         </a>
                     </li>
 
