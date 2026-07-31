@@ -182,9 +182,7 @@
                 © <span class="font-semibold text-white">Sphere Marketing Solutions</span>,<span class="text-[#B0B9AE]"> All Right Reserved.</span>
             </p>
 
-            <p class="text-[17px] text-gray-300">
-                <span class="text-[#B0B9AE]">Sphere Digital Marketing Solutions</span>
-            </p>
+            
 
         </div>
 

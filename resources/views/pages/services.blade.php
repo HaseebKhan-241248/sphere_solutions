@@ -10,8 +10,6 @@
                 <p class="text-lg space-x-3">
                     <a href="{{ route('home') }}" class="hover:text-[#4761FF]">Home</a>
                     <span>/</span>
-                    <a href="#" class="hover:text-[#4761FF]"> Pages</a>
-                    <span>/</span>
                     <span class="text-[#4761FF]"> Service </span>
                 </p>
             </div>
@@ -322,53 +320,10 @@
                 <div>
 
                     <h2 class="text-[36px] font-semibold text-[#20233F] mb-10">
-                        Get A Free Quote
+                        Contact Us
                     </h2>
 
-                    <form action="#" method="POST">
-                        @csrf
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
-
-                            <div class="w-full">
-                                <input type="text" placeholder="Your Name"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
-                            </div>
-
-                            <div class="w-full">
-                                <input type="email" placeholder="Your Email"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
-                            </div>
-
-                            <div class="w-full">
-                                <input type="text" placeholder="Your Mobile"
-                                       class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg outline-none focus:border-[#4761FF] transition duration-300">
-                            </div>
-
-                            <div class="w-full">
-                                <select
-                                    class="w-full h-14 rounded-xl border border-gray-300 px-5 text-base md:text-lg text-gray-700 outline-none focus:border-[#4761FF] transition duration-300 bg-white">
-                                    <option disabled selected>Choose A Service</option>
-                                    <option>Digital Marketing</option>
-                                    <option>SEO</option>
-                                    <option>Content Marketing</option>
-                                    <option>Social Marketing</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <label>
-                            <textarea rows="6" placeholder="Message"
-                                      class="w-full mt-6 rounded-xl border border-gray-300 px-6 p-2 text-md outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"></textarea>
-                        </label>
-
-                        <button
-                            class="w-full mt-4 h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300 cursor-pointer">
-                            Submit Now
-                        </button>
-
-                    </form>
+                    <x-contact-form />
 
                 </div>
 

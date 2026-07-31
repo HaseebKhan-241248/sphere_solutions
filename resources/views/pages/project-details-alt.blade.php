@@ -11,8 +11,6 @@
                 <p class="text-lg space-x-3">
                     <a href="#" class="hover:text-[#4761FF]">Home</a>
                     <span>/</span>
-                    <a href="#" class="hover:text-[#4761FF]"> Pages</a>
-                    <span>/</span>
                     <span class="text-[#4761FF]"> Service Details</span>
                 </p>
             </div>

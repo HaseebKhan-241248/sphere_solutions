@@ -1,0 +1,53 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\TeamMember;
+use Illuminate\Database\Seeder;
+
+class TeamMemberSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $members = [
+            [
+                'name' => 'Utkarsh Parathe',
+                'role' => 'Founder & CEO',
+                'photo' => 'images/CEO.png',
+                'sort_order' => 1,
+            ],
+            [
+                'name' => 'Adam Crew',
+                'role' => 'Co Founder',
+                'photo' => 'images/CoFounder.png',
+                'sort_order' => 2,
+            ],
+            [
+                'name' => 'Boris Johnson',
+                'role' => 'Executive Manager',
+                'photo' => 'images/team-3.jpg',
+                'sort_order' => 3,
+            ],
+            [
+                'name' => 'Robert Jordan',
+                'role' => 'Digital Marketer',
+                'photo' => 'images/team-4.jpg',
+                'sort_order' => 4,
+            ],
+        ];
+
+        foreach ($members as $member) {
+            TeamMember::query()->updateOrCreate(
+                ['name' => $member['name']],
+                [
+                    ...$member,
+                    'facebook_url' => null,
+                    'twitter_url' => null,
+                    'instagram_url' => null,
+                    'linkedin_url' => null,
+                    'is_active' => true,
+                ],
+            );
+        }
+    }
+}

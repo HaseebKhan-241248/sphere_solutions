@@ -29,6 +29,9 @@ Route::get('/about-us', [AboutController::class, 'index'])->name('about');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');
+Route::get('/privacy-policy', [PrivacyPolicyController::class, 'index'])->name('privacy-policy');
+Route::get('/terms-conditions', [TermsConditionsController::class, 'index'])->name('terms-conditions');
+Route::get('/refund-policy', [RefundPolicyController::class, 'index'])->name('refund-policy');
 Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');
@@ -49,8 +52,3 @@ Route::get('/projects-list', [ProjectsListController::class, 'index'])->name('pr
 Route::get('/project-details-alt', [ProjectsDetailsAltController::class, 'index'])->name('project-details-alt');
 
 Route::get('/404', [ErrorsController::class, 'index'])->name('errors.404');
-
-Route::get('privacy-policy', [PrivacyPolicyController::class, 'index'])->name('privacy-policy');
-Route::get('refund-policy', [RefundPolicyController::class, 'index'])->name('refund-policy');
-Route::get('terms-conditions', [TermsConditionsController::class, 'index'])->name('terms-conditions');
-

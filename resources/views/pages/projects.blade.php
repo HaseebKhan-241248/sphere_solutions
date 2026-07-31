@@ -10,8 +10,6 @@
                 <p class="text-lg space-x-3">
                     <a href="{{ route('home') }}" class="hover:text-[#4761FF]">Home</a>
                     <span>/</span>
-                    <a href="#" class="hover:text-[#4761FF]"> Pages</a>
-                    <span>/</span>
                     <span class="text-[#4761FF]"> Projects </span>
                 </p>
             </div>

@@ -8,7 +8,6 @@
 @endphp
 
 <form
-    id="contactForm"
     action="{{ $formAction }}"
     method="POST"
     novalidate
