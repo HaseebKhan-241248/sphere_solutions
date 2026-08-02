@@ -22,7 +22,7 @@
             <span class="text-lg">•</span>
             <span>DESIGNING WHAT'S NEXT</span>
             <span class="text-lg">•</span>
-            <span>AI-POWERED DIGITAL TRANSFORMATION</span>
+            <span>AI-POWERED DIGITAL TRANSFORMAT</span>
         </div>
 
     </div>
@@ -32,50 +32,68 @@
 <!-- Top Header (desktop only) -->
 <header class="hidden sm:block bg-[#4761FF] text-white overflow-hidden" data-aos="fade-down" data-aos-duration="600">
     <div class="max-w-[85%] mx-auto px-6 sm:px-0">
-        <div class="flex flex-col lg:flex-row items-center justify-between py-1 gap-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between py-2 gap-4">
 
             <!-- Logo-->
-            <a href="{{ route('home') }}" class="text-2xl md:text-3xl font-bold text-white hover:opacity-90 transition">
-                <img src="{{ asset('images/h-logo.png') }}" alt="Sphere Marketing Solutions" class="w-24">
+            <a href="{{ route('home') }}" class="shrink-0 hover:opacity-90 transition">
+                <img src="{{ $siteLogoDesktop }}" alt="Sphere Marketing Solutions" class="h-16 w-16 object-contain rounded-full bg-white/10 ring-2 ring-white/30">
             </a>
 
             <!-- Contact Info & Socials -->
             <div class="flex flex-wrap items-center justify-center lg:justify-end gap-6 text-sm">
 
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
-                    </svg>
-                    <span class="font-sans">Vancouver, BC, Canada</span>
-                </div>
+                @if (filled($site[\App\Support\SiteSettings::ADDRESS] ?? null))
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/>
+                        </svg>
+                        <span class="font-sans">{{ $site[\App\Support\SiteSettings::ADDRESS] }}</span>
+                    </div>
+                @endif
 
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path d="M2 4h20v16H2V4zm10 8L4 6v12h16V6l-8 6z"/>
-                    </svg>
-                    <a href="mailto:info@spheremarketingsolutions.com" class="hover:underline font-sans">info@spheremarketingsolutions.com</a>
-                </div>
+                @if (filled($site[\App\Support\SiteSettings::EMAIL] ?? null))
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M2 4h20v16H2V4zm10 8L4 6v12h16V6l-8 6z"/>
+                        </svg>
+                        <a href="mailto:{{ $site[\App\Support\SiteSettings::EMAIL] }}" class="hover:underline font-sans">{{ $site[\App\Support\SiteSettings::EMAIL] }}</a>
+                    </div>
+                @endif
 
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path
-                            d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                    </svg>
-                    <a href="tel:+16043137091" class="hover:underline font-sans">+1 (604) 313-7091</a>
-                </div>
+                @if (filled($site[\App\Support\SiteSettings::PHONE] ?? null))
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M6.62 10.79a15.09 15.09 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <a href="tel:{{ $sitePhoneTel }}" class="hover:underline font-sans">{{ $site[\App\Support\SiteSettings::PHONE] }}</a>
+                    </div>
+                @endif
 
                 <div class="flex items-center gap-3">
-                    <a href="https://www.facebook.com/profile.php?id=61558581241296" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::FACEBOOK_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::FACEBOOK_URL] }}" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    @endif
 
-                    <a href="https://x.com/SpMarkSolutions" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::TWITTER_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::TWITTER_URL] }}" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    @endif
 
-                    <a href="https://www.linkedin.com/in/sm-solutions/" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::INSTAGRAM_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::INSTAGRAM_URL] }}" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    @endif
+
+                    @if (filled($site[\App\Support\SiteSettings::LINKEDIN_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::LINKEDIN_URL] }}" target="_blank" rel="noopener" class="size-7.5 rounded-full bg-white text-[#4761FF] flex items-center justify-center hover:bg-gray-200 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    @endif
                 </div>
 
             </div>
@@ -92,7 +110,7 @@
         <!-- Mobile: logo + menu only -->
         <div class="flex sm:hidden items-center justify-between py-3">
             <a href="{{ route('home') }}" class="shrink-0">
-                <img src="{{ asset('images/sphere_logo.png') }}" alt="Sphere Marketing Solutions" class="h-12 w-auto object-contain">
+                <img src="{{ $siteLogoMobile }}" alt="Sphere Marketing Solutions" class="h-14 w-14 object-contain rounded-full shadow-sm ring-1 ring-slate-100">
             </a>
             <button id="mobileMenuBtn" type="button" class="flex flex-col w-10 h-10 items-center justify-center gap-1.5 border border-gray-200 rounded-lg focus:outline-none" aria-label="Toggle menu">
                 <span class="w-5 h-[2px] bg-[#1C2035] transition-all duration-300"></span>
@@ -104,128 +122,67 @@
         <!-- Desktop Header Container -->
         <div class="hidden sm:flex flex-col lg:flex-row items-center justify-between py-4 gap-4 xl:gap-0">
 
-            <!-- Mobile Menu Toggle Button (sm and below) -->
-            <div class="sm:hidden w-full flex items-center">
-                <button id="mobileMenuBtn" type="button" class=" focus:outline-none" aria-label="Toggle menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
             <!-- Nav Links List -->
             <ul id="navLinks" class="flex flex-wrap items-center justify-start mr-auto gap-4 md:gap-6 xl:gap-8 text-[16px] lg:text-[18px] text-black">
 
-                <li data-aos="fade-down" data-aos-delay="250">
+                <li>
                     <a href="{{ route('home') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('home') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Home
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('home') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="300">
+                <li>
                     <a href="{{ route('about') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('about') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         About
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('about') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
 
-                <li class="relative group" data-aos="fade-down" data-aos-delay="350">
+                <li class="relative group">
                     <a href="{{ route('services') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
                         Service
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                        {{--<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
-                             viewBox="0 0 20 20">
-                            <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>--}}
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('services') ? 'w-full' : '' }}"></span>
                     </a>
-                   {{-- <ul class="absolute left-0 top-full mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
-                        <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">All
-                                Services</a></li>
-                        <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Website
-                                Development</a></li>
-                        <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">SEO
-                                Services</a></li>
-                        <li><a href="{{ route('services') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Digital
-                                Marketing</a></li>
-                    </ul>--}}
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="400">
+                <li>
                     <a href="{{ route('prices') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Packages
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('prices') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="450">
+                <li>
+                    <a href="{{ route('blog.index') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('blog.*') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
+                        Blog
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('blog.*') ? 'w-full' : '' }}"></span>
+                    </a>
+                </li>
+
+                <li>
                     <a href="{{ route('faqs') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('faqs') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         FAQs
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('faqs') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
 
-                <li class="relative group" data-aos="fade-down" data-aos-delay="500">
-                    <a href="{{ route('projects') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('projects') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
-                        Project
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                       {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
-                             viewBox="0 0 20 20">
-                            <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>--}}
-                    </a>
-{{--
-                    <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
-                        <li><a href="{{ route('projects') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Projects</a>
-                        </li>
-                        <li><a href="{{ route('project-details') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">Project
-                                Details</a></li>
-                    </ul>
---}}
-                </li>
-
-                <li class="relative group" data-aos="fade-down" data-aos-delay="550">
+                <li class="relative group">
                     <a href="{{ route('our-team') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative font-sans">
                         Our Team
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
-                       {{-- <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current transition-transform duration-300 group-hover:rotate-180"
-                             viewBox="0 0 20 20">
-                            <path d="M5.5 7.5L10 12l4.5-4.5z"/>
-                        </svg>--}}
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('our-team') ? 'w-full' : '' }}"></span>
                     </a>
-{{--
-                    <ul class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform translate-y-2 group-hover:translate-y-0">
-                        <li>
-                            <a href="{{ route('our-team') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
-                                Our Team
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('testimonials') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
-                                Testimonials
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('features') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
-                                Features
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('quote') }}" class="block p-2 text-[15px] hover:text-[#4761FF] hover:bg-gray-50 transition-all duration-300">
-                                Get a Quote
-                            </a>
-                        </li>
-                    </ul>
---}}
                 </li>
 
-                <li data-aos="fade-down" data-aos-delay="600">
-
+                <li>
                     <a href="{{ route('contact') }}" class="nav-link flex items-center gap-1 {{ request()->routeIs('contact') ? 'text-[#4761FF]' : '' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
                         Contact
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('contact') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
             </ul>
 
-            <div data-aos="fade-down" data-aos-delay="650" class="shrink-0">
+            <div class="shrink-0">
                 <a href="{{ route('quote') }}"
                    class="whitespace-nowrap bg-[#4761FF] hover:bg-indigo-700 text-white text-md font-medium px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 shadow-md">
                     Hire Us
@@ -244,8 +201,8 @@
                 <li><a href="{{ route('about') }}" class="block py-2 hover:text-[#4761FF]">About</a></li>
                 <li><a href="{{ route('services') }}" class="block py-2 hover:text-[#4761FF]">Services</a></li>
                 <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4761FF]">Packages</a></li>
+                <li><a href="{{ route('blog.index') }}" class="block py-2 {{ request()->routeIs('blog.*') ? 'text-[#4761FF]' : 'hover:text-[#4761FF]' }}">Blog</a></li>
                 <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4761FF]">FAQs</a></li>
-                <li><a href="{{ route('projects') }}" class="block py-2 hover:text-[#4761FF]">Projects</a></li>
                 <li><a href="{{ route('our-team') }}" class="block py-2 hover:text-[#4761FF]">Our Team</a></li>
                 <li><a href="{{ route('testimonials') }}" class="block py-2 hover:text-[#4761FF]">Testimonials</a></li>
                 <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4761FF]">Contact</a></li>
@@ -259,4 +216,3 @@
 
     </div>
 </nav>
-

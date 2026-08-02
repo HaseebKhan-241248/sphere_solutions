@@ -37,7 +37,9 @@
 
 @include('partials.footer')
 
-<button id="scrollTopBtn" class="cursor-pointer hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#4761FF] text-white items-center justify-center shadow-lg z-50">
+@include('partials.whatsapp-chat')
+
+<button id="scrollTopBtn" class="cursor-pointer hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#4761FF] text-white items-center justify-center shadow-lg z-50 {{ !empty($whatsappEnabled) ? 'scroll-top-with-whatsapp' : '' }}">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 

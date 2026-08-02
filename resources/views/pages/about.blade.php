@@ -224,7 +224,7 @@
             <img src="{{ asset('images/about-play.jpg') }}" alt="About Background" class="absolute inset-0 w-full h-full object-cover z-0">
 
             <!-- Play Button Container -->
-            <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
+            {{-- <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
                 <button class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl relative group xl:translate-x-[150px]">
                     <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40 duration-600"></span>
 
@@ -232,7 +232,7 @@
                         <path d="M8 5v14l11-7z"/>
                     </svg>
                 </button>
-            </div>
+            </div> --}}
 
             <div class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[42%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
 

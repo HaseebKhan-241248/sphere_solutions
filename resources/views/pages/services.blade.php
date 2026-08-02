@@ -176,6 +176,7 @@
         </div>
     </section>
 
+    {{-- Testimonials temporarily hidden from services page
     <section class="w-full bg-[#F8F9FA] py-16 md:py-24 font-sans antialiased overflow-hidden">
         <div class="w-[90%] md:w-[85%] mx-auto max-w-6xl">
 
@@ -187,7 +188,6 @@
                     </h2>
                 </div>
 
-                <!-- Control Buttons -->
                 <div class="flex items-center gap-4 shrink-0">
                     <button id="customPrevBtn"
                             class="w-16 h-16 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#4761FF] hover:text-white hover:border-[#4761FF] shadow-sm transition duration-300">
@@ -204,10 +204,8 @@
                 </div>
             </div>
 
-            <!-- Scrollable Slider Container -->
             <div id="testimonialSlider"
                  class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-none py-4">
-                <!-- Card 1 -->
                 <div
                     class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
                     <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
@@ -223,7 +221,6 @@
                     <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
                 </div>
 
-                <!-- Card 2 -->
                 <div
                     class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
                     <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
@@ -239,7 +236,6 @@
                     <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
                 </div>
 
-                <!-- Card 3 -->
                 <div
                     class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
                     <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
@@ -255,7 +251,6 @@
                     <span class="prof text-[#4761FF] font-medium text-sm mt-1">Profession</span>
                 </div>
 
-                <!-- Card 4 -->
                 <div
                     class="testimonial-card min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] snap-center bg-white border border-slate-100 rounded-2xl p-8 md:p-10 flex flex-col items-start text-start shadow-sm">
                     <div class="w-24 h-24 rounded-full overflow-hidden mb-6 shadow-md">
@@ -273,6 +268,7 @@
             </div>
         </div>
     </section>
+    --}}
 
     <section data-aos="fade-up" data-aos-delay="100" class="py-24 bg-white">
         <div class="max-w-[85%] mx-auto">

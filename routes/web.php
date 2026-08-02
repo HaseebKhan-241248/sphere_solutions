@@ -1,31 +1,34 @@
 <?php
 
-use App\Http\Controllers\user\HomeController;
 use App\Http\Controllers\user\AboutController;
+use App\Http\Controllers\user\BlogController;
 use App\Http\Controllers\user\CheckoutController;
 use App\Http\Controllers\user\ContactController;
 use App\Http\Controllers\user\ErrorsController;
 use App\Http\Controllers\user\FAQSController;
 use App\Http\Controllers\user\FeaturesController;
+use App\Http\Controllers\user\HomeController;
 use App\Http\Controllers\user\NewsletterController;
 use App\Http\Controllers\user\OurTeamController;
 use App\Http\Controllers\user\PricesController;
-use App\Http\Controllers\user\QuoteController;
-use App\Http\Controllers\user\TestimonialsController;
-use App\Http\Controllers\user\ServicesController;
-use App\Http\Controllers\user\ServicesDetailsController;
+use App\Http\Controllers\user\PrivacyPolicyController;
 use App\Http\Controllers\user\ProjectsController;
+use App\Http\Controllers\user\ProjectsDetailsAltController;
 use App\Http\Controllers\user\ProjectsDetailsController;
 use App\Http\Controllers\user\ProjectsListController;
-use App\Http\Controllers\user\ProjectsDetailsAltController;
-use App\Http\Controllers\user\PrivacyPolicyController;
+use App\Http\Controllers\user\QuoteController;
 use App\Http\Controllers\user\RefundPolicyController;
+use App\Http\Controllers\user\ServicesController;
+use App\Http\Controllers\user\ServicesDetailsController;
 use App\Http\Controllers\user\TermsConditionsController;
+use App\Http\Controllers\user\TestimonialsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about-us', [AboutController::class, 'index'])->name('about');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');

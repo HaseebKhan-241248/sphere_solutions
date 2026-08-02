@@ -65,7 +65,7 @@
                                 <div>
                                     <h4 class="text-black text-sm font-semibold tracking-wider">Our
                                         Office</h4>
-                                    <p class="font-sans text-[#555555] text-sm">Vancouver, BC, Canada</p>
+                                    <p class="font-sans text-[#555555] text-sm">{{ $site[\App\Support\SiteSettings::ADDRESS] ?? 'Vancouver, BC, Canada' }}</p>
                                 </div>
                             </div>
 
@@ -78,7 +78,9 @@
                                 <div>
                                     <h4 class="text-black text-sm font-semibold tracking-wider">Call
                                         Us</h4>
-                                    <p class="font-sans text-[#555555] text-sm">+1 (604) 313-7091</p>
+                                    <p class="font-sans text-[#555555] text-sm">
+                                        <a href="tel:{{ $sitePhoneTel }}" class="hover:text-[#4761FF]">{{ $site[\App\Support\SiteSettings::PHONE] ?? '+1 (604) 313-7091' }}</a>
+                                    </p>
                                 </div>
                             </div>
 
@@ -91,7 +93,9 @@
                                 <div>
                                     <h4 class="text-black text-sm font-semibold tracking-wider">Mail
                                         Us</h4>
-                                    <p class="font-sans text-[#555555] text-sm">info@spheremarketingsolutions.com</p>
+                                    <p class="font-sans text-[#555555] text-sm">
+                                        <a href="mailto:{{ $site[\App\Support\SiteSettings::EMAIL] ?? 'info@spheremarketingsolutions.com' }}" class="hover:text-[#4761FF]">{{ $site[\App\Support\SiteSettings::EMAIL] ?? 'info@spheremarketingsolutions.com' }}</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

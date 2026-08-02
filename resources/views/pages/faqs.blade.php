@@ -39,24 +39,7 @@
                 </h2>
             </div>
 
-            <div class="bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-100 p-6 mb-10 w-full max-w-4xl mx-auto">
-
-                <div class="border border-slate-200 rounded-lg flex items-center overflow-hidden h-14 bg-white transition-all duration-300 focus-within:border-indigo-400 focus-within:ring-4 focus-within:ring-indigo-200">
-
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        class="w-full bg-transparent px-5 text-slate-700 placeholder-slate-400 text-sm h-full outline-none focus:outline-none"
-                    >
-
-                    <button class="bg-[#4761FF] hover:bg-blue-700 text-white w-16 h-full flex items-center justify-center transition duration-200 shrink-0 focus:outline-none">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                        </svg>
-                    </button>
-
-                </div>
-            </div>
+            
             <div class="w-full faq-wrapper">
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">

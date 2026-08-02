@@ -13,40 +13,54 @@
 
                 <ul class="space-y-3">
 
-                    <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Vancouver, BC, Canada</span>
-                    </li>
+                    @if (filled($site[\App\Support\SiteSettings::ADDRESS] ?? null))
+                        <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>{{ $site[\App\Support\SiteSettings::ADDRESS] }}</span>
+                        </li>
+                    @endif
 
-                    <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+16043137091" class="hover:text-white duration-300">+1 (604) 313-7091</a>
-                    </li>
+                    @if (filled($site[\App\Support\SiteSettings::PHONE] ?? null))
+                        <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:{{ $sitePhoneTel }}" class="hover:text-white duration-300">{{ $site[\App\Support\SiteSettings::PHONE] }}</a>
+                        </li>
+                    @endif
 
-                    <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@spheremarketingsolutions.com" class="flex-wrap hover:text-white duration-300 truncate">info@spheremarketingsolutions.com</a>
-                    </li>
+                    @if (filled($site[\App\Support\SiteSettings::EMAIL] ?? null))
+                        <li class="flex items-center gap-4 text-[15px] text-[#B0B9AE]">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:{{ $site[\App\Support\SiteSettings::EMAIL] }}" class="flex-wrap hover:text-white duration-300 truncate">{{ $site[\App\Support\SiteSettings::EMAIL] }}</a>
+                        </li>
+                    @endif
 
                 </ul>
 
                 <div class="flex gap-2 mt-4">
 
-                    <a href="https://x.com/SpMarkSolutions" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::TWITTER_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::TWITTER_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    @endif
 
-                    <a href="https://www.facebook.com/profile.php?id=61558581241296" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::FACEBOOK_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::FACEBOOK_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    @endif
 
-                    <a href="https://www.youtube.com/channel/UCPRpwmlmC9DqVHz1PB6mn1w" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::INSTAGRAM_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::INSTAGRAM_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    @endif
 
-                    <a href="https://www.linkedin.com/in/sm-solutions/" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+                    @if (filled($site[\App\Support\SiteSettings::LINKEDIN_URL] ?? null))
+                        <a href="{{ $site[\App\Support\SiteSettings::LINKEDIN_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    @endif
 
                 </div>
 
@@ -87,6 +101,12 @@
                     <li>
                         <a href="{{ route('faqs') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
                             <i class="fa-solid fa-angle-right mr-3"></i>FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('blog.index') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Blog
                         </a>
                     </li>
                 </ul>
