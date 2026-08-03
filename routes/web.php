@@ -42,7 +42,7 @@ Route::get('/packages', [PricesController::class, 'index'])->name('prices');
 Route::post('/checkout/{package}', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
 Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');
-Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
+//Route::get('/quote', [QuoteController::class, 'index'])->name('quote');
 Route::get('/testimonials', [TestimonialsController::class, 'index'])->name('testimonials');
 
 Route::get('/services', [ServicesController::class, 'index'])->name('services');

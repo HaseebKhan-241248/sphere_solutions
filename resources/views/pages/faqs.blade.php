@@ -39,12 +39,12 @@
                 </h2>
             </div>
 
-            
+
             <div class="w-full faq-wrapper">
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
 
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
 
                         <span>1. What sort of services do we offer?</span>
 
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>2. Which industries do we offer work for?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>3. What technologies do we work on?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>4. What details do I need to provide?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>5. Do we sign an NDA to ensure your data privacy?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>6. What is our stance regarding intellectual property?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>7. Do I get any support for the product developed?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
                         <span>8. How much time will it take for the completion of my project?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">

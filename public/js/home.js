@@ -1,317 +1,282 @@
-const slides = document.querySelectorAll(".hero-slide");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
+// --- HERO SLIDER ---
+const heroSlides = document.querySelectorAll(".hero-slide");
+const heroNextBtn = document.getElementById("nextBtn");
+const heroPrevBtn = document.getElementById("prevBtn");
 
-let current = 0;
-let autoSlide;
+let heroCurrent = 0;
+let heroAutoSlide;
 
-function showSlide(index) {
+function showHeroSlide(index) {
+    heroSlides.forEach((slide, i) => {
+        if (i === index) {
+            slide.classList.remove("hidden");
+            slide.classList.add("active");
+        } else {
+            slide.classList.add("hidden");
+            slide.classList.remove("active");
+        }
+    });
+}
 
-    slides.forEach(slide => {
-        slide.classList.add("hidden");
-        slide.classList.remove("active");
+function nextHeroSlide() {
+    heroCurrent = (heroCurrent + 1) % heroSlides.length;
+    showHeroSlide(heroCurrent);
+}
+
+function prevHeroSlide() {
+    heroCurrent = (heroCurrent - 1 + heroSlides.length) % heroSlides.length;
+    showHeroSlide(heroCurrent);
+}
+
+function startHeroAutoSlide() {
+    heroAutoSlide = setInterval(nextHeroSlide, 5000);
+}
+
+function resetHeroAutoSlide() {
+    clearInterval(heroAutoSlide);
+    startHeroAutoSlide();
+}
+
+if (heroNextBtn && heroPrevBtn && heroSlides.length > 0) {
+    heroNextBtn.addEventListener("click", function () {
+        nextHeroSlide();
+        resetHeroAutoSlide();
     });
 
-    slides[index].classList.remove("hidden");
-    slides[index].classList.add("active");
+    heroPrevBtn.addEventListener("click", function () {
+        prevHeroSlide();
+        resetHeroAutoSlide();
+    });
+
+    showHeroSlide(heroCurrent);
+    startHeroAutoSlide();
 }
 
-function nextSlide() {
 
-    current++;
-
-    if (current >= slides.length) {
-        current = 0;
-    }
-
-    showSlide(current);
-}
-
-function prevSlide() {
-
-    current--;
-
-    if (current < 0) {
-        current = slides.length - 1;
-    }
-
-    showSlide(current);
-}
-
-function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 5000);
-}
-
-function resetAutoSlide() {
-    clearInterval(autoSlide);
-    startAutoSlide();
-}
-
-nextBtn.addEventListener("click", function () {
-    nextSlide();
-    resetAutoSlide();
-});
-
-prevBtn.addEventListener("click", function () {
-    prevSlide();
-    resetAutoSlide();
-});
-
-showSlide(current);
-startAutoSlide();
-
-
-// Slider Variables
+// --- SECONDARY CAROUSEL SLIDER ---
 const slider = document.getElementById("slider");
-const cards = [...slider.children];
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("previous");
 
-let current = cards.length;
-let autoSlide;
+if (slider) {
+    const cards = [...slider.children];
+    const cardNextBtn = document.getElementById("next");
+    const cardPrevBtn = document.getElementById("previous");
 
-function cloneCards() {
-    const first = document.createDocumentFragment();
-    const last = document.createDocumentFragment();
+    let cardCurrent = cards.length;
+    let cardAutoSlide;
 
-    cards.forEach(card => {
-        first.appendChild(card.cloneNode(true));
-        last.appendChild(card.cloneNode(true));
+    function cloneCards() {
+        const first = document.createDocumentFragment();
+        const last = document.createDocumentFragment();
+
+        cards.forEach(card => {
+            first.appendChild(card.cloneNode(true));
+            last.appendChild(card.cloneNode(true));
+        });
+
+        slider.prepend(first);
+        slider.append(last);
+    }
+
+    function visibleCards() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
+    function cardWidth() {
+        const gap = parseFloat(getComputedStyle(slider).gap) || 32;
+        return slider.children[0].offsetWidth + gap;
+    }
+
+    function activeCard() {
+        [...slider.children].forEach(card => card.classList.remove("is-active"));
+
+        let index = cardCurrent;
+        if (visibleCards() === 3) {
+            index = cardCurrent + 1;
+        }
+
+        if (slider.children[index]) {
+            slider.children[index].classList.add("is-active");
+        }
+    }
+
+    function render(animation = true) {
+        if (!animation) {
+            slider.classList.add("no-transition");
+        }
+
+        slider.style.transform = `translateX(-${cardCurrent * cardWidth()}px)`;
+
+        if (!animation) {
+            slider.offsetHeight;
+            slider.classList.remove("no-transition");
+        }
+
+        activeCard();
+    }
+
+    function nextSlide() {
+        cardCurrent++;
+        render();
+    }
+
+    function prevSlide() {
+        cardCurrent--;
+        render();
+    }
+
+    slider.addEventListener("transitionend", () => {
+        if (cardCurrent >= cards.length * 2) {
+            cardCurrent = cards.length;
+            render(false);
+        } else if (cardCurrent <= 0) {
+            cardCurrent = cards.length;
+            render(false);
+        }
     });
 
-    slider.prepend(first);
-    slider.append(last);
-}
-
-function visibleCards() {
-    if (window.innerWidth >= 1024) return 3;
-    if (window.innerWidth >= 768) return 2;
-    return 1;
-}
-
-
-function cardWidth() {
-    const gap = parseFloat(getComputedStyle(slider).gap) || 32;
-    return slider.children[0].offsetWidth + gap;
-}
-
-function activeCard() {
-
-    [...slider.children].forEach(card =>
-        card.classList.remove("is-active")
-    );
-
-    let index = current;
-
-    if (visibleCards() === 3) {
-        index = current + 1;
+    function startAuto() {
+        clearInterval(cardAutoSlide);
+        cardAutoSlide = setInterval(() => {
+            nextSlide();
+        }, 5000);
     }
 
-    slider.children[index].classList.add("is-active");
-}
-
-function render(animation = true) {
-
-    if (!animation) {
-        slider.classList.add("no-transition");
-    }
-
-    slider.style.transform =
-        `translateX(-${current * cardWidth()}px)`;
-
-    if (!animation) {
-        slider.offsetHeight;
-        slider.classList.remove("no-transition");
-    }
-
-    activeCard();
-}
-
-function nextSlide() {
-    current++;
-    render();
-}
-
-function prevSlide() {
-    current--;
-    render();
-}
-
-slider.addEventListener("transitionend", () => {
-
-    if (current >= cards.length * 2) {
-
-        current = cards.length;
-        render(false);
-
-    } else if (current <= 0) {
-
-        current = cards.length;
-        render(false);
-
-    }
-
-});
-
-function startAuto() {
-
-    clearInterval(autoSlide);
-
-    autoSlide = setInterval(() => {
+    if (cardNextBtn) cardNextBtn.onclick = () => {
         nextSlide();
-    }, 5000);
+        startAuto();
+    };
+    if (cardPrevBtn) cardPrevBtn.onclick = () => {
+        prevSlide();
+        startAuto();
+    };
 
+    window.addEventListener('resize', () => render(false));
+
+    cloneCards();
+    render(false);
+    startAuto();
 }
 
-nextBtn.onclick = () => {
-    nextSlide();
-    startAuto();
-};
 
-prevBtn.onclick = () => {
-    prevSlide();
-    startAuto();
-};
+// PROJECT SLIDER //
 
-window.onresize = () => render(false);
+(() => {
+    const slider = document.getElementById("projectSlider");
+    const nextBtn = document.getElementById("projectNextBtn");
+    const prevBtn = document.getElementById("projectPrevBtn");
 
-cloneCards();
-render(false);
-startAuto();
+    if (!slider || !nextBtn || !prevBtn) return;
 
-(function () {
-    const projectGrid = document.querySelector('.grid.lg\\:grid-cols-3.md\\:grid-cols-2');
-    const projectPrevBtn = document.getElementById('projectPrevBtn');
-    const projectNextBtn = document.getElementById('projectNextBtn');
+    let isAnimating = false;
 
-    if (!projectGrid || !projectPrevBtn || !projectNextBtn) return;
-
-    const projects = Array.from(projectGrid.children);
-    const totalProjects = projects.length;
-
-    let currentProject = 0;
-
-    function visibleProjectCount() {
-        return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+    function getVisibleCards() {
+        if (window.innerWidth >= 1280) return 4;
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
     }
 
-    function updateProjectVisibility() {
-        const visibleCount = visibleProjectCount();
-        const maxIndex = totalProjects - visibleCount;
+    function getSlideWidth() {
+        return slider.children[0].offsetWidth;
+    }
 
-        projects.forEach((project, index) => {
-            if (index >= currentProject && index < currentProject + visibleCount) {
-                project.style.display = 'block';
-            } else {
-                project.style.display = 'none';
-            }
+// next //
+    nextBtn.addEventListener("click", () => {
+
+        if (isAnimating) return;
+        isAnimating = true;
+
+        const width = getSlideWidth();
+
+        slider.style.transition = "transform .5s ease";
+        slider.style.transform = `translateX(-${width}px)`;
+
+        slider.addEventListener("transitionend", function handler() {
+
+            slider.removeEventListener("transitionend", handler);
+
+            slider.appendChild(slider.firstElementChild);
+
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    slider.style.transition = "";
+                    isAnimating = false;
+                });
+            });
+
         });
-    }
 
-    function nextProject() {
-        const visibleCount = visibleProjectCount();
-        const maxIndex = totalProjects - visibleCount;
+    });
 
-        if (currentProject < maxIndex) {
-            currentProject++;
-            updateProjectVisibility();
-        }
-    }
+// prev //
+    prevBtn.addEventListener("click", () => {
 
-    function prevProject() {
-        if (currentProject > 0) {
-            currentProject--;
-            updateProjectVisibility();
-        }
-    }
+        if (isAnimating) return;
+        isAnimating = true;
 
-    projectNextBtn.addEventListener('click', nextProject);
-    projectPrevBtn.addEventListener('click', prevProject);
+        const width = getSlideWidth();
 
-    window.addEventListener('resize', updateProjectVisibility);
+        slider.insertBefore(
+            slider.lastElementChild,
+            slider.firstElementChild
+        );
 
-    updateProjectVisibility();
+        slider.style.transition = "none";
+        slider.style.transform = `translateX(-${width}px)`;
+
+        requestAnimationFrame(() => {
+
+            requestAnimationFrame(() => {
+
+                slider.style.transition = "transform .5s ease";
+                slider.style.transform = "translateX(0)";
+
+            });
+
+        });
+
+        slider.addEventListener("transitionend", function handler() {
+
+            slider.removeEventListener("transitionend", handler);
+
+            slider.style.transition = "";
+            isAnimating = false;
+
+        });
+
+    });
+
+
+    window.addEventListener("resize", () => {
+        slider.style.transition = "none";
+        slider.style.transform = "translateX(0)";
+    });
+
 })();
 
+
+// --- INTERSECTION OBSERVERS ---
 document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.service-card');
+    const selectors = ['.service-card', '.project-card', '.team-card', '.testi-card'];
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15
-    });
+    selectors.forEach(selector => {
+        const cards = document.querySelectorAll(selector);
+        if (cards.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.15});
 
-    cards.forEach(card => observer.observe(card));
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.project-card');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15
-    });
-
-    cards.forEach(card => observer.observe(card));
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.team-card');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15
-    });
-
-    cards.forEach(card => observer.observe(card));
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.testi-card');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.15
-    });
-
-    cards.forEach(card => observer.observe(card));
-}); ``
-
-
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        if (i === index) {
-            slide.classList.add('active');
-        } else {
-            slide.classList.remove('active');
+            cards.forEach(card => observer.observe(card));
         }
     });
-}
+});
