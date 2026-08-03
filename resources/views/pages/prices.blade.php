@@ -42,9 +42,17 @@
                     </div>
                 @endif
 
+                @if ($errors->any())
+                    <div class="mb-8 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-600 font-medium">
+                        {{ $errors->first() }}
+                    </div>
+                @endif
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
                     @foreach ($plans as $key => $plan)
+                        @continue($key === 'enterprise')
+
                         @php
                             $isFeatured = ! empty($plan['featured']);
                             $canCheckout = ! empty($plan['checkout']);
@@ -58,7 +66,7 @@
                                 : 'bg-[#1E293B] hover:bg-slate-900 shadow-sm';
                         @endphp
 
-                        <div class="bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 hover:shadow-xl {{ $key === 'enterprise' ? 'md:col-span-2 lg:col-span-3' : '' }}">
+                        <div class="bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 ease-out hover:shadow-xl hover:scale-[1.03]">
                             <div>
                                 <div class="{{ $headerBg }} rounded-xl p-6 text-left text-white mb-8 relative overflow-hidden {{ $isFeatured ? 'shadow-md' : '' }}">
                                     <h3 class="text-lg font-bold tracking-wide mb-1 {{ $titleClass }}">{{ $plan['name'] }}</h3>
@@ -118,9 +126,189 @@
                         </div>
                     @endforeach
 
+                    {{-- Custom Payment card (sits next to Platinum) --}}
+                    <div class="bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 ease-out hover:shadow-xl hover:scale-[1.03]">
+                        <div>
+                            <div class="bg-[#1E293B] rounded-xl p-6 text-left text-white mb-8 relative overflow-hidden">
+                                <h3 class="text-lg font-bold tracking-wide mb-1 text-slate-200">Custom Payment</h3>
+                                <p class="text-sm text-slate-400 mb-3">Pay any custom amount securely through Stripe</p>
+                                <div class="text-lg font-semibold text-white">
+                                    Enter your amount
+                                </div>
+                            </div>
+
+                            <div class="space-y-4 px-2 mb-6 text-left">
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Services Included</p>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600">
+                                    <span>Choose any custom payment amount</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Secure Stripe Checkout</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Instant payment confirmation</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Flexible one-time payment</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Works for any service package</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Quick and secure checkout</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Receipt emailed after payment</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                            </div>
+
+                            <div class="px-2 mb-6 text-left">
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Note</p>
+                                <ul class="space-y-1 text-[13px] text-slate-500">
+                                    <li>- Enter your preferred amount in the payment popup</li>
+                                    <li>- Package customization can be made based on your business requirements.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="px-2 pt-2 text-left">
+                            <button type="button"
+                                    id="openCustomPaymentModal"
+                                    class="inline-block w-fit bg-[#1E293B] hover:bg-slate-900 shadow-sm text-white font-bold px-7 py-3 rounded-full text-sm tracking-wider transition duration-200 cursor-pointer">
+                                Pay Now
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
+
+    {{-- Custom Payment Modal --}}
+    <div id="customPaymentModal"
+         class="fixed inset-0 z-[80] hidden items-center justify-center p-4"
+         aria-hidden="true"
+         style="z-index: 80;">
+        <div id="customPaymentBackdrop" class="absolute inset-0 bg-slate-900/50" style="background: rgba(15, 23, 42, 0.5);"></div>
+
+        <div class="relative z-10 w-full max-w-md rounded-2xl bg-white shadow-2xl border border-slate-100 overflow-hidden"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="customPaymentTitle"
+             style="max-width: 28rem; background: #fff; border-radius: 1rem; box-shadow: 0 25px 50px rgba(15, 23, 42, 0.25);">
+            <div class="flex items-start justify-between gap-4 px-6 pt-6 pb-2">
+                <div class="min-w-0">
+                    <h3 id="customPaymentTitle" class="text-xl font-semibold text-[#0F172A] mb-1">
+                        Custom Payment
+                    </h3>
+                    <p class="text-sm text-slate-500">
+                        Enter the amount you want to pay, then continue to Stripe Checkout.
+                    </p>
+                </div>
+                <button type="button"
+                        id="closeCustomPaymentModal"
+                        class="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition cursor-pointer"
+                        aria-label="Close"
+                        style="flex-shrink: 0; width: 2.25rem; height: 2.25rem; border-radius: 9999px;">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width: 1.25rem; height: 1.25rem;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <form action="{{ route('checkout.custom') }}" method="POST" id="customPaymentForm" class="px-6 pb-6 pt-4">
+                @csrf
+                <label for="customAmount" class="block text-sm font-medium text-slate-700 mb-2">
+                    Amount (USD)
+                </label>
+                <div class="flex items-stretch mb-2 rounded-xl border border-slate-200 overflow-hidden focus-within:ring-2 focus-within:ring-[#4761FF] focus-within:border-transparent"
+                     style="display: flex; align-items: stretch; border: 1px solid #e2e8f0; border-radius: 0.75rem; overflow: hidden;">
+                    <span class="inline-flex items-center justify-center px-4 bg-slate-50 text-slate-600 font-semibold border-r border-slate-200"
+                          style="display: inline-flex; align-items: center; justify-content: center; padding: 0 1rem; background: #f8fafc; color: #475569; font-weight: 600; border-right: 1px solid #e2e8f0;">
+                        $
+                    </span>
+                    <input type="number"
+                           name="amount"
+                           id="customAmount"
+                           min="1"
+                           max="100000"
+                           step="0.01"
+                           required
+                           value="{{ old('amount') }}"
+                           placeholder="0.00"
+                           class="w-full border-0 px-4 py-3 text-slate-800 focus:outline-none focus:ring-0"
+                           style="width: 100%; border: 0; padding: 0.75rem 1rem; color: #1e293b; outline: none;">
+                </div>
+                <p class="text-xs text-slate-400 mb-6">Minimum $1.00 — Maximum $100,000.00</p>
+
+                <div class="flex items-center gap-3" style="display: flex; gap: 0.75rem;">
+                    <button type="button"
+                            id="cancelCustomPaymentModal"
+                            class="flex-1 rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition cursor-pointer"
+                            style="flex: 1; border-radius: 9999px; border: 1px solid #e2e8f0; padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 600; color: #475569; cursor: pointer;">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                            class="flex-1 rounded-full bg-[#4761FF] hover:bg-blue-700 px-5 py-3 text-sm font-bold text-white shadow-md transition cursor-pointer"
+                            style="flex: 1; border-radius: 9999px; background: #4761FF; padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 700; color: #fff; cursor: pointer; border: 0;">
+                        Pay Now
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const modal = document.getElementById('customPaymentModal');
+            const openBtn = document.getElementById('openCustomPaymentModal');
+            const closeBtn = document.getElementById('closeCustomPaymentModal');
+            const cancelBtn = document.getElementById('cancelCustomPaymentModal');
+            const backdrop = document.getElementById('customPaymentBackdrop');
+            const amountInput = document.getElementById('customAmount');
+
+            if (!modal || !openBtn) return;
+
+            function openModal() {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                setTimeout(function () {
+                    amountInput && amountInput.focus();
+                }, 50);
+            }
+
+            function closeModal() {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+
+            openBtn.addEventListener('click', openModal);
+            closeBtn && closeBtn.addEventListener('click', closeModal);
+            cancelBtn && cancelBtn.addEventListener('click', closeModal);
+            backdrop && backdrop.addEventListener('click', closeModal);
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+
+            @if ($errors->has('amount') || old('amount'))
+                openModal();
+            @endif
+        })();
+    </script>
 @endsection

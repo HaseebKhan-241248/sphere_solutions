@@ -39,6 +39,7 @@ Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');
 Route::get('/packages', [PricesController::class, 'index'])->name('prices');
+Route::post('/checkout/custom', [CheckoutController::class, 'custom'])->name('checkout.custom');
 Route::post('/checkout/{package}', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
 Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('checkout.cancel');

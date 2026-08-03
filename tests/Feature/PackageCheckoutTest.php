@@ -19,9 +19,9 @@ class PackageCheckoutTest extends TestCase
             ->assertSee('Standard Package')
             ->assertSee('Premium Package')
             ->assertSee('Platinum Package')
-            ->assertSee('Enterprise Package')
-            ->assertSee('Buy Now')
-            ->assertSee('Request a Quote');
+            ->assertDontSee('Enterprise Package')
+            ->assertSee('Custom Payment')
+            ->assertSee('Buy Now');
     }
 
     public function test_checkout_redirects_back_when_stripe_is_not_configured(): void
@@ -52,6 +52,35 @@ class PackageCheckoutTest extends TestCase
 
         $response = $this->from(route('prices'))
             ->post(route('checkout.store', 'unknown'));
+
+        $response->assertRedirect(route('prices'))
+            ->assertSessionHas('checkout_error');
+    }
+
+    public function test_custom_checkout_requires_amount(): void
+    {
+        $response = $this->from(route('prices'))
+            ->post(route('checkout.custom'), []);
+
+        $response->assertRedirect(route('prices'))
+            ->assertSessionHasErrors('amount');
+    }
+
+    public function test_custom_checkout_rejects_amount_below_minimum(): void
+    {
+        $response = $this->from(route('prices'))
+            ->post(route('checkout.custom'), ['amount' => 0.5]);
+
+        $response->assertRedirect(route('prices'))
+            ->assertSessionHasErrors('amount');
+    }
+
+    public function test_custom_checkout_redirects_back_when_stripe_is_not_configured(): void
+    {
+        config(['services.stripe.secret' => null]);
+
+        $response = $this->from(route('prices'))
+            ->post(route('checkout.custom'), ['amount' => 150]);
 
         $response->assertRedirect(route('prices'))
             ->assertSessionHas('checkout_error');
