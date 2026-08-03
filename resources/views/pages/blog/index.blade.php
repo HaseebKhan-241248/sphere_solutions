@@ -14,7 +14,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#A5B4FC] font-semibold">Blog</span>
+                    <span class="text-[#4F46E5] font-semibold">Blog</span>
                 </nav>
             </div>
         </div>
@@ -33,9 +33,9 @@
             @if ($posts->isEmpty())
                 <p class="text-center text-gray-500 text-lg">No blog posts published yet.</p>
             @else
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     @foreach ($posts as $post)
-                        <article class="group bg-white rounded-2xl border border-slate-100 shadow-[0_8px_30px_rgba(28,32,53,0.06)] overflow-hidden flex flex-col h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_40px_rgba(71,97,255,0.14)] hover:border-[#4761FF]/20">
+                        <article class="group bg-white rounded-2xl border border-slate-200/60 shadow-[0_10px_30px_rgba(0,0,0,0.10)] overflow-hidden flex flex-col h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(71,97,255,0.18)] hover:border-[#4761FF]/30">
                             <a href="{{ route('blog.show', $post->slug) }}" class="block relative overflow-hidden">
                                 <img src="{{ $post->featuredImageUrl() }}"
                                      alt="{{ $post->title }}"
