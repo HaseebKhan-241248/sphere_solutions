@@ -16,7 +16,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">Packages</span>
+                    <span class="text-[#4870F8] font-semibold">Packages</span>
                 </nav>
             </div>
 
@@ -28,7 +28,7 @@
             <div class="max-w-[88%] mx-auto">
 
                 <div class="text-center mb-12">
-                    <span class="text-[#4761FF] text-lg tracking-wide block mb-2">
+                    <span class="text-[#4870F8] text-lg tracking-wide block mb-2">
                         Pricing Plans
                     </span>
                     <h2 class="text-[#0F172A] text-4xl md:text-5xl font-semibold tracking-tight">
@@ -57,12 +57,12 @@
                             $isFeatured = ! empty($plan['featured']);
                             $canCheckout = ! empty($plan['checkout']);
                             $amount = isset($plan['amount_cents']) ? (int) $plan['amount_cents'] / 100 : null;
-                            $headerBg = $isFeatured ? 'bg-[#4761FF]' : 'bg-[#1E293B]';
+                            $headerBg = $isFeatured ? 'bg-[#4870F8]' : 'bg-[#1E293B]';
                             $titleClass = $isFeatured ? 'text-blue-100' : 'text-slate-200';
                             $taglineClass = $isFeatured ? 'text-blue-100/80' : 'text-slate-400';
-                            $priceAccent = $isFeatured ? 'text-black' : 'text-[#4761FF]';
+                            $priceAccent = $isFeatured ? 'text-white' : 'text-[#4870F8]';
                             $buttonClass = $isFeatured
-                                ? 'bg-[#4761FF] hover:bg-blue-700 shadow-md'
+                                ? 'bg-[#4870F8] hover:bg-[#3A5CE0] shadow-md'
                                 : 'bg-[#1E293B] hover:bg-slate-900 shadow-sm';
                         @endphp
 
@@ -230,7 +230,7 @@
                 <label for="customAmount" class="block text-sm font-medium text-slate-700 mb-2">
                     Amount (USD)
                 </label>
-                <div class="flex items-stretch mb-2 rounded-xl border border-slate-200 overflow-hidden focus-within:ring-2 focus-within:ring-[#4761FF] focus-within:border-transparent"
+                <div class="flex items-stretch mb-2 rounded-xl border border-slate-200 overflow-hidden focus-within:ring-2 focus-within:ring-[#4870F8] focus-within:border-transparent"
                      style="display: flex; align-items: stretch; border: 1px solid #e2e8f0; border-radius: 0.75rem; overflow: hidden;">
                     <span class="inline-flex items-center justify-center px-4 bg-slate-50 text-slate-600 font-semibold border-r border-slate-200"
                           style="display: inline-flex; align-items: center; justify-content: center; padding: 0 1rem; background: #f8fafc; color: #475569; font-weight: 600; border-right: 1px solid #e2e8f0;">
@@ -258,8 +258,8 @@
                         Cancel
                     </button>
                     <button type="submit"
-                            class="flex-1 rounded-full bg-[#4761FF] hover:bg-blue-700 px-5 py-3 text-sm font-bold text-white shadow-md transition cursor-pointer"
-                            style="flex: 1; border-radius: 9999px; background: #4761FF; padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 700; color: #fff; cursor: pointer; border: 0;">
+                            class="flex-1 rounded-full bg-[#4870F8] hover:bg-[#3A5CE0] px-5 py-3 text-sm font-bold text-white shadow-md transition cursor-pointer"
+                            style="flex: 1; border-radius: 9999px; background: #4870F8; padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 700; color: #fff; cursor: pointer; border: 0;">
                         Pay Now
                     </button>
                 </div>

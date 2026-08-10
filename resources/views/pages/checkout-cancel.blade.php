@@ -8,7 +8,7 @@
             <div class="relative z-20 max-w-2xl mx-auto px-4">
                 <h1 class="text-white text-4xl md:text-5xl font-bold tracking-wide mb-4">Checkout Cancelled</h1>
                 <p class="text-slate-200 text-lg mb-8">No payment was taken. You can choose a package again whenever you are ready.</p>
-                <a href="{{ route('prices') }}" class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition">
+                <a href="{{ route('prices') }}" class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-8 py-3 rounded-full transition">
                     View Packages
                 </a>
             </div>

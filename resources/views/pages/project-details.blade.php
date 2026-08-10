@@ -8,75 +8,71 @@
             <div class="text-white px-4">
                 <h1 class="text-4xl md:text-7xl font-bold mb-4">Project Details</h1>
                 <p class="text-lg space-x-3">
-                    <a href="{{ route('home') }}" class="hover:text-[#4761FF]">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-[#4870F8]">Home</a>
                     <span>/</span>
-                    <span class="text-[#4761FF]"> Project Details</span>
+                    <span class="text-[#4870F8]"> Project Details</span>
                 </p>
             </div>
         </div>
     </section>
 
 
-    <section class="py-16">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-16">
         <div class="max-w-[85%] mx-auto grid lg:grid-cols-3 gap-12">
 
             <div class="lg:col-span-2">
 
                 <img src="{{ asset('images/about-hero.jpg') }}"
-                     alt="Digital Marketing Service" class="w-full h-105 object-cover rounded-lg mb-8">
+                     alt="Digital Marketing Project" class="w-full h-105 object-cover rounded-lg mb-8">
 
-                <h2 class="text-3xl md:text-4xl font-bold text-[#20233F] mb-6">Digital Marketing Project</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#20233F] mb-6">Digital Marketing Growth Campaign</h2>
 
                 <p class="font-sans text-[#555555] leading-6 text-[17px] mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis luctus augue vitae vulputate.
-                    Nulla vel venenatis nisi. Fusce convallis, nibh id interdum ullamcorper, libero metus lacinia sapien,
-                    accumsan auctor erat libero id nulla. Fusce cursus ante tellus, non tempor magna pellentesque eu.
-                    Quisque egestas ultrices libero, sed vulputate libero tincidunt id. Mauris eleifend nunc ac ligula
-                    mollis, a semper libero consequat. Vestibulum ac elit vel erat molestie malesuada.
+                    Sphere Marketing Solutions partnered with a Vancouver service business to rebuild their digital
+                    presence from the ground up. We launched a clear website structure, improved SEO foundations, and
+                    ran targeted Meta and Google Ads to reach the right audience with measurable lead goals.
                 </p>
 
                 <p class="font-sans text-[#555555] leading-6 text-[17px] mb-10">
-                    Integer sit amet efficitur massa. Vivamus elementum commodo commodo. Vivamus ac dapibus sem, vitae
-                    convallis nunc. Mauris nec eleifend mi. Pellentesque in neque ut nisl luctus suscipit non in lectus.
-                    Aliquam quam nibh, viverra ac turpis a, tristique faucibus lectus. Praesent nunc nunc, tristique at
-                    sapien sed, accumsan ullamcorper odio.
+                    The campaign combined landing page updates, creative assets, and weekly performance reviews so the
+                    client could see what was working. Within the first months, organic visibility improved and paid
+                    channels delivered a steadier flow of qualified inquiries without wasting budget on broad targeting.
                 </p>
 
                 <h3 class="text-2xl md:text-3xl font-semibold text-[#20233F] mb-6">Project Gallery</h3>
 
                 <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] mb-12 divide-y divide-gray-100 p-8">
                     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                        <img src="{{ asset('images/project-1.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-2.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-3.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-4.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-1.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-2.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-3.jpg') }}" class="rounded-lg">
-                        <img src="{{ asset('images/project-4.jpg') }}" class="rounded-lg">
+                        <img src="{{ asset('images/project-1.jpg') }}" class="rounded-lg" alt="Project gallery 1">
+                        <img src="{{ asset('images/project-2.jpg') }}" class="rounded-lg" alt="Project gallery 2">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="rounded-lg" alt="Project gallery 3">
+                        <img src="{{ asset('images/project-4.jpg') }}" class="rounded-lg" alt="Project gallery 4">
+                        <img src="{{ asset('images/project-1.jpg') }}" class="rounded-lg" alt="Project gallery 5">
+                        <img src="{{ asset('images/project-2.jpg') }}" class="rounded-lg" alt="Project gallery 6">
+                        <img src="{{ asset('images/project-3.jpg') }}" class="rounded-lg" alt="Project gallery 7">
+                        <img src="{{ asset('images/project-4.jpg') }}" class="rounded-lg" alt="Project gallery 8">
                     </div>
                 </div>
 
                 <h3 class="text-2xl md:text-3xl font-semibold text-[#20233F] mb-6">Clients Review</h3>
 
-                <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-8 max-w-md">
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-8 max-w-md hover:-translate-y-1 transition duration-300">
 
                     <div class="flex items-center gap-4 mb-6">
-                        <img src="https://i.pravatar.cc/150?img=6" alt="Jhon Doe"
+                        <img src="https://i.pravatar.cc/150?img=6" alt="Faisal Raza"
                              class="size-17 rounded-full object-cover">
                         <div>
-                            <h4 class="text-[20px] font-bold text-[#20233F]">Jhon Doe</h4>
-                            <p class="text-[15px] text-[#777]">CEO & Founder</p>
+                            <h4 class="text-[20px] font-bold text-[#20233F]">Faisal Raza</h4>
+                            <p class="text-[15px] text-[#777]">Client Success Manager</p>
                         </div>
                     </div>
 
-                    <h3 class="text-2xl font-bold text-[#20233F] mb-4">Creative and effective work</h3>
+                    <h3 class="text-2xl font-bold text-[#20233F] mb-4">Clear plan, measurable results</h3>
 
                     <p class="font-sans text-[#555555] leading-6 text-[16px]">
-                        onumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
-                        consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit gubergren
-                        dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea sea no sed dolores
-                        diam nonumy, gubergren sit stet no diam kasd vero.
+                        We needed one partner for web and ads. Sphere kept the plan simple and focused on results we
+                        could measure. Communication was consistent, and the team adjusted creatives quickly when
+                        priorities shifted.
                     </p>
 
                 </div>
@@ -88,52 +84,52 @@
                 <div>
                     <h3 class="text-2xl md:text-3xl font-bold text-[#20233F] mb-4">Project Info</h3>
                     <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-5 space-y-3">
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            <span class="text-[#4761FF]">Project Name:</span> Marketing
+                        <div class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            <span class="text-[#4870F8]">Project Name:</span> Digital Marketing
+                        </div>
+                        <div class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            <span class="text-[#4870F8]">Client:</span> Local Service Brand
+                        </div>
+                        <div class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            <span class="text-[#4870F8]">Focus:</span> SEO & Paid Ads
+                        </div>
+                        <a href="https://spheremarketingsolutions.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F] hover:text-[#4870F8]">
+                            <span class="text-[#4870F8]">Project Link:</span> Sphere Site
                         </a>
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            <span class="text-[#4761FF]">Client Name:</span> John Doe
-                        </a>
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            <span class="text-[#4761FF]">Project Manager:</span> John Doe
-                        </a>
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            <span class="text-[#4761FF]">Project Link:</span> example.com
-                        </a>
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            <span class="text-[#4761FF]">Completed Date:</span> 01 Jan, 2026
-                        </a>
-                        <a href="#" class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            E-mail Marketing
-                        </a>
+                        <div class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            <span class="text-[#4870F8]">Completed:</span> 2025
+                        </div>
+                        <div class="flex items-center gap-1 border-l-4 border-gray-300 py-3 px-7 rounded-lg transition font-semibold text-[18px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Website Development
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="text-2xl md:text-3xl font-bold text-[#20233F] mb-4">Recent Projects</h3>
                     <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-5 space-y-3">
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg  hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                        <a href="{{ route('project-details') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg  hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
                             Digital Marketing
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Internet Marketing
+                        <a href="{{ route('project-details-alt') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            SEO & Content
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Content Marketing
+                        <a href="{{ route('projects') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Social Advertising
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Social Marketing
+                        <a href="{{ route('projects') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Shopify Stores
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            B2B Marketing
+                        <a href="{{ route('projects') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Video Editing
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            E-mail Marketing
+                        <a href="{{ route('contact') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Custom Software
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -141,21 +137,21 @@
 
                 <div>
                     <h3 class="text-2xl md:text-3xl font-semibold text-[#20233F] mb-4">Get A Free Quote</h3>
-                    <form class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-6 space-y-4">
+                    <form action="{{ route('contact') }}" method="get" class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-6 space-y-4">
                         <input type="text" placeholder="Your Name" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none">
-                        <input type="email" placeholder="Your Email" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
-                        <input type="text" placeholder="Your Mobile" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
-                        <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
+                        <input type="email" placeholder="Your Email" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
+                        <input type="text" placeholder="Your Mobile" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
+                        <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
                             <option>Choose A Service</option>
                             <option selected>Digital Marketing</option>
                             <option>SEO</option>
-                            <option>Content Marketing</option>
-                            <option>Social Marketing</option>
+                            <option>Website Development</option>
+                            <option>Social Media Advertising</option>
                         </select>
-                        <textarea rows="4" placeholder="Message" class="w-full rounded-xl border border-gray-300 px-5 py-3 text-[16px] outline-none focus:border-[#4761FF]"></textarea>
-                        <button type="button" class="w-full h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300">
+                        <textarea rows="4" placeholder="Message" class="w-full rounded-xl border border-gray-300 px-5 py-3 text-[16px] outline-none focus:border-[#4870F8]"></textarea>
+                        <a href="{{ route('contact') }}" class="w-full h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4870F8] to-[#6B8AFF] hover:opacity-90 duration-300 flex items-center justify-center">
                             Submit Now
-                        </button>
+                        </a>
                     </form>
                 </div>
 
@@ -164,12 +160,7 @@
         </div>
     </section>
 
-    <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#4761FF] text-white items-center justify-center shadow-lg z-50">
+    <button id="scrollTopBtn" class="hidden fixed bottom-6 right-6 w-12 h-12 rounded-full bg-[#4870F8] text-white items-center justify-center shadow-lg z-50">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 @endsection
-
-
-
-
-

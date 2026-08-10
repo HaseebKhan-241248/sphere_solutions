@@ -8,7 +8,11 @@
 ])
 
 @php
-    $members = $members ?? \App\Models\TeamMember::query()->active()->ordered()->get();
+    try {
+        $members = $members ?? \App\Models\TeamMember::query()->active()->ordered()->get();
+    } catch (\Throwable) {
+        $members = $members ?? collect();
+    }
 @endphp
 
 @if ($members->isNotEmpty())
@@ -16,7 +20,7 @@
         <div class="{{ $wrapperClass }}">
             <div class="{{ $innerClass }}">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-[#4761FF] text-lg tracking-wide block mb-3">
+                    <span class="text-[#4870F8] text-lg tracking-wide block mb-3">
                         {{ $eyebrow }}
                     </span>
                     <h2 class="text-[#0F172A] text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">

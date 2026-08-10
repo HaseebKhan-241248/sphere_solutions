@@ -7,6 +7,8 @@
 @theme {
     --font-sans: 'Montserrat', 'Poppins', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-brand: #4870F8;
+    --color-brand-dark: #3A5CE0;
 }
 
 /* Testimonial slider (pages) */
@@ -24,8 +26,8 @@
 }
 
 .active-center-card {
-    background-color: #4761FF !important;
-    border-color: #4761FF !important;
+    background-color: #4870F8 !important;
+    border-color: #4870F8 !important;
     transform: scale(1.03);
 }
 
@@ -52,9 +54,10 @@
 .testi-card {
     background: #fff;
     border-radius: 0.75rem;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
     padding: 3.5rem;
-    transition: transform .3s, background .4s, color .4s;
+    transition: transform .3s, background .4s, color .4s, border-color .3s;
     flex: 0 0 calc(33.333% - 1.34rem);
 }
 
@@ -86,12 +89,12 @@
 }
 
 .testi-card span {
-    color: #4761FF;
+    color: #4870F8;
     font-size: 1.25rem;
 }
 
 .testi-card.is-active {
-    background: #4761FF;
+    background: #4870F8;
     color: #fff;
 }
 

@@ -31,7 +31,7 @@
                     </time>
                 @endif
                 @foreach ($post->categories as $category)
-                    <span class="px-2 py-0.5 rounded bg-[#F1F3FA] text-[#4761FF]">{{ $category->name }}</span>
+                    <span class="px-2 py-0.5 rounded bg-[#EEF2FF] text-[#4870F8]">{{ $category->name }}</span>
                 @endforeach
                 @foreach ($post->tags as $tag)
                     <span class="px-2 py-0.5 rounded border border-gray-200 text-gray-600">#{{ $tag->name }}</span>
@@ -43,7 +43,7 @@
             </article>
 
             <div class="mt-12 pt-8 border-t border-gray-200">
-                <a href="{{ route('blog.index') }}" class="inline-flex items-center gap-2 text-[#4761FF] font-medium hover:gap-3 transition-all">
+                <a href="{{ route('blog.index') }}" class="inline-flex items-center gap-2 text-[#4870F8] font-medium hover:gap-3 transition-all">
                     <i class="fas fa-angle-double-left"></i> Back to Blog
                 </a>
             </div>
@@ -62,7 +62,7 @@
                                          loading="lazy">
                                 </div>
                                 <div class="p-5">
-                                    <h3 class="text-lg font-semibold text-[#1C2035] group-hover:text-[#4761FF] transition line-clamp-2">
+                                    <h3 class="text-lg font-semibold text-[#1C2035] group-hover:text-[#4870F8] transition line-clamp-2">
                                         {{ $relatedPost->title }}
                                     </h3>
                                 </div>

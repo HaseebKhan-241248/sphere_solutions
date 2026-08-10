@@ -75,38 +75,56 @@
 
                 <ul class="space-y-2 text-[15px] text-[#B0B9AE]">
                     <li>
-                        <a href="{{ route('terms-conditions') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Terms & Conditions
+                        <a href="{{ route('about') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>About
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('contact') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Contact Us
+                        <a href="{{ route('services') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Services
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('privacy-policy') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Privacy Policy
+                        <a href="{{ route('our-team') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Our Team
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('refund-policy') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <i class="fa-solid fa-angle-right mr-3"></i>Refund Policy
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ route('faqs') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                        <a href="{{ route('faqs') }}" class="inline-block hover:text-white transition-colors duration-300">
                             <i class="fa-solid fa-angle-right mr-3"></i>FAQs
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('blog.index') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                        <a href="{{ route('blog.index') }}" class="inline-block hover:text-white transition-colors duration-300">
                             <i class="fa-solid fa-angle-right mr-3"></i>Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('contact') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('privacy-policy') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('terms-conditions') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('refund-policy') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Refund Policy
                         </a>
                     </li>
                 </ul>

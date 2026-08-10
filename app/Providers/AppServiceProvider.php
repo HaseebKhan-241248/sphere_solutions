@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
         // utf8mb4 indexes: 255 chars = 1020 bytes, over MySQL's 1000-byte key limit
         Schema::defaultStringLength(191);
 
-        View::composer(['layout.app', 'partials.header', 'partials.footer', 'partials.whatsapp-chat', 'pages.contact'], function ($view): void {
+        View::composer(['layout.app', 'home', 'partials.header', 'partials.footer', 'partials.whatsapp-chat', 'pages.contact', 'pages.services', 'pages.quote'], function ($view): void {
             try {
                 $view->with('site', SiteSettings::all());
                 $view->with('siteLogoDesktop', SiteSettings::logoDesktopUrl());

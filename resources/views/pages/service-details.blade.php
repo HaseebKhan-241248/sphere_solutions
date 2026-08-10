@@ -8,15 +8,15 @@
             <div class="text-white px-4">
                 <h1 class="text-4xl md:text-7xl font-bold mb-4">Service Details</h1>
                 <p class="text-lg space-x-3">
-                    <a href="{{ route('home') }}" class="hover:text-[#4761FF]">Home</a>
+                    <a href="{{ route('home') }}" class="hover:text-[#4870F8]">Home</a>
                     <span>/</span>
-                    <span class="text-[#4761FF]"> Service Details</span>
+                    <span class="text-[#4870F8]"> Service Details</span>
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
+    <section data-aos="fade-up" data-aos-delay="100" class="py-16">
         <div class="max-w-[85%] mx-auto grid lg:grid-cols-3 gap-12">
 
             <div class="lg:col-span-2">
@@ -24,52 +24,50 @@
                 <img src="{{ asset('images/about-hero.jpg') }}"
                      alt="Digital Marketing Services" class="w-full h-105 object-cover rounded-lg mb-8">
 
-                <h2 class="text-3xl md:text-4xl font-bold text-[#20233F] mb-6">Digital Marketing Services</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#20233F] mb-6">Website, SEO & Digital Marketing</h2>
 
                 <p class="font-sans text-gray-600 leading-8 text-[17px] mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis luctus augue vitae vulputate.
-                    Nulla vel venenatis nisi. Fusce convallis, nibh id interdum ullamcorper, libero metus lacinia sapien,
-                    accumsan auctor erat libero id nulla. Fusce cursus ante tellus, non tempor magna pellentesque eu.
-                    Quisque egestas ultrices libero, sed vulputate libero tincidunt id. Mauris eleifend nunc ac ligula
-                    mollis, a semper libero consequat. Vestibulum ac elit vel erat molestie malesuada.
+                    Sphere Marketing Solutions helps Vancouver businesses transform their digital presence with
+                    websites that look sharp and perform reliably. We pair development with SEO so your pages can rank
+                    for the searches that matter, then support growth with social advertising, Google Ads, and creative
+                    content that keeps your brand consistent.
                 </p>
 
                 <p class="font-sans text-gray-600 leading-8 text-[17px] mb-10">
-                    Integer sit amet efficitur massa. Vivamus elementum commodo commodo. Vivamus ac dapibus sem, vitae
-                    convallis nunc. Mauris nec eleifend mi. Pellentesque in neque ut nisl luctus suscipit non in lectus.
-                    Aliquam quam nibh, viverra ac turpis a, tristique faucibus lectus. Praesent nunc nunc, tristique at
-                    sapien sed, accumsan ullamcorper odio.
+                    Whether you need a new storefront, Shopify management, YouTube channel support, or custom software
+                    to streamline operations, our team focuses on practical plans, clear timelines, and results you can
+                    measure. Partner with us to improve visibility, engagement, and conversions.
                 </p>
 
                 <h3 class="text-2xl md:text-3xl font-semibold text-[#20233F] mb-6">Our Work Process</h3>
 
                 <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] mb-12 divide-y divide-gray-100">
                     <div class="flex items-start gap-5 p-6">
-                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#F1F3FA] text-[#4761FF] flex items-center justify-center">1</div>
+                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#EEF2FF] text-[#4870F8] flex items-center justify-center">1</div>
                         <div>
                             <h4 class="text-lg md:text-2xl font-semibold text-[#20233F] mb-1">Research</h4>
-                            <p class="text-[#777] text-[15px] md:text-[18px]">Pellentesque in neque ut nisl luctus suscipit non in lectus.</p>
+                            <p class="text-[#777] text-[15px] md:text-[18px]">We review your goals, audience, competitors, and current digital footprint before recommending a plan.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-5 p-6">
-                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#F1F3FA] text-[#4761FF] flex items-center justify-center">2</div>
+                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#EEF2FF] text-[#4870F8] flex items-center justify-center">2</div>
                         <div>
                             <h4 class="text-lg md:text-2xl font-semibold text-[#20233F] mb-1">Concept</h4>
-                            <p class="text-[#777] text-[15px] md:text-[18px]">Pellentesque in neque ut nisl luctus suscipit non in lectus.</p>
+                            <p class="text-[#777] text-[15px] md:text-[18px]">We map messaging, structure, and campaign direction so every deliverable supports the same outcome.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-5 p-6">
-                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#F1F3FA] text-[#4761FF] flex items-center justify-center">3</div>
+                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#EEF2FF] text-[#4870F8] flex items-center justify-center">3</div>
                         <div>
                             <h4 class="text-lg md:text-2xl font-semibold text-[#20233F] mb-1">Development</h4>
-                            <p class="text-[#777] text-[15px] md:text-[18px]">Pellentesque in neque ut nisl luctus suscipit non in lectus.</p>
+                            <p class="text-[#777] text-[15px] md:text-[18px]">We build, optimize, and launch websites, creatives, and campaigns with room to iterate as data comes in.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-5 p-6">
-                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#F1F3FA] text-[#4761FF] flex items-center justify-center">4</div>
+                        <div class="size-16 text-2xl shrink-0 rounded-full bg-[#EEF2FF] text-[#4870F8] flex items-center justify-center">4</div>
                         <div>
                             <h4 class="text-lg md:text-2xl font-semibold text-[#20233F] mb-1">Finalization</h4>
-                            <p class="text-[#777] text-[15px] md:text-[18px]">Pellentesque in neque ut nisl luctus suscipit non in lectus.</p>
+                            <p class="text-[#777] text-[15px] md:text-[18px]">We refine based on performance, hand over clear reporting, and keep support available as you grow.</p>
                         </div>
                     </div>
                 </div>
@@ -85,8 +83,8 @@
                         </button>
                         <div class="faq-answer px-5">
                             <p class="text-[#777] text-[15px] pb-5">
-                                We offer SEO, social media management, content marketing, email campaigns, PPC
-                                advertising, and full-funnel digital strategy tailored to your business goals.
+                                We offer website development, SEO, social media advertising, Google and Facebook Ads,
+                                Shopify support, video editing, graphic design, YouTube management, and custom software.
                             </p>
                         </div>
                     </div>
@@ -124,8 +122,8 @@
             <aside class="space-y-8">
                 <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.1)] p-5 rounded-lg">
                     <div class="relative ">
-                        <input type="text" placeholder="Search..." class="w-full h-14 rounded-xl border border-gray-300 px-5 pr-14 text-[17px] outline-none focus:border-[#4761FF]">
-                        <button class="absolute right-1 top-1 h-12 w-12 rounded-lg text-[#4761FF] flex items-center justify-center">
+                        <input type="text" placeholder="Search..." class="w-full h-14 rounded-xl border border-gray-300 px-5 pr-14 text-[17px] outline-none focus:border-[#4870F8]">
+                        <button class="absolute right-1 top-1 h-12 w-12 rounded-lg text-[#4870F8] flex items-center justify-center">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
@@ -133,28 +131,28 @@
                 <div>
                     <h3 class="text-2xl font-bold text-[#20233F] mb-4">Our Services</h3>
                     <div class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-5 space-y-3">
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg  hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                        <a href="{{ route('services') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg  hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
                             Digital Marketing
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Internet Marketing
+                        <a href="{{ route('service-details') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Website Development
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Content Marketing
+                        <a href="{{ route('service-details') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            SEO Services
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            Social Marketing
+                        <a href="{{ route('services') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Social Media Ads
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            B2B Marketing
+                        <a href="{{ route('services') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Shopify & E-commerce
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
-                        <a href="#" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4761FF] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
-                            E-mail Marketing
+                        <a href="{{ route('contact') }}" class="flex items-center justify-between border-l-4 border-gray-300 py-3 px-7 rounded-lg hover:text-[#4870F8] transition font-bold text-[17px] shadow-[0_0_4px_rgba(0,0,0,0.15)] text-[#20233F]">
+                            Custom Software
                             <span class="size-3 p-3 rounded-sm border border-black flex items-center justify-center"><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -164,25 +162,25 @@
                     <h3 class="text-2xl md:text-3xl font-semibold text-[#20233F] mb-4">Get A Free Quote</h3>
                     <form class="bg-white rounded-lg shadow-[0_0_15px_5px_rgba(0,0,0,0.06)] p-6 space-y-4">
                         <input type="text" placeholder="Your Name" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none">
-                        <input type="email" placeholder="Your Email" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
-                        <input type="text" placeholder="Your Mobile" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
-                        <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4761FF]">
+                        <input type="email" placeholder="Your Email" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
+                        <input type="text" placeholder="Your Mobile" class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
+                        <select class="w-full h-14 rounded-xl border border-gray-300 px-5 text-[16px] outline-none focus:border-[#4870F8]">
                             <option>Choose A Service</option>
                             <option selected>Digital Marketing</option>
                             <option>SEO</option>
-                            <option>Content Marketing</option>
-                            <option>Social Marketing</option>
+                            <option>Website Development</option>
+                            <option>Social Media Advertising</option>
                         </select>
-                        <textarea rows="4" placeholder="Message" class="w-full rounded-xl border border-gray-300 px-5 py-3 text-[16px] outline-none focus:border-[#4761FF]"></textarea>
-                        <button type="button" class="w-full h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4761FF] to-[#5C6CFF] hover:opacity-90 duration-300">
+                        <textarea rows="4" placeholder="Message" class="w-full rounded-xl border border-gray-300 px-5 py-3 text-[16px] outline-none focus:border-[#4870F8]"></textarea>
+                        <a href="{{ route('contact') }}" class="w-full h-14 rounded-xl text-white text-lg bg-linear-to-r from-[#4870F8] to-[#6B8AFF] hover:opacity-90 duration-300 flex items-center justify-center">
                             Submit Now
-                        </button>
+                        </a>
                     </form>
                 </div>
 
                 <div class="bg-white shadow-[0_0_15px_5px_rgba(0,0,0,0.1)]  rounded-lg p-8 text-center">
-                    <h3 class="text-xl md:text-3xl font-semibold text-[#20233F] mb-6">Interested with this service?</h3>
-                    <a href="#" class="inline-block bg-[#4761FF] hover:bg-indigo-700 text-white font-medium px-8 py-4 rounded-lg transition">
+                    <h3 class="text-xl md:text-3xl font-semibold text-[#20233F] mb-6">Interested in this service?</h3>
+                    <a href="{{ route('contact') }}" class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-medium px-8 py-4 rounded-lg transition">
                         Let's work together
                     </a>
                 </div>

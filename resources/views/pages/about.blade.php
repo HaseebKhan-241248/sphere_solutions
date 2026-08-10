@@ -18,7 +18,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">About</span>
+                    <span class="text-[#4870F8] font-semibold">About</span>
                 </nav>
             </div>
 
@@ -33,7 +33,7 @@
 
 
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#4761FF] text-lg tracking-wide block mb-3">
+                <span class="text-[#4870F8] text-lg tracking-wide block mb-3">
                     Features
                 </span>
                     <h2 class="text-[#0F172A] text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
@@ -48,7 +48,7 @@
 
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
-                            <img src="{{ asset('images/icon-1.png') }}" class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                            <img src="{{ asset('images/icon-1.png') }}" class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -70,7 +70,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-2.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -91,7 +91,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-3.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -112,7 +112,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-4.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -133,7 +133,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-1.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -155,7 +155,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-2.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -176,7 +176,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-3.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -197,7 +197,7 @@
                         <!-- Icon Wrapper -->
                         <div class="mb-6">
                             <img src="{{ asset('images/icon-4.png') }}"
-                                 class="bg-[#F1F3FA] rounded-full w-16 transition duration-300">
+                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
                         </div>
 
                         <!-- Title Text -->
@@ -225,8 +225,8 @@
 
             <!-- Play Button Container -->
             {{-- <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
-                <button class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4761FF] text-white rounded-full flex items-center justify-center shadow-2xl relative group xl:translate-x-[150px]">
-                    <span class="absolute inset-0 bg-[#4761FF] rounded-full animate-ping opacity-40 duration-600"></span>
+                <button class="w-20 h-20 lg:w-24 lg:h-24 bg-[#4870F8] text-white rounded-full flex items-center justify-center shadow-2xl relative group xl:translate-x-[150px]">
+                    <span class="absolute inset-0 bg-[#4870F8] rounded-full animate-ping opacity-40 duration-600"></span>
 
                     <svg class="w-6 h-6 lg:w-8 lg:h-8 fill-current ml-1 relative z-10" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
@@ -237,7 +237,7 @@
             <div class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[42%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
 
                 <!-- About Us Subtitle -->
-                <span class="text-[#4761FF] font-medium text-lg tracking-wide block mb-5">
+                <span class="text-[#4870F8] font-medium text-lg tracking-wide block mb-5">
                     About Us
                 </span>
 
@@ -280,8 +280,8 @@
 
                 <div class="pb-2">
                     <a href="{{ route('contact') }}"
-                       class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
-                        Explore More
+                       class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-8 py-3 rounded-full transition shadow-md hover:shadow-lg text-sm tracking-wide">
+                        Contact Us
                     </a>
                 </div>
             </div>

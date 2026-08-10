@@ -28,7 +28,7 @@
                         };
                     @endphp
                     <li class="opacity-0 -translate-x-8 transition-all duration-500 {{ $delay }} group-hover:opacity-100 group-hover:translate-x-0">
-                        <a class="w-9 h-9 flex items-center justify-center bg-white text-[#4761FF] rounded-full shadow hover:bg-[#4761FF] hover:text-white transition duration-200"
+                        <a class="w-9 h-9 flex items-center justify-center bg-white text-[#4870F8] rounded-full shadow hover:bg-[#4870F8] hover:text-white transition duration-200"
                            href="{{ $url }}"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -52,7 +52,7 @@
     <h5 class="text-[#0F172A] transition-colors duration-300 text-lg font-semibold mb-1">
         {{ $member->name }}
     </h5>
-    <span class="text-[#4761FF] transition-colors duration-300 text-sm">
+    <span class="text-[#4870F8] transition-colors duration-300 text-sm">
         {{ $member->role }}
     </span>
 </div>

@@ -17,7 +17,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">404 Error</span>
+                    <span class="text-[#4870F8] font-semibold">404 Error</span>
                 </nav>
             </div>
         </div>
@@ -26,7 +26,7 @@
     <section class="min-h-[80vh] flex items-center justify-center px-4 py-12 md:py-24">
         <div class="max-w-xl w-full text-center flex flex-col items-center">
 
-            <div class="text-[#4761FF] mb-6">
+            <div class="text-[#4870F8] mb-6">
                 <svg class="w-20 h-20 md:w-24 md:h-24 stroke-current fill-none" stroke-width="1.5" viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -48,7 +48,7 @@
             </p>
 
             <a href="#"
-               class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-full transition duration-200 text-base tracking-wide shadow-md">
+               class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-8 py-3.5 rounded-full transition duration-200 text-base tracking-wide shadow-md">
                 Go Back To Home
             </a>
 

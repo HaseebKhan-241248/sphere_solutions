@@ -19,7 +19,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">FAQs</span>
+                    <span class="text-[#4870F8] font-semibold">FAQs</span>
                 </nav>
             </div>
 
@@ -31,7 +31,7 @@
         <div class="lg:max-w-[55%] w-full p-4 mx-auto">
 
             <div class="text-center mb-12">
-                <span class="text-[#4761FF] text-[18px] text-base tracking-wide block mb-2">
+                <span class="text-[#4870F8] text-[18px] text-base tracking-wide block mb-2">
                     General FAQs
                 </span>
                 <h2 class="text-[#0F172A] text-3xl lg:text-5xl font-extrabold tracking-tight">
@@ -44,7 +44,7 @@
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
 
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
 
                         <span>1. What sort of services do we offer?</span>
 
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>2. Which industries do we offer work for?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>3. What technologies do we work on?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>4. What details do I need to provide?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>5. Do we sign an NDA to ensure your data privacy?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>6. What is our stance regarding intellectual property?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>7. Do I get any support for the product developed?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@
                 </div>
 
                 <div class="faq-item bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300">
-                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 focus:ring-inset focus:bg-indigo-50 focus:font-bold focus:text-[#4057E6]">
+                    <button class="faq-btn w-full flex items-center justify-between p-5 text-left text-[#555555] font-semibold font-sans text-sm sm:text-base cursor-pointer border-2 border-transparent rounded-lg outline-none transition-all duration-300 focus:outline-none focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30 focus:ring-inset focus:bg-[#EEF2FF] focus:font-bold focus:text-[#4870F8]">
                         <span>8. How much time will it take for the completion of my project?</span>
                         <svg class="faq-icon w-5 h-5 text-slate-400 transform transition-all duration-300 shrink-0"
                              fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,7 +175,7 @@
     <div data-aos="fade-up" data-aos-delay="100" class="lg:max-w-[55%] w-full mx-auto bg-white rounded-xl shadow-[0_25px_60px_rgba(0,0,0,0.1)] border border-slate-100/80 p-8 sm:p-10 text-center mb-24">
         <h3 class="text-[#0F172A] text-2xl sm:text-3xl font-extrabold tracking-tight mb-6">Have More Questions?</h3>
         <a href="{{ route('contact') }}"
-           class="inline-block bg-[#4761FF] hover:bg-blue-700 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition duration-200 text-sm sm:text-base">
+           class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition duration-200 text-sm sm:text-base">
             Contact Us
         </a>
     </div>

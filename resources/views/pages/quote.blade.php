@@ -17,7 +17,7 @@
                 <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
                     <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
                     <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] font-semibold">Quote</span>
+                    <span class="text-[#4870F8] font-semibold">Quote</span>
                 </nav>
             </div>
         </div>
@@ -30,8 +30,8 @@
 
                 <div>
 
-                <span class="text-[#4761FF] text-xl font-medium">
-                    Get A Quote
+                <span class="text-[#4870F8] text-xl font-medium">
+                    Contact Us
                 </span>
 
                     <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
@@ -40,26 +40,23 @@
                     </h2>
 
                     <p class="text-gray-500 text-[16px] leading-7 mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                        sed stet lorem sit clita duo justo.
+                        Tell us what you need — a new website, more leads, better SEO, or ongoing creative support.
+                        We'll review your goals and suggest a clear next step.
                     </p>
 
                     <p class="text-gray-500 text-[16px] leading-7 mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                        sed stet lorem sit clita duo justo.
+                        Most conversations start with a short call or message. You'll hear back within one business day.
                     </p>
 
-                    <a href="#" class="inline-flex overflow-hidden rounded-xl border border-[#4761FF]">
+                    <a href="tel:{{ $sitePhoneTel ?? '+16043137091' }}" class="inline-flex overflow-hidden rounded-xl border border-[#4870F8]">
 
                     <span
-                        class="size-14 bg-linear-to-r from-[#4761FF] to-[#5C6CFF] flex items-center justify-center text-white text-lg">
+                        class="size-14 bg-linear-to-r from-[#4870F8] to-[#6B8AFF] flex items-center justify-center text-white text-lg">
                         <i class="fa-solid fa-phone"></i>
                     </span>
 
-                        <span class="px-4 flex items-center text-[#4761FF] text-xl font-medium bg-white">
-                        +1 (604) 313-7091
+                        <span class="px-4 flex items-center text-[#4870F8] text-xl font-medium bg-white">
+                        {{ $site[\App\Support\SiteSettings::PHONE] ?? '+1 (604) 313-7091' }}
                     </span>
 
                     </a>
