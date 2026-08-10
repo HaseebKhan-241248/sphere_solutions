@@ -691,3 +691,53 @@ body {
     object-position: top center;
     display: block;
 }
+
+/* Service card "Learn more" CTA */
+.service-learn-more-wrap {
+    margin: -1px auto 0;
+    width: 78%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    z-index: 30;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.group:hover .service-learn-more-wrap {
+    height: 2.75rem;
+    opacity: 1;
+}
+
+.service-learn-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    width: 100%;
+    background: linear-gradient(135deg, #4870F8 0%, #3A5CE0 100%);
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 0 12px 28px rgba(72, 112, 248, 0.35);
+    transition: background 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+.service-learn-more:hover {
+    background: linear-gradient(135deg, #3A5CE0 0%, #2F4FCC 100%);
+    box-shadow: 0 14px 32px rgba(72, 112, 248, 0.45);
+    color: #fff;
+}
+
+.service-learn-more i {
+    font-size: 0.8rem;
+    transition: transform 0.25s ease;
+}
+
+.service-learn-more:hover i {
+    transform: translateX(4px);
+}

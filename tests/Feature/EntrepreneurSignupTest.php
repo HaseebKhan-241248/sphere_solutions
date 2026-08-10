@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Mail\EntrepreneurSignupAdminMail;
+use App\Mail\EntrepreneurSignupUserMail;
 use App\Models\EntrepreneurSignup;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -20,7 +21,7 @@ class EntrepreneurSignupTest extends TestCase
             ->assertSee('Join Sphere’s Global Entrepreneur Network', false);
     }
 
-    public function test_signup_stores_submission_and_sends_admin_email(): void
+    public function test_signup_stores_submission_and_sends_admin_and_user_emails(): void
     {
         Mail::fake();
         config(['contact.admin_email' => 'info@spheremarketingsolutions.com']);
@@ -54,6 +55,11 @@ class EntrepreneurSignupTest extends TestCase
         Mail::assertSent(EntrepreneurSignupAdminMail::class, function (EntrepreneurSignupAdminMail $mail) {
             return $mail->hasTo('info@spheremarketingsolutions.com')
                 && $mail->signup->email === 'alex@example.com';
+        });
+
+        Mail::assertSent(EntrepreneurSignupUserMail::class, function (EntrepreneurSignupUserMail $mail) {
+            return $mail->hasTo('alex@example.com')
+                && $mail->signup->name === 'Alex Entrepreneur';
         });
     }
 

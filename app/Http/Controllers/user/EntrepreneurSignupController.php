@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\user;
 
 use App\Actions\EntrepreneurSignup\SendEntrepreneurSignupEmailAction;
+use App\Actions\EntrepreneurSignup\SendEntrepreneurSignupUserEmailAction;
 use App\Actions\EntrepreneurSignup\StoreEntrepreneurSignupAction;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreEntrepreneurSignupRequest;
@@ -21,6 +22,7 @@ class EntrepreneurSignupController extends Controller
         StoreEntrepreneurSignupRequest $request,
         StoreEntrepreneurSignupAction $storeSignup,
         SendEntrepreneurSignupEmailAction $sendSignupEmail,
+        SendEntrepreneurSignupUserEmailAction $sendSignupUserEmail,
     ): JsonResponse|RedirectResponse {
     
         if (filled($request->input('hp_field'))) {
@@ -39,6 +41,7 @@ class EntrepreneurSignupController extends Controller
                 route('entrepreneur-signup'),
             );
             $sendSignupEmail->handle($signup);
+            $sendSignupUserEmail->handle($signup);
         } catch (Throwable $exception) {
             report($exception);
 

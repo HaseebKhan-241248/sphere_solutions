@@ -43,10 +43,9 @@
                     </p>
                 </div>
 
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('service-details') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('service-details') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -68,10 +67,9 @@
                     </p>
                 </div>
 
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('service-details') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('service-details') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -92,10 +90,9 @@
                         Campaigns that grow engagement, visibility, and conversions across channels.
                     </p>
                 </div>
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('service-details') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('service-details') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -116,10 +113,9 @@
                         Reach your target audience effectively with Meta and Google Ads that drive measurable results.
                     </p>
                 </div>
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('service-details') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('service-details') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -141,10 +137,9 @@
                         Elevate your content and brand image with professional creative services.
                     </p>
                 </div>
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('contact') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('contact') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -165,10 +160,9 @@
                         Grow your channel so your videos reach their maximum potential through smarter promotion.
                     </p>
                 </div>
-                <div
-                    class="mx-auto h-0 border border-gray-200 overflow-hidden opacity-0 group-hover:h-10  group-hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center justify-center bg-white/60 rounded-b-lg w-[70%] z-[999]">
-                    <a href="{{ route('contact') }}" class="text-[#4870F8] text-sm font-medium cursor-pointer">
-                        Read More <i class="fas fa-angle-double-right"></i>
+                <div class="service-learn-more-wrap">
+                    <a href="{{ route('contact') }}" class="service-learn-more">
+                        Read More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
