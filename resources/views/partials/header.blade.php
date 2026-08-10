@@ -100,6 +100,13 @@
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('contact') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('entrepreneur-signup') }}"
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4761FF] font-semibold' : 'font-medium' }} hover:text-[#4761FF] cursor-pointer transition-all duration-300 relative group font-sans">
+                        Join Us
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4761FF] transition-all duration-300 group-hover:w-full {{ request()->routeIs('entrepreneur-signup') ? 'w-full' : '' }}"></span>
+                    </a>
+                </li>
             </ul>
 
             <div class="shrink-0">
@@ -144,6 +151,9 @@
             <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4761FF]">FAQs</a></li>
             <li><a href="{{ route('our-team') }}" class="block py-2 hover:text-[#4761FF]">Our Team</a></li>
             <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4761FF]">Contact</a></li>
+            <li><a href="{{ route('entrepreneur-signup') }}"
+                   class="block py-2 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4761FF]' : 'hover:text-[#4761FF]' }}">Join Us</a>
+            </li>
             <li class="pt-3">
                 <a href="tel:{{ $sitePhoneTel }}"
                    class="block text-center bg-[#4761FF] text-white font-medium py-3 rounded-full transition-all duration-300 hover:bg-[#3548d4] hover:shadow-[0_10px_25px_rgba(71,97,255,0.35)]">

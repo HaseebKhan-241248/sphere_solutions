@@ -109,6 +109,12 @@
                             <i class="fa-solid fa-angle-right mr-3"></i>Blog
                         </a>
                     </li>
+
+                    <li>
+                        <a href="{{ route('entrepreneur-signup') }}" class="inline-block hover:text-white hover:scale-110 transform transition-all duration-300 ease-in-out">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Entrepreneur Network
+                        </a>
+                    </li>
                 </ul>
 
             </div>
