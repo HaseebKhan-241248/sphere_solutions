@@ -28,8 +28,13 @@ class TeamMemberForm
                             ->disk('public')
                             ->directory('team-members')
                             ->imageEditor()
+                            ->imageAspectRatio('3:4')
+                            ->automaticallyOpenImageEditorForAspectRatio()
+                            ->automaticallyResizeImagesMode('cover')
+                            ->automaticallyResizeImagesToWidth('600')
+                            ->automaticallyResizeImagesToHeight('800')
                             ->maxSize(4096)
-                            ->helperText('Upload a square portrait when possible. Existing seeded images may use paths like images/CEO.png.'),
+                            ->helperText('Upload a portrait photo. It will be cropped to 600×800 (3:4) to match the team card. Use the crop tool to keep the face fully visible.'),
                         TextInput::make('sort_order')
                             ->numeric()
                             ->default(0)

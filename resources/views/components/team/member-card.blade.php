@@ -12,9 +12,9 @@
     ]);
 @endphp
 
-<div {{ $attributes->merge(['class' => 'bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group']) }}>
-    <div class="relative overflow-hidden mb-5">
-        <img class="w-full h-[320px] " src="{{ $member->photoUrl() }}" alt="{{ $member->name }}">
+<div {{ $attributes->merge(['class' => 'team-member-card bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden text-center pb-6 transition duration-700 border border-slate-50 relative group h-full']) }}>
+    <div class="team-member-photo relative overflow-hidden mb-5 bg-slate-100">
+        <img src="{{ $member->photoUrl() }}" alt="{{ $member->name }}">
 
         @if (count($socials))
             <ul class="absolute top-4 left-4 flex flex-col space-y-2">

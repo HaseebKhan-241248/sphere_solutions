@@ -21,19 +21,7 @@ class TeamMemberSeeder extends Seeder
                 'role' => 'Co Founder',
                 'photo' => 'images/CoFounder.png',
                 'sort_order' => 2,
-            ],
-            [
-                'name' => 'Boris Johnson',
-                'role' => 'Executive Manager',
-                'photo' => 'images/team-3.jpg',
-                'sort_order' => 3,
-            ],
-            [
-                'name' => 'Robert Jordan',
-                'role' => 'Digital Marketer',
-                'photo' => 'images/team-4.jpg',
-                'sort_order' => 4,
-            ],
+            ],            
         ];
 
         foreach ($members as $member) {

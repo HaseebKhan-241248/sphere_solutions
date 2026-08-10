@@ -47,6 +47,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('our-team') }}"
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                        Team Members
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('our-team') ? 'w-full' : '' }}"></span>
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('contact') }}"
                        class="nav-link flex items-center gap-1 {{ request()->routeIs('contact') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
                         Contact
@@ -101,7 +108,9 @@
             <li><a href="{{ route('blog.index') }}"
                    class="block py-2 {{ request()->routeIs('blog.*') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Blog</a>
             </li>
-            <li><a href="{{ route('our-team') }}" class="block py-2 hover:text-[#4870F8]">Our Team</a></li>
+            <li><a href="{{ route('our-team') }}"
+                   class="block py-2 {{ request()->routeIs('our-team') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Team Members</a>
+            </li>
             <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4870F8]">FAQs</a></li>
             <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4870F8]">Contact</a></li>
             <li><a href="{{ route('entrepreneur-signup') }}"
