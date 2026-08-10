@@ -61,6 +61,14 @@
     flex: 0 0 calc(33.333% - 1.34rem);
 }
 
+/* Tighten side padding on tablet / mid desktop where cards are narrower */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .testi-card {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
 .testi-card:hover {
     transform: translateY(-0.5rem);
 }
