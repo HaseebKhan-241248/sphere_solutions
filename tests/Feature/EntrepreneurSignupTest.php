@@ -34,7 +34,7 @@ class EntrepreneurSignupTest extends TestCase
             'portfolio_url' => 'https://linkedin.com/in/alex',
             'message' => 'Looking to collaborate with Sphere.',
             'consent' => '1',
-            'website' => '',
+            'hp_field' => '',
         ];
 
         $response = $this->postJson(route('entrepreneur-signup.store'), $payload);
@@ -67,7 +67,7 @@ class EntrepreneurSignupTest extends TestCase
             'location' => 'Nowhere',
             'main_skill' => 'Spam',
             'consent' => '1',
-            'website' => 'http://spam.example',
+            'hp_field' => 'http://spam.example',
         ]);
 
         $response->assertOk();

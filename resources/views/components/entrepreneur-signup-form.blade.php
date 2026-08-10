@@ -5,19 +5,11 @@
 @php
     $formAction = $action ?? route('entrepreneur-signup.store');
     $fieldClass = 'w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500';
-    $mainSkills = [
-        'Digital Marketing',
-        'SEO Specialist',
-        'Content Creator',
-        'Web Developer',
-        'Graphic Designer',
-        'Sales',
-        'Social Media Marketing',
-        'Copywriting',
-        'Freelance / Generalist',
-        'Startup Founder',
-        'Other',
-    ];
+    $oldAdditionalSkills = collect(preg_split('/\s*,\s*/', (string) old('additional_skills', '')))
+        ->map(fn (string $skill) => trim($skill))
+        ->filter()
+        ->values()
+        ->all();
 @endphp
 
 <form
@@ -29,13 +21,10 @@
 >
     @csrf
 
-    <div data-entrepreneur-success class="hidden rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700"></div>
     <div data-entrepreneur-error class="hidden rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-600 font-medium"></div>
 
     @if (session('entrepreneur_success'))
-        <div class="rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            {{ session('entrepreneur_success') }}
-        </div>
+        <div data-entrepreneur-flash-success class="hidden" aria-hidden="true">{{ session('entrepreneur_success') }}</div>
     @endif
 
     @if (session('entrepreneur_error'))
@@ -44,10 +33,10 @@
         </div>
     @endif
 
-    {{-- Honeypot anti-spam field (hidden from users) --}}
+    {{-- Honeypot anti-spam field (hidden from users; cleared by JS before submit) --}}
     <div class="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden="true">
-        <label for="website">Website</label>
-        <input type="text" name="website" id="website" value="" tabindex="-1" autocomplete="off">
+        <label for="hp_field">Leave blank</label>
+        <input type="text" name="hp_field" id="hp_field" value="" tabindex="-1" autocomplete="new-password" data-hp>
     </div>
 
     <div class="w-full">
@@ -84,32 +73,46 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div class="w-full">
-            <label for="main_skill" class="block text-sm font-medium text-[#1C2035] mb-2">Main Skill <span class="text-red-500">*</span></label>
-            <select name="main_skill" id="main_skill"
-                    class="{{ $fieldClass }} @error('main_skill') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 bg-white"
-                    data-field="main_skill"
-                    aria-describedby="error-main_skill">
-                <option value="" disabled {{ old('main_skill') ? '' : 'selected' }}>Select your main skill</option>
-                @foreach ($mainSkills as $skill)
-                    <option value="{{ $skill }}" @selected(old('main_skill') === $skill)>{{ $skill }}</option>
+    <div class="w-full">
+        <label for="main_skill" class="block text-sm font-medium text-[#1C2035] mb-2">Main Skill <span class="text-red-500">*</span></label>
+        <input type="text" name="main_skill" id="main_skill" placeholder="e.g. Digital Marketing, SEO, Web Development" maxlength="150" value="{{ old('main_skill') }}"
+               class="{{ $fieldClass }} @error('main_skill') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+               data-field="main_skill"
+               aria-describedby="error-main_skill">
+        <p id="error-main_skill" data-error-for="main_skill" class="contact-error-text {{ $errors->has('main_skill') ? '' : 'hidden' }}">
+            {{ $errors->first('main_skill') }}
+        </p>
+    </div>
+
+    <div class="w-full" data-skills-tags>
+        <label for="additional_skills_input" class="block text-sm font-medium text-[#1C2035] mb-2">Additional Skills</label>
+        <div
+            class="min-h-[56px] w-full border border-slate-300 rounded-lg px-3 py-2 flex flex-wrap items-center gap-2 focus-within:border-[#4761FF] focus-within:ring-4 focus-within:ring-indigo-200 transition @error('additional_skills') contact-field-error @enderror"
+            data-skills-box
+            data-field="additional_skills"
+        >
+            <div class="flex flex-wrap gap-2" data-skills-list>
+                @foreach ($oldAdditionalSkills as $skill)
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-[#EEF1FF] text-[#1C2035] text-sm px-3 py-1" data-skill-tag="{{ $skill }}">
+                        {{ $skill }}
+                        <button type="button" class="cursor-pointer text-[#4761FF] hover:text-[#3548d4] leading-none" data-remove-skill aria-label="Remove {{ $skill }}">&times;</button>
+                    </span>
                 @endforeach
-            </select>
-            <p id="error-main_skill" data-error-for="main_skill" class="contact-error-text {{ $errors->has('main_skill') ? '' : 'hidden' }}">
-                {{ $errors->first('main_skill') }}
-            </p>
+            </div>
+            <input
+                type="text"
+                id="additional_skills_input"
+                data-skills-input
+                placeholder="Type a skill and press Enter"
+                maxlength="80"
+                class="flex-1 min-w-[160px] border-0 outline-none bg-transparent py-2 text-sm placeholder-slate-500"
+            >
         </div>
-        <div class="w-full">
-            <label for="additional_skills" class="block text-sm font-medium text-[#1C2035] mb-2">Additional Skills</label>
-            <input type="text" name="additional_skills" id="additional_skills" placeholder="e.g. SEO, Canva, WordPress" maxlength="500" value="{{ old('additional_skills') }}"
-                   class="{{ $fieldClass }} @error('additional_skills') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
-                   data-field="additional_skills"
-                   aria-describedby="error-additional_skills">
-            <p id="error-additional_skills" data-error-for="additional_skills" class="contact-error-text {{ $errors->has('additional_skills') ? '' : 'hidden' }}">
-                {{ $errors->first('additional_skills') }}
-            </p>
-        </div>
+        <input type="hidden" name="additional_skills" value="{{ old('additional_skills') }}" data-skills-value>
+        <p class="mt-1.5 text-xs text-slate-500">Press Enter after each skill to add it.</p>
+        <p id="error-additional_skills" data-error-for="additional_skills" class="contact-error-text {{ $errors->has('additional_skills') ? '' : 'hidden' }}">
+            {{ $errors->first('additional_skills') }}
+        </p>
     </div>
 
     <div class="w-full">

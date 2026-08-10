@@ -22,7 +22,8 @@ class EntrepreneurSignupController extends Controller
         StoreEntrepreneurSignupAction $storeSignup,
         SendEntrepreneurSignupEmailAction $sendSignupEmail,
     ): JsonResponse|RedirectResponse {
-        if (filled($request->input('website'))) {
+    
+        if (filled($request->input('hp_field'))) {
             $fakeSuccess = 'Thank you for signing up. We have received your information and will contact you if there is a suitable opportunity.';
 
             if ($request->expectsJson()) {
