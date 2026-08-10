@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'admin_email' => env('ADMIN_EMAIL', 'admin@sp'),
+    'admin_email' => env('ADMIN_EMAIL', 'info@spheremarketingsolutions.com'),
 
     'admin_name' => env('ADMIN_NAME', 'Admin'),
 

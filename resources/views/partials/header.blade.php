@@ -53,6 +53,13 @@
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('contact') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('entrepreneur-signup') }}"
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                        Join Us
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('entrepreneur-signup') ? 'w-full' : '' }}"></span>
+                    </a>
+                </li>
             </ul>
 
             <div class="shrink-0">
@@ -97,6 +104,9 @@
             <li><a href="{{ route('our-team') }}" class="block py-2 hover:text-[#4870F8]">Our Team</a></li>
             <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4870F8]">FAQs</a></li>
             <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4870F8]">Contact</a></li>
+            <li><a href="{{ route('entrepreneur-signup') }}"
+                   class="block py-2 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Join Us</a>
+            </li>
             <li class="pt-3">
                 <a href="{{ route('contact') }}"
                    class="block text-center bg-[#4870F8] text-white font-medium py-3 rounded-full transition-all duration-300 hover:bg-[#3A5CE0]">

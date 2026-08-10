@@ -4,6 +4,7 @@ use App\Http\Controllers\user\AboutController;
 use App\Http\Controllers\user\BlogController;
 use App\Http\Controllers\user\CheckoutController;
 use App\Http\Controllers\user\ContactController;
+use App\Http\Controllers\user\EntrepreneurSignupController;
 use App\Http\Controllers\user\ErrorsController;
 use App\Http\Controllers\user\FAQSController;
 use App\Http\Controllers\user\FeaturesController;
@@ -31,6 +32,10 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/entrepreneur-signup', [EntrepreneurSignupController::class, 'index'])->name('entrepreneur-signup');
+Route::post('/entrepreneur-signup', [EntrepreneurSignupController::class, 'store'])
+    ->middleware('throttle:10,1')
+    ->name('entrepreneur-signup.store');
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');
 Route::get('/privacy-policy', [PrivacyPolicyController::class, 'index'])->name('privacy-policy');
 Route::get('/terms-conditions', [TermsConditionsController::class, 'index'])->name('terms-conditions');

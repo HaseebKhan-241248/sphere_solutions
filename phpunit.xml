@@ -28,10 +28,10 @@
         <env name="DB_PORT" value="3306"/>
         <env name="DB_DATABASE" value="sphere_testing"/>
         <env name="DB_USERNAME" value="root"/>
-        <env name="DB_PASSWORD" value="password"/>
+        <env name="DB_PASSWORD" value=""/>
         <env name="DB_URL" value=""/>
         <env name="MAIL_MAILER" value="array"/>
-        <env name="ADMIN_EMAIL" value="admin@sp"/>
+        <env name="ADMIN_EMAIL" value="info@spheremarketingsolutions.com"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="PULSE_ENABLED" value="false"/>

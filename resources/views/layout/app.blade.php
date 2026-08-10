@@ -44,7 +44,9 @@
 </button>
 
 <script src="{{ asset('js/home.js') }}"></script>
+<script src="{{ asset('js/toast.js') }}"></script>
 <script src="{{ asset('js/contact-form.js') }}"></script>
+<script src="{{ asset('js/entrepreneur-signup-form.js') }}"></script>
 <script src="{{ asset('js/newsletter-form.js') }}"></script>
 <script src="{{ asset('js/faqs.js') }}"></script>
 <script src="{{ asset('js/project-detail.js') }}"></script>

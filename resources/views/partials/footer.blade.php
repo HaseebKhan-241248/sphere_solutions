@@ -105,6 +105,12 @@
                     </li>
 
                     <li>
+                        <a href="{{ route('entrepreneur-signup') }}" class="inline-block hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-angle-right mr-3"></i>Entrepreneur Network
+                        </a>
+                    </li>
+
+                    <li>
                         <a href="{{ route('contact') }}" class="inline-block hover:text-white transition-colors duration-300">
                             <i class="fa-solid fa-angle-right mr-3"></i>Contact Us
                         </a>
