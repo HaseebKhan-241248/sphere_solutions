@@ -8,14 +8,14 @@ use Illuminate\Console\Command;
 class ImportWordPressBlogsCommand extends Command
 {
     protected $signature = 'blog:import-wordpress
-        {path : Absolute path to the WordPress WXR (.xml) export}
+        {path? : Path to the WordPress WXR (.xml) export}
         {--skip-images : Import posts without downloading images}';
 
     protected $description = 'Import published WordPress posts (and images) into the Laravel blog CMS';
 
     public function handle(WordPressBlogImporter $importer): int
     {
-        $path = (string) $this->argument('path');
+        $path = (string) ($this->argument('path') ?: public_path('imports/spheremarketingsolutions.WordPress.2026-08-02.xml'));
 
         if (! is_file($path)) {
             $this->error("File not found: {$path}");
@@ -23,7 +23,7 @@ class ImportWordPressBlogsCommand extends Command
             return self::FAILURE;
         }
 
-        $this->info('Importing published WordPress posts...');
+        $this->info("Importing published WordPress posts from: {$path}");
 
         $result = $importer->import($path, downloadImages: ! $this->option('skip-images'));
 
