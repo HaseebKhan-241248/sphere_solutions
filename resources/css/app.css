@@ -405,12 +405,12 @@ body {
 }
 
 .policy-content a {
-    color: #4761ff;
+    color: #4870F8;
     text-decoration: underline;
 }
 
 .policy-content blockquote {
-    border-left: 4px solid #4761ff;
+    border-left: 4px solid #4870F8;
     padding-left: 1rem;
     margin: 1.25rem 0;
     color: #475569;
@@ -470,7 +470,7 @@ body {
 }
 
 .blog-content a {
-    color: #4761ff;
+    color: #4870F8;
     text-decoration: underline;
 }
 
@@ -483,7 +483,7 @@ body {
 }
 
 .blog-content blockquote {
-    border-left: 4px solid #4761ff;
+    border-left: 4px solid #4870F8;
     padding-left: 1rem;
     margin: 1.25rem 0;
     color: #475569;

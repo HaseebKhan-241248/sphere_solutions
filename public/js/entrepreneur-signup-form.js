@@ -82,7 +82,7 @@
 
             const removeBtn = document.createElement('button');
             removeBtn.type = 'button';
-            removeBtn.className = 'cursor-pointer text-[#4761FF] hover:text-[#3548d4] leading-none';
+            removeBtn.className = 'cursor-pointer text-[#4870F8] hover:text-[#3A5CE0] leading-none';
             removeBtn.setAttribute('data-remove-skill', '');
             removeBtn.setAttribute('aria-label', 'Remove ' + skill);
             removeBtn.innerHTML = '&times;';

@@ -15,11 +15,7 @@
                     About Us
                 </h1>
 
-                <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
-                    <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
-                    <span class="text-slate-300">/</span>
-                    <span class="text-[#4870F8] font-semibold">About</span>
-                </nav>
+                <x-page-breadcrumb current="About" />
             </div>
 
         </div>
@@ -58,12 +54,12 @@
 
                         <!-- Paragraph Text -->
                         <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
+                            Visually appealing, functionally robust websites built for your business goals.
                         </p>
 
                     </div>
 
-                    <!-- Card 2: Professional Staff -->
+                    <!-- Card 2 -->
                     <div
                         class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
 
@@ -80,11 +76,11 @@
 
                         <!-- Paragraph Text -->
                         <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
+                            Social ads, SEO, and campaigns that reach your audience and drive conversions.
                         </p>
                     </div>
 
-                    <!-- Card 3: Fair Prices -->
+                    <!-- Card 3 -->
                     <div
                         class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
 
@@ -101,11 +97,11 @@
 
                         <!-- Paragraph Text -->
                         <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
+                            Video editing and graphic design that elevate your brand image and content.
                         </p>
                     </div>
 
-                    <!-- Card 4: 24/7 Support -->
+                    <!-- Card 4 -->
                     <div
                         class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
 
@@ -122,92 +118,7 @@
 
                         <!-- Paragraph Text -->
                         <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
-                        </p>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div
-                        class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
-
-                        <!-- Icon Wrapper -->
-                        <div class="mb-6">
-                            <img src="{{ asset('images/icon-1.png') }}"
-                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
-                        </div>
-
-                        <!-- Title Text -->
-                        <h4 class="text-[#0F172A] text-xl font-medium mb-3 transition-colors duration-300">
-                            Web Development
-                        </h4>
-
-                        <!-- Paragraph Text -->
-                        <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
-                        </p>
-
-                    </div>
-
-                    <!-- Card 2: Professional Staff -->
-                    <div
-                        class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
-
-                        <!-- Icon Wrapper -->
-                        <div class="mb-6">
-                            <img src="{{ asset('images/icon-2.png') }}"
-                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
-                        </div>
-
-                        <!-- Title Text -->
-                        <h4 class="text-[#0F172A] text-xl font-medium mb-3 transition-colors duration-300">
-                            Digital Marketing
-                        </h4>
-
-                        <!-- Paragraph Text -->
-                        <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
-                        </p>
-                    </div>
-
-                    <!-- Card 3: Fair Prices -->
-                    <div
-                        class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
-
-                        <!-- Icon Wrapper -->
-                        <div class="mb-6">
-                            <img src="{{ asset('images/icon-3.png') }}"
-                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
-                        </div>
-
-                        <!-- Title Text -->
-                        <h4 class="text-[#0F172A] text-xl font-medium mb-3 transition-colors duration-300">
-                            Creative Content
-                        </h4>
-
-                        <!-- Paragraph Text -->
-                        <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
-                        </p>
-                    </div>
-
-                    <!-- Card 4: 24/7 Support -->
-                    <div
-                        class="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.1)] p-6 transition duration-300 group">
-
-                        <!-- Icon Wrapper -->
-                        <div class="mb-6">
-                            <img src="{{ asset('images/icon-4.png') }}"
-                                 class="bg-[#EEF2FF] rounded-full w-16 transition duration-300">
-                        </div>
-
-                        <!-- Title Text -->
-                        <h4 class="text-[#0F172A] text-xl font-medium mb-3 transition-colors duration-300">
-                            Quick Support
-                        </h4>
-
-                        <!-- Paragraph Text -->
-                        <p class="text-[#555555] font-sans text-sm leading-relaxed transition-colors duration-300">
-                            Results-driven digital solutions tailored to your business goals.
+                            Our team is available Monday to Saturday to help with services and pricing.
                         </p>
                     </div>
 

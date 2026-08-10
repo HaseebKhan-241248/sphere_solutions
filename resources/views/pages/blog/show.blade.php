@@ -11,13 +11,10 @@
                 <h1 class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-4">
                     {{ $post->title }}
                 </h1>
-                <nav class="flex items-center justify-center space-x-2 text-white text-base font-medium">
-                    <a href="{{ route('home') }}" class="hover:underline transition text-slate-200">Home</a>
-                    <span class="text-slate-300">/</span>
-                    <a href="{{ route('blog.index') }}" class="hover:underline transition text-slate-200">Blog</a>
-                    <span class="text-slate-300">/</span>
-                    <span class="text-[#A5B4FC] font-semibold truncate max-w-[220px]">{{ $post->title }}</span>
-                </nav>
+                <x-page-breadcrumb
+                    :current="$post->title"
+                    :parents="[['label' => 'Blog', 'url' => route('blog.index')]]"
+                />
             </div>
         </div>
     </section>

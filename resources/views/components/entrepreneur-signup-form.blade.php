@@ -4,7 +4,7 @@
 
 @php
     $formAction = $action ?? route('entrepreneur-signup.store');
-    $fieldClass = 'w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4761FF] focus:bg-white transition duration-200 placeholder-slate-500';
+    $fieldClass = 'w-full border border-slate-300 rounded-lg px-4 py-4 text-sm focus:outline-none focus:border-[#4870F8] focus:bg-white transition duration-200 placeholder-slate-500';
     $oldAdditionalSkills = collect(preg_split('/\s*,\s*/', (string) old('additional_skills', '')))
         ->map(fn (string $skill) => trim($skill))
         ->filter()
@@ -42,7 +42,7 @@
     <div class="w-full">
         <label for="name" class="block text-sm font-medium text-[#1C2035] mb-2">Full Name <span class="text-red-500">*</span></label>
         <input type="text" name="name" id="name" placeholder="Your full name" maxlength="100" value="{{ old('name') }}"
-               class="{{ $fieldClass }} @error('name') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+               class="{{ $fieldClass }} @error('name') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                data-field="name"
                aria-describedby="error-name">
         <p id="error-name" data-error-for="name" class="contact-error-text {{ $errors->has('name') ? '' : 'hidden' }}">
@@ -54,7 +54,7 @@
         <div class="w-full">
             <label for="email" class="block text-sm font-medium text-[#1C2035] mb-2">Email Address <span class="text-red-500">*</span></label>
             <input type="email" name="email" id="email" placeholder="you@example.com" maxlength="255" value="{{ old('email') }}"
-                   class="{{ $fieldClass }} @error('email') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+                   class="{{ $fieldClass }} @error('email') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                    data-field="email"
                    aria-describedby="error-email">
             <p id="error-email" data-error-for="email" class="contact-error-text {{ $errors->has('email') ? '' : 'hidden' }}">
@@ -64,7 +64,7 @@
         <div class="w-full">
             <label for="location" class="block text-sm font-medium text-[#1C2035] mb-2">Country / City <span class="text-red-500">*</span></label>
             <input type="text" name="location" id="location" placeholder="e.g. Vancouver, Canada" maxlength="200" value="{{ old('location') }}"
-                   class="{{ $fieldClass }} @error('location') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+                   class="{{ $fieldClass }} @error('location') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                    data-field="location"
                    aria-describedby="error-location">
             <p id="error-location" data-error-for="location" class="contact-error-text {{ $errors->has('location') ? '' : 'hidden' }}">
@@ -76,7 +76,7 @@
     <div class="w-full">
         <label for="main_skill" class="block text-sm font-medium text-[#1C2035] mb-2">Main Skill <span class="text-red-500">*</span></label>
         <input type="text" name="main_skill" id="main_skill" placeholder="e.g. Digital Marketing, SEO, Web Development" maxlength="150" value="{{ old('main_skill') }}"
-               class="{{ $fieldClass }} @error('main_skill') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+               class="{{ $fieldClass }} @error('main_skill') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                data-field="main_skill"
                aria-describedby="error-main_skill">
         <p id="error-main_skill" data-error-for="main_skill" class="contact-error-text {{ $errors->has('main_skill') ? '' : 'hidden' }}">
@@ -87,7 +87,7 @@
     <div class="w-full" data-skills-tags>
         <label for="additional_skills_input" class="block text-sm font-medium text-[#1C2035] mb-2">Additional Skills</label>
         <div
-            class="min-h-[56px] w-full border border-slate-300 rounded-lg px-3 py-2 flex flex-wrap items-center gap-2 focus-within:border-[#4761FF] focus-within:ring-4 focus-within:ring-indigo-200 transition @error('additional_skills') contact-field-error @enderror"
+            class="min-h-[56px] w-full border border-slate-300 rounded-lg px-3 py-2 flex flex-wrap items-center gap-2 focus-within:border-[#4870F8] focus-within:ring-4 focus-within:ring-[#4870F8]/30 transition @error('additional_skills') contact-field-error @enderror"
             data-skills-box
             data-field="additional_skills"
         >
@@ -95,7 +95,7 @@
                 @foreach ($oldAdditionalSkills as $skill)
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-[#EEF1FF] text-[#1C2035] text-sm px-3 py-1" data-skill-tag="{{ $skill }}">
                         {{ $skill }}
-                        <button type="button" class="cursor-pointer text-[#4761FF] hover:text-[#3548d4] leading-none" data-remove-skill aria-label="Remove {{ $skill }}">&times;</button>
+                        <button type="button" class="cursor-pointer text-[#4870F8] hover:text-[#3A5CE0] leading-none" data-remove-skill aria-label="Remove {{ $skill }}">&times;</button>
                     </span>
                 @endforeach
             </div>
@@ -118,7 +118,7 @@
     <div class="w-full">
         <label for="portfolio_url" class="block text-sm font-medium text-[#1C2035] mb-2">LinkedIn / Portfolio / Website</label>
         <input type="text" name="portfolio_url" id="portfolio_url" placeholder="https://linkedin.com/in/your-profile" maxlength="500" value="{{ old('portfolio_url') }}"
-               class="{{ $fieldClass }} @error('portfolio_url') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+               class="{{ $fieldClass }} @error('portfolio_url') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                data-field="portfolio_url"
                aria-describedby="error-portfolio_url">
         <p id="error-portfolio_url" data-error-for="portfolio_url" class="contact-error-text {{ $errors->has('portfolio_url') ? '' : 'hidden' }}">
@@ -129,7 +129,7 @@
     <div class="w-full">
         <label for="message" class="block text-sm font-medium text-[#1C2035] mb-2">Short Message</label>
         <textarea name="message" id="message" rows="5" placeholder="Tell us a little about yourself and what you’re looking for" maxlength="5000"
-                  class="{{ $fieldClass }} resize-none @error('message') contact-field-error @enderror outline-none transition-all focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200"
+                  class="{{ $fieldClass }} resize-none @error('message') contact-field-error @enderror outline-none transition-all focus:border-[#4870F8] focus:ring-4 focus:ring-[#4870F8]/30"
                   data-field="message"
                   aria-describedby="error-message">{{ old('message') }}</textarea>
         <p id="error-message" data-error-for="message" class="contact-error-text {{ $errors->has('message') ? '' : 'hidden' }}">
@@ -140,7 +140,7 @@
     <div class="w-full">
         <label class="flex items-start gap-3 cursor-pointer">
             <input type="checkbox" name="consent" value="1" data-field="consent"
-                   class="mt-1 size-4 rounded border-slate-300 text-[#4761FF] focus:ring-[#4761FF] @error('consent') contact-field-error @enderror"
+                   class="mt-1 size-4 rounded border-slate-300 text-[#4870F8] focus:ring-[#4870F8] @error('consent') contact-field-error @enderror"
                    {{ old('consent') ? 'checked' : '' }}
                    aria-describedby="error-consent">
             <span class="text-sm text-[#555555] leading-relaxed">
@@ -154,7 +154,7 @@
 
     <div>
         <button type="submit" data-entrepreneur-submit
-                class="w-full sm:w-auto bg-[#4761FF] hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
+                class="w-full sm:w-auto bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
             <span data-submit-label>Submit Your Interest</span>
             <span data-submit-loading class="hidden">Submitting...</span>
         </button>

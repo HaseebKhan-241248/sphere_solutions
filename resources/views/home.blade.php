@@ -10,7 +10,7 @@
         <div class="relative max-w-7xl mx-auto h-full min-h-[85vh] md:min-h-screen px-6 flex items-center z-10">
             <div class="max-w-2xl text-white py-24">
                 <p class="text-lg md:text-xl mb-4 text-white/85">
-                    Welcome to <span class="font-semibold text-[#58C8E0]">Sphere Marketing Solutions</span>
+                    Welcome to <span class="font-semibold text-[#4870F8]">Sphere Marketing Solutions</span>
                 </p>
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 tracking-tight">
                     Modern marketing that helps your business grow
@@ -24,7 +24,7 @@
                         Contact Us
                     </a>
                     <a href="{{ route('services') }}"
-                       class="inline-block border-2 border-[#4870F8] text-[#58C8E0] hover:bg-[#4870F8]/15 px-8 py-3.5 rounded-full text-base font-semibold transition">
+                       class="inline-block border-2 border-[#4870F8] text-white hover:bg-[#4870F8]/15 px-8 py-3.5 rounded-full text-base font-semibold transition">
                         Our Services
                     </a>
                 </div>

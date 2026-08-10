@@ -15,11 +15,7 @@
                     Join Us
                 </h1>
 
-                <nav class="flex items-center justify-center space-x-2 text-white text-base">
-                    <a href="{{ route('home') }}" class="hover:underline text-[20px] transition text-slate-200">Home</a>
-                    <span class="text-slate-300">/</span>
-                    <span class="text-[#4F46E5] text-[20px]">Entrepreneur Network</span>
-                </nav>
+                <x-page-breadcrumb current="Entrepreneur Network" />
             </div>
 
         </div>
@@ -29,7 +25,7 @@
         <div class="max-w-[85%] mx-auto">
 
             <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-                <span class="text-[#4761FF] text-[18px] md:text-[20px] tracking-wide block mb-3">
+                <span class="text-[#4870F8] text-[18px] md:text-[20px] tracking-wide block mb-3">
                     Entrepreneur Network
                 </span>
                 <h2 class="text-[#1C2035] text-3xl md:text-[46px] font-bold tracking-tight leading-tight mb-5">
