@@ -78,8 +78,8 @@ if (slider) {
     }
 
     function visibleCards() {
-        if (window.innerWidth >= 1024) return 3;
-        if (window.innerWidth >= 768) return 2;
+        // Keep in sync with .testi-card flex widths in app.css (3 until mobile, then 1).
+        if (window.innerWidth >= 768) return 3;
         return 1;
     }
 
@@ -91,10 +91,8 @@ if (slider) {
     function activeCard() {
         [...slider.children].forEach(card => card.classList.remove("is-active"));
 
-        let index = cardCurrent;
-        if (visibleCards() === 3) {
-            index = cardCurrent + 1;
-        }
+        // Always highlight the middle card among the ones currently in view.
+        const index = cardCurrent + Math.floor((visibleCards() - 1) / 2);
 
         if (slider.children[index]) {
             slider.children[index].classList.add("is-active");

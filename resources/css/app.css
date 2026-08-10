@@ -58,7 +58,8 @@
     box-shadow: none;
     padding: 3.5rem;
     transition: transform .3s, background .4s, color .4s, border-color .3s;
-    flex: 0 0 calc(33.333% - 1.34rem);
+    /* 3 cards: two gaps of 2rem (gap-8) → (100% - 4rem) / 3 */
+    flex: 0 0 calc((100% - 4rem) / 3);
 }
 
 /* Tighten side padding on tablet / mid desktop where cards are narrower */
