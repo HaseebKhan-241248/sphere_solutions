@@ -296,9 +296,9 @@
 
                 <div>
 
-                    <h2 class="text-[36px] font-semibold text-[#20233F] mb-10">
+                   {{-- <h2 class="text-[36px] font-semibold text-[#20233F] mb-10">
                         Contact Us
-                    </h2>
+                    </h2>--}}
 
                     <x-contact-form />
 
