@@ -1,7 +1,7 @@
 @props([
     'members' => null,
     'eyebrow' => 'Our Team',
-    'title' => 'Our Expert People <br> Ready to Help You',
+    'title' => 'Meet Our Team',
     'gridClass' => 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8',
     'wrapperClass' => 'bg-white py-24 px-4 sm:px-6 lg:px-8',
     'innerClass' => 'max-w-[85%] mx-auto',

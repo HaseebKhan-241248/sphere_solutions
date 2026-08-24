@@ -11,17 +11,17 @@ class TeamMemberSeeder extends Seeder
     {
         $members = [
             [
-                'name' => 'Utkarsh Parathe',
+                'name' => 'Parathe U',
                 'role' => 'Founder & CEO',
                 'photo' => 'images/CEO.png',
                 'sort_order' => 1,
             ],
             [
-                'name' => 'Adam Crew',
+                'name' => 'Anirudha D',
                 'role' => 'Co Founder',
                 'photo' => 'images/CoFounder.png',
                 'sort_order' => 2,
-            ],            
+            ],
         ];
 
         foreach ($members as $member) {

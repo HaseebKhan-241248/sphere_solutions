@@ -8,24 +8,24 @@
         <div class="absolute inset-0 bg-[#0B1520]/70"></div>
 
         <div class="relative max-w-7xl mx-auto h-full min-h-[85vh] md:min-h-screen px-6 flex items-center z-10">
-            <div class="max-w-2xl text-white py-24">
+            <div class="max-w-2xl text-white py-24 px-0 md:px-10">
                 <p class="text-lg md:text-xl mb-4 text-white/85">
-                    Welcome to <span class="font-semibold text-[#4870F8]">Sphere Marketing Solutions</span>
+                    <span class="font-semibold text-[#4870F8]">Sphere Marketing Solutions</span>
                 </p>
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 tracking-tight">
-                    Modern marketing that helps your business grow
+                    Get your business seen by the right people
                 </h1>
                 <p class="text-base md:text-lg text-white/80 leading-relaxed mb-10 max-w-xl">
-                    Websites, SEO, social ads, and creative content — delivered with a clear plan and practical results.
+                    We bring strategy, creativity, and digital expertise together to help businesses build their brand and reach the people who matter most
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="{{ route('contact') }}"
                        class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] px-8 py-3.5 rounded-full text-base font-semibold transition">
-                        Contact Us
+                       Grow With Us
                     </a>
                     <a href="{{ route('services') }}"
                        class="inline-block border-2 border-[#4870F8] text-white hover:bg-[#4870F8]/15 px-8 py-3.5 rounded-full text-base font-semibold transition">
-                        Our Services
+                        Explore Our Services
                     </a>
                 </div>
             </div>
@@ -35,8 +35,12 @@
     <section class="py-16">
 
         <div class="max-w-[85%] mx-auto bg-[#F7FAFC]">
-            <div
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 border border-slate-200 rounded-[5px]">
+            <div class="text-center mb-12">
+                <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">
+                    Everything your business needs to grow online
+                </h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 border border-slate-200 rounded-[5px]">
 
                 <!-- Card 1 -->
                 <div data-aos="fade-up" data-aos-delay="100"
@@ -52,7 +56,7 @@
 
                         <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
                             style="font-weight: 600;">
-                            Web Development
+                            Built Your Website
                         </h3>
 
                         <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
@@ -74,11 +78,11 @@
 
                         <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
                             style="font-weight: 600;">
-                            Digital Marketing
+                            Reach More Customer
                         </h3>
 
                         <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            Social ads, SEO, and campaigns that reach your audience and drive conversions.
+                            Get your business in front of the right people through Google, social media, and online advertising.
                         </p>
                     </div>
                 </div>
@@ -122,7 +126,7 @@
                         </h3>
 
                         <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            Our team is available Monday to Saturday to help with services and pricing.
+                            We're here when you need updates, improvements, or help with your digital presence
                         </p>
                     </div>
                 </div>
@@ -159,7 +163,7 @@
 
                 <!-- Main Heading -->
                 <h2 class="text-[#0F172A] text-3xl lg:text-4xl font-semibold tracking-tight leading-[45px] mb-5">
-                    The Best Marketing Agency to Improve Your Businesses
+                    Marketing Solutions Built for Business Growth
                 </h2>
 
                 <!-- Paragraph text -->
@@ -376,12 +380,12 @@
                 <div class="bg-white border border-slate-200 rounded-xl p-6">
                     <span class="text-[#4870F8] font-semibold text-sm">01</span>
                     <h3 class="text-lg font-semibold text-[#0F172A] mt-2 mb-2">Understand</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">We learn your goals, audience, and what success looks like for your business.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">We learn about your business, goals, audience, and challenges.</p>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-xl p-6">
                     <span class="text-[#4870F8] font-semibold text-sm">02</span>
                     <h3 class="text-lg font-semibold text-[#0F172A] mt-2 mb-2">Plan</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">You get a clear scope, timeline, and package so expectations are aligned early.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">We create a clear strategy tailored to your goals and priorities.</p>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-xl p-6">
                     <span class="text-[#4870F8] font-semibold text-sm">03</span>
@@ -391,7 +395,7 @@
                 <div class="bg-white border border-slate-200 rounded-xl p-6">
                     <span class="text-[#4870F8] font-semibold text-sm">04</span>
                     <h3 class="text-lg font-semibold text-[#0F172A] mt-2 mb-2">Grow</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">After launch we support improvements, campaigns, and ongoing marketing needs.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">We monitor performance, optimize results, and help your business keep growing.</p>
                 </div>
             </div>
         </div>
@@ -609,8 +613,7 @@
                 </span>
 
                     <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
-                        Need Our Expert Help?
-                        We're Here!
+                        Ready to Grow Your Business?
                     </h2>
 
                     <p class="text-gray-500 text-[16px] leading-7 mb-4">
@@ -667,9 +670,7 @@
                     <h1 class="mb-4 text-[#4870F8] text-xl">Testimonial</h1>
 
                     <h2 class="text-[20px] md:text-[45px] font-semibold leading-[1.1] text-[#20233F] md:max-w-2xl">
-                        What Clients Say
-                        <br>
-                        About Our Services!
+                        What Our Clients Say
                     </h2>
                 </div>
 
