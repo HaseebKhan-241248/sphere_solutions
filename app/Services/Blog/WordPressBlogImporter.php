@@ -27,6 +27,8 @@ class WordPressBlogImporter
 
     private int $imagesDownloaded = 0;
 
+    private int $imagesLinked = 0;
+
     /** @var list<string> */
     private array $errors = [];
 
@@ -36,6 +38,7 @@ class WordPressBlogImporter
      *     updated: int,
      *     skipped: int,
      *     images_downloaded: int,
+     *     images_linked: int,
      *     errors: list<string>
      * }
      */
@@ -61,9 +64,9 @@ class WordPressBlogImporter
 
         $items = $xml->channel->item ?? [];
 
-        if ($downloadImages) {
-            $this->prefetchAttachmentImages($items);
-        }
+        // Always map attachment URLs to local storage when files already exist.
+        // Only download missing files when $downloadImages is true.
+        $this->prefetchAttachmentImages($items, $downloadImages);
 
         foreach ($items as $item) {
             $postType = (string) ($item->children('wp', true)->post_type ?? '');
@@ -87,11 +90,12 @@ class WordPressBlogImporter
             'updated' => $this->updated,
             'skipped' => $this->skipped,
             'images_downloaded' => $this->imagesDownloaded,
+            'images_linked' => $this->imagesLinked,
             'errors' => $this->errors,
         ];
     }
 
-    private function prefetchAttachmentImages(iterable $items): void
+    private function prefetchAttachmentImages(iterable $items, bool $downloadImages): void
     {
         foreach ($items as $item) {
             $postType = (string) ($item->children('wp', true)->post_type ?? '');
@@ -104,7 +108,7 @@ class WordPressBlogImporter
                 continue;
             }
 
-            $this->downloadImage($url);
+            $this->resolveImage($url, $downloadImages);
         }
     }
 
@@ -132,10 +136,7 @@ class WordPressBlogImporter
         }
 
         $content = $this->sanitizeImportedHtml($content);
-
-        if ($downloadImages) {
-            $content = $this->localizeContentImages($content);
-        }
+        $content = $this->localizeContentImages($content, $downloadImages);
 
         $featuredImage = $this->extractFirstLocalImagePath($content);
 
@@ -254,7 +255,7 @@ class WordPressBlogImporter
         return trim($html);
     }
 
-    private function localizeContentImages(string $html): string
+    private function localizeContentImages(string $html, bool $downloadImages): string
     {
         if (trim($html) === '') {
             return $html;
@@ -267,7 +268,7 @@ class WordPressBlogImporter
                 continue;
             }
 
-            $this->downloadImage($url);
+            $this->resolveImage($url, $downloadImages);
         }
 
         if ($this->urlMap === []) {
@@ -339,7 +340,12 @@ class WordPressBlogImporter
         return $output;
     }
 
-    private function downloadImage(string $url): ?string
+    /**
+     * Map a remote WordPress image URL to storage/app/public/blogs/{Y}/{m}/{file}.
+     * If the file already exists locally, it is linked (no download).
+     * Missing files are downloaded only when $downloadImages is true.
+     */
+    private function resolveImage(string $url, bool $downloadImages = true): ?string
     {
         $url = html_entity_decode($url, ENT_QUOTES | ENT_HTML5);
 
@@ -369,8 +375,13 @@ class WordPressBlogImporter
 
         if (Storage::disk('public')->exists($storagePath)) {
             $this->urlMap[$url] = $localUrl;
+            $this->imagesLinked++;
 
             return $localUrl;
+        }
+
+        if (! $downloadImages) {
+            return null;
         }
 
         try {

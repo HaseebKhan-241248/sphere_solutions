@@ -114,6 +114,7 @@ class BlogModuleTest extends TestCase
         $this->assertSame(1, $result['imported']);
         $this->assertSame(0, $result['skipped']);
         $this->assertGreaterThanOrEqual(1, $result['images_downloaded']);
+        $this->assertArrayHasKey('images_linked', $result);
 
         $post = BlogPost::query()->where('slug', 'sample-imported-post')->first();
         $this->assertNotNull($post);
@@ -124,6 +125,34 @@ class BlogModuleTest extends TestCase
         $this->assertTrue($post->categories->contains('slug', 'digital-marketing'));
         $this->assertTrue($post->tags->contains('slug', 'seo-tips'));
         Storage::disk('public')->assertExists('blogs/2024/08/demo.png');
+    }
+
+    public function test_wordpress_importer_links_existing_local_images_without_download(): void
+    {
+        Storage::fake('public');
+        Storage::disk('public')->put('blogs/2024/08/demo.png', 'already-here');
+
+        Http::fake();
+
+        $xmlPath = storage_path('framework/testing/wordpress-sample-link.xml');
+        if (! is_dir(dirname($xmlPath))) {
+            mkdir(dirname($xmlPath), 0777, true);
+        }
+
+        file_put_contents($xmlPath, $this->sampleWxr());
+
+        $result = app(WordPressBlogImporter::class)->import($xmlPath, downloadImages: false);
+
+        $this->assertSame(1, $result['imported']);
+        $this->assertSame(0, $result['images_downloaded']);
+        $this->assertGreaterThanOrEqual(1, $result['images_linked']);
+
+        $post = BlogPost::query()->where('slug', 'sample-imported-post')->first();
+        $this->assertNotNull($post);
+        $this->assertStringContainsString('/storage/blogs/2024/08/demo.png', $post->content);
+        $this->assertSame('blogs/2024/08/demo.png', $post->featured_image);
+
+        Http::assertNothingSent();
     }
 
     private function sampleWxr(): string

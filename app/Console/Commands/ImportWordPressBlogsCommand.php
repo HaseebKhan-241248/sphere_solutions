@@ -9,9 +9,9 @@ class ImportWordPressBlogsCommand extends Command
 {
     protected $signature = 'blog:import-wordpress
         {path? : Path to the WordPress WXR (.xml) export}
-        {--skip-images : Import posts without downloading images}';
+        {--skip-images : Do not download images; only link files already in storage/app/public/blogs}';
 
-    protected $description = 'Import published WordPress posts (and images) into the Laravel blog CMS';
+    protected $description = 'Import published WordPress posts into the Laravel blog CMS (links existing storage images by default path blogs/{Y}/{m}/{file})';
 
     public function handle(WordPressBlogImporter $importer): int
     {
@@ -23,9 +23,14 @@ class ImportWordPressBlogsCommand extends Command
             return self::FAILURE;
         }
 
-        $this->info("Importing published WordPress posts from: {$path}");
+        $downloadImages = ! $this->option('skip-images');
 
-        $result = $importer->import($path, downloadImages: ! $this->option('skip-images'));
+        $this->info("Importing published WordPress posts from: {$path}");
+        $this->info($downloadImages
+            ? 'Images: link existing local files, download only if missing.'
+            : 'Images: link existing local files only (no downloads).');
+
+        $result = $importer->import($path, downloadImages: $downloadImages);
 
         $this->table(
             ['Metric', 'Count'],
@@ -33,6 +38,7 @@ class ImportWordPressBlogsCommand extends Command
                 ['Imported', $result['imported']],
                 ['Updated', $result['updated']],
                 ['Skipped', $result['skipped']],
+                ['Images linked (local)', $result['images_linked']],
                 ['Images downloaded', $result['images_downloaded']],
                 ['Errors', count($result['errors'])],
             ],
