@@ -22,6 +22,13 @@ class TeamMemberSeeder extends Seeder
                 'photo' => 'images/CoFounder.png',
                 'sort_order' => 2,
             ],
+
+            [
+                'name' => 'Sheraz khan',
+                'role' => 'Marketing Director',
+                'photo' => 'images/MarketingDirector.png',
+                'sort_order' => 2,
+            ],
         ];
 
         foreach ($members as $member) {

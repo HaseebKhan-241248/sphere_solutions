@@ -1,7 +1,7 @@
 <!-- Desktop Header: logo + nav + Contact Us -->
 <header class="hidden lg:block bg-white text-[#0F172A] border-b border-slate-100 overflow-hidden relative z-40"
         data-aos="fade-down" data-aos-duration="600">
-    <div class="max-w-[92%] xl:max-w-[85%] mx-auto px-6 sm:px-0">
+    <div class="max-w-[85%] mx-auto px-6 sm:px-0">
         <div class="flex items-center justify-between py-3 gap-4">
 
             <a href="{{ route('home') }}" class="shrink-0 hover:opacity-90 transition">
@@ -70,8 +70,7 @@
             </ul>
 
             <div class="shrink-0 hidden xl:block">
-                <a href="{{ route('contact') }}"
-                   class="whitespace-nowrap bg-[#4870F8] text-white text-md font-semibold px-6 py-2.5 rounded-full transition-all duration-300 hover:bg-[#3A5CE0] active:scale-100">
+                <a href="{{ route('contact') }}" class="whitespace-nowrap bg-[#4870F8] text-white text-md font-semibold px-6 py-2.5 rounded-full transition-all duration-300 hover:bg-[#3A5CE0] active:scale-100">
                     Contact Us
                 </a>
             </div>
@@ -81,23 +80,19 @@
 </header>
 
 <!-- Mobile Navigation -->
-<nav id="navBar" class="lg:hidden relative z-40 bg-white border-b border-slate-100">
+<nav id="navBar" class="block lg:hidden relative z-40 bg-white border-b border-slate-100">
     <div class="flex items-center justify-between py-3 px-6">
         <a href="{{ route('home') }}" class="shrink-0">
-            <img src="{{ $siteLogoMobile }}" alt="Sphere Marketing Solutions"
-                 class="h-14 w-14 object-contain rounded-full ring-1 ring-slate-100">
+            <img src="{{ $siteLogoMobile }}" alt="Sphere Marketing Solutions"   class="h-14 w-14 object-contain rounded-full ring-1 ring-slate-100">
         </a>
-        <button id="mobileMenuBtn" type="button"
-                class="flex flex-col w-10 h-10 items-center justify-center gap-1.5 border border-gray-200 rounded-lg focus:outline-none"
-                aria-label="Toggle menu">
+        <button id="mobileMenuBtn" type="button" class="flex flex-col w-10 h-10 items-center justify-center gap-1.5 border border-gray-200 rounded-lg focus:outline-none" aria-label="Toggle menu">
             <span class="w-5 h-[2px] bg-[#0F172A] transition-all duration-300"></span>
             <span class="w-5 h-[2px] bg-[#0F172A] transition-all duration-300"></span>
             <span class="w-5 h-[2px] bg-[#0F172A] transition-all duration-300"></span>
         </button>
     </div>
 
-    <div id="mobileNavPanel"
-         class="hidden absolute left-0 top-full w-full bg-white border-t border-gray-100 z-50 px-6 py-6">
+    <div id="mobileNavPanel" class="hidden absolute left-0 top-full w-full bg-white border-t border-gray-100 z-50 px-6 py-6">
         <ul class="flex flex-col gap-3 text-[17px] text-black font-medium">
             <li><a href="{{ route('home') }}"
                    class="block py-2 {{ request()->routeIs('home') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Home</a>
