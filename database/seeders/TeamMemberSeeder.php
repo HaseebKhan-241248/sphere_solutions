@@ -18,7 +18,7 @@ class TeamMemberSeeder extends Seeder
             ],
             [
                 'name' => 'Anirudha D',
-                'role' => 'Co Founder',
+                'role' => 'Marketing Consultant',
                 'photo' => 'images/CoFounder.png',
                 'sort_order' => 2,
             ],
