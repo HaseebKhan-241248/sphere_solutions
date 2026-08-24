@@ -7,7 +7,7 @@
         </video>
         <div class="absolute inset-0 bg-[#0B1520]/70"></div>
 
-        <div class="relative max-w-7xl mx-auto h-full min-h-[85vh] md:min-h-screen px-6 flex items-center z-10">
+        <div class="relative max-w-7xl 2xl:max-w-[85%] mx-auto h-full min-h-[85vh] md:min-h-screen px-6 sm:px-0 flex items-center z-10">
             <div class="max-w-2xl text-white py-24 px-0 md:px-10">
                 <p class="text-lg md:text-xl mb-4 text-white/85">
                     <span class="font-semibold text-[#4870F8]">Sphere Marketing Solutions</span>
