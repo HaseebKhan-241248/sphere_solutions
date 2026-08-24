@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             SiteSettingsSeeder::class,
             TeamMemberSeeder::class,
             UserSeeder::class,
+            TestimonialSeeder::class,
         ]);
     }
 }
