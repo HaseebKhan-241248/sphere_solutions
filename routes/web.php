@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\InvoicePdfController;
 use App\Http\Controllers\user\AboutController;
 use App\Http\Controllers\user\BlogController;
 use App\Http\Controllers\user\CheckoutController;
@@ -24,6 +25,11 @@ use App\Http\Controllers\user\ServicesDetailsController;
 use App\Http\Controllers\user\TermsConditionsController;
 use App\Http\Controllers\user\TestimonialsController;
 use Illuminate\Support\Facades\Route;
+
+Route::middleware(['web', 'auth'])->group(function (): void {
+    Route::get('/admin/invoices/{invoice}/pdf', InvoicePdfController::class)
+        ->name('admin.invoices.pdf');
+});
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
