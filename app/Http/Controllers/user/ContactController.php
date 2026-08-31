@@ -6,6 +6,7 @@ use App\Actions\Contact\SendContactEmailsAction;
 use App\Actions\Contact\StoreContactAction;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreContactRequest;
+use App\Models\ContactUs;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Throwable;
@@ -14,7 +15,8 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return view('pages.contact');
+        $contact_us = ContactUs::query()->first();
+        return view('pages.contact', compact('contact_us'));
     }
 
     public function store(
