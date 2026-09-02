@@ -48,10 +48,18 @@ class InvoicePdfService
                 'logo' => PdfImage::toDataUri($companyLogoPath) ?? PdfImage::toDataUri('images/sphere_logo.png'),
             ],
             'clientLogo' => PdfImage::toDataUri($client?->logo),
+            'ringImage' => self::ringImage(),
         ])
             ->setPaper('a4')
             ->setOption('isRemoteEnabled', false)
             ->setOption('isHtml5ParserEnabled', true);
+    }
+
+    private static function ringImage(): ?string
+    {
+        $path = 'images/invoice-ring.png';
+
+        return PdfImage::toDataUri($path);
     }
 
     private function sanitizeText(?string $text): string

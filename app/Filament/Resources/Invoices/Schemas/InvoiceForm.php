@@ -11,6 +11,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 
 class InvoiceForm
@@ -61,7 +62,11 @@ class InvoiceForm
                     ->numeric()
                     ->suffix('%')
                     ->default(5)
-                    ->required(),
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function (Get $get, Set $set): void {
+                        static::recalculateTotals($get, $set);
+                    }),
             ])->columns(3)->columnSpanFull(),
 
             Section::make('Line items')->schema([
@@ -78,14 +83,39 @@ class InvoiceForm
                             ->numeric()
                             ->live(onBlur: true)
                             ->suffix(fn (Get $get): string => strtoupper((string) ($get('../../currency') ?? '')))
-                            ->afterStateUpdated(function ($state, callable $set): void {
-                                $set('total', $state);
+                            ->afterStateUpdated(function ($state, Get $get, Set $set, TextInput $component): void {
+                                $amount = ($state === null || $state === '') ? 0 : (float) $state;
+                                $set('total', $amount);
+
+                                $items = $get('../../items') ?? [];
+                                $pathParts = explode('.', $component->getStatePath());
+                                $itemKey = $pathParts[count($pathParts) - 2] ?? null;
+
+                                if (is_array($items) && filled($itemKey) && isset($items[$itemKey]) && is_array($items[$itemKey])) {
+                                    $items[$itemKey]['price'] = $amount;
+                                    $items[$itemKey]['total'] = $amount;
+                                }
+
+                                static::recalculateTotals($get, $set, fromItem: true, itemsOverride: is_array($items) ? $items : []);
                             })
                             ->required(),
 
                         TextInput::make('total')
                             ->numeric()
+                            ->live(onBlur: true)
                             ->suffix(fn (Get $get): string => strtoupper((string) ($get('../../currency') ?? '')))
+                            ->afterStateUpdated(function ($state, Get $get, Set $set, TextInput $component): void {
+                                $amount = ($state === null || $state === '') ? 0 : (float) $state;
+                                $items = $get('../../items') ?? [];
+                                $pathParts = explode('.', $component->getStatePath());
+                                $itemKey = $pathParts[count($pathParts) - 2] ?? null;
+
+                                if (is_array($items) && filled($itemKey) && isset($items[$itemKey]) && is_array($items[$itemKey])) {
+                                    $items[$itemKey]['total'] = $amount;
+                                }
+
+                                static::recalculateTotals($get, $set, fromItem: true, itemsOverride: is_array($items) ? $items : []);
+                            })
                             ->required(),
 
                         TextInput::make('sort_order')
@@ -96,6 +126,15 @@ class InvoiceForm
                     ->defaultItems(1)
                     ->reorderable()
                     ->orderColumn('sort_order')
+                    ->live()
+                    ->afterStateUpdated(function ($state, Get $get, Set $set): void {
+                        static::recalculateTotals($get, $set, fromRepeater: true, itemsOverride: is_array($state) ? $state : []);
+                    })
+                    ->deleteAction(
+                        fn ($action) => $action->after(function (Get $get, Set $set): void {
+                            static::recalculateTotals($get, $set, fromRepeater: true);
+                        }),
+                    )
                     ->columnSpanFull(),
             ])->columnSpanFull(),
 
@@ -118,5 +157,65 @@ class InvoiceForm
                     ->suffix(fn (Get $get): string => strtoupper((string) ($get('currency') ?? ''))),
             ])->columns(3)->columnSpanFull(),
         ]);
+    }
+
+    protected static function recalculateTotals(
+        Get $get,
+        Set $set,
+        bool $fromItem = false,
+        bool $fromRepeater = false,
+        ?array $itemsOverride = null,
+    ): void {
+        if ($fromItem) {
+            $itemsPath = '../../items';
+            $gstPath = '../../gst_rate';
+            $subtotalPath = '../../subtotal';
+            $gstAmountPath = '../../gst_amount';
+            $grandTotalPath = '../../grand_total';
+        } elseif ($fromRepeater) {
+            $itemsPath = null;
+            $gstPath = '../gst_rate';
+            $subtotalPath = '../subtotal';
+            $gstAmountPath = '../gst_amount';
+            $grandTotalPath = '../grand_total';
+        } else {
+            $itemsPath = 'items';
+            $gstPath = 'gst_rate';
+            $subtotalPath = 'subtotal';
+            $gstAmountPath = 'gst_amount';
+            $grandTotalPath = 'grand_total';
+        }
+
+        if (is_array($itemsOverride)) {
+            $items = $itemsOverride;
+        } elseif ($itemsPath === null) {
+            $items = $get('.') ?? [];
+        } else {
+            $items = $get($itemsPath) ?? [];
+        }
+
+        if (! is_array($items)) {
+            $items = [];
+        }
+
+        $subtotal = collect($items)->sum(function ($item): float {
+            if (! is_array($item)) {
+                return 0.0;
+            }
+
+            if (filled($item['total'] ?? null)) {
+                return (float) $item['total'];
+            }
+
+            return (float) ($item['price'] ?? 0);
+        });
+
+        $gstRate = (float) ($get($gstPath) ?? 5);
+        $gstAmount = round($subtotal * ($gstRate / 100), 2);
+        $grandTotal = round($subtotal + $gstAmount, 2);
+
+        $set($subtotalPath, number_format($subtotal, 2, '.', ''));
+        $set($gstAmountPath, number_format($gstAmount, 2, '.', ''));
+        $set($grandTotalPath, number_format($grandTotal, 2, '.', ''));
     }
 }
