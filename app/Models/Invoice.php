@@ -14,6 +14,8 @@ class Invoice extends Model
 
     public const STATUS_PAID = 'paid';
 
+    public const NUMBER_PREFIX = 'TR';
+
     protected $fillable = [
         'client_id',
         'invoice_number',
@@ -35,6 +37,41 @@ class Invoice extends Model
             'gst_amount' => 'decimal:2',
             'grand_total' => 'decimal:2',
         ];
+    }
+
+    protected static function booted(): void
+    {
+        static::saving(function (Invoice $invoice): void {
+            if (filled($invoice->invoice_number)) {
+                $invoice->invoice_number = strtoupper(trim((string) $invoice->invoice_number));
+
+                return;
+            }
+
+            if (! $invoice->exists) {
+                $invoice->invoice_number = static::nextInvoiceNumber();
+            }
+        });
+    }
+
+    public static function nextInvoiceNumber(): string
+    {
+        $prefix = self::NUMBER_PREFIX;
+        $max = 0;
+
+        $numbers = static::query()
+            ->where('invoice_number', 'like', $prefix.'%')
+            ->pluck('invoice_number');
+
+        foreach ($numbers as $number) {
+            if (preg_match('/^'.preg_quote($prefix, '/').'(\d+)$/i', (string) $number, $matches)) {
+                $max = max($max, (int) $matches[1]);
+            }
+        }
+
+        $next = $max + 1;
+
+        return $prefix.str_pad((string) $next, max(3, strlen((string) $next)), '0', STR_PAD_LEFT);
     }
 
     public function client(): BelongsTo

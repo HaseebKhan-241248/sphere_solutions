@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Invoices\Pages;
 
 use App\Filament\Resources\Invoices\InvoiceResource;
+use App\Models\Invoice;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateInvoice extends CreateRecord
@@ -11,6 +12,10 @@ class CreateInvoice extends CreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
+        if (blank($data['invoice_number'] ?? null)) {
+            $data['invoice_number'] = Invoice::nextInvoiceNumber();
+        }
+
         return $this->applyTotals($data);
     }
 

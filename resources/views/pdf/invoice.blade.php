@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <style>
-
         @page {
             margin: 130px;
-        margin-right: 140px !important;
-        margin-left: 110px !important;
+            margin-right: 140px !important;
+            margin-left: 110px !important;
         }
 
         body {
-            font-family: DejaVu Sans, sans-serif;
+            font-family:
+                DejaVu Sans,
+                sans-serif;
             font-size: 10px;
             color: #1a2b3c;
         }
@@ -20,12 +21,6 @@
         table {
             border-collapse: collapse;
         }
-
-
-        /* =========================================================
-           TOP SECTION
-           ========================================================= */
-
         table.top {
             width: 100%;
             margin-bottom: 2px;
@@ -46,62 +41,50 @@
             width: 48%;
             text-align: right;
         }
+        .company-info {
+            width: 100%;
+        }
 
+        .company-info td {
+            vertical-align: middle;
+        }
 
-      /* =========================================================
-   COMPANY INFO
-   ========================================================= */
+        .logo-cell {
+            width: 66px;
+            vertical-align: middle;
+        }
 
-.company-info {
-    width: 100%;
-}
+        .company-logo {
+            width: 70px;
+            height: 70px;
+            display: block;
+        }
 
-.company-info td {
-    vertical-align: middle;
-}
+        .details-cell {
+            vertical-align: middle;
+            padding-left: 12px;
+            text-align: left;
+            padding-top: 18px;
+        }
 
-/* Logo column */
- .logo-cell {
-    width: 66px;
-    vertical-align: middle;
-}
+        .company-name {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1a2b3c;
+            letter-spacing: 0.1px;
+            line-height: 14px;
+            white-space: nowrap;
+            margin: 0;
+            padding: 0;
+        }
 
- .company-logo {
-    width: 70px;
-    height: 70px;
-    display: block;
-}
-
-/* Text column - vertically centered with logo */
- .details-cell {
-    vertical-align: middle;
-    padding-left: 12px;
-    text-align: left;
-    padding-top: 18px;
-}
-
- .company-name {
-    font-size: 13px;
-    font-weight: bold;
-    color: #1a2b3c;
-    letter-spacing: 0.1px;
-    line-height: 14px;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-}
-
- .company-tagline {
-    font-size: 9.5px;
-    color: #5a6a78;
-    line-height: 11px;
-    margin: 2px 0 0 0;
-    padding: 0;
-}
-
-        /* =========================================================
-           SECTIONS
-           ========================================================= */
+        .company-tagline {
+            font-size: 9.5px;
+            color: #5a6a78;
+            line-height: 11px;
+            margin: 2px 0 0 0;
+            padding: 0;
+        }
 
         .section-title {
             font-size: 10px;
@@ -138,33 +121,19 @@
             padding-left: 22px;
         }
 
-
-        /* =========================================================
-           RING GRAPHIC
-           ========================================================= */
-
         .ring-table {
             width: 300px;
             height: 300px;
 
             border-collapse: collapse;
 
-            background-image: url('{{ $ringImage }}');
+            background-image: url("{{ $ringImage }}");
             background-repeat: no-repeat;
 
-            /*
-             * Keep the ring itself perfectly centered.
-             */
             background-position: center left;
 
-            /*
-             * Ring size stays 300 x 300.
-             */
             background-size: 290px 290px;
 
-            /*
-             * Move the entire ring upward.
-             */
             margin: -64px auto 0 auto;
         }
 
@@ -178,27 +147,13 @@
             vertical-align: top;
         }
 
-
-        /* =========================================================
-           CONTENT INSIDE RING
-           ========================================================= */
-
         .ring-content {
             width: 300px;
 
-            /*
-             * This controls the vertical position of
-             * INVOICE + TYMEY logo as one group.
-             */
             padding-top: 92px;
 
             text-align: center;
         }
-
-
-        /* =========================================================
-           INVOICE TEXT
-           ========================================================= */
 
         .ring-invoice-text {
             width: 300px;
@@ -217,11 +172,6 @@
             line-height: 1;
         }
 
-
-        /* =========================================================
-           CLIENT / TYMEY LOGO
-           ========================================================= */
-
         .ring-logo-box {
             width: 300px;
 
@@ -239,18 +189,10 @@
             display: inline-block;
         }
 
-
-        /* =========================================================
-           INVOICE META
-           ========================================================= */
-
         .invoice-meta {
             width: 60px;
             text-align: right;
 
-            /*
-             * Keep invoice number aligned with the ring.
-             */
             margin: 6px auto 0 auto;
 
             color: #1a2b3c;
@@ -261,11 +203,6 @@
 
             font-size: 9.5px;
         }
-
-
-        /* =========================================================
-           ITEMS HEADER
-           ========================================================= */
 
         .items-head-wrap {
             width: 95%;
@@ -301,11 +238,6 @@
             text-align: right;
         }
 
-
-        /* =========================================================
-           ITEMS BODY
-           ========================================================= */
-
         .items-body-wrap {
             width: 95%;
             margin: 14px auto 0 auto;
@@ -340,14 +272,8 @@
             margin: 0 0 3px 0;
         }
 
-
-        /* =========================================================
-           NOTES + TOTALS
-           ========================================================= */
-
         .summary-wrap {
             width: 91%;
-            /* margin: 16px auto 0 auto; */
             background-color: transparent;
             border-radius: 0;
         }
@@ -441,655 +367,297 @@
             padding-top: 8px;
         }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+        .footer-band {
+            width: calc(100% + 88px);
+            margin-left: -44px;
+            height: 180px;
+            background-color: #15617c;
+            text-align: center;
+            page-break-inside: avoid;
+        }
 
-   .footer-band {
-    width: calc(100% + 88px);
-    margin-left: -44px;
-    height: 180px;
-    background-color: #15617C;
-    text-align: center;
-    page-break-inside: avoid;
-}
+        table.footer-center {
+            width: 100%;
+            margin-top: 30px;
+        }
 
-table.footer-center {
-    width: 100%;
-    margin-top: 40px;
-}
+        table.footer-pill {
+            width: 550px;
+            background-color: #0e1c28;
+            border-radius: 28px;
+            margin: 20px auto;
+            table-layout: fixed;
+        }
+        table.footer-pill > tbody > tr > td {
+            color: #ffffff;
+            font-size: 8.5px;
+            line-height: 12px;
+            padding: 8px 8px;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
 
-table.footer-pill {
-    width: 550px;
-    background-color: #0e1c28;
-    border-radius: 28px;
-    margin: 20px auto;
-    table-layout: fixed;
-}
-    table.footer-pill > tbody > tr > td {
-        color: #ffffff;
-        font-size: 8.5px;
-        line-height: 12px;
-        padding: 8px 8px;
-        white-space: nowrap;
-        vertical-align: middle;
-    }
+        table.footer-pill > tbody > tr > td:nth-child(1) {
+            width: 32%;
+        }
 
-    table.footer-pill > tbody > tr > td:nth-child(1) {
-        width: 32%;
-    }
+        table.footer-pill > tbody > tr > td:nth-child(2) {
+            width: 24%;
+        }
 
-    table.footer-pill > tbody > tr > td:nth-child(2) {
-        width: 24%;
-    }
+        table.footer-pill > tbody > tr > td:nth-child(3) {
+            width: 34%;
+        }
 
-    table.footer-pill > tbody > tr > td:nth-child(3) {
-        width: 34%;
-    }
+        .footer-item {
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 8px;
+        }
 
-    /* DOMPDF-SAFE ICON + TEXT ALIGNMENT */
+        .footer-item-inner {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
 
-    .footer-item {
-        vertical-align: middle;
-        text-align: center;
-        padding: 0 8px;
-    }
+        .footer-icon-cell {
+            width: 18px;
+            height: 18px;
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+        }
 
-    .footer-item-inner {
-        border-collapse: collapse;
-        margin: 0 auto;
-    }
+        .footer-text-cell {
+            padding: 0 0 5px 5px;
+            vertical-align: middle;
+            text-align: left;
 
-    .footer-icon-cell {
-        width: 18px;
-        height: 18px;
-        padding: 0;
-        vertical-align: middle;
-        text-align: center;
-    }
+            color: #ffffff;
+            font-size: 8.5px;
+            line-height: 18px;
 
-    .footer-text-cell {
-        padding: 0 0 5px 5px;
-        vertical-align: middle;
-        text-align: left;
+            white-space: nowrap;
+        }
 
-        color: #ffffff;
-        font-size: 8.5px;
-        line-height: 18px;
-
-        white-space: nowrap;
-    }
-
-    .footer-icon {
-        width: 10px;
-        height: 10px;
-        display: block;
-        margin: 0;
-    }
+        .footer-icon {
+            width: 10px;
+            height: 10px;
+            display: block;
+            margin: 0;
+        }
     </style>
 </head>
 
-
 <body>
-
-
-@php
-
-    $currency = trim((string) ($invoice->currency ?? ''));
-
-
-    /* =========================================================
-       CURRENCY FORMATTERS
-       ========================================================= */
-
-    $formatLine = function ($amount) {
-        return '$'.number_format((float) ($amount ?? 0), 2);
-    };
-
-
-    $formatPlain = function ($amount) {
-        return number_format((float) ($amount ?? 0), 2);
-    };
-
-
-    $formatGrand = function ($amount) use ($currency) {
-
-        return '$ '.number_format(
-            (float) ($amount ?? 0),
-            2
-        ).($currency !== '' ? ' '.$currency : '');
-
-    };
-
-
-    /* =========================================================
-       FOOTER SVG ICONS
-       ========================================================= */
-
-    $svgGlobe = '<svg xmlns="http://www.w3.org/2000/svg"
-        width="14"
-        height="14"
-        viewBox="0 0 24 24"
-        fill="none">
-
-        <circle
-            cx="12"
-            cy="12"
-            r="9"
-            stroke="#A8D5D8"
-            stroke-width="1.8"
-        />
-
-        <ellipse
-            cx="12"
-            cy="12"
-            rx="4"
-            ry="9"
-            stroke="#A8D5D8"
-            stroke-width="1.8"
-        />
-
-        <path
-            d="M3 12h18"
-            stroke="#A8D5D8"
-            stroke-width="1.8"
-        />
-
-    </svg>';
-
-
-    $svgPhone = '<svg xmlns="http://www.w3.org/2000/svg"
-        width="14"
-        height="14"
-        viewBox="0 0 24 24">
-
-        <path
-            fill="#3ECF8E"
-            d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.4C8.7 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.5 14.2c-.2.5-1.1 1-1.8 1.1-.5.1-1.1 0-1.8-.3-3.2-1.3-5.5-3.8-6.6-6.6-.3-.7-.4-1.3-.3-1.8.1-.7.6-1.6 1.1-1.8.2-.1.4 0 .5.1l1.6 1.6c.1.1.2.3.1.5l-.7 1.2c.8 1.6 2.1 2.9 3.7 3.7l1.2-.7c.2-.1.4 0 .5.1l1.6 1.6c.2.2.2.3.1.5z"
-        />
-
-    </svg>';
-
-
-    $svgMail = '<svg xmlns="http://www.w3.org/2000/svg"
-        width="14"
-        height="14"
-        viewBox="0 0 24 24"
-        fill="none">
-
-        <rect
-            x="3"
-            y="5"
-            width="18"
+@php $currency = trim((string) ($invoice->currency ?? '')); $formatLine = function ($amount) { return
+        '$'.number_format((float) ($amount ?? 0), 2); }; $formatPlain = function ($amount) { return
+        number_format((float) ($amount ?? 0), 2); }; $formatGrand = function ($amount) use ($currency) { return '$
+        '.number_format( (float) ($amount ?? 0), 2 ).($currency !== '' ? ' '.$currency : ''); }; $svgGlobe = '<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
             height="14"
-            rx="2"
-            stroke="#A8D5D8"
-            stroke-width="1.8"
-        />
+            viewBox="0 0 24 24"
+            fill="none"
+        >
+            <circle cx="12" cy="12" r="9" stroke="#A8D5D8" stroke-width="1.8" />
 
-        <path
-            d="M4 7l8 6 8-6"
-            stroke="#A8D5D8"
-            stroke-width="1.8"
-        />
+            <ellipse cx="12" cy="12" rx="4" ry="9" stroke="#A8D5D8" stroke-width="1.8" />
 
-    </svg>';
+            <path d="M3 12h18" stroke="#A8D5D8" stroke-width="1.8" /></svg
+        >'; $svgPhone = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+            <path
+                fill="#3ECF8E"
+                d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.4C8.7 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.5 14.2c-.2.5-1.1 1-1.8 1.1-.5.1-1.1 0-1.8-.3-3.2-1.3-5.5-3.8-6.6-6.6-.3-.7-.4-1.3-.3-1.8.1-.7.6-1.6 1.1-1.8.2-.1.4 0 .5.1l1.6 1.6c.1.1.2.3.1.5l-.7 1.2c.8 1.6 2.1 2.9 3.7 3.7l1.2-.7c.2-.1.4 0 .5.1l1.6 1.6c.2.2.2.3.1.5z"
+            /></svg
+        >'; $svgMail = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="#A8D5D8" stroke-width="1.8" />
 
-
-    $iconGlobe =
-        'data:image/svg+xml;base64,'.base64_encode($svgGlobe);
-
-    $iconPhone =
-        'data:image/svg+xml;base64,'.base64_encode($svgPhone);
-
-    $iconMail =
-        'data:image/svg+xml;base64,'.base64_encode($svgMail);
-
-@endphp
-
-
-<!-- =========================================================
-     TOP SECTION
-     ========================================================= -->
+            <path d="M4 7l8 6 8-6" stroke="#A8D5D8" stroke-width="1.8" /></svg
+        >'; $iconGlobe = 'data:image/svg+xml;base64,'.base64_encode($svgGlobe); $iconPhone =
+        'data:image/svg+xml;base64,'.base64_encode($svgPhone); $iconMail =
+        'data:image/svg+xml;base64,'.base64_encode($svgMail); @endphp
 
 <table class="top">
-
     <tr>
         <td class="col-left">
-
-
-            <!-- COMPANY INFORMATION -->
-
             <table class="company-info">
-    <tr>
-        @if($company['logo'])
-            <td class="logo-cell">
-                <img
-                    src="{{ $company['logo'] }}"
-                    class="company-logo"
-                    alt="{{ $company['name'] ?? 'Company' }}"
-                >
-            </td>
-        @endif
+                <tr>
+                    @if($company['logo'])
+                        <td class="logo-cell">
+                            <img
+                                src="{{ $company['logo'] }}"
+                                class="company-logo"
+                                alt="{{ $company['name'] ?? 'Company' }}"
+                            />
+                        </td>
+                    @endif
 
-        <td class="details-cell">
+                    <td class="details-cell">
+                        <div class="company-name">{{ $company['name'] ?? '' }}</div>
 
-            <div class="company-name">
-                {{ $company['name'] ?? '' }}
-            </div>
+                        <div class="company-tagline">{{ $company['tagline'] ?? '' }}</div>
+                    </td>
+                </tr>
+            </table>
 
-            <div class="company-tagline">
-                {{ $company['tagline'] ?? '' }}
-            </div>
-
-        </td>
-    </tr>
-</table>
-
-
-            <!-- PAYABLE TO -->
-
-            <div class="section-title">
-                PAYABLE TO
-            </div>
-
+            <div class="section-title">PAYABLE TO</div>
 
             @if($client)
 
-                <div class="client-name">
-                    {{ $client->name }}
-                </div>
-
+                <div class="client-name">{{ $client->name }}</div>
 
             @endif
 
+            <div class="section-title">PAYMENT INSTRUCTIONS</div>
 
-            <!-- PAYMENT INSTRUCTIONS -->
-
-            <div class="section-title">
-                PAYMENT INSTRUCTIONS
-            </div>
-
-
-            <div class="payment-lines">
-                {{ $paymentInstructions }}
-            </div>
-
-
+            <div class="payment-lines">{{ $paymentInstructions }}</div>
         </td>
 
-
-        <!-- =====================================================
-             RIGHT COLUMN
-             ===================================================== -->
-
         <td class="col-right">
-
-
-            <!-- =================================================
-                 300 x 300 RING
-                 ================================================= -->
-
             <table class="ring-table">
-
                 <tr>
-
                     <td>
-
-
-                        <!-- RING CONTENT -->
-
                         <div class="ring-content">
-
-
-                            <!-- INVOICE -->
-
-                            <div class="ring-invoice-text">
-                                INVOICE
-                            </div>
-
-
-                            <!-- CLIENT LOGO -->
+                            <div class="ring-invoice-text">INVOICE</div>
 
                             @if($clientLogo)
 
                                 <div class="ring-logo-box">
-
-                                    <img
-                                        src="{{ $clientLogo }}"
-                                        alt="{{ $client?->name ?? 'Client' }}"
-                                    >
-
+                                    <img src="{{ $clientLogo }}" alt="{{ $client?->name ?? 'Client' }}" />
                                 </div>
 
                             @endif
-
-
                         </div>
-
                     </td>
-
                 </tr>
-
             </table>
 
-
-            <!-- =================================================
-                 INVOICE NUMBER / DATE
-                 ================================================= -->
-
             <div class="invoice-meta">
+                <div>Invoice Number: {{ $invoice->invoice_number }}</div>
 
-                <div>
-                    Invoice Number: {{ $invoice->invoice_number }}
-                </div>
-
-                <div>
-                    Date: {{ $invoice->invoice_date->format('m/d/Y') }}
-                </div>
-
+                <div>Date: {{ $invoice->invoice_date->format('m/d/Y') }}</div>
             </div>
-
-
         </td>
-
     </tr>
-
 </table>
-
-
-<!-- =========================================================
-     ITEMS HEADER
-     ========================================================= -->
 
 <div class="items-head-wrap">
-
     <table class="items-head">
-
         <tr>
+            <td class="hdr-first" style="width: 62%">ITEM DESCRIPTION</td>
 
+            <td class="hdr-mid" style="width: 19%">PRICE</td>
 
-            <td
-                class="hdr-first"
-                style="width:62%"
-            >
-                ITEM DESCRIPTION
-            </td>
-
-
-            <td
-                class="hdr-mid"
-                style="width:19%"
-            >
-                PRICE
-            </td>
-
-
-            <td
-                class="hdr-last"
-                style="width:19%"
-            >
-                TOTAL
-            </td>
-
-
+            <td class="hdr-last" style="width: 19%">TOTAL</td>
         </tr>
-
     </table>
-
 </div>
-
-
-<!-- =========================================================
-     ITEMS
-     ========================================================= -->
 
 <div class="items-body-wrap">
-
     <table class="items-body">
+        @foreach($items as $item)
 
-    @foreach($items as $item)
+            <tr>
+                <td style="width: 62%">
+                    @foreach( preg_split('/\R/', $item->description) as $line ) @if(trim($line) !== '')
 
-        <tr>
+                        <p class="desc-line">{{ trim($line) }}</p>
 
+                    @endif @endforeach
+                </td>
 
-            <td style="width:62%">
+                <td class="price" style="width: 19%">{{ $formatLine($item->price) }}</td>
 
-                @foreach(
-                    preg_split('/\R/', $item->description)
-                    as $line
-                )
+                <td class="total" style="width: 19%">{{ $formatLine($item->total) }}</td>
+            </tr>
 
-                    @if(trim($line) !== '')
-
-                        <p class="desc-line">
-                            {{ trim($line) }}
-                        </p>
-
-                    @endif
-
-                @endforeach
-
-            </td>
-
-
-            <td
-                class="price"
-                style="width:19%"
-            >
-                {{ $formatLine($item->price) }}
-            </td>
-
-
-            <td
-                class="total"
-                style="width:19%"
-            >
-                {{ $formatLine($item->total) }}
-            </td>
-
-
-        </tr>
-
-    @endforeach
-
+        @endforeach
     </table>
-
 </div>
-
-
-<!-- =========================================================
-     SUMMARY
-     ========================================================= -->
 
 <div class="summary-wrap">
-
     <table class="bottom">
-
         <tr>
-
-
-            <!-- NOTES -->
-
             <td class="notes-col">
+                <div class="notes-title">NOTES:</div>
 
-                <div class="notes-title">
-                    NOTES:
-                </div>
-
-                <div class="notes-text">
-                    {{ $notes }}
-                </div>
-
+                <div class="notes-text">{{ $notes }}</div>
             </td>
-
-
-            <!-- TOTALS -->
 
             <td class="totals-col">
-
                 <div class="totals-card">
-                <table class="totals-box">
+                    <table class="totals-box">
+                        <tr>
+                            <td class="label">SUB TOTAL</td>
 
+                            <td class="value">{{ $formatPlain($invoice->subtotal) }}</td>
+                        </tr>
 
-                    <!-- SUB TOTAL -->
+                        <tr>
+                            <td class="label">GST ({{ number_format($invoice->gst_rate, 0) }}%)</td>
 
-                    <tr>
+                            <td class="value">{{ $formatPlain($invoice->gst_amount) }}</td>
+                        </tr>
 
-                        <td class="label">
-                            SUB TOTAL
-                        </td>
+                        <tr class="grand-row">
+                            <td class="label">GRAND TOTAL</td>
 
-                        <td class="value">
-                            {{ $formatPlain($invoice->subtotal) }}
-                        </td>
-
-                    </tr>
-
-
-                    <!-- GST -->
-
-                    <tr>
-
-                        <td class="label">
-                            GST ({{ number_format($invoice->gst_rate, 0) }}%)
-                        </td>
-
-                        <td class="value">
-                            {{ $formatPlain($invoice->gst_amount) }}
-                        </td>
-
-                    </tr>
-
-
-                    <!-- GRAND TOTAL -->
-
-                    <tr class="grand-row">
-
-                        <td class="label">
-                            GRAND TOTAL
-                        </td>
-
-                        <td class="value">
-                            {{ $formatGrand($invoice->grand_total) }}
-                        </td>
-
-                    </tr>
-
-
-                </table>
+                            <td class="value">{{ $formatGrand($invoice->grand_total) }}</td>
+                        </tr>
+                    </table>
                 </div>
-
             </td>
-
-
         </tr>
-
     </table>
-
 </div>
-
-
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
 
 <div class="footer-band">
-
     <table class="footer-center">
-
         <tr>
-
             <td align="center">
+                <table class="footer-pill">
+                    <tr>
+                        <td class="footer-item">
+                            <table class="footer-item-inner">
+                                <tr>
+                                    <td class="footer-icon-cell">
+                                        <img src="{{ $iconGlobe }}" class="footer-icon" alt="" />
+                                    </td>
 
+                                    <td class="footer-text-cell">{{ $company['website'] }}</td>
+                                </tr>
+                            </table>
+                        </td>
 
-            <table class="footer-pill">
+                        <td class="footer-item">
+                            <table class="footer-item-inner">
+                                <tr>
+                                    <td class="footer-icon-cell">
+                                        <img src="{{ $iconPhone }}" class="footer-icon" alt="" />
+                                    </td>
 
-<tr>
+                                    <td class="footer-text-cell">{{ $company['phone'] }}</td>
+                                </tr>
+                            </table>
+                        </td>
 
-    {{-- WEBSITE --}}
-    <td class="footer-item">
+                        <td class="footer-item">
+                            <table class="footer-item-inner">
+                                <tr>
+                                    <td class="footer-icon-cell">
+                                        <img src="{{ $iconMail }}" class="footer-icon" alt="" />
+                                    </td>
 
-        <table class="footer-item-inner">
-            <tr>
-
-                <td class="footer-icon-cell">
-                    <img
-                        src="{{ $iconGlobe }}"
-                        class="footer-icon"
-                        alt=""
-                    >
-                </td>
-
-                <td class="footer-text-cell">
-                    {{ $company['website'] }}
-                </td>
-
-            </tr>
-        </table>
-
-    </td>
-
-
-    {{-- PHONE --}}
-    <td class="footer-item">
-
-        <table class="footer-item-inner">
-            <tr>
-
-                <td class="footer-icon-cell">
-                    <img
-                        src="{{ $iconPhone }}"
-                        class="footer-icon"
-                        alt=""
-                    >
-                </td>
-
-                <td class="footer-text-cell">
-                    {{ $company['phone'] }}
-                </td>
-
-            </tr>
-        </table>
-
-    </td>
-
-
-    {{-- EMAIL --}}
-    <td class="footer-item">
-
-        <table class="footer-item-inner">
-            <tr>
-
-                <td class="footer-icon-cell">
-                    <img
-                        src="{{ $iconMail }}"
-                        class="footer-icon"
-                        alt=""
-                    >
-                </td>
-
-                <td class="footer-text-cell">
-                    {{ $company['email'] }}
-                </td>
-
-            </tr>
-        </table>
-
-    </td>
-
-</tr>
-
-</table>
-
+                                    <td class="footer-text-cell">{{ $company['email'] }}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
             </td>
-
         </tr>
-
     </table>
-
 </div>
-
-
 </body>
 </html>

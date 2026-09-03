@@ -35,7 +35,8 @@ class InvoiceForm
                 TextInput::make('invoice_number')
                     ->required()
                     ->unique(ignoreRecord: true)
-                    ->default(fn () => 'TR'.now()->format('ym')),
+                    ->default(fn () => Invoice::nextInvoiceNumber())
+                    ->helperText('Auto-generated from the highest invoice number. You can change it; the next invoice will continue from there.'),
 
                 DatePicker::make('invoice_date')
                     ->required()
