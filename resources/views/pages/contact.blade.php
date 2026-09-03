@@ -5,14 +5,18 @@
 
     <section>
         <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden">
+@if($contact_us->main_image)
+            <img src="{{ asset('storage/' . $contact_us->main_image) }}" alt="About Hero" class="absolute inset-0 w-full h-full object-cover z-0">
+            @else
+                <img src="{{ asset('images/about-hero.jpg') }}" alt="About Hero" class="absolute inset-0 w-full h-full object-cover z-0">
 
-            <img src="{{ asset('images/about-hero.jpg') }}" alt="About Hero" class="absolute inset-0 w-full h-full object-cover z-0">
+            @endif
 
             <div class="absolute inset-0 bg-black/10 z-10"></div>
 
             <div class="relative z-20">
                 <h1 class="text-white text-5xl md:text-6xl font-bold tracking-wide mb-4">
-                    Contact Us
+                    {{ $contact_us->main_heading }}
                 </h1>
 
                 <x-page-breadcrumb current="Contact Us" />
@@ -27,10 +31,10 @@
 
             <div class="text-center max-w-xl mx-auto mb-16">
                 <span class="text-[#4870F8] text-[20px] tracking-wide block mb-3">
-                    Contact Us
+                   {{ $contact_us->main_heading }}
                 </span>
                 <h2 class="text-[#1C2035] text-4xl md:text-[46px] font-bold tracking-tight leading-tight">
-                    If You Have Any Query, Please Contact Us
+                    {{ $contact_us->sub_heading }}
                 </h2>
             </div>
 
@@ -39,7 +43,7 @@
 
                 <div class="lg:col-span-6">
                     <h2 class="text-[#1C2035] text-3xl font-semibold tracking-tight mb-8">
-                        Full Functional Contact Form
+                        {{ $contact_us->contact_form }}
                     </h2>
 
                     <x-contact-form />
@@ -48,7 +52,7 @@
                 <div class="lg:col-span-5 space-y-8">
                     <div>
                         <h2 class="text-[#1C2035] text-2xl font-semibold tracking-tight mb-8">
-                            Contact Details
+                            {{ $contact_us->contact_detail }}
                         </h2>
 
                         <div class="space-y-6">
@@ -59,8 +63,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-black text-sm font-semibold tracking-wider">Our
-                                        Office</h4>
+                                    <h4 class="text-black text-sm font-semibold tracking-wider">{{ $contact_us->our_office }}</h4>
                                     <p class="font-sans text-[#555555] text-sm">{{ $site[\App\Support\SiteSettings::ADDRESS] ?? 'Vancouver, BC, Canada' }}</p>
                                 </div>
                             </div>
@@ -72,8 +75,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-black text-sm font-semibold tracking-wider">Call
-                                        Us</h4>
+                                    <h4 class="text-black text-sm font-semibold tracking-wider">{{ $contact_us->call_us }}</h4>
                                     <p class="font-sans text-[#555555] text-sm">
                                         <a href="tel:{{ $sitePhoneTel }}" class="hover:text-[#4870F8]">{{ $site[\App\Support\SiteSettings::PHONE] ?? '+1 (604) 313-7091' }}</a>
                                     </p>
@@ -87,8 +89,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h4 class="text-black text-sm font-semibold tracking-wider">Mail
-                                        Us</h4>
+                                    <h4 class="text-black text-sm font-semibold tracking-wider">{{ $contact_us->mail_us }}</h4>
                                     <p class="font-sans text-[#555555] text-sm">
                                         <a href="mailto:{{ $site[\App\Support\SiteSettings::EMAIL] ?? 'info@spheremarketingsolutions.com' }}" class="hover:text-[#4870F8]">{{ $site[\App\Support\SiteSettings::EMAIL] ?? 'info@spheremarketingsolutions.com' }}</a>
                                     </p>
@@ -98,10 +99,14 @@
                     </div>
 
                     <div class="w-full h-[280px] rounded-xl overflow-hidden shadow-sm border border-slate-100 relative">
-                        <iframe class="w-full h-full border-0"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.34964792216!2d-123.1939432!3d49.2578263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0x796063c1de3f8f35!2sVancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
-                                allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            class="w-full h-full border-0"
+                            src="https://www.google.com/maps?q={{ urlencode($contact_us->location) }}&output=embed"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
                     </div>
+
                 </div>
 
             </div>
