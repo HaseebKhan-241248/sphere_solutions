@@ -3,9 +3,11 @@
 namespace App\Filament\Resources\Invoices\Pages;
 
 use App\Filament\Resources\Invoices\InvoiceResource;
+use App\Filament\Resources\Invoices\Tables\InvoicesTable;
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use Filament\Support\Icons\Heroicon;
 
 class EditInvoice extends EditRecord
 {
@@ -16,8 +18,10 @@ class EditInvoice extends EditRecord
         return [
             Action::make('downloadPdf')
                 ->label('Download PDF')
-                ->icon('heroicon-o-arrow-down-tray')
-                ->url(fn (): string => route('admin.invoices.pdf', ['invoice' => $this->record])),
+                ->icon(Heroicon::OutlinedArrowDownTray)
+                ->url(fn (): string => route('admin.invoices.pdf', ['invoice' => $this->record]))
+                ->openUrlInNewTab(),
+            InvoicesTable::sendEmailAction(),
             DeleteAction::make(),
         ];
     }

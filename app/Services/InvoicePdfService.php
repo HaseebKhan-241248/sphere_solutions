@@ -13,9 +13,19 @@ class InvoicePdfService
 {
     public function download(Invoice $invoice): Response
     {
-        $filename = 'invoice-'.preg_replace('/[^A-Za-z0-9._-]+/', '-', $invoice->invoice_number).'.pdf';
+        return $this->makePdf($invoice)->download($this->filename($invoice));
+    }
 
-        return $this->buildPdf($invoice)->download($filename);
+    public function filename(Invoice $invoice): string
+    {
+        $safe = preg_replace('/[^A-Za-z0-9._-]+/', '-', $invoice->invoice_number) ?: 'invoice';
+
+        return 'invoice-'.$safe.'.pdf';
+    }
+
+    public function makePdf(Invoice $invoice)
+    {
+        return $this->buildPdf($invoice);
     }
 
     public function buildPdf(Invoice $invoice)
