@@ -4,15 +4,16 @@
 
 
     <section>
-        <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden">
-@if($contact_us->main_image)
-            <img src="{{ asset('storage/' . $contact_us->main_image) }}" alt="About Hero" class="absolute inset-0 w-full h-full object-cover z-0">
+        <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden bg-[#0B1520]">
+            @if($contact_us->heroImageUrl())
+                <img src="{{ $contact_us->heroImageUrl() }}" alt="{{ $contact_us->main_heading }}" class="absolute inset-0 w-full h-full object-cover z-0">
             @else
-                <img src="{{ asset('images/about-hero.jpg') }}" alt="About Hero" class="absolute inset-0 w-full h-full object-cover z-0">
-
+                <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+                    <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
+                </video>
             @endif
 
-            <div class="absolute inset-0 bg-black/10 z-10"></div>
+            <div class="absolute inset-0 bg-[#0B1520]/70 z-10"></div>
 
             <div class="relative z-20">
                 <h1 class="text-white text-5xl md:text-6xl font-bold tracking-wide mb-4">

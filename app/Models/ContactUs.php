@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class ContactUs extends Model
 {
@@ -18,4 +19,13 @@ class ContactUs extends Model
         'location',
         'send_message',
     ];
+
+    public function heroImageUrl(): ?string
+    {
+        if (blank($this->main_image) || ! Storage::disk('public')->exists($this->main_image)) {
+            return null;
+        }
+
+        return Storage::disk('public')->url($this->main_image);
+    }
 }

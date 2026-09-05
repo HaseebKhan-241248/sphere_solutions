@@ -16,7 +16,7 @@ class ContactUsSeeder extends Seeder
             ['id' => 1],
             [
                 'main_heading'   => 'Contact Us',
-                'main_image'     => 'contact-us.jpg',
+                'main_image'     => null,
                 'sub_heading'    => 'If You Have Any Query, Please Contact Us',
                 'contact_form'   => 'Full Functional Contact Form',
                 'contact_detail' => 'Contact Details',
