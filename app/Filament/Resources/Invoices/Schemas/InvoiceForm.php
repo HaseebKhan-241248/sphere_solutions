@@ -30,14 +30,17 @@ class InvoiceForm
                     ->searchable()
                     ->preload()
                     ->required()
+                    ->live()
+                    ->afterStateUpdated(function ($state, Set $set): void {
+                        if (filled($state)) {
+                            $set('invoice_number', Invoice::nextInvoiceNumberForClient((int) $state));
+                        }
+                    })
                     ->getOptionLabelFromRecordUsing(fn (Client $record) => $record->name),
 
                 TextInput::make('invoice_number')
                     ->required()
-                    ->unique(ignoreRecord: true)
-                    ->default(fn () => Invoice::nextInvoiceNumber())
-                    ->helperText('Auto-generated from the highest invoice number. You can change it; the next invoice will continue from there.'),
-
+                    ->unique(ignoreRecord: true),
                 DatePicker::make('invoice_date')
                     ->required()
                     ->default(now()),

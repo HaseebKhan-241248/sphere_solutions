@@ -34,4 +34,21 @@ class Client extends Model
 
         return Storage::disk('public')->url($this->logo);
     }
+
+    public function invoicePrefix(): string
+    {
+        $parts = array_values(array_filter(preg_split('/\s+/', trim((string) $this->name)) ?: []));
+
+        if (count($parts) >= 2) {
+            return strtoupper(substr($parts[0], 0, 1).substr($parts[array_key_last($parts)], 0, 1));
+        }
+
+        if (count($parts) === 1) {
+            $word = $parts[0];
+
+            return strtoupper(substr($word, 0, 1).substr($word, 1, 1));
+        }
+
+        return 'XX';
+    }
 }

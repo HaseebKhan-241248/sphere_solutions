@@ -14,8 +14,6 @@ class Invoice extends Model
 
     public const STATUS_PAID = 'paid';
 
-    public const NUMBER_PREFIX = 'TR';
-
     protected $fillable = [
         'client_id',
         'invoice_number',
@@ -48,15 +46,19 @@ class Invoice extends Model
                 return;
             }
 
-            if (! $invoice->exists) {
-                $invoice->invoice_number = static::nextInvoiceNumber();
+            if (! $invoice->exists && filled($invoice->client_id)) {
+                $invoice->invoice_number = static::nextInvoiceNumberForClient($invoice->client_id);
             }
         });
     }
 
-    public static function nextInvoiceNumber(): string
+    public static function nextInvoiceNumberForClient(Client|int $client): string
     {
-        $prefix = self::NUMBER_PREFIX;
+        $client = $client instanceof Client
+            ? $client
+            : Client::query()->findOrFail($client);
+
+        $prefix = $client->invoicePrefix();
         $max = 0;
 
         $numbers = static::query()
@@ -69,9 +71,7 @@ class Invoice extends Model
             }
         }
 
-        $next = $max + 1;
-
-        return $prefix.str_pad((string) $next, max(3, strlen((string) $next)), '0', STR_PAD_LEFT);
+        return $prefix.str_pad((string) ($max + 1), 4, '0', STR_PAD_LEFT);
     }
 
     public function client(): BelongsTo
