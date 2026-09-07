@@ -6,6 +6,7 @@ use App\Actions\SendInvoiceToClient;
 use App\Models\Invoice;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Notifications\Notification;
@@ -67,6 +68,7 @@ class InvoicesTable
                     ->openUrlInNewTab(),
                 self::sendEmailAction(),
                 EditAction::make(),
+                DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
