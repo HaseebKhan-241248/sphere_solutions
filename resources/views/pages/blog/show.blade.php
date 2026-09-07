@@ -6,7 +6,7 @@
         <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden">
             <img src="{{ $post->featuredImageUrl() }}" alt="{{ $post->title }}"
                  class="absolute inset-0 w-full h-full object-cover z-0">
-            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
             <div class="relative z-20 max-w-4xl px-4">
                 <h1 class="text-white text-3xl md:text-5xl font-bold tracking-wide mb-4">
                     {{ $post->title }}
