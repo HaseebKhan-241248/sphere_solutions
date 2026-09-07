@@ -1,6 +1,6 @@
 @props([
     'members' => null,
-    'eyebrow' => 'Our Team',
+    'tagline' => 'Our Team',
     'title' => 'Meet Our Team',
     'gridClass' => 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8',
     'wrapperClass' => 'bg-white py-24 px-4 sm:px-6 lg:px-8',
@@ -21,7 +21,7 @@
             <div class="{{ $innerClass }}">
                 <div class="text-center max-w-2xl mx-auto mb-16">
                     <span class="text-[#4870F8] text-lg tracking-wide block mb-3">
-                        {{ $eyebrow }}
+                        {{ $tagline }}
                     </span>
                     <h2 class="text-[#0F172A] text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
                         {!! $title !!}

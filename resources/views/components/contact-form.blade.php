@@ -86,7 +86,7 @@
     <div>
         <button type="submit" data-contact-submit
                 class="bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-10 py-4 rounded-full transition shadow-md hover:shadow-lg text-base tracking-wide cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
-            <span data-submit-label>{{ $contact_us->send_message }}</span>
+            <span data-submit-label>{{ $contact_us->send_message ?? 'Send Message' }}</span>
             <span data-submit-loading class="hidden">Sending...</span>
         </button>
     </div>
