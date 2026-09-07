@@ -12,5 +12,5 @@
     @endforeach
 
     <span class="text-slate-300">/</span>
-    <span class="text-[#4870F8] font-semibold truncate max-w-[220px]">{{ $current }}</span>
+    <span class="breadcrumb-current font-semibold truncate max-w-[220px]">{{ $current }}</span>
 </nav>

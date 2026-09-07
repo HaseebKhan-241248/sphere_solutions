@@ -1,146 +1,98 @@
 @extends('layout.app')
 @section('content')
 
+    @if ($home)
     <section class="relative min-h-[85vh] md:min-h-screen overflow-hidden bg-[#0B1520]">
-        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="{{ asset('videos/hero-video-1.mp4') }}" type="video/mp4">
-        </video>
+        @if ($home->heroVideoUrl())
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+                <source src="{{ $home->heroVideoUrl() }}" type="video/mp4">
+            </video>
+        @endif
         <div class="absolute inset-0 bg-[#0B1520]/70"></div>
 
         <div class="relative max-w-7xl 2xl:max-w-[85%] mx-auto h-full min-h-[85vh] md:min-h-screen px-6 sm:px-0 flex items-center z-10">
             <div class="max-w-2xl text-white py-24 px-0 md:px-10">
-                <p class="text-lg md:text-xl mb-4 text-white/85">
-                    <span class="font-semibold text-[#4870F8]">Sphere Marketing Solutions</span>
-                </p>
+                @if (filled($home->hero_tagline))
+                    <p class="text-lg md:text-xl mb-4 text-white/85">
+                        <span class="font-semibold text-[#4870F8]">{{ $home->hero_tagline }}</span>
+                    </p>
+                @endif
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 tracking-tight">
-                    Get your business seen by the right people
+                    {{ $home->hero_heading }}
                 </h1>
-                <p class="text-base md:text-lg text-white/80 leading-relaxed mb-10 max-w-xl">
-                    We bring strategy, creativity, and digital expertise together to help businesses build their brand and reach the people who matter most
-                </p>
+                @if (filled($home->hero_subheading))
+                    <p class="text-base md:text-lg text-white/80 leading-relaxed mb-10 max-w-xl">
+                        {{ $home->hero_subheading }}
+                    </p>
+                @endif
                 <div class="flex flex-wrap gap-4">
-                    <a href="{{ route('contact') }}"
-                       class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] px-8 py-3.5 rounded-full text-base font-semibold transition">
-                       Grow With Us
-                    </a>
-                    <a href="{{ route('services') }}"
-                       class="inline-block border-2 border-[#4870F8] text-white hover:bg-[#4870F8]/15 px-8 py-3.5 rounded-full text-base font-semibold transition">
-                        Explore Our Services
-                    </a>
+                    @if (filled($home->hero_primary_cta_text))
+                        <a href="{{ $home->ctaUrl($home->hero_primary_cta_url, '/contact-us') }}"
+                           class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] px-8 py-3.5 rounded-full text-base font-semibold transition">
+                           {{ $home->hero_primary_cta_text }}
+                        </a>
+                    @endif
+                    @if (filled($home->hero_secondary_cta_text))
+                        <a href="{{ $home->ctaUrl($home->hero_secondary_cta_url, '/services') }}"
+                           class="inline-block border-2 border-[#4870F8] text-white hover:bg-[#4870F8]/15 px-8 py-3.5 rounded-full text-base font-semibold transition">
+                            {{ $home->hero_secondary_cta_text }}
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
+    @if (filled($home->benefits_heading) || ! empty($home->benefits))
+        <section class="py-16">
 
-        <div class="max-w-[85%] mx-auto bg-[#F7FAFC]">
-            <div class="text-center mb-12">
-                <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">
-                    Everything your business needs to grow online
-                </h1>
+            <div class="max-w-[85%] mx-auto bg-[#F7FAFC]">
+                @if (filled($home->benefits_heading))
+                    <div class="text-center mb-12">
+                        <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mt-2">
+                            {{ $home->benefits_heading }}
+                        </h1>
+                    </div>
+                @endif
+                @if (! empty($home->benefits))
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 border border-slate-200 rounded-[5px]">
+                        @foreach ($home->benefits as $index => $card)
+                            <div data-aos="fade-up" data-aos-delay="{{ ($index + 1) * 100 }}"
+                                 class="p-10 lg:p-4 xl:p-8 bg-white relative group cursor-pointer overflow-hidden">
+
+                                <div class="transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
+                                    <div
+                                        class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center mb-6 transition-all duration-500 group-hover:bg-[#4870F8]/10">
+                                        <img src="{{ $home->mediaUrl($card['icon'] ?? null) }}"
+                                             alt="{{ $card['title'] ?? 'Benefit' }}"
+                                             class="transition-transform duration-500 ease-out group-hover:scale-110">
+                                    </div>
+
+                                    <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
+                                        style="font-weight: 600;">
+                                        {{ $card['title'] ?? '' }}
+                                    </h3>
+
+                                    <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
+                                        {{ $card['description'] ?? '' }}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                @endif
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 border border-slate-200 rounded-[5px]">
-
-                <!-- Card 1 -->
-                <div data-aos="fade-up" data-aos-delay="100"
-                     class="p-10 lg:p-4 xl:p-8 bg-white relative group cursor-pointer overflow-hidden">
-
-                    <!-- Inner Wrapper for Ultra-Smooth Lift -->
-                    <div class="transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
-                        <div
-                            class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center mb-6 transition-all duration-500 group-hover:bg-[#4870F8]/10">
-                            <img src="{{ asset('images/icon-1.png') }}"
-                                 class="transition-transform duration-500 ease-out group-hover:scale-110">
-                        </div>
-
-                        <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
-                            style="font-weight: 600;">
-                            Built Your Website
-                        </h3>
-
-                        <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            Visually appealing, functionally robust websites built for your business goals.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div data-aos="fade-up" data-aos-delay="200"
-                     class="p-10 lg:p-4 xl:p-8 bg-white relative group cursor-pointer overflow-hidden">
-
-                    <div class="transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
-                        <div
-                            class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#EEF2FF] transition-all duration-500 group-hover:bg-[#4870F8]/10">
-                            <img src="{{ asset('images/icon-2.png') }}"
-                                 class="transition-transform duration-500 ease-out group-hover:scale-110">
-                        </div>
-
-                        <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
-                            style="font-weight: 600;">
-                            Reach More Customer
-                        </h3>
-
-                        <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            Get your business in front of the right people through Google, social media, and online advertising.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div data-aos="fade-up" data-aos-delay="300"
-                     class="p-10 lg:p-4 xl:p-8 bg-white relative group cursor-pointer overflow-hidden">
-
-                    <div class="transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
-                        <div
-                            class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#EEF2FF] transition-all duration-500 group-hover:bg-[#4870F8]/10">
-                            <img src="{{ asset('images/icon-3.png') }}"
-                                 class="transition-transform duration-500 ease-out group-hover:scale-110">
-                        </div>
-
-                        <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
-                            style="font-weight: 600;">
-                            Creative Content
-                        </h3>
-
-                        <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            Video editing and graphic design that elevate your brand image and content.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div data-aos="fade-up" data-aos-delay="400"
-                     class="p-10 lg:p-4 xl:p-8 bg-white relative group cursor-pointer overflow-hidden">
-
-                    <div class="transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
-                        <div
-                            class="w-16 h-16 flex items-center justify-center mb-6 rounded-full bg-[#EEF2FF] transition-all duration-500 group-hover:bg-[#4870F8]/10">
-                            <img src="{{ asset('images/icon-4.png') }}"
-                                 class="transition-transform duration-500 ease-out group-hover:scale-110">
-                        </div>
-
-                        <h3 class="text-lg mb-4 transition-colors duration-500 group-hover:text-[#4870F8]"
-                            style="font-weight: 600;">
-                            Quick Support
-                        </h3>
-
-                        <p class="text-[#555555] leading-8 text-[16px] font-sans transition-colors duration-500">
-                            We're here when you need updates, improvements, or help with your digital presence
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
     <section data-aos="fade-up" class="relative w-full bg-slate-50 overflow-hidden">
         <div
             class="relative min-h-[650px] lg:min-h-[700px] xl:min-h-[750px] w-full flex items-end lg:items-end overflow-hidden">
 
-            <img src="{{ asset('images/about-play.jpg') }}" alt="About Background"
-                 class="absolute inset-0 w-full h-full object-cover z-0">
+            @if ($home->aboutImageUrl())
+                <img src="{{ $home->aboutImageUrl() }}" alt="About Background"
+                     class="absolute inset-0 w-full h-full object-cover z-0">
+            @endif
 
             <!-- Play Button Container -->
             {{-- <div class="absolute inset-0 z-20 flex items-center justify-center lg:justify-start lg:pl-62">
@@ -156,61 +108,55 @@
             <div
                 class="relative z-20 w-full lg:max-w-[45%] xl:max-w-[40%] 2xl:max-w-[42%] lg:ml-auto bg-white p-6 sm:p-10 shadow-2xl mt-50 mx-4 sm:mx-8 lg:mx-0 lg:mr-32 lg:rounded-t-xl lg:rounded-b-none overflow-y-auto xl:overflow-hidden bottom-0 self-end">
 
-                <!-- About Us Subtitle -->
-                <span class="text-[#4870F8] font-medium text-lg tracking-wide block mb-5">
-                    About Us
-                </span>
+                @if (filled($home->about_tagline))
+                    <span class="text-[#4870F8] font-medium text-lg tracking-wide block mb-5">
+                        {{ $home->about_tagline }}
+                    </span>
+                @endif
 
-                <!-- Main Heading -->
-                <h2 class="text-[#0F172A] text-3xl lg:text-4xl font-semibold tracking-tight leading-[45px] mb-5">
-                    Marketing Solutions Built for Business Growth
-                </h2>
+                @if (filled($home->about_heading))
+                    <h2 class="text-[#0F172A] text-3xl lg:text-4xl font-semibold tracking-tight leading-[45px] mb-5">
+                        {{ $home->about_heading }}
+                    </h2>
+                @endif
 
-                <!-- Paragraph text -->
-                <p class="text-[#555555] font-sans text-sm leading-[25px] mb-7">
-                    Welcome to Sphere Marketing Solutions. We specialize in web development, social media advertising,
-                    SEO, video editing, graphic design, and YouTube channel management to enhance your online presence
-                    and achieve your business goals.
-                </p>
+                @if (filled($home->about_description))
+                    <p class="text-[#555555] font-sans text-sm leading-[25px] mb-7">
+                        {{ $home->about_description }}
+                    </p>
+                @endif
 
-                <!-- Features Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                    <!-- Feature 1 -->
-                    <div class="flex flex-col items-start">
-                        <div class="mb-3">
-                            <img src="{{ asset('images/icon-5.png') }}" alt="Service Icon"
-                                 class="w-16 h-16 object-contain">
-                        </div>
-                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Client-First
-                            Ethics</h3>
-                        <p class="text-[#555555] text-md leading-[25px] font-sans">
-                            We prioritize client success, ethical services, and maximizing ROI.
-                        </p>
+                @if (! empty($home->about_features))
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        @foreach ($home->about_features as $feature)
+                            <div class="flex flex-col items-start">
+                                <div class="mb-3">
+                                    <img src="{{ $home->mediaUrl($feature['icon'] ?? null) }}"
+                                         alt="{{ $feature['title'] ?? 'Feature' }}"
+                                         class="w-16 h-16 object-contain">
+                                </div>
+                                <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">{{ $feature['title'] ?? '' }}</h3>
+                                <p class="text-[#555555] text-md leading-[25px] font-sans">
+                                    {{ $feature['description'] ?? '' }}
+                                </p>
+                            </div>
+                        @endforeach
                     </div>
+                @endif
 
-                    <!-- Feature 2 -->
-                    <div class="flex flex-col items-start">
-                        <div class="mb-3">
-                            <img src="{{ asset('images/icon-2.png') }}" alt="Expert Icon"
-                                 class="w-16 h-16 object-contain">
-                        </div>
-                        <h3 class="text-[#0F172A] text-base font-semibold mb-1 text-lg font-sans">Dedicated Experts</h3>
-                        <p class="text-[#555555] text-md leading-[25px] font-sans">
-                            A tightly-knit team focused on innovation and results-driven delivery.
-                        </p>
+                @if (filled($home->about_cta_text))
+                    <div class="pb-2">
+                        <a href="{{ $home->ctaUrl($home->about_cta_url, '/contact-us') }}"
+                           class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-8 py-3 rounded-full transition text-sm tracking-wide">
+                            {{ $home->about_cta_text }}
+                        </a>
                     </div>
-                </div>
-
-                <div class="pb-2">
-                    <a href="{{ route('contact') }}"
-                       class="inline-block bg-[#4870F8] hover:bg-[#3A5CE0] text-white font-semibold px-8 py-3 rounded-full transition text-sm tracking-wide">
-                        Contact Us
-                    </a>
-                </div>
+                @endif
             </div>
 
         </div>
     </section>
+    @endif
 
     <section data-aos="fade-up" data-aos-delay="100" class="max-w-[85%] mx-auto py-16">
 
@@ -608,22 +554,29 @@
 
                 <div>
 
-                <span class="text-[#4870F8] text-xl font-medium">
-                    Contact Us
-                </span>
+                @if ($home && filled($home->contact_tagline))
+                    <span class="text-[#4870F8] text-xl font-medium">
+                        {{ $home->contact_tagline }}
+                    </span>
+                @endif
 
-                    <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
-                        Ready to Grow Your Business?
-                    </h2>
+                    @if ($home && filled($home->contact_heading))
+                        <h2 class="text-[30px] md:text-[45px] leading-[1.1] font-semibold text-[#20233F] mt-5 mb-8">
+                            {{ $home->contact_heading }}
+                        </h2>
+                    @endif
 
-                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
-                        Tell us what you need — a new website, more leads, better SEO, or ongoing creative support.
-                        We’ll review your goals and suggest a clear next step.
-                    </p>
+                    @if ($home && filled($home->contact_paragraph_1))
+                        <p class="text-gray-500 text-[16px] leading-7 mb-4">
+                            {{ $home->contact_paragraph_1 }}
+                        </p>
+                    @endif
 
-                    <p class="text-gray-500 text-[16px] leading-7 mb-4">
-                        Most conversations start with a short call or message. You’ll hear back within one business day.
-                    </p>
+                    @if ($home && filled($home->contact_paragraph_2))
+                        <p class="text-gray-500 text-[16px] leading-7 mb-4">
+                            {{ $home->contact_paragraph_2 }}
+                        </p>
+                    @endif
 
                     <a href="tel:{{ $sitePhoneTel }}" class="inline-flex overflow-hidden rounded-xl border border-[#4870F8]">
 

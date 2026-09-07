@@ -4,7 +4,7 @@
     <section>
         <div class="relative py-32 text-center flex flex-col items-center justify-center overflow-hidden">
             <img src="{{ asset('images/about-hero.jpg') }}" alt="Checkout Success" class="absolute inset-0 w-full h-full object-cover z-0">
-            <div class="absolute inset-0 bg-black/10 z-10"></div>
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
             <div class="relative z-20 max-w-2xl mx-auto px-4">
                 <h1 class="text-white text-4xl md:text-5xl font-bold tracking-wide mb-4">Payment Successful</h1>
                 <p class="text-slate-200 text-lg mb-8">Thank you! Your payment was successful. Our team will contact you soon.</p>

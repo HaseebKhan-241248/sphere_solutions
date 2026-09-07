@@ -12,8 +12,8 @@ class CreateInvoice extends CreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
-        if (blank($data['invoice_number'] ?? null)) {
-            $data['invoice_number'] = Invoice::nextInvoiceNumber();
+        if (blank($data['invoice_number'] ?? null) && filled($data['client_id'] ?? null)) {
+            $data['invoice_number'] = Invoice::nextInvoiceNumberForClient((int) $data['client_id']);
         }
 
         return $this->applyTotals($data);

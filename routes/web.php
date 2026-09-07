@@ -58,7 +58,8 @@ Route::get('/checkout/cancel', [CheckoutController::class, 'cancel'])->name('che
 Route::get('/testimonials', [TestimonialsController::class, 'index'])->name('testimonials');
 
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
-Route::get('/service-details', [ServicesDetailsController::class, 'index'])->name('service-details');
+Route::get('/services/{service:slug}', [ServicesDetailsController::class, 'show'])->name('services.show');
+Route::redirect('/service-details', '/services')->name('service-details');
 
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
 Route::get('/project-details', [ProjectsDetailsController::class, 'index'])->name('project-details');
