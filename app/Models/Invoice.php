@@ -18,6 +18,7 @@ class Invoice extends Model
         'client_id',
         'invoice_number',
         'invoice_date',
+        'invoice_instruction',
         'currency',
         'subtotal',
         'gst_rate',

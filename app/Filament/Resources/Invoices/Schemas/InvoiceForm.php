@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Invoices\Schemas;
 
 use App\Models\Client;
 use App\Models\Invoice;
+use App\Models\Setting;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
@@ -71,6 +72,12 @@ class InvoiceForm
                     ->afterStateUpdated(function (Get $get, Set $set): void {
                         static::recalculateTotals($get, $set);
                     }),
+                Textarea::make('invoice_instruction')
+                    ->label('Payment Instruction')
+                    ->rows(3)
+                    ->default(Setting::where('key', 'invoice_payment_instructions')->value('value'))
+                    ->placeholder('Enter Payment instructions...')
+                    ->columnSpanFull(),
             ])->columns(3)->columnSpanFull(),
 
             Section::make('Line items')->schema([

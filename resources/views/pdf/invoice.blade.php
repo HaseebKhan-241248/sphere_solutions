@@ -511,7 +511,8 @@
 
             <div class="section-title">PAYMENT INSTRUCTIONS</div>
 
-            <div class="payment-lines">{{ $paymentInstructions }}</div>
+            <div class="payment-lines">  {{ $invoice->invoice_instruction }}</div>
+
         </td>
 
         <td class="col-right">
