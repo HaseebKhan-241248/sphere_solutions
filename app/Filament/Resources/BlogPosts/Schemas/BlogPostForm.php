@@ -73,6 +73,7 @@ class BlogPostForm
                             ])
                             ->fileAttachmentsDisk('public')
                             ->fileAttachmentsDirectory('blogs/content')
+                            ->resizableImages()
                             ->columnSpanFull(),
                     ])
                     ->columns(2),
