@@ -1,5 +1,28 @@
 @extends('layout.app')
 
+@section('title', 'Blog – Sphere Marketing Solutions')
+@section('meta_description', 'Practical tips and updates on digital marketing, web development, video, and design.')
+
+@php
+    $blogCanonical = $posts->currentPage() <= 1
+        ? route('blog.index')
+        : $posts->url($posts->currentPage());
+    $blogPrevUrl = $posts->previousPageUrl();
+    if ($blogPrevUrl && $posts->currentPage() === 2) {
+        $blogPrevUrl = route('blog.index');
+    }
+@endphp
+
+@push('meta')
+    <link rel="canonical" href="{{ $blogCanonical }}">
+    @if ($blogPrevUrl)
+        <link rel="prev" href="{{ $blogPrevUrl }}">
+    @endif
+    @if ($posts->nextPageUrl())
+        <link rel="next" href="{{ $posts->nextPageUrl() }}">
+    @endif
+@endpush
+
 @section('content')
 
     <section>

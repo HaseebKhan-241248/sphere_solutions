@@ -27,7 +27,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <title>Sphere Marketing Solutions – Digital Marketing</title>
+    <title>@yield('title', 'Sphere Marketing Solutions – Digital Marketing')</title>
+    @hasSection('meta_description')
+        <meta name="description" content="{{ trim($__env->yieldContent('meta_description')) }}">
+    @endif
+    @stack('meta')
 </head>
 
 <body>

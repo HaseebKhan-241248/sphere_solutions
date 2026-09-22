@@ -50,6 +50,31 @@ class BlogModuleTest extends TestCase
             ->assertNotFound();
     }
 
+    public function test_blog_index_includes_canonical_and_pagination_rel_links(): void
+    {
+        for ($i = 1; $i <= 10; $i++) {
+            BlogPost::query()->create([
+                'title' => "Post {$i}",
+                'slug' => "post-{$i}",
+                'excerpt' => "Excerpt {$i}",
+                'content' => "<p>Body {$i}</p>",
+                'status' => BlogPost::STATUS_PUBLISHED,
+                'published_at' => now()->subDays($i),
+            ]);
+        }
+
+        $this->get(route('blog.index'))
+            ->assertOk()
+            ->assertSee('<link rel="canonical" href="'.route('blog.index').'">', false)
+            ->assertSee('<link rel="next" href="'.url('/blog?page=2').'">', false)
+            ->assertDontSee('rel="prev"', false);
+
+        $this->get('/blog?page=2')
+            ->assertOk()
+            ->assertSee('<link rel="canonical" href="'.url('/blog?page=2').'">', false)
+            ->assertSee('<link rel="prev" href="'.route('blog.index').'">', false);
+    }
+
     public function test_admin_can_open_blog_resources(): void
     {
         $admin = User::factory()->create();

@@ -1,5 +1,12 @@
 @extends('layout.app')
 
+@section('title', 'Projects – Sphere Marketing Solutions')
+@section('meta_description', 'Explore digital marketing and creative projects delivered by Sphere Marketing Solutions.')
+
+@push('meta')
+    <link rel="canonical" href="{{ route('projects') }}">
+@endpush
+
 @section('content')
 
     <section>
@@ -242,32 +249,6 @@
                 </div>
 
 
-            </div>
-
-            <div class="flex items-center justify-center bg-white py-4 mt-8">
-                <a href="{{ route('projects') }}" class="flex size-10 md:size-14 items-center rounded-tl-lg rounded-bl-lg justify-center border border-gray-200 text-gray-500 transition hover:bg-gray-200 focus:outline-none">
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://w3.org">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                    </svg>
-                </a>
-
-                <a href="{{ route('projects') }}" class="flex size-10 md:size-14 items-center cursor-pointer justify-center bg-[#4870F8] font-semibold text-white focus:outline-none">
-                    1
-                </a>
-
-                <a href="{{ route('projects-list') }}" class="flex size-10 md:size-14 items-center cursor-pointer justify-center border border-gray-200 text-[#4870F8] transition hover:bg-gray-200 focus:outline-none">
-                    2
-                </a>
-
-                <a href="{{ route('project-details') }}" class="flex size-10 md:size-14 items-center cursor-pointer justify-center border border-gray-200 text-[#4870F8] transition hover:bg-gray-200 focus:outline-none">
-                    3
-                </a>
-
-                <a href="{{ route('projects-list') }}" class="flex size-10 md:size-14 items-center cursor-pointer rounded-tr-lg rounded-br-lg justify-center border border-gray-200 text-[#4870F8] transition hover:bg-gray-200 focus:outline-none">
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://w3.org">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                </a>
             </div>
 
         </div>

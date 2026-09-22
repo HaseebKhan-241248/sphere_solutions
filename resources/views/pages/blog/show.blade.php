@@ -1,5 +1,18 @@
 @extends('layout.app')
 
+@php
+    $pageTitle = ($post->meta_title ?: $post->title).' – Sphere Marketing Solutions';
+    $pageDescription = $post->meta_description
+        ?: \Illuminate\Support\Str::limit(strip_tags((string) ($post->excerpt ?: $post->content)), 160);
+@endphp
+
+@section('title', $pageTitle)
+@section('meta_description', $pageDescription)
+
+@push('meta')
+    <link rel="canonical" href="{{ route('blog.show', $post->slug) }}">
+@endpush
+
 @section('content')
 
     <section>
