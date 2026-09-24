@@ -175,7 +175,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-5.png') }}">
+                            <img src="{{ asset('images/icon-5.png') }}" alt="Website Development Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
@@ -199,7 +199,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-6.png') }}">
+                            <img src="{{ asset('images/icon-6.png') }}" alt="SEO Services Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
@@ -223,7 +223,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-7.png') }}">
+                            <img src="{{ asset('images/icon-7.png') }}" alt="Digital Marketing Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
@@ -246,7 +246,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-8.png') }}">
+                            <img src="{{ asset('images/icon-8.png') }}" alt="Social Media Advertising Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
@@ -269,7 +269,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-9.png') }}">
+                            <img src="{{ asset('images/icon-9.png') }}" alt="Video Editing & Graphics Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
@@ -293,7 +293,7 @@
                     class="bg-white p-8 md:p-9 rounded-lg group-hover:rounded-b-none border border-slate-200 group-hover:border-[#4870F8]/30 transition-all duration-300 min-h-[280px] h-full flex flex-col items-center">
                     <div class="text-[#4870F8] text-6xl mb-4 flex justify-center">
                         <div class="w-16 h-16 flex items-center bg-[#EEF2FF] rounded-full justify-center">
-                            <img src="{{ asset('images/icon-10.png') }}">
+                            <img src="{{ asset('images/icon-10.png') }}" alt="YouTube Management Icon">
                         </div>
                     </div>
                     <h3 class="text-center text-[19px] font-semibold text-gray-800 hover:text-[#4870F8] cursor-pointer min-h-[52px] flex items-center justify-center mb-2">
