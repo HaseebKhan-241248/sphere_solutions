@@ -22,6 +22,7 @@ class BlogPostForm
         return $schema
             ->components([
                 Section::make('Post')
+                    ->columnSpanFull()
                     ->schema([
                         TextInput::make('title')
                             ->required()
