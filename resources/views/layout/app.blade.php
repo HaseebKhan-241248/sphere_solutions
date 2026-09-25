@@ -28,8 +28,8 @@
 
     <!-- 4. Google Fonts avec display=swap -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
 
     <title>@yield('title', 'Sphere Marketing Solutions – Digital Marketing')</title>
     @hasSection('meta_description')
@@ -67,13 +67,16 @@
 <script src="{{ asset('js/header.js') }}" defer></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100,
-        });
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100,
+            });
+        }
     });
 </script>
 </body>
