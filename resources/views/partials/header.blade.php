@@ -27,42 +27,42 @@
                 </li>
                 <li>
                     <a href="{{ route('services') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('services') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Services">
                         Services
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('services') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('prices') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Packages">
                         Packages
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('prices') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('blog.index') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('blog.*') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('blog.*') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Blog">
                         Blog
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('blog.*') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('our-team') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('our-team') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Team Members">
                         Team Members
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('our-team') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('contact') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('contact') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('contact') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Contact">
                         Contact
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('contact') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('entrepreneur-signup') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans">
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Join Us">
                         Join Us
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('entrepreneur-signup') ? 'w-full' : '' }}"></span>
                     </a>
@@ -98,18 +98,18 @@
                    class="block py-2 {{ request()->routeIs('home') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Home</a>
             </li>
             <li><a href="{{ route('about') }}" class="block py-2 hover:text-[#4870F8]">About</a></li>
-            <li><a href="{{ route('services') }}" class="block py-2 hover:text-[#4870F8]">Services</a></li>
-            <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4870F8]">Packages</a></li>
+            <li><a href="{{ route('services') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Services">Services</a></li>
+            <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Packages">Packages</a></li>
             <li><a href="{{ route('blog.index') }}"
                    class="block py-2 {{ request()->routeIs('blog.*') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Blog</a>
             </li>
             <li><a href="{{ route('our-team') }}"
-                   class="block py-2 {{ request()->routeIs('our-team') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Team Members</a>
+                   class="block py-2 {{ request()->routeIs('our-team') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}" aria-label="Team Members">Team Members</a>
             </li>
-            <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4870F8]">FAQs</a></li>
-            <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4870F8]">Contact</a></li>
+            <li><a href="{{ route('faqs') }}" class="block py-2 hover:text-[#4870F8]" aria-label="FAQs">FAQs</a></li>
+            <li><a href="{{ route('contact') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Contact">Contact</a></li>
             <li><a href="{{ route('entrepreneur-signup') }}"
-                   class="block py-2 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Join Us</a>
+                   class="block py-2 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}" aria-label="Join Us">Join Us</a>
             </li>
             <li class="pt-3">
                 <a href="{{ route('contact') }}"

@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Website Development">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -210,7 +210,7 @@
                 </div>
 
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about SEO Services">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -233,7 +233,7 @@
                     </p>
                 </div>
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Digital Marketing">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -256,7 +256,7 @@
                     </p>
                 </div>
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Social Media Advertising">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -280,7 +280,7 @@
                     </p>
                 </div>
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Video Editing & Graphics">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -303,7 +303,7 @@
                     </p>
                 </div>
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about YouTube Management">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
