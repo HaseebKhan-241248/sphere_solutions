@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- 1. Preconnect Tags -->
-    <link rel="preconnect" href="https://unpkg.com">
-
-    <!-- Preload critical self-hosted Poppins weights (discovery optimisation) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin
           href="/build/assets/poppins-400-normal-cpxAROuN.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -17,12 +13,6 @@
           href="/build/assets/poppins-700-normal-Qrb0O0WB.woff2">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <!-- 2. FontAwesome – self-hosted via npm (bundled in app.css) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/>
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    </noscript>
 
     <title>@yield('title', 'Sphere Marketing Solutions – Digital Marketing')</title>
     @hasSection('meta_description')
