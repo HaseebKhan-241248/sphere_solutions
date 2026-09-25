@@ -6,7 +6,8 @@
 
             <a href="{{ route('home') }}" class="shrink-0 hover:opacity-90 transition">
                 <img src="{{ $siteLogoDesktop }}" alt="Sphere Marketing Solutions"
-                     class="h-16 w-16 object-contain rounded-full ring-1 ring-slate-200">
+                     class="h-16 w-16 object-contain rounded-full ring-1 ring-slate-200"
+                     width="64" height="64" fetchpriority="high">
             </a>
 
             <ul id="navLinks"
@@ -83,7 +84,9 @@
 <nav id="navBar" class="block lg:hidden relative z-40 bg-white border-b border-slate-100">
     <div class="flex items-center justify-between py-3 px-6">
         <a href="{{ route('home') }}" class="shrink-0">
-            <img src="{{ $siteLogoMobile }}" alt="Sphere Marketing Solutions"   class="h-14 w-14 object-contain rounded-full ring-1 ring-slate-100">
+            <img src="{{ $siteLogoMobile }}" alt="Sphere Marketing Solutions"
+                 class="h-14 w-14 object-contain rounded-full ring-1 ring-slate-100"
+                 width="56" height="56" fetchpriority="high">
         </a>
         <button id="mobileMenuBtn" type="button" class="flex flex-col w-10 h-10 items-center justify-center gap-1.5 border border-gray-200 rounded-lg focus:outline-none" aria-label="Toggle menu">
             <span class="w-5 h-[2px] bg-[#0F172A] transition-all duration-300"></span>

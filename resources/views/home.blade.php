@@ -280,7 +280,7 @@
                     </p>
                 </div>
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Video Editing & Graphics">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more about Video Editing &amp; Graphics">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>

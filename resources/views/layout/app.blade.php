@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 1. Preconnect Tags Top Par -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Preload critical self-hosted Poppins weights (discovery optimisation) -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/build/assets/poppins-400-normal-cpxAROuN.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/build/assets/poppins-600-normal-zEkxB9Mr.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="/build/assets/poppins-700-normal-Qrb0O0WB.woff2">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -16,9 +25,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     </noscript>
 
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-    rel="stylesheet">
+    <!-- 3. AOS CSS Non-Blocking -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/>
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    </noscript>
 
     <title>@yield('title', 'Sphere Marketing Solutions – Digital Marketing')</title>
     @hasSection('meta_description')
