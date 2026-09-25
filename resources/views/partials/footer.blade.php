@@ -39,25 +39,25 @@
                 <div class="flex gap-2 mt-4">
 
                     @if (filled($site[\App\Support\SiteSettings::TWITTER_URL] ?? null))
-                        <a href="{{ $site[\App\Support\SiteSettings::TWITTER_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                        <a href="{{ $site[\App\Support\SiteSettings::TWITTER_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center" aria-label="Twitter">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     @endif
 
                     @if (filled($site[\App\Support\SiteSettings::FACEBOOK_URL] ?? null))
-                        <a href="{{ $site[\App\Support\SiteSettings::FACEBOOK_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                        <a href="{{ $site[\App\Support\SiteSettings::FACEBOOK_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     @endif
 
                     @if (filled($site[\App\Support\SiteSettings::INSTAGRAM_URL] ?? null))
-                        <a href="{{ $site[\App\Support\SiteSettings::INSTAGRAM_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                        <a href="{{ $site[\App\Support\SiteSettings::INSTAGRAM_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center" aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     @endif
 
                     @if (filled($site[\App\Support\SiteSettings::LINKEDIN_URL] ?? null))
-                        <a href="{{ $site[\App\Support\SiteSettings::LINKEDIN_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center">
+                        <a href="{{ $site[\App\Support\SiteSettings::LINKEDIN_URL] }}" target="_blank" rel="noopener" class="size-9 rounded-full bg-white text-black flex items-center justify-center" aria-label="LinkedIn">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     @endif
@@ -75,61 +75,61 @@
 
                 <ul class="space-y-2 text-[15px] text-[#B0B9AE]">
                     <li>
-                        <a href="{{ route('about') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('about') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="About">
                             <i class="fa-solid fa-angle-right mr-3"></i>About
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('services') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('services') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Services">
                             <i class="fa-solid fa-angle-right mr-3"></i>Services
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('our-team') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('our-team') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Our Team">
                             <i class="fa-solid fa-angle-right mr-3"></i>Our Team
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('faqs') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('faqs') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="FAQs">
                             <i class="fa-solid fa-angle-right mr-3"></i>FAQs
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('blog.index') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('blog.index') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Blog">
                             <i class="fa-solid fa-angle-right mr-3"></i>Blog
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('entrepreneur-signup') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('entrepreneur-signup') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Entrepreneur Network">
                             <i class="fa-solid fa-angle-right mr-3"></i>Entrepreneur Network
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('contact') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('contact') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Contact Us">
                             <i class="fa-solid fa-angle-right mr-3"></i>Contact Us
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('privacy-policy') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('privacy-policy') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Privacy Policy">
                             <i class="fa-solid fa-angle-right mr-3"></i>Privacy Policy
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('terms-conditions') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('terms-conditions') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Terms & Conditions">
                             <i class="fa-solid fa-angle-right mr-3"></i>Terms & Conditions
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('refund-policy') }}" class="inline-block hover:text-white transition-colors duration-300">
+                        <a href="{{ route('refund-policy') }}" class="inline-block hover:text-white transition-colors duration-300" aria-label="Refund Policy">
                             <i class="fa-solid fa-angle-right mr-3"></i>Refund Policy
                         </a>
                     </li>

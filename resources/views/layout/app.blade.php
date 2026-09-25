@@ -8,7 +8,7 @@
     <!-- 1. Preconnect Tags Top Par -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -52,7 +52,6 @@
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
-<!-- 5. Sabhi Custom JS Files Mein `defer` Add Kiya Gaya Hai -->
 <script src="{{ asset('js/home.js') }}" defer></script>
 <script src="{{ asset('js/toast.js') }}" defer></script>
 <script src="{{ asset('js/contact-form.js') }}" defer></script>

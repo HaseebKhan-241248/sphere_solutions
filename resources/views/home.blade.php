@@ -186,7 +186,7 @@
                 </div>
 
                 <div class="service-learn-more-wrap">
-                    <a href="{{ route('services') }}" class="service-learn-more">
+                    <a href="{{ route('services') }}" class="service-learn-more" aria-label="Learn more">
                         Learn more <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -364,6 +364,7 @@
 
                 <div class="flex gap-4">
                     <button id="projectPrevBtn"
+                            aria-label="Previous project"
                             class="size-10 md:w-16 md:h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-[#4870F8] hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
@@ -398,11 +399,11 @@
                                 <div
                                     class="absolute inset-0 flex justify-center items-center gap-4 opacity-0 group-hover:opacity-100 transition">
 
-                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="View project">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
 
-                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="Contact us">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -438,11 +439,11 @@
                                 <div
                                     class="absolute inset-0 flex justify-center items-center gap-4 opacity-0 group-hover:opacity-100 transition">
 
-                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="View project">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
 
-                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="Contact us">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -478,11 +479,11 @@
                                 <div
                                     class="absolute inset-0 flex justify-center items-center gap-4 opacity-0 group-hover:opacity-100 transition">
 
-                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="View project">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
 
-                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="Contact us">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -519,11 +520,11 @@
                                 <div
                                     class="absolute inset-0 flex justify-center items-center gap-4 opacity-0 group-hover:opacity-100 transition">
 
-                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('project-details') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="View project">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
 
-                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center">
+                                    <a href="{{ route('contact') }}" class="size-12 rounded-full bg-white flex justify-center items-center" aria-label="Contact us">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>

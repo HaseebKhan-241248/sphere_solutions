@@ -23,10 +23,12 @@
 
                 <div class="flex gap-2 md:gap-4">
                     <button id="previous"
+                            aria-label="Previous"
                             class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-[#4870F8] hover:text-white duration-300">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
                     <button id="next"
+                            aria-label="Next"
                             class="size-10 md:w-16 md:h-16 rounded-full bg-white shadow-[0_0_8px_rgba(0,0,0,0.1)] cursor-pointer flex items-center justify-center hover:bg-[#4870F8] hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
