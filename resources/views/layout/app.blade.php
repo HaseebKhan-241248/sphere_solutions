@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- 1. Preconnect Tags Top Par -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- 1. Preconnect Tags -->
     <link rel="preconnect" href="https://unpkg.com">
 
     <!-- Preload critical self-hosted Poppins weights (discovery optimisation) -->
@@ -19,13 +18,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-          media="print" onload="this.media='all'"/>
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    </noscript>
-
-    <!-- 3. AOS CSS Non-Blocking -->
+    <!-- 2. FontAwesome – self-hosted via npm (bundled in app.css) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/>
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
