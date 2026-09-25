@@ -370,6 +370,7 @@
                     </button>
 
                     <button id="projectNextBtn"
+                            aria-label="Next project"
                             class="size-10 md:w-16 md:h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-[#4870F8] hover:text-white duration-300">
                         <i class="fa-solid fa-angle-right"></i>
                     </button>
