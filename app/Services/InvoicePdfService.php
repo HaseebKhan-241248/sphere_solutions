@@ -32,7 +32,7 @@ class InvoicePdfService
     {
         $invoice->load(['client', 'items']);
 
-        $companyLogoPath = SiteSettings::get(SiteSettings::LOGO_DESKTOP) ?? 'images/sphere_logo.png';
+        $companyLogoPath = SiteSettings::get(SiteSettings::LOGO_DESKTOP) ?? 'images/sphere_logo.webp';
 
         $client = $invoice->client;
 
@@ -55,7 +55,7 @@ class InvoicePdfService
                 'website' => 'www.spheremarketingsolutions.com',
                 'email' => $this->sanitizeText(SiteSettings::get(SiteSettings::EMAIL)),
                 'phone' => $this->sanitizeText(SiteSettings::get(SiteSettings::PHONE)),
-                'logo' => PdfImage::toDataUri($companyLogoPath) ?? PdfImage::toDataUri('images/sphere_logo.png'),
+                'logo' => PdfImage::toDataUri($companyLogoPath) ?? PdfImage::toDataUri('images/sphere_logo.webp'),
             ],
             'clientLogo' => PdfImage::toDataUri($client?->logo),
             'ringImage' => self::ringImage(),

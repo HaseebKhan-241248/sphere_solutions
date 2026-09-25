@@ -37,8 +37,8 @@ class AppServiceProvider extends ServiceProvider
             } catch (Throwable) {
                 $defaults = SiteSettings::defaults();
                 $view->with('site', $defaults);
-                $view->with('siteLogoDesktop', asset('images/sphere_logo.png'));
-                $view->with('siteLogoMobile', asset('images/sphere_logo.png'));
+                $view->with('siteLogoDesktop', asset('images/sphere_logo.webp'));
+                $view->with('siteLogoMobile', asset('images/sphere_logo.webp'));
                 $view->with('sitePhoneTel', '+16043137091');
                 $view->with('whatsappEnabled', false);
                 $view->with('whatsappUrl', null);

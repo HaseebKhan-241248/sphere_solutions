@@ -10,20 +10,12 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <!-- 2. FontAwesome Async/Non-Blocking -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
           media="print" onload="this.media='all'"/>
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     </noscript>
 
-    <!-- 3. AOS CSS Non-Blocking -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/>
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    </noscript>
-
-    <!-- 4. Google Fonts avec display=swap -->
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
     rel="stylesheet">

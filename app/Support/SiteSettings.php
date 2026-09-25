@@ -145,7 +145,7 @@ class SiteSettings
     {
         return static::resolveAssetUrl(
             static::get(self::LOGO_DESKTOP),
-            'images/sphere_logo.png',
+            'images/sphere_logo.webp',
         );
     }
 
@@ -153,7 +153,7 @@ class SiteSettings
     {
         return static::resolveAssetUrl(
             static::get(self::LOGO_MOBILE),
-            'images/sphere_logo.png',
+            'images/sphere_logo.webp',
         );
     }
 
