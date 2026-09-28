@@ -46,7 +46,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
-                    @foreach ($plans as $key => $plan)
+                    {{-- @foreach ($plans as $key => $plan)
                         @continue($key === 'enterprise')
 
                         @php
@@ -120,9 +120,9 @@
                                 @endif
                             </div>
                         </div>
-                    @endforeach
+                    @endforeach --}}
 
-                    {{-- Custom Payment card (sits next to Platinum) --}}
+                    
                     <div class="bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 ease-out hover:shadow-xl hover:scale-[1.03]">
                         <div>
                             <div class="bg-[#1E293B] rounded-xl p-6 text-left text-white mb-8 relative overflow-hidden">
