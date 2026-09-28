@@ -2,7 +2,50 @@
 
 return [
 
+    /*
+    |--------------------------------------------------------------------------
+    | Default currency for fixed package checkouts
+    |--------------------------------------------------------------------------
+    */
     'currency' => env('STRIPE_CURRENCY', 'usd'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Payment Currencies
+    |--------------------------------------------------------------------------
+    |
+    | Customers can enter any amount and choose a currency for custom checkout.
+    | Availability still depends on the Stripe account and payment methods.
+    |
+    */
+    'custom_payment' => [
+        'default_currency' => env('STRIPE_CUSTOM_CURRENCY', 'cad'),
+        'allowed_currencies' => [
+            'cad' => 'Canadian Dollar',
+            'usd' => 'US Dollar',
+            'eur' => 'Euro',
+            'gbp' => 'British Pound',
+            'aud' => 'Australian Dollar',
+            'inr' => 'Indian Rupee',
+            'mxn' => 'Mexican Peso',
+            'jpy' => 'Japanese Yen',
+            'sgd' => 'Singapore Dollar',
+            'nzd' => 'New Zealand Dollar',
+            'chf' => 'Swiss Franc',
+            'aed' => 'UAE Dirham',
+            'hkd' => 'Hong Kong Dollar',
+            'php' => 'Philippine Peso',
+            'sek' => 'Swedish Krona',
+            'nok' => 'Norwegian Krone',
+            'dkk' => 'Danish Krone',
+            'pln' => 'Polish Zloty',
+            'zar' => 'South African Rand',
+        ],
+        // Stripe treats these as whole units (no cents).
+        'zero_decimal_currencies' => [
+            'jpy',
+        ],
+    ],
 
     /*
     |--------------------------------------------------------------------------

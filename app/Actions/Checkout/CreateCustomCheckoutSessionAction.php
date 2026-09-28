@@ -9,14 +9,30 @@ use Stripe\Stripe;
 
 class CreateCustomCheckoutSessionAction
 {
-    public function handle(int $amountCents): Session
+    public function handle(int $unitAmount, string $currency): Session
     {
-        if ($amountCents < 100) {
-            throw new InvalidArgumentException('Amount must be at least $1.00.');
+        $currency = strtolower(trim($currency));
+        $allowed = array_keys(config('packages.custom_payment.allowed_currencies', []));
+
+        if (! in_array($currency, $allowed, true)) {
+            throw new InvalidArgumentException('Please choose a supported currency.');
         }
 
-        if ($amountCents > 10000000) {
-            throw new InvalidArgumentException('Amount may not exceed $100,000.00.');
+        $isZeroDecimal = in_array(
+            $currency,
+            config('packages.custom_payment.zero_decimal_currencies', []),
+            true
+        );
+
+        $minimum = $isZeroDecimal ? 1 : 100;
+        $maximum = $isZeroDecimal ? 100000 : 10000000;
+
+        if ($unitAmount < $minimum) {
+            throw new InvalidArgumentException('Amount must be at least 1.00.');
+        }
+
+        if ($unitAmount > $maximum) {
+            throw new InvalidArgumentException('Amount may not exceed 100,000.00.');
         }
 
         $secret = config('services.stripe.secret');
@@ -27,17 +43,17 @@ class CreateCustomCheckoutSessionAction
 
         Stripe::setApiKey($secret);
 
-        $currency = strtolower((string) config('packages.currency', 'usd'));
+        $currencyLabel = strtoupper($currency);
 
         return Session::create([
             'mode' => 'payment',
             'line_items' => [[
                 'price_data' => [
                     'currency' => $currency,
-                    'unit_amount' => $amountCents,
+                    'unit_amount' => $unitAmount,
                     'product_data' => [
                         'name' => 'Custom Payment',
-                        'description' => 'Custom amount payment for Sphere Marketing Solutions',
+                        'description' => "Custom amount payment ({$currencyLabel}) for Sphere Marketing Solutions",
                     ],
                 ],
                 'quantity' => 1,
@@ -49,7 +65,8 @@ class CreateCustomCheckoutSessionAction
             'metadata' => [
                 'package' => 'custom',
                 'package_name' => 'Custom Payment',
-                'amount_cents' => (string) $amountCents,
+                'amount_cents' => (string) $unitAmount,
+                'currency' => $currency,
             ],
         ]);
     }

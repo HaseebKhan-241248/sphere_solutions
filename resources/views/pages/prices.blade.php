@@ -72,7 +72,7 @@
                                         <div class="flex items-baseline font-black">
                                             <span class="text-xl {{ $priceAccent }} font-extrabold mr-1 -translate-y-3">$</span>
                                             <span class="text-4xl tracking-tight">{{ number_format($amount, 0) }}</span>
-                                            <span class="text-sm {{ $priceAccent }} font-medium ml-2">/ Month</span>
+                                            <span class="text-sm {{ $priceAccent }} font-medium ml-2">USD / Month</span>
                                         </div>
                                     @else
                                         <div class="text-lg font-semibold text-white">
@@ -127,7 +127,7 @@
                         <div>
                             <div class="bg-[#1E293B] rounded-xl p-6 text-left text-white mb-8 relative overflow-hidden">
                                 <h3 class="text-lg font-bold tracking-wide mb-1 text-slate-200">Custom Payment</h3>
-                                <p class="text-sm text-slate-400 mb-3">Pay any custom amount securely through Stripe</p>
+                                <p class="text-sm text-slate-400 mb-3">Pay any custom amount in your preferred currency</p>
                                 <div class="text-lg font-semibold text-white">
                                     Enter your amount
                                 </div>
@@ -137,6 +137,10 @@
                                 <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Services Included</p>
                                 <div class="flex items-center justify-between text-[14px] text-slate-600">
                                     <span>Choose any custom payment amount</span>
+                                    <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
+                                    <span>Pay in CAD, USD, and more</span>
                                     <svg class="w-4 h-4 text-emerald-500 stroke-current shrink-0 ml-3" fill="none" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                 </div>
                                 <div class="flex items-center justify-between text-[14px] text-slate-600 pt-3 border-t border-slate-100">
@@ -168,7 +172,7 @@
                             <div class="px-2 mb-6 text-left">
                                 <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">Note</p>
                                 <ul class="space-y-1 text-[13px] text-slate-500">
-                                    <li>- Enter your preferred amount in the payment popup</li>
+                                    <li>- Enter your preferred amount and currency in the payment popup</li>
                                     <li>- Package customization can be made based on your business requirements.</li>
                                 </ul>
                             </div>
@@ -196,18 +200,18 @@
          style="z-index: 80;">
         <div id="customPaymentBackdrop" class="absolute inset-0 bg-slate-900/50" style="background: rgba(15, 23, 42, 0.5);"></div>
 
-        <div class="relative z-10 w-full max-w-md rounded-2xl bg-white shadow-2xl border border-slate-100 overflow-hidden"
+        <div class="relative z-10 w-full max-w-lg rounded-2xl bg-white shadow-2xl border border-slate-100 overflow-hidden"
              role="dialog"
              aria-modal="true"
              aria-labelledby="customPaymentTitle"
-             style="max-width: 28rem; background: #fff; border-radius: 1rem; box-shadow: 0 25px 50px rgba(15, 23, 42, 0.25);">
+             style="max-width: 32rem; background: #fff; border-radius: 1rem; box-shadow: 0 25px 50px rgba(15, 23, 42, 0.25);">
             <div class="flex items-start justify-between gap-4 px-6 pt-6 pb-2">
                 <div class="min-w-0">
                     <h3 id="customPaymentTitle" class="text-xl font-semibold text-[#0F172A] mb-1">
                         Custom Payment
                     </h3>
                     <p class="text-sm text-slate-500">
-                        Enter the amount you want to pay, then continue to Stripe Checkout.
+                        Enter your payment amount and preferred currency, then continue to Stripe Checkout.
                     </p>
                 </div>
                 <button type="button"
@@ -221,30 +225,55 @@
                 </button>
             </div>
 
+            @php
+                $allowedCurrencies = config('packages.custom_payment.allowed_currencies', []);
+                $defaultCurrency = strtoupper(old(
+                    'currency',
+                    config('packages.custom_payment.default_currency', 'cad')
+                ));
+            @endphp
+
             <form action="{{ route('checkout.custom') }}" method="POST" id="customPaymentForm" class="px-6 pb-6 pt-4">
                 @csrf
-                <label for="customAmount" class="block text-sm font-medium text-slate-700 mb-2">
-                    Amount (USD)
-                </label>
-                <div class="flex items-stretch mb-2 rounded-xl border border-slate-200 overflow-hidden focus-within:ring-2 focus-within:ring-[#4870F8] focus-within:border-transparent"
-                     style="display: flex; align-items: stretch; border: 1px solid #e2e8f0; border-radius: 0.75rem; overflow: hidden;">
-                    <span class="inline-flex items-center justify-center px-4 bg-slate-50 text-slate-600 font-semibold border-r border-slate-200"
-                          style="display: inline-flex; align-items: center; justify-content: center; padding: 0 1rem; background: #f8fafc; color: #475569; font-weight: 600; border-right: 1px solid #e2e8f0;">
-                        $
-                    </span>
-                    <input type="number"
-                           name="amount"
-                           id="customAmount"
-                           min="1"
-                           max="100000"
-                           step="0.01"
-                           required
-                           value="{{ old('amount') }}"
-                           placeholder="0.00"
-                           class="w-full border-0 px-4 py-3 text-slate-800 focus:outline-none focus:ring-0"
-                           style="width: 100%; border: 0; padding: 0.75rem 1rem; color: #1e293b; outline: none;">
+
+                <div class="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-4 mb-3">
+                    <div>
+                        <label for="customAmount" class="block text-sm font-medium text-slate-700 mb-2">
+                            Amount
+                        </label>
+                        <input type="number"
+                               name="amount"
+                               id="customAmount"
+                               min="1"
+                               max="100000"
+                               step="0.01"
+                               required
+                               value="{{ old('amount') }}"
+                               placeholder="0.00"
+                               class="w-full min-h-12 rounded-xl border border-slate-200 px-4 py-3 text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#4870F8] focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="customCurrency" class="block text-sm font-medium text-slate-700 mb-2">
+                            Currency
+                        </label>
+                        <select name="currency"
+                                id="customCurrency"
+                                required
+                                class="w-full min-h-12 rounded-xl border border-slate-200 px-4 py-3 text-slate-800 bg-white focus:outline-none focus:ring-2 focus:ring-[#4870F8] focus:border-transparent cursor-pointer">
+                            @foreach ($allowedCurrencies as $code => $label)
+                                <option value="{{ strtolower($code) }}" @selected(strtolower($defaultCurrency) === strtolower($code))>
+                                    {{ strtoupper($code) }} — {{ $label }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
-                <p class="text-xs text-slate-400 mb-6">Minimum $1.00 — Maximum $100,000.00</p>
+
+                <p id="paymentSummary" class="text-sm text-slate-500 mb-2">
+                    Enter your payment amount and preferred currency
+                </p>
+                <p class="text-xs text-slate-400 mb-6">Minimum 1.00 — Maximum 100,000.00</p>
 
                 <div class="flex items-center gap-3" style="display: flex; gap: 0.75rem;">
                     <button type="button"
@@ -256,7 +285,7 @@
                     <button type="submit"
                             class="flex-1 rounded-full bg-[#4870F8] hover:bg-[#3A5CE0] px-5 py-3 text-sm font-bold text-white shadow-md transition cursor-pointer"
                             style="flex: 1; border-radius: 9999px; background: #4870F8; padding: 0.75rem 1.25rem; font-size: 0.875rem; font-weight: 700; color: #fff; cursor: pointer; border: 0;">
-                        Pay Now
+                        Pay Securely with Stripe
                     </button>
                 </div>
             </form>
@@ -271,14 +300,26 @@
             const cancelBtn = document.getElementById('cancelCustomPaymentModal');
             const backdrop = document.getElementById('customPaymentBackdrop');
             const amountInput = document.getElementById('customAmount');
+            const currencySelect = document.getElementById('customCurrency');
+            const summary = document.getElementById('paymentSummary');
 
             if (!modal || !openBtn) return;
+
+            function updatePaymentSummary() {
+                if (!summary || !amountInput || !currencySelect) return;
+
+                const amount = amountInput.value || '0.00';
+                const currency = (currencySelect.value || 'cad').toUpperCase();
+
+                summary.textContent = 'You will pay ' + amount + ' ' + currency + ' through Stripe';
+            }
 
             function openModal() {
                 modal.classList.remove('hidden');
                 modal.classList.add('flex');
                 modal.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';
+                updatePaymentSummary();
                 setTimeout(function () {
                     amountInput && amountInput.focus();
                 }, 50);
@@ -296,13 +337,18 @@
             cancelBtn && cancelBtn.addEventListener('click', closeModal);
             backdrop && backdrop.addEventListener('click', closeModal);
 
+            amountInput && amountInput.addEventListener('input', updatePaymentSummary);
+            currencySelect && currencySelect.addEventListener('change', updatePaymentSummary);
+
             document.addEventListener('keydown', function (event) {
                 if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
                     closeModal();
                 }
             });
 
-            @if ($errors->has('amount') || old('amount'))
+            updatePaymentSummary();
+
+            @if ($errors->has('amount') || $errors->has('currency') || old('amount') || old('currency'))
                 openModal();
             @endif
         })();

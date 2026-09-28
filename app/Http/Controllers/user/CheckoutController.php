@@ -35,7 +35,10 @@ class CheckoutController extends Controller
     public function custom(StoreCustomCheckoutRequest $request, CreateCustomCheckoutSessionAction $createCustomCheckout): RedirectResponse
     {
         try {
-            $session = $createCustomCheckout->handle($request->amountCents());
+            $session = $createCustomCheckout->handle(
+                $request->unitAmount(),
+                $request->currency()
+            );
         } catch (InvalidArgumentException $exception) {
             return redirect()
                 ->route('prices')
