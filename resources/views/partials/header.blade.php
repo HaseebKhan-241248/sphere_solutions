@@ -33,13 +33,7 @@
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('services') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
-                <li>
-                    <a href="{{ route('prices') }}"
-                       class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Packages">
-                        Packages
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('prices') ? 'w-full' : '' }}"></span>
-                    </a>
-                </li>
+            
                 <li>
                     <a href="{{ route('blog.index') }}"
                        class="nav-link flex items-center gap-1 {{ request()->routeIs('blog.*') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Blog">
@@ -66,6 +60,13 @@
                        class="nav-link flex items-center gap-1 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Join Us">
                         Join Us
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('entrepreneur-signup') ? 'w-full' : '' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('prices') }}"
+                       class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Packages">
+                        Make Payments
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('prices') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>
             </ul>

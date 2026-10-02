@@ -10,10 +10,9 @@
 
             <div class="relative z-20">
                 <h1 class="text-white text-5xl md:text-6xl font-bold tracking-wide mb-4">
-                    Packages
+                Payments
                 </h1>
-
-                <x-page-breadcrumb current="Packages" />
+                <x-page-breadcrumb current="Payments" />
             </div>
 
         </div>
@@ -44,7 +43,7 @@
                     </div>
                 @endif
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch justify-items-center">
 
                     {{-- @foreach ($plans as $key => $plan)
                         @continue($key === 'enterprise')
@@ -121,9 +120,9 @@
                             </div>
                         </div>
                     @endforeach --}}
-
+<div class="md:hidden"></div>
                     
-                    <div class="bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 ease-out hover:shadow-xl hover:scale-[1.03]">
+                    <div class="lg:col-start-2 bg-white rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-slate-100 flex flex-col justify-between overflow-hidden p-6 text-center transition duration-300 ease-out hover:shadow-xl hover:scale-[1.03]">
                         <div>
                             <div class="bg-[#1E293B] rounded-xl p-6 text-left text-white mb-8 relative overflow-hidden">
                                 <h3 class="text-lg font-bold tracking-wide mb-1 text-slate-200">Custom Payment</h3>
@@ -181,7 +180,7 @@
                         <div class="px-2 pt-2 text-left">
                             <button type="button"
                                     id="openCustomPaymentModal"
-                                    class="inline-block w-fit bg-[#1E293B] hover:bg-slate-900 shadow-sm text-white font-bold px-7 py-3 rounded-full text-sm tracking-wider transition duration-200 cursor-pointer">
+                                    class="inline-block w-full bg-[#1E293B] hover:bg-slate-900 shadow-sm text-white font-bold px-7 py-3 rounded-full text-sm tracking-wider transition duration-200 cursor-pointer">
                                 Pay Now
                             </button>
                         </div>
