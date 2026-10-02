@@ -10,9 +10,9 @@
 
             <div class="relative z-20">
                 <h1 class="text-white text-5xl md:text-6xl font-bold tracking-wide mb-4">
-                Payments
+                Payment
                 </h1>
-                <x-page-breadcrumb current="Payments" />
+                <x-page-breadcrumb current="Payment" />
             </div>
 
         </div>
@@ -22,14 +22,14 @@
         <div class="w-full py-24 px-4 sm:px-6 lg:px-8 font-sans antialiased text-slate-800">
             <div class="max-w-[88%] mx-auto">
 
-                <div class="text-center mb-12">
+                <!-- <div class="text-center mb-12">
                     <span class="text-[#4870F8] text-lg tracking-wide block mb-2">
-                        Pricing Plans
+                        Payment
                     </span>
                     <h2 class="text-[#0F172A] text-4xl md:text-5xl font-semibold tracking-tight">
-                        Pricing Plan for Our Services
+                        Payment Plan for Our Services
                     </h2>
-                </div>
+                </div> -->
 
                 @if (session('checkout_error'))
                     <div class="mb-8 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-600 font-medium">

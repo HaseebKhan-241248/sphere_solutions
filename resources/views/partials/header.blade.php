@@ -65,7 +65,7 @@
                 <li>
                     <a href="{{ route('prices') }}"
                        class="nav-link flex items-center gap-1 {{ request()->routeIs('prices') ? 'text-[#4870F8] font-semibold' : 'font-medium' }} hover:text-[#4870F8] cursor-pointer transition-all duration-300 relative group font-sans" aria-label="Packages">
-                        Make Payments
+                        Make Payment
                         <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#4870F8] transition-all duration-300 group-hover:w-full {{ request()->routeIs('prices') ? 'w-full' : '' }}"></span>
                     </a>
                 </li>

@@ -49,7 +49,7 @@ Route::get('/refund-policy', [RefundPolicyController::class, 'index'])->name('re
 Route::get('/faqs', [FAQSController::class, 'index'])->name('faqs');
 Route::get('/features', [FeaturesController::class, 'index'])->name('features');
 Route::get('/our-team', [OurTeamController::class, 'index'])->name('our-team');
-Route::get('/make-Payments', [PricesController::class, 'index'])->name('prices');
+Route::get('/make-Payment', [PricesController::class, 'index'])->name('prices');
 Route::post('/checkout/custom', [CheckoutController::class, 'custom'])->name('checkout.custom');
 Route::post('/checkout/{package}', [CheckoutController::class, 'store'])->name('checkout.store');
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
