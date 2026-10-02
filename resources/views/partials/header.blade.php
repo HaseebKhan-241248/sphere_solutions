@@ -103,7 +103,7 @@
             </li>
             <li><a href="{{ route('about') }}" class="block py-2 hover:text-[#4870F8]">About</a></li>
             <li><a href="{{ route('services') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Services">Services</a></li>
-            <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Packages">Packages</a></li>
+            
             <li><a href="{{ route('blog.index') }}"
                    class="block py-2 {{ request()->routeIs('blog.*') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}">Blog</a>
             </li>
@@ -115,6 +115,7 @@
             <li><a href="{{ route('entrepreneur-signup') }}"
                    class="block py-2 {{ request()->routeIs('entrepreneur-signup') ? 'text-[#4870F8]' : 'hover:text-[#4870F8]' }}" aria-label="Join Us">Join Us</a>
             </li>
+            <li><a href="{{ route('prices') }}" class="block py-2 hover:text-[#4870F8]" aria-label="Packages">Make Payment</a></li>
             <li class="pt-3">
                 <a href="{{ route('contact') }}"
                    class="block text-center bg-[#4870F8] text-white font-medium py-3 rounded-full transition-all duration-300 hover:bg-[#3A5CE0]">
