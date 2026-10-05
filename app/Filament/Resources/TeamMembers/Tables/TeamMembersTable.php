@@ -19,8 +19,8 @@ class TeamMembersTable
             ->columns([
                 ImageColumn::make('photo')
                     ->label('Photo')
-                    ->circular()
-                    ->getStateUsing(fn ($record) => $record->photoUrl()),
+                    ->disk('public')
+                    ->circular(),
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
