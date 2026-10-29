@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use App\Support\SiteSettings;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -25,6 +28,13 @@ class AppServiceProvider extends ServiceProvider
     {
         // utf8mb4 indexes: 255 chars = 1020 bytes, over MySQL's 1000-byte key limit
         Schema::defaultStringLength(191);
+
+        RateLimiter::for('contact', function (Request $request) {
+            return [
+                Limit::perMinute(3)->by($request->ip()),
+                Limit::perDay(15)->by('contact-day:'.$request->ip()),
+            ];
+        });
 
         View::composer(['layout.app', 'home', 'partials.header', 'partials.footer', 'partials.whatsapp-chat', 'pages.contact', 'pages.services', 'pages.quote'], function ($view): void {
             try {

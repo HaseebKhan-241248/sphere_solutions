@@ -7,26 +7,38 @@ use App\Mail\ContactCustomerMail;
 use App\Models\Contact;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\RateLimiter;
 use Tests\TestCase;
 
 class ContactFormTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_contact_form_stores_submission_and_sends_emails(): void
+    protected function setUp(): void
     {
-        Mail::fake();
-        config(['contact.admin_email' => 'admin@sp']);
+        parent::setUp();
 
-        $payload = [
+        RateLimiter::clear('127.0.0.1');
+        RateLimiter::clear('contact-day:127.0.0.1');
+    }
+
+    private function validPayload(array $overrides = []): array
+    {
+        return array_merge([
             'name' => 'Jane Doe',
             'email' => 'jane@example.com',
             'mobile' => '+1 604 555 0100',
             'subject' => 'Website inquiry',
             'message' => 'Hello, I would like to know more about your services.',
-        ];
+        ], $overrides);
+    }
 
-        $response = $this->postJson(route('contact.store'), $payload);
+    public function test_contact_form_stores_submission_and_sends_emails(): void
+    {
+        Mail::fake();
+        config(['contact.admin_email' => 'admin@sp']);
+
+        $response = $this->postJson(route('contact.store'), $this->validPayload());
 
         $response->assertOk()
             ->assertJson([
@@ -86,6 +98,24 @@ class ContactFormTest extends TestCase
         $this->assertArrayHasKey('email', $errors);
 
         Mail::assertNothingSent();
+    }
+
+    public function test_contact_form_is_rate_limited(): void
+    {
+        Mail::fake();
+        config(['contact.admin_email' => 'admin@sp']);
+
+        for ($i = 0; $i < 3; $i++) {
+            $this->postJson(route('contact.store'), $this->validPayload([
+                'email' => "user{$i}@example.com",
+            ]))->assertOk();
+        }
+
+        $this->postJson(route('contact.store'), $this->validPayload([
+            'email' => 'blocked@example.com',
+        ]))->assertStatus(429);
+
+        $this->assertDatabaseCount('contacts', 3);
     }
 
     public function test_contact_model_is_created_with_fillable_fields(): void

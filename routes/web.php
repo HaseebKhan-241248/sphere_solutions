@@ -37,7 +37,9 @@ Route::get('/about-us', [AboutController::class, 'index'])->name('about');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact-us', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactController::class, 'store'])
+    ->middleware('throttle:contact')
+    ->name('contact.store');
 Route::get('/entrepreneur-signup', [EntrepreneurSignupController::class, 'index'])->name('entrepreneur-signup');
 Route::post('/entrepreneur-signup', [EntrepreneurSignupController::class, 'store'])
     ->middleware('throttle:10,1')
